@@ -20,7 +20,7 @@ data_processors = {
 }
 
 
-data_file = None
+data_files = []
 sector = None
 
 # Grab the argument values from our options list
@@ -28,11 +28,12 @@ for opt, arg in options:
   if opt in ['-s', '--sector']:
     sector = arg.strip()
   elif opt in ['-f', '--file']:
-    data_file = arg.strip()
+    data_files.append(arg.strip())
 
-if not data_file:
+if not len(data_files) > 0 :
   print('You must pass the data file being used for input! e.g. estimate.py --file=data.xls')
   exit()
+
 
 if not sector or sector == 'all':
   # if no sector is specified, then we proceed to process
@@ -40,12 +41,12 @@ if not sector or sector == 'all':
   sector_data = {}
 
   for sec, processor in data_processors.items():
-    sector_data[sec] = processor(data_file)
+    sector_data[sec] = processor(data_files)
 
 else:
 
   if sector in data_processors:
-    sector_data = {str(sector): data_processors[sector](data_file)}
+    sector_data = {str(sector): data_processors[sector](data_files)}
 
   else:
     valid_sectors = reduce(lambda x,y: x+', '+y, data_processors.keys())
