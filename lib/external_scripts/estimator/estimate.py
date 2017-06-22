@@ -7,8 +7,8 @@ from functools import reduce
 import estimators
 
 # Get command line arguments
-short_options = 's:f:'
-long_options  = ['sector=', 'file=']
+short_options = 's:f:t:'
+long_options  = ['sector=', 'file=', 'tag=']
 
 options = getopt(sys.argv[1:], short_options, long_options)[0]
 
@@ -23,12 +23,25 @@ data_processors = {
 data_files = []
 sector = None
 
+
 # Grab the argument values from our options list
+check_for_tag = False
 for opt, arg in options:
+
+  if check_for_tag:
+    check_for_tag = False
+    if opt in ['-t', '--tag']:
+      data_files[-1]['tag'] = arg.strip()
+      continue
+
   if opt in ['-s', '--sector']:
     sector = arg.strip()
   elif opt in ['-f', '--file']:
-    data_files.append(arg.strip())
+    data_files.append({'file_path': arg.strip(), 'tag': ''})
+
+    # Whenever a --file argument is passed, a tag for that file should follow
+    check_for_tag = True 
+
 
 if not len(data_files) > 0 :
   print('You must pass the data file being used for input! e.g. estimate.py --file=data.xls')

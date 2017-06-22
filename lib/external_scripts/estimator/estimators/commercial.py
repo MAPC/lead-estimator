@@ -2,7 +2,7 @@ from .estimator import Estimator
 
 def commercial(data_source):
 
-  def processor(data):
+  def methodology(data):
     return data
 
-  return Estimator(processor)(data_source)
+  return Estimator(methodology)(data_source)
