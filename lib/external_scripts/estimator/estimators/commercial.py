@@ -83,27 +83,26 @@ def commercial(data_source):
 
 
     # Find percentage of consumption for each fuel type.
-    # Methodology says to keep the electrical consumption at 100%.
-    fuel_con_percentage = {'el': 1.0}
+    source_column_map = {
+      'ng': 'ng',
+      'fueloil': 'fo'
+    }
+    
+    energy_sources = pd.DataFrame(datasets['cbecs_sources'][['activity', 'all', 'ng', 'fueloil']])
+    energy_sources['fueloil'].fillna(0, inplace=True)
+    energy_sources.rename(columns=source_column_map, inplace=True)
 
-    fuel_con_filter = []
-    for fuel in fuel_types:
-      fuel_con_filter.append(fuel+'_con_per')
+    for fuel in source_column_map.values():
+      energy_sources[fuel] = energy_sources[fuel].astype(float) / energy_sources['all'].astype(float)
 
-    fuel_con_totals = results[fuel_con_filter].sum()
-    fuel_con_matrix_total = fuel_con_totals.sum()
-
-    for fuel in [x for x in fuel_types if x != 'el']:
-      fuel_con_percentage[fuel] = fuel_con_totals[fuel+'_con_per'] / fuel_con_matrix_total
+    energy_sources['el'] = 1.0
 
     
     # Calculate avergage consumption and expenditure 
     for fuel in fuel_types:
-      results[fuel+'_con'] = results[fuel+'_con_per'] * results['emps'] * fuel_con_percentage[fuel] * fuel_factor[fuel]
-      results[fuel+'_exp'] = results[fuel+'_exp_per'] * results['emps'] * fuel_factor[fuel] 
+      results[fuel+'_con'] = results[fuel+'_con_per'] * results['emps'] * energy_sources[fuel] * fuel_factor[fuel]
+      results[fuel+'_exp'] = (results[fuel+'_exp_per'] / fuel_conversion[fuel]) * results[fuel+'_con']
 
-
-    pprint(results)
     return results
 
   return Estimator(methodology)(data_source)

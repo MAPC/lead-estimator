@@ -59,8 +59,10 @@ if not sector or sector == 'all':
 else:
 
   if sector in data_processors:
-    sector_data = {str(sector): data_processors[sector](data_files)}
+    sector_data = {str(sector): data_processors[sector](data_files).to_json()}
 
   else:
     valid_sectors = reduce(lambda x,y: x+', '+y, data_processors.keys())
     print("{0} is not a valid sector! Valid sector arguments are {1}.".format(sector, valid_sectors))
+
+pprint(sector_data)
