@@ -8,17 +8,17 @@
 
   Arguments:
 
-    --file:     The absolute path to a data file that is in either .csv, .xls, or .xlsx format.
-                These optional files are used in place of tables in the database when properly 
-                tagged. See --tag argument.
+    --file, -f:     The absolute path to a data file that is in either .csv, .xls, or .xlsx format.
+                    These optional files are used in place of tables in the database when properly 
+                    tagged. See --tag argument.
 
-    --sector:   The name of the sector that will be processed. If this argument is not included 
-                in the command, then the program will process all sectors.
+    --sector, -s:   The name of the sector that will be processed. If this argument is not included 
+                    in the command, then the program will process all sectors.
 
-    --tag:      This argument must follow a --file argument. If this argument does not follow a 
-                --file argument, the file will not be used. Possible file tags are eowld, 
-                cbecs_el, cbecs_fo, cbecs_ng, cbecs_sources, mecs_ami, mecs_fce, mecs_fci,
-                recs_hfc, recs_hfe, recs_sc, acs_uis, acs_hf. See --file argument.
+    --tag, -t:      This argument must follow a --file argument. If this argument does not follow a 
+                    --file argument, the file will not be used. Possible file tags are eowld, 
+                    cbecs_el, cbecs_fo, cbecs_ng, cbecs_sources, mecs_ami, mecs_fce, mecs_fci,
+                    recs_hfc, recs_hfe, recs_sc, acs_uis, acs_hf. See --file argument.
 """
 
 import sys
