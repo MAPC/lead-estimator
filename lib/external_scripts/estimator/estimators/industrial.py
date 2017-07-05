@@ -38,7 +38,7 @@ def industrial(data_sources):
     """
     eowld = datasets['eowld']
     eowld = eowld[(eowld['naicscode'].astype(int) >= 311) & (eowld['naicscode'].astype(int) <= 339) & (eowld['cal_year'].astype(int) == 2015)]
-    eowld = eowld[['naicscode', 'naicstitle', 'municipal', 'avgemp', 'estab']]
+    eowld = eowld[['municipal', 'naicscode', 'naicstitle', 'avgemp', 'estab']]
     eowld = eowld.sort_values(['naicscode']) 
     eowld.rename(columns={'naicscode': 'naics_code'}, inplace=True)
 
@@ -81,6 +81,8 @@ def industrial(data_sources):
 
     for fuel in fuel_types:
       results[fuel+'_cons'] = results['cons_total'] * results[fuel+'_%']
+
+    results.sort_values('municipal', inplace=True)
 
 
     return results

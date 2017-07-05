@@ -54,68 +54,74 @@ def commercial(data_sources):
       Step 1 in Methodology
     """
     eowld = datasets['eowld']
-    eowld = eowld[eowld['municipal'].str.lower() == 'gloucester']
     eowld = eowld[(eowld['naicscode'].astype(int) >= 400) & (eowld['naicscode'].astype(int) <= 1000) & (eowld['cal_year'].astype(int) == 2015)]
-    eowld = eowld[['naicscode', 'avgemp', 'estab']]
+    eowld_snapshot = eowld[['municipal', 'naicscode', 'avgemp', 'estab']]
 
-    pba_stats = {}
-    for pba, naics_codes in pba_naics_groups.items():
-      pba_stats[pba] = eowld[eowld['naicscode'].isin(naics_codes)].sum()[['avgemp', 'estab']]
+    results = pd.DataFrame()
+
+    for municipality in eowld['municipal'].unique():
+      eowld = pd.DataFrame(eowld_snapshot[eowld_snapshot['municipal'] == municipality])
+
+      pba_stats = {}
+      for pba, naics_codes in pba_naics_groups.items():
+        pba_stats[pba] = eowld[eowld['naicscode'].isin(naics_codes)].sum()[['avgemp', 'estab']]
 
 
-    """
-      Step 2 in Methodology
-    """
+      """
+        Step 2 in Methodology
+      """
 
-    # Pull in the CBECS datasets
-    cbecs = {}
-    for fuel in fuel_types:
-      column_map = {
-        'cnsperworker': fuel+'_con_per',
-        'experworker': fuel+'_exp_per',
+      # Pull in the CBECS datasets
+      cbecs = {}
+      for fuel in fuel_types:
+        column_map = {
+          'cnsperworker': fuel+'_con_per',
+          'experworker': fuel+'_exp_per',
+        }
+
+        cbecs[fuel] = pd.DataFrame(datasets['cbecs_'+fuel][['activity', 'cnsperworker', 'experworker']])
+        cbecs[fuel].rename(columns=column_map, inplace=True)
+
+        # Use Option 2 in methodology for replacing missing values in each column
+        for column_name in column_map.values():
+          column_avg = cbecs[fuel][column_name].mean()
+          cbecs[fuel][column_name].fillna(column_avg, inplace=True)
+
+
+      # Compose the datasets into a single DataFrame 
+      current_result = None
+      for i, fuel in enumerate(fuel_types):
+        if i == 0:
+          current_result = pd.DataFrame(cbecs[fuel][cbecs[fuel]['activity'].str.strip().isin(pba_naics_groups.keys())])
+        else:
+          current_result = pd.merge(current_result, cbecs[fuel], on='activity')
+
+      current_result['emps'] = current_result['activity'].apply(lambda x: pba_stats[x.strip()]['avgemp'])
+      current_result['estabs'] = current_result['activity'].apply(lambda x: pba_stats[x.strip()]['estab'])
+
+
+      # Find percentage of consumption for each fuel type.
+      source_column_map = {
+        'ng': 'ng',
+        'fueloil': 'fo'
       }
+      
+      energy_sources = pd.DataFrame(datasets['cbecs_sources'][['activity', 'all', 'ng', 'fueloil']])
+      energy_sources['fueloil'].fillna(0, inplace=True)
+      energy_sources.rename(columns=source_column_map, inplace=True)
 
-      cbecs[fuel] = pd.DataFrame(datasets['cbecs_'+fuel][['activity', 'cnsperworker', 'experworker']])
-      cbecs[fuel].rename(columns=column_map, inplace=True)
+      for fuel in source_column_map.values():
+        energy_sources[fuel] = energy_sources[fuel].astype(float) / energy_sources['all'].astype(float)
 
-      # Use Option 2 in methodology for replacing missing values in each column
-      for column_name in column_map.values():
-        column_avg = cbecs[fuel][column_name].mean()
-        cbecs[fuel][column_name].fillna(column_avg, inplace=True)
+      energy_sources['el'] = 1.0
 
+      # Calculate avergage consumption and expenditure 
+      for fuel in fuel_types:
+        current_result[fuel+'_con'] = current_result[fuel+'_con_per'] * current_result['emps'] * energy_sources[fuel] * fuel_factor[fuel]
+        current_result[fuel+'_exp'] = (current_result[fuel+'_exp_per'] / fuel_conversion[fuel]) * current_result[fuel+'_con']
 
-    # Compose the datasets into a single DataFrame 
-    results = None
-    for i, fuel in enumerate(fuel_types):
-      if i == 0:
-        results = pd.DataFrame(cbecs[fuel][cbecs[fuel]['activity'].str.strip().isin(pba_naics_groups.keys())])
-      else:
-        results = pd.merge(results, cbecs[fuel], on='activity')
-
-    results['emps'] = results['activity'].apply(lambda x: pba_stats[x.strip()]['avgemp'])
-    results['estabs'] = results['activity'].apply(lambda x: pba_stats[x.strip()]['estab'])
-
-
-    # Find percentage of consumption for each fuel type.
-    source_column_map = {
-      'ng': 'ng',
-      'fueloil': 'fo'
-    }
-    
-    energy_sources = pd.DataFrame(datasets['cbecs_sources'][['activity', 'all', 'ng', 'fueloil']])
-    energy_sources['fueloil'].fillna(0, inplace=True)
-    energy_sources.rename(columns=source_column_map, inplace=True)
-
-    for fuel in source_column_map.values():
-      energy_sources[fuel] = energy_sources[fuel].astype(float) / energy_sources['all'].astype(float)
-
-    energy_sources['el'] = 1.0
-
-    
-    # Calculate avergage consumption and expenditure 
-    for fuel in fuel_types:
-      results[fuel+'_con'] = results[fuel+'_con_per'] * results['emps'] * energy_sources[fuel] * fuel_factor[fuel]
-      results[fuel+'_exp'] = (results[fuel+'_exp_per'] / fuel_conversion[fuel]) * results[fuel+'_con']
+      current_result['municipal'] = municipality
+      results = results.append(current_result, ignore_index=True)
 
 
     return results

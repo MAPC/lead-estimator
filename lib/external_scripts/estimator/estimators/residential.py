@@ -63,7 +63,7 @@ def residential(data_sources):
       Step 1 in Methodology
     """
     acs_uis = datasets['acs_uis']
-    acs_uis = acs_uis[(acs_uis['acs_year'] == '2006-10') & (acs_uis['municipal'].str.lower() == 'gloucester')]
+    acs_uis = acs_uis[(acs_uis['acs_year'] == '2006-10')]
     acs_uis = acs_uis[['muni_id', 'municipal', 'hu', 'u1', 'u2_4', 'u5_9', 'u10_19', 'u20ov', 'u_oth']]
     acs_uis.rename(columns={'hu': 'total'}, inplace=True)
 
@@ -77,7 +77,7 @@ def residential(data_sources):
       Step 2 in Methodology
     """
     acs_hf = datasets['acs_hf']
-    acs_hf = acs_hf[(acs_hf['acs_year'] == '2006-10') & (acs_hf['municipal'].str.lower() == 'gloucester')]
+    acs_hf = acs_hf[(acs_hf['acs_year'] == '2006-10')]
     acs_hf = acs_hf[['muni_id', 'gas', 'elec', 'oil']]
     
     results = pd.merge(acs_uis, acs_hf, on='muni_id')
@@ -147,6 +147,7 @@ def residential(data_sources):
     for fuel, conversion_ratio in co2_conversion_map.items():
       results[fuel+'_emissions_co2'] = results[fuel+'_cons_btu'] * conversion_ratio
 
+    results.sort_values(['municipal', 'hu_type'], inplace=True)
 
     return results
 
