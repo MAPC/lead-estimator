@@ -1,12 +1,32 @@
+"""
+  Class: Estimator
+
+  Curried class who's first call consumes a methodology function which is used 
+  by the second call that loads in and injects datasets into the methodology.
+"""
+
 import pandas as pd
 from os import path
+
 
 class Estimator(object):
 
   loaded_files = {}
 
   def __new__(self, fn):
+    """
+      @param Function<[Dict<DataFrame>],DataFrame> fn
+
+      @return Estimator
+    """
+
     def estimator(data_sources):
+      """
+        @param List<Dict<String>> data_sources
+
+        @return DataFrame
+      """
+
       data = {}
 
       file_readers = {

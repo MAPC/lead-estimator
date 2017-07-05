@@ -1,22 +1,31 @@
+"""
+  Commercial Sector Estimator
+"""
+
 import pandas as pd
 from .estimator import Estimator
-from pprint import pprint
 
-def commercial(data_source):
+
+def commercial(data_sources):
+  """
+    @param List<Dict<String>> data_sources
+
+    @return DataFrame
+  """
 
   pba_naics_groups = {
-      'Education': [611],
-      'Food sales': [445],
-      'Food service': [722],
-      'Health care Outpatient': [621],
-      'Lodging': [623, 721],
-      'Mercantile Retail (other than mall)': [441, 442, 443, 444, 451, 452, 453, 532],
-      'Mercantile Enclosed and strip malls': [446, 448],
-      'Office': [454, 486, 511, 516, 517, 518, 519, 521, 522, 523, 524, 525, 531, 533, 541, 551, 561, 624, 921, 923, 924, 925, 926, 928],
-      'Public assembly': [481, 482, 485, 487, 512, 515, 711, 712, 713],
-      'Religious worship': [813],
-      'Service': [447, 483, 484, 488, 491, 492, 811, 812],
-      'Warehouse and storage': [423, 424, 493],
+    'Education': [611],
+    'Food sales': [445],
+    'Food service': [722],
+    'Health care Outpatient': [621],
+    'Lodging': [623, 721],
+    'Mercantile Retail (other than mall)': [441, 442, 443, 444, 451, 452, 453, 532],
+    'Mercantile Enclosed and strip malls': [446, 448],
+    'Office': [454, 486, 511, 516, 517, 518, 519, 521, 522, 523, 524, 525, 531, 533, 541, 551, 561, 624, 921, 923, 924, 925, 926, 928],
+    'Public assembly': [481, 482, 485, 487, 512, 515, 711, 712, 713],
+    'Religious worship': [813],
+    'Service': [447, 483, 484, 488, 491, 492, 811, 812],
+    'Warehouse and storage': [423, 424, 493],
   }
   
   fuel_types = ['el', 'ng', 'fo']
@@ -35,6 +44,11 @@ def commercial(data_source):
 
 
   def methodology(datasets):
+    """
+      @param Dict<DataFrame> datasets
+
+      @return DataFrame 
+    """
 
     """
       Step 1 in Methodology
@@ -103,6 +117,9 @@ def commercial(data_source):
       results[fuel+'_con'] = results[fuel+'_con_per'] * results['emps'] * energy_sources[fuel] * fuel_factor[fuel]
       results[fuel+'_exp'] = (results[fuel+'_exp_per'] / fuel_conversion[fuel]) * results[fuel+'_con']
 
+
     return results
 
-  return Estimator(methodology)(data_source)
+
+  # Construct the Estimator from the methodology and then process the data sources
+  return Estimator(methodology)(data_sources)

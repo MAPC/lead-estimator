@@ -1,9 +1,18 @@
+"""
+  Residential Sector Estimator
+"""
+
 import pandas as pd
 import numpy as np
-from pprint import pprint
 from .estimator import Estimator
  
+
 def residential(data_sources):
+  """
+    @param List<Dict<String>> data_sources
+
+    @return DataFrame
+  """
 
   fuel_type_map = {
     'gas': 'ng',
@@ -13,12 +22,12 @@ def residential(data_sources):
 
   fuel_cons_columns = [x+'_cons_btu' for x in fuel_type_map.values()]
 
+  # Build two additional maps from our fuel types
   fuel_avg_map = {}
   hfc_fuel_map = {}
   for fuel in fuel_type_map.values():
     fuel_avg_map['avg_'+fuel] = fuel
     hfc_fuel_map[fuel] = fuel+'_hfc'
-
 
   hu_type_map = {
       'Single_family': 'u1',
@@ -42,12 +51,17 @@ def residential(data_sources):
     'foil': 22.38 / 0.139,
   }
 
+
   def methodology(datasets):
+    """
+      @param Dict<DataFrame> datasets
+
+      @return DataFrame
+    """
 
     """
       Step 1 in Methodology
     """
-
     acs_uis = datasets['acs_uis']
     acs_uis = acs_uis[(acs_uis['acs_year'] == '2006-10') & (acs_uis['municipal'].str.lower() == 'gloucester')]
     acs_uis = acs_uis[['muni_id', 'municipal', 'hu', 'u1', 'u2_4', 'u5_9', 'u10_19', 'u20ov', 'u_oth']]
@@ -62,7 +76,6 @@ def residential(data_sources):
     """
       Step 2 in Methodology
     """
-
     acs_hf = datasets['acs_hf']
     acs_hf = acs_hf[(acs_hf['acs_year'] == '2006-10') & (acs_hf['municipal'].str.lower() == 'gloucester')]
     acs_hf = acs_hf[['muni_id', 'gas', 'elec', 'oil']]
@@ -76,7 +89,6 @@ def residential(data_sources):
     """
       Step 3 in Methodology
     """
-
     # Prepare percentages to scale the energy consumption for MA 
     # based on the national 
     recs_sc = pd.DataFrame(datasets['recs_sc'][['hu_type', 'ma']])
@@ -90,7 +102,6 @@ def residential(data_sources):
     recs_sc = recs_sc.reset_index()
 
     recs_sc['ma'] = recs_sc['ma'] / float(ma_sum)
-
 
     # Apply MA percentages to national energy consumption
     recs_hfc = pd.DataFrame(datasets['recs_hfc'])
@@ -123,11 +134,9 @@ def residential(data_sources):
     results = pd.merge(results, recs_hfc, on='hu_type')
 
 
-
     """
       Step 4 in Methodology
     """
-
     for fuel in fuel_type_map.values():
       results[fuel+'_cons_btu'] = results[fuel] * results[fuel+'_hfc']
 
@@ -141,4 +150,6 @@ def residential(data_sources):
 
     return results
 
+
+  # Construct the Estimator from the methodology and then process the data sources
   return Estimator(methodology)(data_sources)

@@ -1,18 +1,37 @@
+"""
+  Industrial Sector Estimator
+"""
+
 import pandas as pd
 import numpy as np
-from pprint import pprint
 from .estimator import Estimator
 
+
 def industrial(data_sources):
+  """
+    @param List<Dict<String>> data_sources
+
+    @return DataFrame
+  """
 
   fuel_types = ['elec', 'foil', 'ng', 'other']
 
+
   def replace_invalid_values(df):
+    """
+      @param DataFrame df
+    """
+
     df.replace('*', np.nan, inplace=True)
     df.replace('Q', np.nan, inplace=True)
 
 
   def methodology(datasets):
+    """
+      @param Dict<DataFrame> datasets
+
+      @return DataFrame
+    """
 
     """
       Step 1 in Methodology
@@ -66,4 +85,6 @@ def industrial(data_sources):
 
     return results
 
+
+  # Construct the Estimator from the methodology and then process the data sources
   return Estimator(methodology)(data_sources)
