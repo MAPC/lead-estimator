@@ -42,6 +42,13 @@ def commercial(data_sources):
     'fo': 1,
   }
 
+  co2_conversion_map = {
+    'el': 0.828,
+    'ng': 11.71 * 10,
+    'fo': 22.38,
+  }
+
+
 
   def methodology(datasets):
     """
@@ -54,6 +61,7 @@ def commercial(data_sources):
       Step 1 in Methodology
     """
     eowld = datasets['eowld']
+    eowld = eowld[eowld['municipal'].str.lower() == 'gloucester']
     eowld = eowld[(eowld['naicscode'].astype(int) >= 400) & (eowld['naicscode'].astype(int) <= 1000) & (eowld['cal_year'].astype(int) == 2015)]
     eowld_snapshot = eowld[['municipal', 'naicscode', 'avgemp', 'estab']]
 
@@ -75,8 +83,8 @@ def commercial(data_sources):
       cbecs = {}
       for fuel in fuel_types:
         column_map = {
-          'cnsperworker': fuel+'_con_per',
-          'experworker': fuel+'_exp_per',
+          'cnsperworker': fuel+'_con_per', # Physical Unit
+          'experworker': fuel+'_exp_per',  # Dollars
         }
 
         cbecs[fuel] = pd.DataFrame(datasets['cbecs_'+fuel][['activity', 'cnsperworker', 'experworker']])
@@ -117,13 +125,16 @@ def commercial(data_sources):
 
       # Calculate avergage consumption and expenditure 
       for fuel in fuel_types:
-        current_result[fuel+'_con'] = current_result[fuel+'_con_per'] * current_result['emps'] * energy_sources[fuel] * fuel_factor[fuel]
-        current_result[fuel+'_exp'] = (current_result[fuel+'_exp_per'] / fuel_conversion[fuel]) * current_result[fuel+'_con']
+        current_result[fuel+'_con_pu'] = current_result[fuel+'_con_per'] * current_result['emps'] * energy_sources[fuel] * fuel_factor[fuel]
+        current_result[fuel+'_con_MMBTU'] = current_result[fuel+'_con_pu'] * fuel_conversion[fuel]
+        current_result[fuel+'_exp_$_pu'] = current_result[fuel+'_exp_per'] * current_result[fuel+'_con_pu']
+        current_result[fuel+'_exp_$_MMBTU'] = current_result[fuel+'_exp_$_pu'] / fuel_conversion[fuel]
+        current_result[fuel+'_emissions'] = current_result[fuel+'_con_pu'] * co2_conversion_map[fuel]
 
       current_result['municipal'] = municipality
       results = results.append(current_result, ignore_index=True)
 
-
+    results = results[['municipal'] + results.columns.values.tolist()[:-1]]
     return results
 
 

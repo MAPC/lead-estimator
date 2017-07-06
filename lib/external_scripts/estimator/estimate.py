@@ -82,7 +82,7 @@ if not sector or sector == 'all':
 else:
 
   if sector in data_processors:
-    sector_data = {str(sector): data_processors[sector](data_files).to_json()}
+    sector_data = {str(sector): data_processors[sector](data_files)}
 
   else:
     valid_sectors = reduce(lambda x,y: x+', '+y, data_processors.keys())
