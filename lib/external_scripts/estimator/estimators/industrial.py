@@ -37,6 +37,7 @@ def industrial(data_sources):
       Step 1 in Methodology
     """
     eowld = datasets['eowld']
+    eowld = eowld[eowld['municipal'].str.lower() == 'gloucester']
     eowld = eowld[(eowld['naicscode'].astype(int) >= 311) & (eowld['naicscode'].astype(int) <= 339) & (eowld['cal_year'].astype(int) == 2015)]
     eowld = eowld[['municipal', 'naicscode', 'naicstitle', 'avgemp', 'estab']]
     eowld = eowld.sort_values(['naicscode']) 
@@ -58,7 +59,7 @@ def industrial(data_sources):
 
     results = pd.merge(results, mecs_fce, on='naics_code')
     replace_invalid_values(results)
-    results['cons_total'] = results['cons_emp'].str.replace(',','').astype(float) * results['avgemp'].astype(float)
+    results['total_con_MMBTU'] = results['cons_emp'].str.replace(',','').astype(float) * results['avgemp'].astype(float)
 
 
     """
@@ -74,13 +75,13 @@ def industrial(data_sources):
     mecs_ami = mecs_ami[fuel_types + ['tot', 'naics_code']]
 
     for fuel in fuel_types:
-      mecs_ami[fuel+'_%'] = mecs_ami[fuel].astype(float) / mecs_ami['tot'].astype(float)
+      mecs_ami[fuel+'_con_%'] = mecs_ami[fuel].astype(float) / mecs_ami['tot'].astype(float)
 
     mecs_ami.drop(fuel_types + ['tot'], axis=1, inplace=True)
     results = pd.merge(results, mecs_ami, on='naics_code')
 
     for fuel in fuel_types:
-      results[fuel+'_cons'] = results['cons_total'] * results[fuel+'_%']
+      results[fuel+'_con_MMBTU'] = results['total_con_MMBTU'] * results[fuel+'_con_%']
 
     results.sort_values('municipal', inplace=True)
 
