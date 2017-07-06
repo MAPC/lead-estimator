@@ -3,6 +3,7 @@
 """
 
 import pandas as pd
+from functools import reduce
 from .estimator import Estimator
 
 
@@ -131,6 +132,7 @@ def commercial(data_sources):
         current_result[fuel+'_exp_$_MMBTU'] = current_result[fuel+'_exp_$_pu'] / fuel_conversion[fuel]
         current_result[fuel+'_emissions'] = current_result[fuel+'_con_pu'] * co2_conversion_map[fuel]
 
+      current_result['total_cons_MMBTU'] = current_result['el_con_MMBTU'] + current_result['ng_con_MMBTU'] + current_result['fo_con_MMBTU']
       current_result['municipal'] = municipality
       results = results.append(current_result, ignore_index=True)
 
