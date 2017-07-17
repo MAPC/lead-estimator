@@ -91,3 +91,6 @@ else:
 
 # Print data to be piped into a file or stdin
 print(sector_data)
+
+for sector, df in sector_data.items():
+  df.to_csv('/opt/files/'+sector+'-out.csv', index=False)

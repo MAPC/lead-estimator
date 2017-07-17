@@ -62,7 +62,7 @@ def commercial(data_sources):
       Step 1 in Methodology
     """
     eowld = datasets['eowld']
-    eowld = eowld[eowld['municipal'].str.lower() == 'gloucester']
+    eowld = eowld[eowld['municipal'].str.lower().isin(['gloucester'])]
     eowld = eowld[(eowld['naicscode'].astype(int) >= 400) & (eowld['naicscode'].astype(int) <= 1000) & (eowld['cal_year'].astype(int) == 2015)]
     eowld_snapshot = eowld[['municipal', 'naicscode', 'avgemp', 'estab']]
 

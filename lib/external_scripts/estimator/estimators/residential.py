@@ -114,6 +114,7 @@ def residential(data_sources):
 
     # Apply MA percentages to national energy consumption
     recs_hfc = pd.DataFrame(datasets['recs_hfc'])
+    recs_hfc_ma = recs_hfc[recs_hfc['geography'].str.lower() == 'massachusetts']
     recs_hfc = recs_hfc[(recs_hfc['geography'].str.lower() == 'united states')]
     recs_hfc = recs_hfc[['hu_type', 'avg_elec', 'avg_ng', 'avg_foil']]
     recs_hfc.rename(columns=fuel_avg_map, inplace=True)
@@ -123,11 +124,10 @@ def residential(data_sources):
     recs_hfc = recs_hfc.reset_index()
     recs_hfc = pd.merge(recs_hfc, recs_sc, on='hu_type')
 
-    # MUST REPLACE WITH DATASET RECS CE2.2
     ma_consumptions = {
-      'elec': 23.8,
-      'ng': 77.9,
-      'foil': 90.3,
+      'elec': recs_hfc_ma['avg_elec'],
+      'ng': recs_hfc_ma['avg_ng'],
+      'foil': recs_hfc_ma['avg_foil'],
     }
 
     for fuel in fuel_type_map.values():

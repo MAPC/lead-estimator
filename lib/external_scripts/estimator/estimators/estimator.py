@@ -5,6 +5,8 @@
   by the second call that loads in and injects datasets into the methodology.
 """
 
+import settings
+import sqlalchemy
 import pandas as pd
 from os import path
 
@@ -12,6 +14,24 @@ from os import path
 class Estimator(object):
 
   loaded_files = {}
+
+  database_tag_map = {
+    'cbecs_el': '',
+    'cbecs_fo': '',
+    'cbecs_ng': '',
+    'cbecs_sources': '',
+    'mecs_ami': '',
+    'mecs_fce': '',
+    'mecs_fci': '',
+    'recs_hfc': '',
+    'recs_hfe': '',
+    'recs_sc': '',
+    'acs_uis': '',
+    'acs_hf': '',
+  }
+
+  postgres_engine = sqlalchemy.create_engine('postgresql://{}:{}@{}:{}/{}'.format(settings.db.USER, settings.db.PASSWORD, settings.db.HOST, settings.db.PORT, settings.db.NAME))
+
 
   def __new__(self, fn):
     """
@@ -41,6 +61,8 @@ class Estimator(object):
           Estimator.loaded_files[data_source['tag']] = file_readers[file_type](data_source['file_path'])
 
         data[data_source['tag']] = Estimator.loaded_files[data_source['tag']]
+
+
 
       return fn(data)
 
