@@ -29,24 +29,24 @@ def commercial(data_sources):
     'Warehouse and storage': [423, 424, 493],
   }
   
-  fuel_types = ['el', 'ng', 'fo']
+  fuel_types = ['elec', 'ng', 'foil']
 
   fuel_conversion = {
-    'el': 0.003412,
+    'elec': 0.003412,
     'ng': 0.1,
-    'fo': 0.139,
+    'foil': 0.139,
   }
 
   fuel_factor = {
-    'el': 1000,
+    'elec': 1000,
     'ng': 1,
-    'fo': 1,
+    'foil': 1,
   }
 
   co2_conversion_map = {
-    'el': 0.828,
+    'elec': 0.828,
     'ng': 11.71 * 10,
-    'fo': 22.38,
+    'foil': 22.38,
   }
 
 
@@ -62,7 +62,6 @@ def commercial(data_sources):
       Step 1 in Methodology
     """
     eowld = datasets['eowld']
-    eowld = eowld[eowld['municipal'].str.lower().isin(['gloucester'])]
     eowld = eowld[(eowld['naicscode'].astype(int) >= 400) & (eowld['naicscode'].astype(int) <= 1000) & (eowld['cal_year'].astype(int) == 2015)]
     eowld_snapshot = eowld[['municipal', 'naicscode', 'avgemp', 'estab']]
 
@@ -112,7 +111,7 @@ def commercial(data_sources):
       # Find percentage of consumption for each fuel type.
       source_column_map = {
         'ng': 'ng',
-        'fueloil': 'fo'
+        'fueloil': 'foil'
       }
       
       energy_sources = pd.DataFrame(datasets['cbecs_sources'][['activity', 'all', 'ng', 'fueloil']])
@@ -122,17 +121,17 @@ def commercial(data_sources):
       for fuel in source_column_map.values():
         energy_sources[fuel] = energy_sources[fuel].astype(float) / energy_sources['all'].astype(float)
 
-      energy_sources['el'] = 1.0
+      energy_sources['elec'] = 1.0
 
       # Calculate avergage consumption and expenditure 
       for fuel in fuel_types:
         current_result[fuel+'_con_pu'] = current_result[fuel+'_con_per'] * current_result['emps'] * energy_sources[fuel] * fuel_factor[fuel]
         current_result[fuel+'_con_MMBTU'] = current_result[fuel+'_con_pu'] * fuel_conversion[fuel]
-        current_result[fuel+'_exp_$_pu'] = current_result[fuel+'_exp_per'] * current_result[fuel+'_con_pu']
-        current_result[fuel+'_exp_$_MMBTU'] = current_result[fuel+'_exp_$_pu'] / fuel_conversion[fuel]
+        current_result[fuel+'_exp_dol_pu'] = current_result[fuel+'_exp_per'] * current_result[fuel+'_con_pu']
+        current_result[fuel+'_exp_dol_MMBTU'] = current_result[fuel+'_exp_dol_pu'] / fuel_conversion[fuel]
         current_result[fuel+'_emissions'] = current_result[fuel+'_con_pu'] * co2_conversion_map[fuel]
 
-      current_result['total_cons_MMBTU'] = current_result['el_con_MMBTU'] + current_result['ng_con_MMBTU'] + current_result['fo_con_MMBTU']
+      current_result['total_cons_MMBTU'] = current_result['elec_con_MMBTU'] + current_result['ng_con_MMBTU'] + current_result['foil_con_MMBTU']
       current_result['municipal'] = municipality
       results = results.append(current_result, ignore_index=True)
 

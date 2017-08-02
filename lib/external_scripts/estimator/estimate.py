@@ -17,8 +17,8 @@
 
     --tag, -t:      This argument must follow a --file argument. If this argument does not follow a 
                     --file argument, the file will not be used. Possible file tags are eowld, 
-                    cbecs_el, cbecs_fo, cbecs_ng, cbecs_sources, mecs_ami, mecs_fce, mecs_fci,
-                    recs_hfc, recs_hfe, recs_sc, acs_uis, acs_hf. See --file argument.
+                    cbecs_el, cbecs_fo, cbecs_ng, cbecs_sources, mecs_ami, mecs_fce, recs_hfc,
+                    recs_hfe, recs_sc, acs_uis, acs_hf. See --file argument.
 """
 
 import sys
@@ -76,13 +76,17 @@ if not sector or sector == 'all':
   # the data for all sectors
   sector_data = {}
 
-  for sec, processor in data_processors.items():
-    sector_data[sec] = processor(data_files).to_json()
+  for sector, processor in data_processors.items():
+    print('Processing {} sector...'.format(sector))
+    sector_data[sector] = processor(data_files)
+    print('Finished {} sector!'.format(sector))
 
 else:
 
   if sector in data_processors:
+    print('Processing {} sector...'.format(sector))
     sector_data = {str(sector): data_processors[sector](data_files)}
+    print('Finished {} sector!'.format(sector))
 
   else:
     valid_sectors = reduce(lambda x,y: x+', '+y, data_processors.keys())
@@ -90,7 +94,8 @@ else:
 
 
 # Print data to be piped into a file or stdin
-print(sector_data)
+#print(sector_data)
 
 for sector, df in sector_data.items():
   df.to_csv('/opt/files/'+sector+'-out.csv', index=False)
+  print('{} sector has been published'.format(sector.capitalize()))

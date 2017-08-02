@@ -38,12 +38,12 @@ def residential(data_sources):
   }
 
   hfc_hu_map = {
-    'total households': 'total',
-    'Single family detached': 'u1',
-    'Single family attached': 'u1',
+    'Total Households': 'total',
+    'Single-Family Detached': 'u1',
+    'Single-Family Attached': 'u1',
     'Apartments in 2-4 Unit Buildings': 'u2_4',
     'Apartments in 5 or More Unit Buildings': 'u5ov',
-    'mobile homes': 'u_oth',
+    'Mobile Homes': 'u_oth',
   }
 
   fuel_conversion_map = {
@@ -71,7 +71,6 @@ def residential(data_sources):
     """
     acs_uis = datasets['acs_uis']
     acs_uis = acs_uis[(acs_uis['acs_year'] == '2011-15')]
-    acs_uis = acs_uis[acs_uis['municipal'].str.lower() == 'gloucester']
     acs_uis = acs_uis[['muni_id', 'municipal', 'hu', 'u1', 'u2_4', 'u5_9', 'u10_19', 'u20ov', 'u_oth']]
     acs_uis.rename(columns={'hu': 'total'}, inplace=True)
 
@@ -81,11 +80,11 @@ def residential(data_sources):
     acs_uis.drop(u5ov, axis=1, inplace=True)
 
 
+
     """
       Step 2 in Methodology
     """
     acs_hf = datasets['acs_hf']
-    acs_hf = acs_hf[acs_hf['municipal'].str.lower() == 'gloucester']
     acs_hf = acs_hf[(acs_hf['acs_year'] == '2011-15')]
     acs_hf = acs_hf[['muni_id', 'gas', 'elec', 'oil']]
     
@@ -132,8 +131,8 @@ def residential(data_sources):
 
     for fuel in fuel_type_map.values():
       recs_hfc['adj'] = recs_hfc[fuel] * recs_hfc['ma']
-      adjustment_ratio = ma_consumptions[fuel] / recs_hfc[recs_hfc['hu_type'] != 'total']['adj'].sum()
-      recs_hfc[fuel] = recs_hfc[fuel] * adjustment_ratio
+      adjustment_ratio = (ma_consumptions[fuel] / recs_hfc[recs_hfc['hu_type'] != 'total']['adj'].sum()).values[0]
+      recs_hfc[fuel] = recs_hfc[fuel].astype(float) * adjustment_ratio
 
     recs_hfc.drop(['adj', 'ma'], axis=1, inplace=True)
     recs_hfc.rename(columns=hfc_fuel_map, inplace=True)

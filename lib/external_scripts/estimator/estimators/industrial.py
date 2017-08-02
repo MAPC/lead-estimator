@@ -37,7 +37,6 @@ def industrial(data_sources):
       Step 1 in Methodology
     """
     eowld = datasets['eowld']
-    eowld = eowld[eowld['municipal'].str.lower() == 'gloucester']
     eowld = eowld[(eowld['naicscode'].astype(int) >= 311) & (eowld['naicscode'].astype(int) <= 339) & (eowld['cal_year'].astype(int) == 2015)]
     eowld = eowld[['municipal', 'naicscode', 'naicstitle', 'avgemp', 'estab']]
     eowld = eowld.sort_values(['naicscode']) 
