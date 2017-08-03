@@ -20,8 +20,8 @@ def residential(data_sources):
     'elec': 'elec',
   }
 
-  fuel_cons_columns = [x+'_cons_mmbtu' for x in fuel_type_map.values()]
-  fuel_cons_pu_columns = [x+'_cons_pu' for x in fuel_type_map.values()]
+  fuel_cons_columns = [x+'_con_mmbtu' for x in fuel_type_map.values()]
+  fuel_cons_pu_columns = [x+'_con_pu' for x in fuel_type_map.values()]
   fuel_exp_columns = [x+'_exp_dollar' for x in fuel_type_map.values()]
 
   # Build two additional maps from our fuel types
@@ -178,19 +178,19 @@ def residential(data_sources):
       Step 4 in Methodology
     """
     for fuel in fuel_type_map.values():
-      results[fuel+'_cons_mmbtu'] = results[fuel] * results[fuel+'_hfc']
-      results[fuel+'_cons_pu'] = results[fuel+'_cons_mmbtu'] / fuel_conversion_map[fuel]
+      results[fuel+'_con_mmbtu'] = results[fuel] * results[fuel+'_hfc']
+      results[fuel+'_con_pu'] = results[fuel+'_con_mmbtu'] / fuel_conversion_map[fuel]
 
       results[fuel+'_exp_dollar'] = results[fuel] * results[fuel+'_hfe']
 
 
     results = results[['muni_id', 'municipal', 'hu_type', 'hu'] + fuel_cons_columns + fuel_cons_pu_columns + fuel_exp_columns]
-    results['cons_by_structure_mmbtu'] = results[fuel_cons_columns].sum(axis=1)
+    results['con_by_structure_mmbtu'] = results[fuel_cons_columns].sum(axis=1)
     results['exp_by_structure_dollar'] = results[fuel_exp_columns].sum(axis=1)
 
     emissions = pd.DataFrame()
     for fuel, conversion_ratio in co2_conversion_map.items():
-      results[fuel+'_emissions_co2'] = results[fuel+'_cons_pu'] * conversion_ratio
+      results[fuel+'_emissions_co2'] = results[fuel+'_con_pu'] * conversion_ratio
 
     results.sort_values(['municipal', 'hu_type'], inplace=True)
 

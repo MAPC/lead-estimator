@@ -76,7 +76,7 @@ def industrial(data_sources):
 
     results = pd.merge(results, mecs_fce, on='naics_code')
     replace_invalid_values(results)
-    results['total_cons_mmbtu'] = results['cons_emp'].str.replace(',','').astype(float) * results['avgemp'].astype(float)
+    results['total_con_mmbtu'] = results['cons_emp'].str.replace(',','').astype(float) * results['avgemp'].astype(float)
 
 
     """
@@ -98,7 +98,7 @@ def industrial(data_sources):
     results = pd.merge(results, mecs_ami, on='naics_code')
 
     for fuel in fuel_types:
-      results[fuel+'_con_mmbtu'] = results['total_cons_mmbtu'] * results[fuel+'_con_%']
+      results[fuel+'_con_mmbtu'] = results['total_con_mmbtu'] * results[fuel+'_con_%']
 
       if not fuel == 'other':
         results[fuel+'_con_pu'] = results[fuel+'_con_mmbtu'] / fuel_conversion[fuel]

@@ -152,7 +152,7 @@ def commercial(data_sources):
         del current_result['level_0']
         del current_result['level_1']
 
-      current_result['total_cons_mmbtu'] = current_result['elec_con_mmbtu'] + current_result['ng_con_mmbtu'] + current_result['foil_con_mmbtu']
+      current_result['total_con_mmbtu'] = current_result['elec_con_mmbtu'] + current_result['ng_con_mmbtu'] + current_result['foil_con_mmbtu']
       current_result['municipal'] = municipality
 
       results = results.append(current_result, ignore_index=True)
