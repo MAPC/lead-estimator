@@ -83,12 +83,15 @@ def commercial(data_sources):
       cbecs = {}
       for fuel in fuel_types:
         column_map = {
-          'cnsperworker': fuel+'_con_per', # Physical Unit
-          'experworker': fuel+'_exp_per',  # Dollars
+          'cnsperbldng': fuel+'_con_per_b',
+          'experbldng': fuel+'_exp_per_b',
+          'cnsperworker': fuel+'_con_per_w', # Physical Unit
+          'experworker': fuel+'_exp_per_w',  # Dollars
         }
 
-        cbecs[fuel] = pd.DataFrame(datasets['cbecs_'+fuel][['activity', 'cnsperworker', 'experworker']])
+        cbecs[fuel] = pd.DataFrame(datasets['cbecs_'+fuel][['activity'] + list(column_map)])
         cbecs[fuel].rename(columns=column_map, inplace=True)
+        cbecs[fuel][fuel+'_con_per_b'] = cbecs[fuel][fuel+'_con_per_b'].str.replace(',', '').apply(pd.to_numeric)
 
         # Use Option 2 in methodology for replacing missing values in each column
         for column_name in column_map.values():
@@ -123,16 +126,36 @@ def commercial(data_sources):
 
       energy_sources['elec'] = 1.0
 
+
       # Calculate avergage consumption and expenditure 
+
+      result_sets = {
+        'mercantile': pd.DataFrame(current_result[current_result['activity'] == 'Mercantile Enclosed and strip malls']),
+        'non_mercantile': pd.DataFrame(current_result[current_result['activity'] != 'Mercantile Enclosed and strip malls'])
+      }
+
       for fuel in fuel_types:
-        current_result[fuel+'_con_pu'] = current_result[fuel+'_con_per'] * current_result['emps'] * energy_sources[fuel] * fuel_factor[fuel]
-        current_result[fuel+'_con_MMBTU'] = current_result[fuel+'_con_pu'] * fuel_conversion[fuel]
-        current_result[fuel+'_exp_dol_pu'] = current_result[fuel+'_exp_per'] * current_result[fuel+'_con_pu']
-        current_result[fuel+'_exp_dol_MMBTU'] = current_result[fuel+'_exp_dol_pu'] / fuel_conversion[fuel]
-        current_result[fuel+'_emissions'] = current_result[fuel+'_con_pu'] * co2_conversion_map[fuel]
+
+        for set_name, result_set in result_sets.items():
+
+          if set_name == 'mercantile':
+            result_set[fuel+'_con_pu'] = result_set[fuel+'_con_per_b'] * result_set['estabs'] * energy_sources[fuel] * fuel_factor[fuel]
+            result_set[fuel+'_exp_dol_pu'] = result_set[fuel+'_exp_per_b'] * result_set[fuel+'_con_pu']
+          else:
+            result_set[fuel+'_con_pu'] = result_set[fuel+'_con_per_w'] * result_set['emps'] * energy_sources[fuel] * fuel_factor[fuel]
+            result_set[fuel+'_exp_dol_pu'] = result_set[fuel+'_exp_per_w'] * result_set[fuel+'_con_pu']
+
+          result_set[fuel+'_con_MMBTU'] = result_set[fuel+'_con_pu'] * fuel_conversion[fuel]
+          result_set[fuel+'_exp_dol_MMBTU'] = result_set[fuel+'_exp_dol_pu'] / fuel_conversion[fuel]
+          result_set[fuel+'_emissions'] = result_set[fuel+'_con_pu'] * co2_conversion_map[fuel]
+
+        current_result = pd.concat(result_sets).sort_values(['activity']).reset_index()
+        del current_result['level_0']
+        del current_result['level_1']
 
       current_result['total_cons_MMBTU'] = current_result['elec_con_MMBTU'] + current_result['ng_con_MMBTU'] + current_result['foil_con_MMBTU']
       current_result['municipal'] = municipality
+
       results = results.append(current_result, ignore_index=True)
 
     results = results[['municipal'] + results.columns.values.tolist()[:-1]]
