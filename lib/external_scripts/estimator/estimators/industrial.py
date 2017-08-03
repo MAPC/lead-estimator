@@ -16,6 +16,24 @@ def industrial(data_sources):
 
   fuel_types = ['elec', 'foil', 'ng', 'other']
 
+  fuel_conversion = {
+    'elec': 0.003412,
+    'ng': 0.1,
+    'foil': 0.139,
+  }
+
+  exp_per_fuel_pu = {
+    'elec': 0.078,
+    'ng': 7.77,
+    'foil': 1.11,
+  }
+
+  co2_conversion_map = {
+    'elec': 0.828,
+    'ng': 11.71,
+    'foil': 22.38,
+  }
+
 
   def replace_invalid_values(df):
     """
@@ -58,7 +76,7 @@ def industrial(data_sources):
 
     results = pd.merge(results, mecs_fce, on='naics_code')
     replace_invalid_values(results)
-    results['total_con_mmbtu'] = results['cons_emp'].str.replace(',','').astype(float) * results['avgemp'].astype(float)
+    results['total_cons_mmbtu'] = results['cons_emp'].str.replace(',','').astype(float) * results['avgemp'].astype(float)
 
 
     """
@@ -80,7 +98,12 @@ def industrial(data_sources):
     results = pd.merge(results, mecs_ami, on='naics_code')
 
     for fuel in fuel_types:
-      results[fuel+'_con_mmbtu'] = results['total_con_mmbtu'] * results[fuel+'_con_%']
+      results[fuel+'_con_mmbtu'] = results['total_cons_mmbtu'] * results[fuel+'_con_%']
+
+      if not fuel == 'other':
+        results[fuel+'_con_pu'] = results[fuel+'_con_mmbtu'] / fuel_conversion[fuel]
+        results[fuel+'_exp_dollar'] = results[fuel+'_con_pu'] * exp_per_fuel_pu[fuel]
+        results[fuel+'_emissions_co2'] = results[fuel+'_con_pu'] * co2_conversion_map[fuel]
 
     results.sort_values('municipal', inplace=True)
 
