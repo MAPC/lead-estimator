@@ -58,7 +58,7 @@ def industrial(data_sources):
 
     results = pd.merge(results, mecs_fce, on='naics_code')
     replace_invalid_values(results)
-    results['total_con_MMBTU'] = results['cons_emp'].str.replace(',','').astype(float) * results['avgemp'].astype(float)
+    results['total_con_mmbtu'] = results['cons_emp'].str.replace(',','').astype(float) * results['avgemp'].astype(float)
 
 
     """
@@ -80,7 +80,7 @@ def industrial(data_sources):
     results = pd.merge(results, mecs_ami, on='naics_code')
 
     for fuel in fuel_types:
-      results[fuel+'_con_MMBTU'] = results['total_con_MMBTU'] * results[fuel+'_con_%']
+      results[fuel+'_con_mmbtu'] = results['total_con_mmbtu'] * results[fuel+'_con_%']
 
     results.sort_values('municipal', inplace=True)
 

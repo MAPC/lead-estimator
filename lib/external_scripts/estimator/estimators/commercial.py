@@ -140,20 +140,19 @@ def commercial(data_sources):
 
           if set_name == 'mercantile':
             result_set[fuel+'_con_pu'] = result_set[fuel+'_con_per_b'] * result_set['estabs'] * energy_sources[fuel] * fuel_factor[fuel]
-            result_set[fuel+'_exp_dol_pu'] = result_set[fuel+'_exp_per_b'] * result_set[fuel+'_con_pu']
+            result_set[fuel+'_exp_dollar'] = result_set[fuel+'_exp_per_b'] * result_set[fuel+'_con_pu']
           else:
             result_set[fuel+'_con_pu'] = result_set[fuel+'_con_per_w'] * result_set['emps'] * energy_sources[fuel] * fuel_factor[fuel]
-            result_set[fuel+'_exp_dol_pu'] = result_set[fuel+'_exp_per_w'] * result_set[fuel+'_con_pu']
+            result_set[fuel+'_exp_dollar'] = result_set[fuel+'_exp_per_w'] * result_set[fuel+'_con_pu']
 
-          result_set[fuel+'_con_MMBTU'] = result_set[fuel+'_con_pu'] * fuel_conversion[fuel]
-          result_set[fuel+'_exp_dol_MMBTU'] = result_set[fuel+'_exp_dol_pu'] / fuel_conversion[fuel]
-          result_set[fuel+'_emissions'] = result_set[fuel+'_con_pu'] * co2_conversion_map[fuel]
+          result_set[fuel+'_con_mmbtu'] = result_set[fuel+'_con_pu'] * fuel_conversion[fuel]
+          result_set[fuel+'_emissions_co2'] = result_set[fuel+'_con_pu'] * co2_conversion_map[fuel]
 
         current_result = pd.concat(result_sets).sort_values(['activity']).reset_index()
         del current_result['level_0']
         del current_result['level_1']
 
-      current_result['total_cons_MMBTU'] = current_result['elec_con_MMBTU'] + current_result['ng_con_MMBTU'] + current_result['foil_con_MMBTU']
+      current_result['total_cons_mmbtu'] = current_result['elec_con_mmbtu'] + current_result['ng_con_mmbtu'] + current_result['foil_con_mmbtu']
       current_result['municipal'] = municipality
 
       results = results.append(current_result, ignore_index=True)
