@@ -20,15 +20,19 @@ def residential(data_sources):
     'elec': 'elec',
   }
 
-  fuel_cons_columns = [x+'_cons_MMBTU' for x in fuel_type_map.values()]
+  fuel_cons_columns = [x+'_cons_mmbtu' for x in fuel_type_map.values()]
   fuel_cons_pu_columns = [x+'_cons_pu' for x in fuel_type_map.values()]
+  fuel_exp_columns = [x+'_exp_dollar' for x in fuel_type_map.values()]
 
   # Build two additional maps from our fuel types
   fuel_avg_map = {}
   hfc_fuel_map = {}
+  hfe_fuel_map = {}
   for fuel in fuel_type_map.values():
     fuel_avg_map['avg_'+fuel] = fuel
     hfc_fuel_map[fuel] = fuel+'_hfc'
+    hfe_fuel_map[fuel] = fuel+'_hfe'
+
 
   hu_type_map = {
       'Single_family': 'u1',
@@ -44,6 +48,15 @@ def residential(data_sources):
     'Apartments in 2-4 Unit Buildings': 'u2_4',
     'Apartments in 5 or More Unit Buildings': 'u5ov',
     'Mobile Homes': 'u_oth',
+  }
+
+  hfe_hu_map = {
+    'total households': 'total',
+    'Single family detached': 'u1',
+    'Single family attached': 'u1',
+    'Apartments in 2-4 Unit Buildings': 'u2_4',
+    'Apartments in 5 or More Unit Buildings': 'u5ov',
+    'mobile homes': 'u_oth',
   }
 
   fuel_conversion_map = {
@@ -113,15 +126,31 @@ def residential(data_sources):
 
     # Apply MA percentages to national energy consumption
     recs_hfc = pd.DataFrame(datasets['recs_hfc'])
+    recs_hfe = pd.DataFrame(datasets['recs_hfe'])
+
     recs_hfc_ma = recs_hfc[recs_hfc['geography'].str.lower() == 'massachusetts']
     recs_hfc = recs_hfc[(recs_hfc['geography'].str.lower() == 'united states')]
+    recs_hfe = recs_hfe[recs_hfe['geography'].str.lower() == 'united states']
+
     recs_hfc = recs_hfc[['hu_type', 'avg_elec', 'avg_ng', 'avg_foil']]
+    recs_hfe = recs_hfe[['hu_type', 'avg_elec', 'avg_ng', 'avg_foil']]
+
     recs_hfc.rename(columns=fuel_avg_map, inplace=True)
+    recs_hfe.rename(columns=fuel_avg_map, inplace=True)
 
     recs_hfc['hu_type'] = recs_hfc['hu_type'].map(hfc_hu_map)
+    recs_hfe['hu_type'] = recs_hfe['hu_type'].map(hfe_hu_map)
+
     recs_hfc = recs_hfc.groupby('hu_type').sum()
     recs_hfc = recs_hfc.reset_index()
     recs_hfc = pd.merge(recs_hfc, recs_sc, on='hu_type')
+
+    for fuel in fuel_type_map.values():
+      recs_hfe[fuel] = recs_hfe[fuel].str.replace(',', '').apply(pd.to_numeric)
+
+    recs_hfe = recs_hfe.groupby('hu_type').sum()
+    recs_hfe = recs_hfe.reset_index()
+    recs_hfe = pd.merge(recs_hfe, recs_sc, on='hu_type')
 
     ma_consumptions = {
       'elec': recs_hfc_ma['avg_elec'],
@@ -133,24 +162,31 @@ def residential(data_sources):
       recs_hfc['adj'] = recs_hfc[fuel] * recs_hfc['ma']
       adjustment_ratio = (ma_consumptions[fuel] / recs_hfc[recs_hfc['hu_type'] != 'total']['adj'].sum()).values[0]
       recs_hfc[fuel] = recs_hfc[fuel].astype(float) * adjustment_ratio
+      recs_hfe[fuel] = recs_hfe[fuel].astype(float) * adjustment_ratio
 
     recs_hfc.drop(['adj', 'ma'], axis=1, inplace=True)
     recs_hfc.rename(columns=hfc_fuel_map, inplace=True)
+    recs_hfe.rename(columns=hfe_fuel_map, inplace=True)
 
     results = pd.melt(results, id_vars=['muni_id', 'municipal', 'gas', 'elec', 'oil', 'ng_%', 'foil_%', 'elec_%'], var_name='hu_type', value_name='hu')
     results.rename(columns=fuel_type_map, inplace=True)
     results = pd.merge(results, recs_hfc, on='hu_type')
+    results = pd.merge(results, recs_hfe, on='hu_type')
 
 
     """
       Step 4 in Methodology
     """
     for fuel in fuel_type_map.values():
-      results[fuel+'_cons_MMBTU'] = results[fuel] * results[fuel+'_hfc']
-      results[fuel+'_cons_pu'] = results[fuel+'_cons_MMBTU'] / fuel_conversion_map[fuel]
+      results[fuel+'_cons_mmbtu'] = results[fuel] * results[fuel+'_hfc']
+      results[fuel+'_cons_pu'] = results[fuel+'_cons_mmbtu'] / fuel_conversion_map[fuel]
 
-    results = results[['muni_id', 'municipal', 'hu_type', 'hu'] + fuel_cons_columns + fuel_cons_pu_columns]
-    results['cons_by_structure_MMBTU'] = results[fuel_cons_columns].sum(axis=1)
+      results[fuel+'_exp_dollar'] = results[fuel] * results[fuel+'_hfe']
+
+
+    results = results[['muni_id', 'municipal', 'hu_type', 'hu'] + fuel_cons_columns + fuel_cons_pu_columns + fuel_exp_columns]
+    results['cons_by_structure_mmbtu'] = results[fuel_cons_columns].sum(axis=1)
+    results['exp_by_structure_dollar'] = results[fuel_exp_columns].sum(axis=1)
 
     emissions = pd.DataFrame()
     for fuel, conversion_ratio in co2_conversion_map.items():
