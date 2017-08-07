@@ -35,7 +35,8 @@ def residential(data_sources):
 
 
   hu_type_map = {
-      'Single_family': 'u1',
+      'Single_family_attached': 'u1a',
+      'Single_family_detached': 'u1d',
       'two_four_units': 'u2_4',
       'five_plus_units': 'u5ov',
       'Mobile_home': 'u_oth',
@@ -43,8 +44,8 @@ def residential(data_sources):
 
   hfc_hu_map = {
     'Total Households': 'total',
-    'Single-Family Detached': 'u1',
-    'Single-Family Attached': 'u1',
+    'Single-Family Attached': 'u1a',
+    'Single-Family Detached': 'u1d',
     'Apartments in 2-4 Unit Buildings': 'u2_4',
     'Apartments in 5 or More Unit Buildings': 'u5ov',
     'Mobile Homes': 'u_oth',
@@ -52,8 +53,8 @@ def residential(data_sources):
 
   hfe_hu_map = {
     'total households': 'total',
-    'Single family detached': 'u1',
-    'Single family attached': 'u1',
+    'Single family attached': 'u1a',
+    'Single family detached': 'u1d',
     'Apartments in 2-4 Unit Buildings': 'u2_4',
     'Apartments in 5 or More Unit Buildings': 'u5ov',
     'mobile homes': 'u_oth',
@@ -84,7 +85,7 @@ def residential(data_sources):
     """
     acs_uis = datasets['acs_uis']
     acs_uis = acs_uis[(acs_uis['acs_year'] == '2011-15')]
-    acs_uis = acs_uis[['muni_id', 'municipal', 'hu', 'u1', 'u2_4', 'u5_9', 'u10_19', 'u20ov', 'u_oth']]
+    acs_uis = acs_uis[['muni_id', 'municipal', 'hu', 'u1a', 'u1d', 'u2_4', 'u5_9', 'u10_19', 'u20ov', 'u_oth']]
     acs_uis.rename(columns={'hu': 'total'}, inplace=True)
 
     # Add 5 and over columns together
@@ -113,7 +114,7 @@ def residential(data_sources):
     # Prepare percentages to scale the energy consumption for MA 
     # based on the national 
     recs_sc = pd.DataFrame(datasets['recs_sc'][['hu_type', 'ma']])
-    recs_sc.replace('Single_family.*', 'Single_family', regex=True, inplace=True)
+    #recs_sc.replace('Single_family.*', 'Single_family', regex=True, inplace=True)
     recs_sc.replace('Q', np.nan, inplace=True)
     recs_sc['hu_type'] = recs_sc['hu_type'].map(hu_type_map)
     recs_sc['ma'] = recs_sc['ma'].astype(float)
