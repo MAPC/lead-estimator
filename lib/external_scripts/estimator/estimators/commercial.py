@@ -116,8 +116,11 @@ def commercial(data_sources):
         'ng': 'ng',
         'fueloil': 'foil'
       }
+
+      activities = current_result['activity'].tolist()
       
       energy_sources = pd.DataFrame(datasets['cbecs_sources'][['activity', 'all', 'ng', 'fueloil']])
+      energy_sources = energy_sources[energy_sources['activity'].isin(activities)].reset_index()
       energy_sources['fueloil'].fillna(0, inplace=True)
       energy_sources.rename(columns=source_column_map, inplace=True)
 
