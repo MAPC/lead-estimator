@@ -33,7 +33,7 @@ def commercial(data_sources):
 
   fuel_conversion = {
     'elec': 0.003412,
-    'ng': 0.1,
+    'ng': 1,
     'foil': 0.139,
   }
 
