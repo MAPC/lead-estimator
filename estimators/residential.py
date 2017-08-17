@@ -105,7 +105,10 @@ def residential(data_sources):
     results = pd.merge(acs_uis, acs_hf, on='muni_id')
     
     for fuel_og, fuel in fuel_type_map.items():
-      results[fuel+'_%'] = results[fuel_og] / results['total']
+      if not fuel == 'elec':
+        results[fuel+'_%'] = results[fuel_og] / results['total']
+
+    results['elec_%'] = 1.0
 
 
     """
@@ -114,7 +117,6 @@ def residential(data_sources):
     # Prepare percentages to scale the energy consumption for MA 
     # based on the national 
     recs_sc = pd.DataFrame(datasets['recs_sc'][['hu_type', 'ma']])
-    #recs_sc.replace('Single_family.*', 'Single_family', regex=True, inplace=True)
     recs_sc.replace('Q', np.nan, inplace=True)
     recs_sc['hu_type'] = recs_sc['hu_type'].map(hu_type_map)
     recs_sc['ma'] = recs_sc['ma'].astype(float)
@@ -130,7 +132,8 @@ def residential(data_sources):
     recs_hfe = pd.DataFrame(datasets['recs_hfe'])
 
     recs_hfc_ma = recs_hfc[recs_hfc['geography'].str.lower() == 'massachusetts']
-    recs_hfc = recs_hfc[(recs_hfc['geography'].str.lower() == 'united states')]
+    recs_hfe_ma = recs_hfe[recs_hfe['geography'].str.lower() == 'massachusetts']
+    recs_hfc = recs_hfc[recs_hfc['geography'].str.lower() == 'united states']
     recs_hfe = recs_hfe[recs_hfe['geography'].str.lower() == 'united states']
 
     recs_hfc = recs_hfc[['hu_type', 'avg_elec', 'avg_ng', 'avg_foil']]
@@ -147,29 +150,39 @@ def residential(data_sources):
     recs_hfc = pd.merge(recs_hfc, recs_sc, on='hu_type')
 
     for fuel in fuel_type_map.values():
-      recs_hfe[fuel] = recs_hfe[fuel].str.replace(',', '').apply(pd.to_numeric)
+      recs_hfe[fuel] = recs_hfe[fuel].astype(str).str.replace(',', '').apply(pd.to_numeric)
 
     recs_hfe = recs_hfe.groupby('hu_type').sum()
     recs_hfe = recs_hfe.reset_index()
     recs_hfe = pd.merge(recs_hfe, recs_sc, on='hu_type')
 
-    ma_consumptions = {
+    hfc_ma_consumptions = {
       'elec': recs_hfc_ma['avg_elec'],
       'ng': recs_hfc_ma['avg_ng'],
       'foil': recs_hfc_ma['avg_foil'],
     }
 
+    hfe_ma_consumptions = {
+      'elec': recs_hfe_ma['avg_elec'],
+      'ng': recs_hfe_ma['avg_ng'],
+      'foil': recs_hfe_ma['avg_foil'],
+    }
+
     for fuel in fuel_type_map.values():
       recs_hfc['adj'] = recs_hfc[fuel] * recs_hfc['ma']
-      adjustment_ratio = (ma_consumptions[fuel] / recs_hfc[recs_hfc['hu_type'] != 'total']['adj'].sum()).values[0]
-      recs_hfc[fuel] = recs_hfc[fuel].astype(float) * adjustment_ratio
-      recs_hfe[fuel] = recs_hfe[fuel].astype(float) * adjustment_ratio
+      recs_hfe['adj'] = recs_hfe[fuel] * recs_hfe['ma']
+      hfc_adjustment_ratio = (hfc_ma_consumptions[fuel] / recs_hfc[recs_hfc['hu_type'] != 'total']['adj'].sum()).values[0]
+      hfe_adjustment_ratio = (hfe_ma_consumptions[fuel] / recs_hfe[recs_hfe['hu_type'] != 'total']['adj'].sum()).values[0]
+      recs_hfc[fuel] = recs_hfc[fuel].astype(float) * hfc_adjustment_ratio
+      recs_hfe[fuel] = recs_hfe[fuel].astype(float) * hfe_adjustment_ratio
 
     recs_hfc.drop(['adj', 'ma'], axis=1, inplace=True)
+    recs_hfe.drop(['adj', 'ma'], axis=1, inplace=True)
     recs_hfc.rename(columns=hfc_fuel_map, inplace=True)
     recs_hfe.rename(columns=hfe_fuel_map, inplace=True)
 
     results = pd.melt(results, id_vars=['muni_id', 'municipal', 'gas', 'elec', 'oil', 'ng_%', 'foil_%', 'elec_%'], var_name='hu_type', value_name='hu')
+
     results.rename(columns=fuel_type_map, inplace=True)
     results = pd.merge(results, recs_hfc, on='hu_type')
     results = pd.merge(results, recs_hfe, on='hu_type')
@@ -179,7 +192,7 @@ def residential(data_sources):
       Step 4 in Methodology
     """
     for fuel in fuel_type_map.values():
-      results[fuel+'_con_mmbtu'] = results[fuel] * results[fuel+'_hfc']
+      results[fuel+'_con_mmbtu'] = results['hu'] * results[fuel+'_hfc'] * results[fuel+'_%']
       results[fuel+'_con_pu'] = results[fuel+'_con_mmbtu'] / fuel_conversion_map[fuel]
 
       results[fuel+'_exp_dollar'] = results[fuel] * results[fuel+'_hfe']
