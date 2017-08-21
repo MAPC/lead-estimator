@@ -52,12 +52,12 @@ def residential(data_sources):
   }
 
   hfe_hu_map = {
-    'total households': 'total',
-    'Single family attached': 'u1a',
-    'Single family detached': 'u1d',
+    'Total Households': 'total',
+    'Single-Family Attached': 'u1a',
+    'Single-Family Detached': 'u1d',
     'Apartments in 2-4 Unit Buildings': 'u2_4',
     'Apartments in 5 or More Unit Buildings': 'u5ov',
-    'mobile homes': 'u_oth',
+    'Mobile Homes': 'u_oth',
   }
 
   fuel_conversion_map = {
