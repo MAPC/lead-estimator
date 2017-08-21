@@ -195,7 +195,7 @@ def residential(data_sources):
       results[fuel+'_con_mmbtu'] = results['hu'] * results[fuel+'_hfc'] * results[fuel+'_%']
       results[fuel+'_con_pu'] = results[fuel+'_con_mmbtu'] / fuel_conversion_map[fuel]
 
-      results[fuel+'_exp_dollar'] = results[fuel] * results[fuel+'_hfe']
+      results[fuel+'_exp_dollar'] = results['hu'] * results[fuel+'_hfe'] * results[fuel+'_%']
 
 
     results = results[['muni_id', 'municipal', 'hu_type', 'hu'] + fuel_cons_columns + fuel_cons_pu_columns + fuel_exp_columns]
