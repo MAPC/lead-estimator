@@ -62,7 +62,7 @@ def residential(data_sources):
 
   fuel_conversion_map = {
     'elec': 0.003412,
-    'ng': 0.1 * 10,
+    'ng': 0.1,
     'foil': 0.139,
   }
 
@@ -199,14 +199,15 @@ def residential(data_sources):
 
 
     results = results[['muni_id', 'municipal', 'hu_type', 'hu'] + fuel_cons_columns + fuel_cons_pu_columns + fuel_exp_columns]
-    results['con_by_structure_mmbtu'] = results[fuel_cons_columns].sum(axis=1)
-    results['exp_by_structure_dollar'] = results[fuel_exp_columns].sum(axis=1)
+    results['total_con_mmbtu'] = results[fuel_cons_columns].sum(axis=1)
+    results['total_exp_dollar'] = results[fuel_exp_columns].sum(axis=1)
 
     emissions = pd.DataFrame()
     for fuel, conversion_ratio in co2_conversion_map.items():
       results[fuel+'_emissions_co2'] = results[fuel+'_con_pu'] * conversion_ratio
 
     results.sort_values(['municipal', 'hu_type'], inplace=True)
+
 
     return results
 

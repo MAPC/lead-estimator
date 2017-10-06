@@ -6,10 +6,16 @@
 """
 
 #import settings
+from .blacklist import blacklist
 import sqlalchemy
 import pandas as pd
 from os import path
 from pprint import pprint
+
+# Turn the blacklist items into their lowercase counterparts.
+# This is better for normalized comparison since you may not
+# know the casing of each item.
+lowercase_blacklist = [x.lower() for x in blacklist]
 
 
 class Estimator(object):
@@ -61,7 +67,12 @@ class Estimator(object):
       for data_source in data_sources:
         if not data_source['tag'] in Estimator.loaded_data:
           file_type = path.splitext(data_source['file_path'])[1][1:]
-          Estimator.loaded_data[data_source['tag']] = file_readers[file_type](data_source['file_path'])
+          df = file_readers[file_type](data_source['file_path'])
+
+          if 'municipal' in df.columns:
+              df = df[~df['municipal'].str.lower().isin(lowercase_blacklist)]
+
+          Estimator.loaded_data[data_source['tag']] = df
 
         data[data_source['tag']] = Estimator.loaded_data[data_source['tag']]
 

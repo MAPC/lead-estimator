@@ -33,19 +33,19 @@ def commercial(data_sources):
 
   fuel_conversion = {
     'elec': 0.003412,
-    'ng': 1,
+    'ng': 0.1,
     'foil': 0.139,
   }
 
   fuel_factor = {
     'elec': 1000,
-    'ng': 1,
+    'ng': 9.64320154,
     'foil': 1,
   }
 
   co2_conversion_map = {
     'elec': 0.828,
-    'ng': 11.71 * 10,
+    'ng': 11.71,
     'foil': 22.38,
   }
 
@@ -63,12 +63,13 @@ def commercial(data_sources):
     """
     eowld = datasets['eowld']
     eowld = eowld[(eowld['naicscode'].astype(int) >= 400) & (eowld['naicscode'].astype(int) <= 1000) & (eowld['cal_year'].astype(int) == 2015)]
-    eowld_snapshot = eowld[['municipal', 'naicscode', 'avgemp', 'estab']]
+    eowld_snapshot = eowld[['muni_id', 'municipal', 'naicscode', 'avgemp', 'estab']]
 
     results = pd.DataFrame()
 
     for municipality in eowld['municipal'].unique():
       eowld = pd.DataFrame(eowld_snapshot[eowld_snapshot['municipal'] == municipality])
+      muni_id = eowld['muni_id'].unique()[0]
 
       pba_stats = {}
       for pba, naics_codes in pba_naics_groups.items():
@@ -151,16 +152,17 @@ def commercial(data_sources):
           result_set[fuel+'_con_mmbtu'] = result_set[fuel+'_con_pu'] * fuel_conversion[fuel]
           result_set[fuel+'_emissions_co2'] = result_set[fuel+'_con_pu'] * co2_conversion_map[fuel]
 
-        current_result = pd.concat(result_sets).sort_values(['activity']).reset_index()
-        del current_result['level_0']
-        del current_result['level_1']
+      current_result = pd.concat(result_sets).sort_values(['activity']).reset_index()
+      del current_result['level_0']
+      del current_result['level_1']
 
       current_result['total_con_mmbtu'] = current_result['elec_con_mmbtu'] + current_result['ng_con_mmbtu'] + current_result['foil_con_mmbtu']
+      current_result['muni_id'] = muni_id
       current_result['municipal'] = municipality
 
       results = results.append(current_result, ignore_index=True)
 
-    results = results[['municipal'] + results.columns.values.tolist()[:-1]]
+    results = results[['muni_id', 'municipal'] + results.columns.values.tolist()[:-1]]
     return results
 
 

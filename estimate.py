@@ -25,7 +25,13 @@ import sys
 import estimators
 from getopt import getopt
 from pprint import pprint
+from os import environ, path
 from functools import reduce
+from shutil import make_archive
+
+FILES_PATH = environ['FILES_PATH']
+OUTPUT_DIR = path.join(FILES_PATH, 'output')
+SECTOR_DIR = path.join(OUTPUT_DIR, 'sectors')
 
 
 # Get command line arguments
@@ -93,9 +99,13 @@ else:
     print("{0} is not a valid sector! Valid sector arguments are {1}.".format(sector, valid_sectors))
 
 
-# Print data to be piped into a file or stdin
-#print(sector_data)
-
+# Publish the files
 for sector, df in sector_data.items():
-  df.to_csv('/opt/files/'+sector+'-out.csv', index=False)
+  file_path = path.join(SECTOR_DIR, sector+'-data.csv')
+  df.to_csv(file_path, index=False)
+
   print('{} sector has been published'.format(sector.capitalize()))
+
+
+if len(sector_data) > 1:
+    make_archive(path.join(OUTPUT_DIR, 'mapc-lead-estimates-data'), 'zip', SECTOR_DIR)

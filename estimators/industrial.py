@@ -56,7 +56,7 @@ def industrial(data_sources):
     """
     eowld = datasets['eowld']
     eowld = eowld[(eowld['naicscode'].astype(int) >= 311) & (eowld['naicscode'].astype(int) <= 339) & (eowld['cal_year'].astype(int) == 2015)]
-    eowld = eowld[['municipal', 'naicscode', 'naicstitle', 'avgemp', 'estab']]
+    eowld = eowld[['muni_id', 'municipal', 'naicscode', 'naicstitle', 'avgemp', 'estab']]
     eowld = eowld.sort_values(['naicscode']) 
     eowld.rename(columns={'naicscode': 'naics_code'}, inplace=True)
 
@@ -76,6 +76,8 @@ def industrial(data_sources):
 
     results = pd.merge(results, mecs_fce, on='naics_code')
     replace_invalid_values(results)
+
+    # We multiply by 1,000,000 here because the cons_emp units are Trillion Btu instead of MMBtu
     results['total_con_mmbtu'] = results['cons_emp'].str.replace(',','').astype(float) * results['avgemp'].astype(float)
 
 
@@ -92,13 +94,13 @@ def industrial(data_sources):
     mecs_ami = mecs_ami[fuel_types + ['tot', 'naics_code']]
 
     for fuel in fuel_types:
-      mecs_ami[fuel+'_con_%'] = mecs_ami[fuel].astype(float) / mecs_ami['tot'].astype(float)
+      mecs_ami[fuel+'_con_perc'] = mecs_ami[fuel].astype(float) / mecs_ami['tot'].astype(float)
 
     mecs_ami.drop(fuel_types + ['tot'], axis=1, inplace=True)
     results = pd.merge(results, mecs_ami, on='naics_code')
 
     for fuel in fuel_types:
-      results[fuel+'_con_mmbtu'] = results['total_con_mmbtu'] * results[fuel+'_con_%']
+      results[fuel+'_con_mmbtu'] = results['total_con_mmbtu'] * results[fuel+'_con_perc']
 
       if not fuel == 'other':
         results[fuel+'_con_pu'] = results[fuel+'_con_mmbtu'] / fuel_conversion[fuel]
