@@ -24,8 +24,6 @@ blacklist = [
     'Franklin Regional Council Of Governments',
     'Inner Core (ICC) Subregion',
     'MAGIC Subregion',
-    'MAPC Region',
-    'MAPC',
     'MetroFuture',
     'MetroFuture Region',
     'Northern Middlesex Council of Government',

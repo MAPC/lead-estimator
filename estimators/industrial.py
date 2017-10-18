@@ -109,6 +109,11 @@ def industrial(data_sources):
 
     results.sort_values('municipal', inplace=True)
 
+    # Rename certain municipal identifiers to conform to the the data
+    # used in the other sectors.
+    results.replace('MAPC Region', 'MAPC', inplace=True)
+
+
 
     return results
 

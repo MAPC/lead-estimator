@@ -163,6 +163,13 @@ def commercial(data_sources):
       results = results.append(current_result, ignore_index=True)
 
     results = results[['muni_id', 'municipal'] + results.columns.values.tolist()[:-1]]
+
+    # Rename certain municipal identifiers to conform to the the data
+    # used in the other sectors.
+    results.replace('MAPC Region', 'MAPC', inplace=True)
+
+
+
     return results
 
 

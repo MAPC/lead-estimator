@@ -208,7 +208,6 @@ def residential(data_sources):
 
     results.sort_values(['municipal', 'hu_type'], inplace=True)
 
-
     return results
 
 
