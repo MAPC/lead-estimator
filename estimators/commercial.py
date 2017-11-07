@@ -44,9 +44,9 @@ def commercial(data_sources):
   }
 
   co2_conversion_map = {
-    'elec': 0.828,
+    'elec': 0.857,
     'ng': 11.71,
-    'foil': 22.38,
+    'foil': 22.579,
   }
 
 
