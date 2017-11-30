@@ -5,12 +5,13 @@
   by the second call that loads in and injects datasets into the methodology.
 """
 
-#import settings
+from .settings import settings
 from .blacklist import blacklist
 import sqlalchemy
 import pandas as pd
 from os import path
 from pprint import pprint
+
 
 # Turn the blacklist items into their lowercase counterparts.
 # This is better for normalized comparison since you may not
@@ -23,12 +24,11 @@ class Estimator(object):
   loaded_data = {}
 
   database_tag_map = {
-      """
     'eowld': 'econ_es202_naics_3d_m',
     'cbecs_elec': 'energy_cbecs_elec_consumption_expenditure_us',
     'cbecs_foil': 'energy_cbecs_fueloil_consumption_expenditure_us',
     'cbecs_ng': 'energy_cbecs_natgas_consumption_expenditure_us',
-    'cbecs_sources': '',
+    'cbecs_sources': 'energy_cbecs_building_energy_sources_us',
     'mecs_ami': 'energy_mecs_fuel_consumption_ne_us',
     'mecs_fce': 'energy_mecs_consumption_ratios_us_us',
     'recs_hfc': 'energy_recs_hh_fuel_consumption_ne_us',
@@ -36,10 +36,9 @@ class Estimator(object):
     'recs_sc': 'energy_recs_hu_structural_characteristics',
     'acs_uis': 'b25024_hu_units_in_structure_acs_m',
     'acs_hf': 'b25117_hu_tenure_by_fuel_acs_m',
-    """
   }
 
-  #postgres_engine = sqlalchemy.create_engine('postgresql://{}:{}@{}:{}/{}'.format(settings.db.USER, settings.db.PASSWORD, settings.db.HOST, settings.db.PORT, settings.db.NAME))
+  postgres_engine = sqlalchemy.create_engine('postgresql://{}:{}@{}:{}/{}'.format(settings.db.USER, settings.db.PASSWORD, settings.db.HOST, settings.db.PORT, settings.db.NAME))
 
 
   def __new__(self, fn):
@@ -77,12 +76,13 @@ class Estimator(object):
         data[data_source['tag']] = Estimator.loaded_data[data_source['tag']]
 
 
-      """
       for tag, table in Estimator.database_tag_map.items():
         if not tag in Estimator.loaded_data:
-          data[tag] = pd.read_sql_query("SELECT * FROM tabular." + table, engine=Estimator.postgres_engine)
-      """
+          data[tag] = pd.read_sql_query("SELECT * FROM tabular." + table, Estimator.postgres_engine)
+          pprint(data[tag])
 
+     
+     
 
       return fn(data)
 

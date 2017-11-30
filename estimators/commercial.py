@@ -84,10 +84,10 @@ def commercial(data_sources):
       cbecs = {}
       for fuel in fuel_types:
         column_map = {
-          'cnsperbldng': fuel+'_con_per_b',
-          'experbldng': fuel+'_exp_per_b',
-          'cnsperworker': fuel+'_con_per_w', # Physical Unit
-          'experworker': fuel+'_exp_per_w',  # Dollars
+          'c_blg': fuel+'_con_per_b',
+          'e_blg': fuel+'_exp_per_b',
+          'c_perwrkr': fuel+'_con_per_w', # Physical Unit
+          'e_kwh': fuel+'_exp_per_kwh', # Dollars
         }
 
         cbecs[fuel] = pd.DataFrame(datasets['cbecs_'+fuel][['activity'] + list(column_map)])
@@ -113,17 +113,28 @@ def commercial(data_sources):
 
 
       # Find percentage of consumption for each fuel type.
+      energy_sources_column_map = {
+        'bld_indic': 'activity',
+        'all_bldg': 'all'
+      }
+
       source_column_map = {
         'ng': 'ng',
         'fueloil': 'foil'
       }
 
-      activities = current_result['activity'].tolist()
+      energy_sources_column_map.update(source_column_map)
+
       
-      energy_sources = pd.DataFrame(datasets['cbecs_sources'][['activity', 'all', 'ng', 'fueloil']])
+      #energy_sources = pd.DataFrame(datasets['cbecs_sources'][['activity', 'all', 'ng', 'fueloil']])
+
+      energy_sources = pd.DataFrame(datasets['cbec_sources'][['years', 'bld_group', 'bld_indic', 'all_bldg', 'nat_gas', 'fuel_oil']])
+      energy_sources = energy_sources[(energy_sources['bld_group'].str.lower() == 'principal building activity') & (energy_sources['years'].astype(int) == 2012)]
+      energy_sources.rename(columns=energy_sources_column_map, inplace=True)
+
+      activities = current_result['activity'].tolist()
       energy_sources = energy_sources[energy_sources['activity'].isin(activities)].reset_index()
       energy_sources['fueloil'].fillna(0, inplace=True)
-      energy_sources.rename(columns=source_column_map, inplace=True)
 
       for fuel in source_column_map.values():
         energy_sources[fuel] = energy_sources[fuel].astype(float) / energy_sources['all'].astype(float)

@@ -1,3 +1,4 @@
 # Ignore cache created when running Python3
 __pycache__
+.DS_Store
 .env

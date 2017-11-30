@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+  app:
+    build: .
+    command: ./estimate.py -s commercial
+    env_file:
+      - .env
+    volumes: 
+      - .:/usr/src/app

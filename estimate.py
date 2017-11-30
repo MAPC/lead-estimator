@@ -12,19 +12,19 @@
                     These optional files are used in place of tables in the database when properly 
                     tagged. See --tag argument.
 
-    --sector, -s:   The name of the sector that will be processed. If this argument is not included 
-                    in the command, then the program will process all sectors.
-
     --tag, -t:      This argument must follow a --file argument. If this argument does not follow a 
                     --file argument, the file will not be used. Possible file tags are eowld, 
                     cbecs_el, cbecs_fo, cbecs_ng, cbecs_sources, mecs_ami, mecs_fce, recs_hfc,
                     recs_hfe, recs_sc, acs_uis, acs_hf. See --file argument.
+
+    --sector, -s:   The name of the sector that will be processed. If this argument is not included 
+                    in the command, then the program will process all sectors.
+
 """
 
 import sys
 import estimators
 from getopt import getopt
-from pprint import pprint
 from os import environ, path
 from functools import reduce
 from shutil import make_archive
@@ -68,11 +68,6 @@ for opt, arg in options:
 
     # Whenever a --file argument is passed, a tag for that file should follow
     check_for_tag = True 
-
-
-if not len(data_files) > 0 :
-  print('You must pass the data file being used for input! e.g. estimate.py --file=data.xls')
-  exit()
 
 
 # Start processing the sector(s)

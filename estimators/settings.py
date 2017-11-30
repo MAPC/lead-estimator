@@ -10,3 +10,7 @@ db = Munch({
   'USER': environ.get('DB_USER'),
   'PASSWORD': environ.get('DB_PASSWORD'),
 })
+
+settings = Munch({
+ 'db': db
+})
