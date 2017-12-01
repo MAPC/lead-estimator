@@ -35,11 +35,11 @@ def residential(data_sources):
 
 
   hu_type_map = {
-      'Single_family_attached': 'u1a',
-      'Single_family_detached': 'u1d',
-      'two_four_units': 'u2_4',
-      'five_plus_units': 'u5ov',
-      'Mobile_home': 'u_oth',
+      'Single Family Attached': 'u1a',
+      'Single Family Detached': 'u1d',
+      'Apartments in 2-4 Unit Buildings': 'u2_4',
+      'Apartments in 5 or more Unit Buildings': 'u5ov',
+      'Mobile Homes': 'u_oth',
   }
 
   hfc_hu_map = {
@@ -61,7 +61,7 @@ def residential(data_sources):
   }
 
   fuel_conversion_map = {
-    'elec': 0.003412,
+    'elec': 0.006707,
     'ng': 0.1,
     'foil': 0.139,
   }
@@ -92,7 +92,6 @@ def residential(data_sources):
     u5ov = ['u5_9', 'u10_19', 'u20ov']
     acs_uis['u5ov'] = acs_uis[u5ov].sum(axis=1, skipna=True)
     acs_uis.drop(u5ov, axis=1, inplace=True)
-
 
 
     """

@@ -25,7 +25,7 @@
 import sys
 import estimators
 from getopt import getopt
-from os import environ, path
+from os import environ, makedirs, path
 from functools import reduce
 from shutil import make_archive
 
@@ -95,6 +95,10 @@ else:
 
 
 # Publish the files
+
+makedirs(OUTPUT_DIR, exist_ok=True)
+makedirs(SECTOR_DIR, exist_ok=True)
+
 for sector, df in sector_data.items():
   file_path = path.join(SECTOR_DIR, sector+'-data.csv')
   df.to_csv(file_path, index=False)

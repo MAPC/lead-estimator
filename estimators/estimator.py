@@ -10,7 +10,6 @@ from .blacklist import blacklist
 import sqlalchemy
 import pandas as pd
 from os import path
-from pprint import pprint
 
 
 # Turn the blacklist items into their lowercase counterparts.
@@ -67,10 +66,6 @@ class Estimator(object):
         if not data_source['tag'] in Estimator.loaded_data:
           file_type = path.splitext(data_source['file_path'])[1][1:]
           df = file_readers[file_type](data_source['file_path'])
-
-          if 'municipal' in df.columns:
-              df = df[~df['municipal'].str.lower().isin(lowercase_blacklist)]
-
           Estimator.loaded_data[data_source['tag']] = df
 
         data[data_source['tag']] = Estimator.loaded_data[data_source['tag']]
@@ -78,11 +73,14 @@ class Estimator(object):
 
       for tag, table in Estimator.database_tag_map.items():
         if not tag in Estimator.loaded_data:
+          print("Loading " + tag)
           data[tag] = pd.read_sql_query("SELECT * FROM tabular." + table, Estimator.postgres_engine)
-          pprint(data[tag])
+     
 
-     
-     
+      for tag, table in data.items():
+        if 'municipal' in table.columns:
+          data[tag] = table[~table['municipal'].str.lower().isin(lowercase_blacklist)]
+
 
       return fn(data)
 

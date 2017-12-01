@@ -17,7 +17,7 @@ def industrial(data_sources):
   fuel_types = ['elec', 'foil', 'ng', 'other']
 
   fuel_conversion = {
-    'elec': 0.003412,
+    'elec': 0.006707,
     'ng': 0.1,
     'foil': 0.139,
   }

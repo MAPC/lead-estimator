@@ -4,7 +4,7 @@ services:
 
   app:
     build: .
-    command: ./estimate.py -s commercial
+    command: "python -u estimate.py -s residential"
     env_file:
       - .env
     volumes: 
