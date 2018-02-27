@@ -5,6 +5,7 @@
 import pandas as pd
 import numpy as np
 from .estimator import Estimator
+from pprint import pprint
 
 
 def industrial(data_sources):
@@ -54,8 +55,9 @@ def industrial(data_sources):
     """
       Step 1 in Methodology
     """
-    eowld = datasets['eowld']
-    eowld = eowld[(eowld['naicscode'].astype(int) >= 311) & (eowld['naicscode'].astype(int) <= 339) & (eowld['cal_year'].astype(int) == 2015)]
+    eowld = pd.DataFrame(datasets['eowld'])
+    eowld['naicscode'] = eowld['naicscode'].astype(int)
+    eowld = eowld[(eowld['naicscode'] >= 311) & (eowld['naicscode'] <= 339) & (eowld['cal_year'].astype(int) == 2015)]
     eowld = eowld[['muni_id', 'municipal', 'naicscode', 'naicstitle', 'avgemp', 'estab']]
     eowld = eowld.sort_values(['naicscode']) 
     eowld.rename(columns={'naicscode': 'naics_code'}, inplace=True)
@@ -69,34 +71,46 @@ def industrial(data_sources):
     """
       Step 2 in Methodology
     """
-    mecs_fce = datasets['mecs_fce']
-    mecs_fce = mecs_fce[(mecs_fce['naics_code'].isin(naics_codes)) & (mecs_fce['region'].str.lower() == 'northeast')]
+    mecs_fce = pd.DataFrame(datasets['mecs_fce'])
+    mecs_fce.rename(columns={'naicscode': 'naics_code'}, inplace=True)
+    mecs_fce = mecs_fce[(mecs_fce['naics_code'] != '')]
+    mecs_fce['naics_code'] = mecs_fce['naics_code'].astype(int)
 
-    mecs_fce = mecs_fce[['naics_code', 'cons_emp']]
+    pprint(mecs_fce)
+    return
+
+    mecs_fce = mecs_fce[(mecs_fce['naics_code'].isin(naics_codes)) & (mecs_fce['years'] == 2010)]
+    mecs_fce = mecs_fce[['naics_code', 'c_employee']]
+
+    pprint(mecs_fce)
+    return
 
     results = pd.merge(results, mecs_fce, on='naics_code')
     replace_invalid_values(results)
 
-    # We multiply by 1,000,000 here because the cons_emp units are Trillion Btu instead of MMBtu
-    results['total_con_mmbtu'] = results['cons_emp'].str.replace(',','').astype(float) * results['avgemp'].astype(float)
+    results['total_con_mmbtu'] = results['c_employee'].astype(float) * results['avgemp'].astype(float)
 
 
     """
       Step 3 in Methodology
     """
     mecs_ami = pd.DataFrame(datasets['mecs_ami'])
+    mecs_ami.rename(columns={'naics_3d': 'naics_code'}, inplace=True)
+
     mecs_ami['naics_code'] = mecs_ami['naics_code'].apply(pd.to_numeric, errors='coerce')
-    mecs_ami = mecs_ami[(mecs_ami['naics_code'].isin(naics_codes)) & (mecs_ami['geography'].str.lower() == 'northeast')]
+    mecs_ami = mecs_ami[(mecs_ami['naics_code'].isin(naics_codes)) & (mecs_ami['geography'].str.lower() == 'northeast') & (mecs_ami['years'] == 2010)]
     replace_invalid_values(mecs_ami)
 
-    mecs_ami['other'] = mecs_ami[['lpgngl', 'coal', 'coke', 'other']].apply(pd.to_numeric).sum(axis=1, skipna=True)
-    mecs_ami['foil'] = mecs_ami[['dist_foil', 'res_foil']].apply(pd.to_numeric).sum(axis=1, skipna=True)
-    mecs_ami = mecs_ami[fuel_types + ['tot', 'naics_code']]
+    mecs_ami['other'] = mecs_ami[['lpg_ngl', 'coal', 'coke_brz', 'other']].apply(pd.to_numeric).sum(axis=1, skipna=True)
+    mecs_ami['foil'] = mecs_ami[['d_fueloil', 'r_fueloil']].apply(pd.to_numeric).sum(axis=1, skipna=True)
+    mecs_ami = mecs_ami[['net_elec', 'natgas', 'foil', 'other', 'tot_consum', 'naics_code']].rename(columns={'net_elec': 'elec', 'natgas': 'ng', 'tot_consum': 'tot'})
 
     for fuel in fuel_types:
       mecs_ami[fuel+'_con_perc'] = mecs_ami[fuel].astype(float) / mecs_ami['tot'].astype(float)
 
+    mecs_ami['naics_code'] = mecs_ami['naics_code'].astype(int)
     mecs_ami.drop(fuel_types + ['tot'], axis=1, inplace=True)
+
     results = pd.merge(results, mecs_ami, on='naics_code')
 
     for fuel in fuel_types:
@@ -113,6 +127,8 @@ def industrial(data_sources):
     # used in the other sectors.
     results.replace('MAPC Region', 'MAPC', inplace=True)
 
+    pprint(results)
+    return
 
 
     return results
