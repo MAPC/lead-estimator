@@ -64,6 +64,7 @@ class Estimator(object):
 
       for data_source in data_sources:
         if not data_source['tag'] in Estimator.loaded_data:
+          print("Loading " + data_source['tag'] + " from file")
           file_type = path.splitext(data_source['file_path'])[1][1:]
           df = file_readers[file_type](data_source['file_path'])
           Estimator.loaded_data[data_source['tag']] = df

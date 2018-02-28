@@ -4,7 +4,7 @@ services:
 
   app:
     build: .
-    command: "python -u estimate.py --sector=industrial"
+    command: "python -u estimate.py"
     env_file:
       - .env
     volumes: 

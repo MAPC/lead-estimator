@@ -71,19 +71,13 @@ def industrial(data_sources):
     """
       Step 2 in Methodology
     """
+
     mecs_fce = pd.DataFrame(datasets['mecs_fce'])
     mecs_fce.rename(columns={'naicscode': 'naics_code'}, inplace=True)
-    mecs_fce = mecs_fce[(mecs_fce['naics_code'] != '')]
     mecs_fce['naics_code'] = mecs_fce['naics_code'].astype(int)
 
-    pprint(mecs_fce)
-    return
-
-    mecs_fce = mecs_fce[(mecs_fce['naics_code'].isin(naics_codes)) & (mecs_fce['years'] == 2010)]
+    mecs_fce = mecs_fce[(mecs_fce['naics_code'].isin(naics_codes)) & (mecs_fce['years'] == 2010) & (mecs_fce['geography'].str.lower() == 'northeast region')]
     mecs_fce = mecs_fce[['naics_code', 'c_employee']]
-
-    pprint(mecs_fce)
-    return
 
     results = pd.merge(results, mecs_fce, on='naics_code')
     replace_invalid_values(results)
@@ -126,10 +120,6 @@ def industrial(data_sources):
     # Rename certain municipal identifiers to conform to the the data
     # used in the other sectors.
     results.replace('MAPC Region', 'MAPC', inplace=True)
-
-    pprint(results)
-    return
-
 
     return results
 
