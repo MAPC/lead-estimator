@@ -29,7 +29,7 @@ class Estimator(object):
     'cbecs_ng': 'energy_cbecs_natgas_consumption_expenditure_us',
     'cbecs_sources': 'energy_cbecs_building_energy_sources_us',
     'mecs_ami': 'energy_mecs_fuel_consumption_ne_us',
-    'mecs_fce': 'energy_mecs_consumption_ratios_us_us',
+    'mecs_fce': 'energy_mecs_consumption_ratios_ne_us',
     'recs_hfc': 'energy_recs_hh_fuel_consumption_ne_us',
     'recs_hfe': 'energy_recs_hh_fuel_expenditures_ne_us',
     'recs_sc': 'energy_recs_hu_structural_characteristics',
@@ -37,7 +37,7 @@ class Estimator(object):
     'acs_hf': 'b25117_hu_tenure_by_fuel_acs_m',
   }
 
-  postgres_engine = sqlalchemy.create_engine('postgresql://{}:{}@{}:{}/{}'.format(settings.db.USER, settings.db.PASSWORD, settings.db.HOST, settings.db.PORT, settings.db.NAME))
+  db_engine = sqlalchemy.create_engine('postgresql://{}:{}@{}:{}/{}'.format(settings.db.USER, settings.db.PASSWORD, settings.db.HOST, settings.db.PORT, settings.db.NAME))
 
 
   def __new__(self, fn):
@@ -75,7 +75,7 @@ class Estimator(object):
       for tag, table in Estimator.database_tag_map.items():
         if not tag in Estimator.loaded_data:
           print("Loading " + tag)
-          data[tag] = pd.read_sql_query("SELECT * FROM tabular." + table, Estimator.postgres_engine)
+          data[tag] = pd.read_sql_query("SELECT * FROM tabular." + table, Estimator.db_engine)
      
 
       for tag, table in data.items():

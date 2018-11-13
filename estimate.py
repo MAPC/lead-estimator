@@ -35,8 +35,8 @@ SECTOR_DIR = path.join(OUTPUT_DIR, 'sectors')
 
 
 # Get command line arguments
-short_options = 's:f:t:'
-long_options  = ['sector=', 'file=', 'tag=']
+short_options = 's:f:t:p:'
+long_options  = ['sector=', 'file=', 'tag=', 'push']
 
 options = getopt(sys.argv[1:], short_options, long_options)[0]
 
@@ -53,6 +53,8 @@ data_files = []
 sector = None
 
 check_for_tag = False
+push_to_db = False
+
 for opt, arg in options:
 
   if check_for_tag:
@@ -63,6 +65,8 @@ for opt, arg in options:
 
   if opt in ['-s', '--sector']:
     sector = arg.strip()
+  elif opt in ['-p', '--push']:
+    push_to_db = True
   elif opt in ['-f', '--file']:
     data_files.append({'file_path': arg.strip(), 'tag': ''})
 
@@ -100,6 +104,10 @@ makedirs(OUTPUT_DIR, exist_ok=True)
 makedirs(SECTOR_DIR, exist_ok=True)
 
 for sector, df in sector_data.items():
+  if push_to_db:
+    print("We want to push to the db")
+    #df.to_sql("mapc-lead-{}" % sector, estimator.Estimator.db_engine, if_exists='replace')
+
   file_path = path.join(SECTOR_DIR, sector+'-data.csv')
   df.to_csv(file_path, index=False)
 
