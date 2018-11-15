@@ -4,7 +4,7 @@ services:
 
   app:
     build: .
-    command: "python -u estimate.py"
+    command: "python -u estimate.py -p"
     env_file:
       - .env
     volumes: 

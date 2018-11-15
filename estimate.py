@@ -35,7 +35,7 @@ SECTOR_DIR = path.join(OUTPUT_DIR, 'sectors')
 
 
 # Get command line arguments
-short_options = 's:f:t:p:'
+short_options = 's:f:t:p'
 long_options  = ['sector=', 'file=', 'tag=', 'push']
 
 options = getopt(sys.argv[1:], short_options, long_options)[0]
@@ -105,8 +105,12 @@ makedirs(SECTOR_DIR, exist_ok=True)
 
 for sector, df in sector_data.items():
   if push_to_db:
-    print("We want to push to the db")
-    #df.to_sql("mapc-lead-{}" % sector, estimator.Estimator.db_engine, if_exists='replace')
+    table = "mapc-lead-{}".format(sector)
+    engine = estimators.Estimator.db_engine
+    schema = "tabular"
+    
+    df.to_sql(table, engine, schema, if_exists='replace')
+    print('{} sector has been pushed to the database'.format(sector.capitalize()))
 
   file_path = path.join(SECTOR_DIR, sector+'-data.csv')
   df.to_csv(file_path, index=False)
