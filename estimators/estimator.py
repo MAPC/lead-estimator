@@ -35,6 +35,8 @@ class Estimator(object):
     'recs_sc': 'energy_recs_hu_structural_characteristics',
     'acs_uis': 'b25024_hu_units_in_structure_acs_m',
     'acs_hf': 'b25117_hu_tenure_by_fuel_acs_m',
+    'masssave_ci': 'energy_masssave_elec_gas_ci_consumption_m',
+    'masssave_res': 'energy_masssave_elec_gas_res_li_consumption_m',
   }
 
   db_engine = sqlalchemy.create_engine('postgresql://{}:{}@{}:{}/{}'.format(settings.db.USER, settings.db.PASSWORD, settings.db.HOST, settings.db.PORT, settings.db.NAME))

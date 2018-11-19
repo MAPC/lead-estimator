@@ -95,6 +95,7 @@ def commercial(data_sources):
     pd.set_option('display.max_columns', 500)
     pd.set_option('display.width', 800)
 
+
     """
       Step 1 in Methodology
     """
@@ -112,6 +113,10 @@ def commercial(data_sources):
 
       eowld = pd.DataFrame(eowld_snapshot[eowld_snapshot['municipal'] == municipality])
       muni_id = eowld['muni_id'].unique()[0]
+
+      masssave_ci = datasets['masssave_ci']
+      masssave_ci = pd.DataFrame(masssave_ci[masssave_ci['municipal'] == municipality])
+      dump(masssave_ci)
 
       pba_stats = {}
       for pba, naics_codes in pba_naics_groups.items():
@@ -249,6 +254,10 @@ def commercial(data_sources):
       del current_result['level_1']
 
       current_result['total_con_mmbtu'] = current_result['elec_con_mmbtu'] + current_result['ng_con_mmbtu'] + current_result['foil_con_mmbtu']
+
+      dump(current_result)
+
+      
       current_result['muni_id'] = muni_id
       current_result['municipal'] = municipality
 
