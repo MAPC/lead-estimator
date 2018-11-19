@@ -153,6 +153,21 @@ def commercial(data_sources):
           if fuel != 'foil':
             cbecs[fuel][column_name].fillna(column_avg, inplace=True)
 
+      # For fuel oil, use Option 1 in methodology for replacing missing values using natural gas for the ratios
+      office_ng = cbecs['ng'].loc[cbecs['ng']['activity'] == 'office', 'ng_con_per_b'].values[0]
+      office_con_foil = cbecs['foil'].loc[cbecs['foil']['activity'] == 'office', 'foil_con_per_b'].values[0]
+      office_exp_foil = cbecs['foil'].loc[cbecs['foil']['activity'] == 'office', 'foil_exp_per_b'].values[0]
+      cbecs['foil']['ng_delta'] = (cbecs['ng']['ng_con_per_b'] - office_ng) / cbecs['ng']['ng_con_per_b']
+
+      cbecs['foil']['foil_con_per_b'] = cbecs['foil'].apply(
+        lambda row: office_con_foil + (office_con_foil * row['ng_delta']) if np.isnan(row['foil_con_per_b']) else row['foil_con_per_b'],
+        axis=1
+      )
+
+      cbecs['foil']['foil_exp_per_b'] = cbecs['foil'].apply(
+        lambda row: office_exp_foil + (office_exp_foil * row['ng_delta']) if np.isnan(row['foil_exp_per_b']) else row['foil_exp_per_b'],
+        axis=1
+      )
 
       # Compose the datasets into a single DataFrame 
       current_result = None
@@ -165,18 +180,14 @@ def commercial(data_sources):
       current_result['emps'] = current_result['activity'].apply(lambda x: pba_stats[x.strip()]['avgemp'])
       current_result['estabs'] = current_result['activity'].apply(lambda x: pba_stats[x.strip()]['estab'])
 
+      current_result['foil_con_per_w'] = current_result.apply(
+        lambda row: row['foil_con_per_b'] / (row['emps'] / row['estabs']) if np.isnan(row['foil_con_per_w']) and row['estabs'] != 0 else row['foil_con_per_w'],
+        axis=1
+      )
+
       for fuel in fuel_types:
         current_result[fuel+'_exp_per_w'] = (current_result[fuel+'_exp_per_b'] / (current_result['emps'] / current_result['estabs'])) * 1000
         current_result[fuel+'_exp_per_w'].replace(np.inf, 0, inplace=True)
-
-      office_ng = current_result.loc[current_result['activity'] == 'office', 'ng_con_per_b']
-      office_foil = current_result.loc[current_result['activity'] == 'office', 'foil_con_per_b']
-      current_result['ng_delta'] = (current_result['ng_con_per_b'] - office_ng) / current_result['ng_con_per_b']
-
-      current_result['foil_con_per_b'] = current_result.apply(
-          lambda row: office_foil + (office_foil * row['ng_delta']) if np.isnan(row['foil_con_per_b']) else row['foil_con_per_b'],
-          axis=1
-      )
 
 
       # Find percentage of consumption for each fuel type.
