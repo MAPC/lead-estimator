@@ -40,7 +40,7 @@ def commercial(data_sources):
 
   fuel_factor = {
     'elec': 1,
-    'ng': 10.37,#9.64320154,
+    'ng': 10.37,
     'foil': 1,
   }
 
@@ -48,12 +48,6 @@ def commercial(data_sources):
     'elec': 0.857,
     'ng': 11.71,
     'foil': 22.579,
-  }
-
-  acs_ratios = {
-    'elec': 1,
-    'ng': .4633,
-    'foil': .3609,
   }
 
   col_order = [
@@ -240,11 +234,11 @@ def commercial(data_sources):
 
           if not result_set.empty:
             if set_name == 'mercantile':
-              result_set[fuel+'_con_pu'] = result_set[fuel+'_con_per_b'] * result_set['estabs'] * acs_ratios[fuel] * fuel_factor[fuel]
-              result_set[fuel+'_exp_dollar'] = result_set[fuel+'_exp_per_b'] * result_set['estabs'] * acs_ratios[fuel]
+              result_set[fuel+'_con_pu'] = result_set[fuel+'_con_per_b'] * result_set['estabs'] * energy_sources[fuel] * fuel_factor[fuel]
+              result_set[fuel+'_exp_dollar'] = result_set[fuel+'_exp_per_b'] * result_set['estabs'] * energy_sources[fuel]
             else:
-              result_set[fuel+'_con_pu'] = result_set[fuel+'_con_per_w'] * result_set['emps'] * acs_ratios[fuel] * fuel_factor[fuel]
-              result_set[fuel+'_exp_dollar'] = result_set[fuel+'_exp_per_w'] * result_set['emps'] * acs_ratios[fuel]
+              result_set[fuel+'_con_pu'] = result_set[fuel+'_con_per_w'] * result_set['emps'] * energy_sources[fuel] * fuel_factor[fuel]
+              result_set[fuel+'_exp_dollar'] = result_set[fuel+'_exp_per_w'] * result_set['emps'] * energy_sources[fuel]
 
             result_set[fuel+'_con_mmbtu'] = result_set[fuel+'_con_pu'] * fuel_conversion[fuel]
             result_set[fuel+'_emissions_co2'] = result_set[fuel+'_con_pu'] * co2_conversion_map[fuel]
@@ -257,8 +251,6 @@ def commercial(data_sources):
       current_result['total_con_mmbtu'] = current_result['elec_con_mmbtu'] + current_result['ng_con_mmbtu'] + current_result['foil_con_mmbtu']
       current_result['muni_id'] = muni_id
       current_result['municipal'] = municipality
-
-      dump(current_result)
 
       results = results.append(current_result, ignore_index=True)
 
