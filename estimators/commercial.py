@@ -39,7 +39,7 @@ def commercial(data_sources):
   }
 
   fuel_factor = {
-    'elec': 1000,
+    'elec': 1,
     'ng': 9.64320154,
     'foil': 1,
   }
@@ -91,6 +91,10 @@ def commercial(data_sources):
       @return DataFrame 
     """
 
+    pd.set_option('display.max_rows', 500)
+    pd.set_option('display.max_columns', 500)
+    pd.set_option('display.width', 800)
+
     """
       Step 1 in Methodology
     """
@@ -101,6 +105,11 @@ def commercial(data_sources):
     results = pd.DataFrame()
 
     for municipality in eowld['municipal'].unique():
+      def dump(x):
+        if municipality == 'Gloucester':
+          print(x)
+          exit()
+
       eowld = pd.DataFrame(eowld_snapshot[eowld_snapshot['municipal'] == municipality])
       muni_id = eowld['muni_id'].unique()[0]
 
@@ -119,20 +128,24 @@ def commercial(data_sources):
         column_map = {
           'c_blg': fuel+'_con_per_b',
           'e_blg': fuel+'_exp_per_b',
-          'c_perwrkr': fuel+'_con_per_w', # Physical Unit
-          'e_kwh': fuel+'_exp_per_kwh', # Dollars
+          'c_perwrkr': fuel+'_con_per_w',
+          'e_kwh': fuel+'_exp_per_unit',
         }
-
 
         cbecs[fuel] = pd.DataFrame(datasets['cbecs_'+fuel][['activity'] + list(column_map)])
         cbecs[fuel]['activity'] = cbecs[fuel]['activity'].str.strip().str.lower()
         cbecs[fuel].rename(columns=column_map, inplace=True)
         cbecs[fuel][fuel+'_con_per_b'] = cbecs[fuel][fuel+'_con_per_b'].apply(pd.to_numeric)
 
-        # Use Option 2 in methodology for replacing missing values in each column
+        if fuel == 'elec':
+          cbecs[fuel][fuel+'_con_per_w'] = cbecs[fuel][fuel+'_con_per_w'] * 1000
+
+        # Use Option 2 in methodology for replacing missing values in each column (except for fuel oil)
         for column_name in column_map.values():
           column_avg = cbecs[fuel][column_name].mean()
-          cbecs[fuel][column_name].fillna(column_avg, inplace=True)
+
+          if fuel != 'foil':
+            cbecs[fuel][column_name].fillna(column_avg, inplace=True)
 
 
       # Compose the datasets into a single DataFrame 
@@ -147,8 +160,17 @@ def commercial(data_sources):
       current_result['estabs'] = current_result['activity'].apply(lambda x: pba_stats[x.strip()]['estab'])
 
       for fuel in fuel_types:
-        current_result[fuel+'_exp_per_w'] = (current_result[fuel+'_con_per_w'] * 1000) * current_result[fuel+'_exp_per_kwh']
+        current_result[fuel+'_exp_per_w'] = (current_result[fuel+'_exp_per_b'] / (current_result['emps'] / current_result['estabs'])) * 1000
         current_result[fuel+'_exp_per_w'].replace(np.inf, 0, inplace=True)
+
+      office_ng = current_result.loc[current_result['activity'] == 'office', 'ng_con_per_b']
+      office_foil = current_result.loc[current_result['activity'] == 'office', 'foil_con_per_b']
+      current_result['ng_delta'] = (current_result['ng_con_per_b'] - office_ng) / current_result['ng_con_per_b']
+
+      current_result['foil_con_per_b'] = current_result.apply(
+          lambda row: office_foil + (office_foil * row['ng_delta']) if np.isnan(row['foil_con_per_b']) else row['foil_con_per_b'],
+          axis=1
+      )
 
 
       # Find percentage of consumption for each fuel type.
@@ -202,10 +224,10 @@ def commercial(data_sources):
           if not result_set.empty:
             if set_name == 'mercantile':
               result_set[fuel+'_con_pu'] = result_set[fuel+'_con_per_b'] * result_set['estabs'] * energy_sources[fuel] * fuel_factor[fuel]
-              result_set[fuel+'_exp_dollar'] = result_set[fuel+'_exp_per_b'] * result_set[fuel+'_con_pu']
+              result_set[fuel+'_exp_dollar'] = result_set[fuel+'_exp_per_b'] * result_set['emps'] * energy_sources[fuel]
             else:
               result_set[fuel+'_con_pu'] = result_set[fuel+'_con_per_w'] * result_set['emps'] * energy_sources[fuel] * fuel_factor[fuel]
-              result_set[fuel+'_exp_dollar'] = result_set[fuel+'_exp_per_w'] * result_set[fuel+'_con_pu']
+              result_set[fuel+'_exp_dollar'] = result_set[fuel+'_exp_per_w'] * result_set['emps'] * energy_sources[fuel]
 
             result_set[fuel+'_con_mmbtu'] = result_set[fuel+'_con_pu'] * fuel_conversion[fuel]
             result_set[fuel+'_emissions_co2'] = result_set[fuel+'_con_pu'] * co2_conversion_map[fuel]
@@ -218,6 +240,8 @@ def commercial(data_sources):
       current_result['total_con_mmbtu'] = current_result['elec_con_mmbtu'] + current_result['ng_con_mmbtu'] + current_result['foil_con_mmbtu']
       current_result['muni_id'] = muni_id
       current_result['municipal'] = municipality
+
+      dump(current_result)
 
       results = results.append(current_result, ignore_index=True)
 
