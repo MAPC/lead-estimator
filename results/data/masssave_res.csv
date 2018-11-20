@@ -1,0 +1,1054 @@
+seq_id,muni_id,municipal,cal_year,sector,elec_incnt,mwh_use,mwh_save,gas_incnt,therm_use,therm_save,h_e_incnt,h_mwh_use,h_mwh_save,h_g_incnt,h_thrmuse,h_thrmsave
+1,1,Abington,2013,Residential & Low-Income,378865.343,51915.538,1301.545,406234.108,1960792.0,63181.422,,,,,,
+2,2,Acton,2013,Residential & Low-Income,509509.496,68416.157,1895.013,345761.361,4282169.0,82699.153,,,,,,
+3,3,Acushnet,2013,Residential & Low-Income,248554.919,26653.88,857.044,54140.21,1143704.0,17112.896,,,,,,
+4,4,Adams,2013,Residential & Low-Income,373483.453,22332.177,963.605,324681.62,1628320.93,18719.226,,,,,,
+5,5,Agawam,2013,Residential & Low-Income,290065.134,123392.337,1799.449,223418.982,5298668.0,58160.576,,,,,,
+6,6,Alford,2013,Residential & Low-Income,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+7,7,Amesbury,2013,Residential & Low-Income,292960.765,48639.568,1073.966,139066.636,3176221.0,34081.136,,,,,,
+8,8,Amherst,2013,Residential & Low-Income,552370.499,87737.321,2298.725,86881.22,1257987.52,13043.412,,,,,,
+9,9,Andover,2013,Residential & Low-Income,636596.112,114378.921,3302.412,369256.801,8067337.0,51436.846,,,,,,
+10,10,Arlington,2013,Residential & Low-Income,897974.823,95436.707,3650.945,653247.81,10233278.0,205429.594,,,,,,
+11,11,Ashburnham,2013,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+12,12,Ashby,2013,Residential & Low-Income,,10206.565,,,128089.17,,Protected,,Protected,Protected,,Protected
+13,13,Ashfield,2013,Residential & Low-Income,,7262.74,,,,,Protected,,Protected,No gas,No gas,No gas
+14,14,Ashland,2013,Residential & Low-Income,487415.417,47560.836,1615.763,139078.95,3533603.0,46482.721,,,,,,
+15,15,Athol,2013,Residential & Low-Income,478787.556,42396.011,1117.114,,,,,,,No gas,No gas,No gas
+16,16,Attleboro,2013,Residential & Low-Income,1021968.181,128857.006,6005.521,181630.169,4837466.0,24572.039,,,,,,
+17,17,Auburn,2013,Residential & Low-Income,593127.623,58320.77,1586.258,,833305.0,,,,,Protected,,Protected
+18,18,Avon,2013,Residential & Low-Income,,14491.025,,,671219.0,,Protected,,Protected,Protected,,Protected
+19,19,Ayer,2013,Residential & Low-Income,273510.695,24240.109,633.542,89581.669,1048163.0,22940.217,,,,,,
+20,20,Barnstable,2013,Residential & Low-Income,1685475.39,184311.589,3835.462,926126.535,15380888.0,342142.974,,,,,,
+21,21,Barre,2013,Residential & Low-Income,118624.402,17749.207,256.878,,,,,,,No gas,No gas,No gas
+22,22,Becket,2013,Residential & Low-Income,,15441.136,,,,,Protected,,Protected,No gas,No gas,No gas
+23,23,Bedford,2013,Residential & Low-Income,450359.929,38272.361,1585.298,571186.19,3439101.0,149187.065,,,,,,
+24,24,Belchertown,2013,Residential & Low-Income,676855.793,52312.586,1766.982,,,,,,,No gas,No gas,No gas
+25,25,Bellingham,2013,Residential & Low-Income,402689.084,57345.271,1573.845,,1353598.0,,,,,Protected,,Protected
+26,26,Belmont,2013,Residential & Low-Income,,,,445721.559,6758876.0,130527.808,Municipal,Municipal,Municipal,,,
+27,27,Berkley,2013,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,Protected,Protected,Protected
+28,28,Berlin,2013,Residential & Low-Income,,11754.859,,,86308.0,,Protected,,Protected,Protected,,Protected
+29,29,Bernardston,2013,Residential & Low-Income,,11491.847,,,,,Protected,,Protected,No gas,No gas,No gas
+30,30,Beverly,2013,Residential & Low-Income,875005.494,109951.428,3066.991,278220.196,5990122.0,64953.238,,,,,,
+31,31,Billerica,2013,Residential & Low-Income,640269.585,124621.761,2971.529,393848.043,8227622.0,95255.367,,,,,,
+32,32,Blackstone,2013,Residential & Low-Income,202432.831,26998.515,627.322,,,,,,,Protected,Protected,Protected
+33,33,Blandford,2013,Residential & Low-Income,,5852.845,,,,,Protected,,Protected,No gas,No gas,No gas
+34,34,Bolton,2013,Residential & Low-Income,200842.087,21200.249,479.174,,,,,,,Protected,Protected,Protected
+35,35,Boston,2013,Residential & Low-Income,11359975.847,1050236.639,52199.679,9565501.071,91775909.0,1439727.265,,,,,,
+36,36,Bourne,2013,Residential & Low-Income,638699.442,62315.191,1537.968,226165.718,4418796.0,103220.869,,,,,,
+37,37,Boxborough,2013,Residential & Low-Income,,,,,457448.0,,Municipal,Municipal,Municipal,Protected,,Protected
+38,38,Boxford,2013,Residential & Low-Income,153559.468,36344.123,682.695,78923.703,1897091.0,24886.265,,,,,,
+39,39,Boylston,2013,Residential & Low-Income,,,,,112249.0,,Municipal,Municipal,Municipal,Protected,,Protected
+40,40,Braintree,2013,Residential & Low-Income,,,,1554528.664,5188435.0,297241.171,Municipal,Municipal,Municipal,,,
+41,41,Brewster,2013,Residential & Low-Income,615528.468,51499.59,851.867,155745.764,1931273.0,76547.081,,,,,,
+42,42,Bridgewater,2013,Residential & Low-Income,,73083.865,,69538.42,2426553.0,11475.471,Municipal,,Municipal,,,
+43,43,Brimfield,2013,Residential & Low-Income,108103.307,14245.572,413.74,,,,,,,No gas,No gas,No gas
+44,44,Brockton,2013,Residential & Low-Income,1779774.977,214708.178,7447.661,388488.686,14705363.0,46381.271,,,,,,
+45,45,Brookfield,2013,Residential & Low-Income,,12577.601,,,109188.0,,Protected,,Protected,Protected,,Protected
+46,46,Brookline,2013,Residential & Low-Income,474681.589,105041.163,3990.649,473366.183,9883233.0,135879.957,,,,,,
+47,47,Buckland,2013,Residential & Low-Income,,6864.342,,,,,Protected,,Protected,No gas,No gas,No gas
+48,48,Burlington,2013,Residential & Low-Income,1510931.31,73538.511,3652.152,248413.792,3673216.0,70546.37,,,,,,
+49,49,Cambridge,2013,Residential & Low-Income,1633609.729,165642.966,12690.826,842622.99,17770274.0,186312.221,,,,,,
+50,50,Canton,2013,Residential & Low-Income,411987.298,62613.042,2639.544,248715.538,4978872.0,31208.175,,,,,,
+51,51,Carlisle,2013,Residential & Low-Income,155295.527,23067.457,486.09,63109.966,1071175.0,17817.404,,,,,,
+52,52,Carver,2013,Residential & Low-Income,308231.604,36095.778,992.0,,827944.0,,,,,Protected,,Protected
+53,53,Charlemont,2013,Residential & Low-Income,,6756.032,,,,,Protected,,Protected,No gas,No gas,No gas
+54,54,Charlton,2013,Residential & Low-Income,366106.408,48221.159,1043.525,,,,,,,No gas,No gas,No gas
+55,55,Chatham,2013,Residential & Low-Income,283052.94,44005.203,439.403,175244.126,3712472.0,79812.73,,,,,,
+56,56,Chelmsford,2013,Residential & Low-Income,468850.056,105074.124,2049.846,636133.924,9655122.0,145409.103,,,,,,
+57,57,Chelsea,2013,Residential & Low-Income,965556.73,61467.624,3031.771,195206.946,5002251.0,68824.216,,,,,,
+58,58,Cheshire,2013,Residential & Low-Income,,11079.421,,,367102.02,,Protected,,Protected,Protected,,Protected
+59,59,Chester,2013,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+60,60,Chesterfield,2013,Residential & Low-Income,,5003.441,,,,,Protected,,Protected,No gas,No gas,No gas
+61,61,Chicopee,2013,Residential & Low-Income,,,,515578.353,7582127.12,75780.953,Municipal,Municipal,Municipal,,,
+62,62,Chilmark,2013,Residential & Low-Income,,14058.675,,,,,Protected,,Protected,No gas,No gas,No gas
+63,63,Clarksburg,2013,Residential & Low-Income,,,,,,,Protected,Protected,Protected,Protected,Protected,Protected
+64,64,Clinton,2013,Residential & Low-Income,302300.942,43287.368,1015.55,96666.286,1853779.0,23764.099,,,,,,
+65,65,Cohasset,2013,Residential & Low-Income,141541.958,32249.412,373.3,81489.458,2001963.0,17835.79,,,,,,
+66,66,Colrain,2013,Residential & Low-Income,,7757.09,,,,,Protected,,Protected,No gas,No gas,No gas
+67,67,Concord,2013,Residential & Low-Income,,,,211256.866,4255923.0,58280.776,Municipal,Municipal,Municipal,,,
+68,68,Conway,2013,Residential & Low-Income,,8840.897,,,,,Protected,,Protected,No gas,No gas,No gas
+69,69,Cummington,2013,Residential & Low-Income,,3606.998,,,,,Protected,,Protected,No gas,No gas,No gas
+70,70,Dalton,2013,Residential & Low-Income,90349.389,26258.64,409.758,,1316771.88,,,,,Protected,,Protected
+71,71,Danvers,2013,Residential & Low-Income,,,,198648.88,3311196.0,56249.961,Municipal,Municipal,Municipal,,,
+72,72,Dartmouth,2013,Residential & Low-Income,1142190.373,84873.782,3697.674,277828.83,4656874.029,73808.022,,,,,,
+73,73,Dedham,2013,Residential & Low-Income,437663.969,60209.31,2557.425,411732.84,5917178.0,99931.774,,,,,,
+74,74,Deerfield,2013,Residential & Low-Income,134099.592,21516.043,566.834,,431222.91,,,,,Protected,,Protected
+75,75,Dennis,2013,Residential & Low-Income,824622.951,69581.523,1446.353,376425.542,5904360.0,167637.15,,,,,,
+76,76,Dighton,2013,Residential & Low-Income,,21049.391,,,422036.0,,Municipal,,Municipal,Protected,,Protected
+77,77,Douglas,2013,Residential & Low-Income,203841.34,30156.427,602.77,,,,,,,No gas,No gas,No gas
+78,78,Dover,2013,Residential & Low-Income,164647.399,27700.991,544.543,,,,,,,Protected,Protected,Protected
+79,79,Dracut,2013,Residential & Low-Income,372589.129,94070.11,1448.045,303851.416,6493059.0,81699.986,,,,,,
+80,80,Dudley,2013,Residential & Low-Income,331485.377,38422.661,712.516,,496727.0,,,,,Protected,,Protected
+81,81,Dunstable,2013,Residential & Low-Income,,12990.057,,,329021.0,,Protected,,Protected,Protected,,Protected
+82,82,Duxbury,2013,Residential & Low-Income,312200.587,54297.468,1734.403,190752.009,3624544.0,26541.274,,,,,,
+83,83,East Bridgewater,2013,Residential & Low-Income,241278.265,46253.377,1123.718,,1707354.0,,,,,Protected,,Protected
+84,84,East Brookfield,2013,Residential & Low-Income,,8065.243,,,93702.0,,Protected,,Protected,Protected,,Protected
+85,85,East Longmeadow,2013,Residential & Low-Income,276658.444,53175.71,1614.589,292456.247,3740444.0,34774.343,,,,,,
+86,86,Eastham,2013,Residential & Low-Income,408033.552,30311.724,559.026,134817.854,1287021.0,51539.817,,,,,,
+87,87,Easthampton,2013,Residential & Low-Income,329856.943,70755.381,1412.021,171275.845,1998582.0,18858.313,,,,,,
+88,88,Easton,2013,Residential & Low-Income,518623.76,83017.39,2425.542,115310.359,3218812.0,17549.923,,,,,,
+89,89,Edgartown,2013,Residential & Low-Income,163338.111,42403.692,241.243,,,,,,,No gas,No gas,No gas
+90,90,Egremont,2013,Residential & Low-Income,,6827.596,,,,,Protected,,Protected,No gas,No gas,No gas
+91,91,Erving,2013,Residential & Low-Income,,6216.581,,,,,Protected,,Protected,No gas,No gas,No gas
+92,92,Essex,2013,Residential & Low-Income,,12870.901,,,497762.0,,Protected,,Protected,Protected,,Protected
+93,93,Everett,2013,Residential & Low-Income,612101.577,86050.652,3764.882,305522.001,8118236.0,60495.882,,,,,,
+94,94,Fairhaven,2013,Residential & Low-Income,235534.884,37504.735,1118.318,174832.76,3264214.0,48858.196,,,,,,
+95,95,Fall River,2013,Residential & Low-Income,1113367.462,170688.001,7424.611,230008.78,19440547.291,19674.674,,,,,,
+96,96,Falmouth,2013,Residential & Low-Income,1393864.385,132969.384,2307.58,620738.991,8743724.0,229529.109,,,,,,
+97,97,Fitchburg,2013,Residential & Low-Income,398246.806,101726.776,1793.312,,7046804.58,,,,,Protected,,Protected
+98,98,Florida,2013,Residential & Low-Income,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+99,99,Foxborough,2013,Residential & Low-Income,639099.377,56648.047,2471.447,153301.799,3551257.0,24642.007,,,,,,
+100,100,Framingham,2013,Residential & Low-Income,2224101.674,158272.014,6305.265,714406.227,9973058.0,147638.708,,,,,,
+101,101,Franklin,2013,Residential & Low-Income,677550.609,105037.885,2788.01,304250.478,6373050.0,41155.226,,,,,,
+102,102,Freetown,2013,Residential & Low-Income,347773.621,26408.971,834.522,,153101.0,,,,,Protected,,Protected
+103,103,Gardner,2013,Residential & Low-Income,649737.832,51444.799,1483.851,,781649.82,,,,,Protected,,Protected
+104,104,Aquinnah,2013,Residential & Low-Income,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+105,105,Georgetown,2013,Residential & Low-Income,,,,485087.251,1702098.0,98305.787,Municipal,Municipal,Municipal,,,
+106,106,Gill,2013,Residential & Low-Income,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+107,107,Gloucester,2013,Residential & Low-Income,690960.574,96656.206,1805.844,339769.844,4082946.0,47555.74,,,,,,
+108,108,Goshen,2013,Residential & Low-Income,,3540.578,,,,,Protected,,Protected,No gas,No gas,No gas
+109,109,Gosnold,2013,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+110,110,Grafton,2013,Residential & Low-Income,500441.28,62731.461,1642.46,187310.17,2997048.0,46090.827,,,,,,
+111,111,Granby,2013,Residential & Low-Income,243065.317,22092.655,775.644,,162829.0,,,,,Protected,,Protected
+112,112,Granville,2013,Residential & Low-Income,,10398.864,,,,,Protected,,Protected,No gas,No gas,No gas
+113,113,Great Barrington,2013,Residential & Low-Income,240517.138,37180.381,780.82,,608386.56,,,,,Protected,,Protected
+114,114,Greenfield,2013,Residential & Low-Income,535556.267,63963.74,1171.711,200797.48,2020491.05,27799.291,,,,,,
+115,115,Groton,2013,Residential & Low-Income,,,,,898614.0,,Municipal,Municipal,Municipal,Protected,,Protected
+116,116,Groveland,2013,Residential & Low-Income,,,,63450.503,1406022.0,22333.665,Municipal,Municipal,Municipal,,,
+117,117,Hadley,2013,Residential & Low-Income,116082.382,21520.279,524.412,,311617.7,,,,,Protected,,Protected
+118,118,Halifax,2013,Residential & Low-Income,424618.23,26713.127,905.446,,517506.0,,,,,Protected,,Protected
+119,119,Hamilton,2013,Residential & Low-Income,193055.68,26238.098,487.447,62536.108,877949.0,13404.596,,,,,,
+120,120,Hampden,2013,Residential & Low-Income,117120.91,19827.578,494.744,141803.639,678948.0,5235.012,,,,,,
+121,121,Hancock,2013,Residential & Low-Income,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+122,122,Hanover,2013,Residential & Low-Income,234031.998,48953.013,1448.523,122324.909,2768485.0,18892.425,,,,,,
+123,123,Hanson,2013,Residential & Low-Income,194044.195,35450.486,696.657,,1659287.0,,,,,Protected,,Protected
+124,124,Hardwick,2013,Residential & Low-Income,,9878.487,,,,,Protected,,Protected,No gas,No gas,No gas
+125,125,Harvard,2013,Residential & Low-Income,167248.982,21566.496,637.253,,261769.0,,,,,Protected,,Protected
+126,126,Harwich,2013,Residential & Low-Income,818812.048,59011.811,1293.013,293849.667,4715937.0,148156.175,,,,,,
+127,127,Hatfield,2013,Residential & Low-Income,,13100.509,,,473097.41,,Protected,,Protected,Protected,,Protected
+128,128,Haverhill,2013,Residential & Low-Income,818993.621,162165.589,4350.555,911077.398,14262974.0,153141.216,,,,,,
+129,129,Hawley,2013,Residential & Low-Income,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+130,130,Heath,2013,Residential & Low-Income,,1989.921,,,,,Protected,,Protected,No gas,No gas,No gas
+131,131,Hingham,2013,Residential & Low-Income,,,,167148.7,4003159.0,59233.997,Municipal,Municipal,Municipal,,,
+132,132,Hinsdale,2013,Residential & Low-Income,,13126.134,,,,,Protected,,Protected,No gas,No gas,No gas
+133,133,Holbrook,2013,Residential & Low-Income,212300.727,33707.534,1088.686,93150.089,1406259.0,14969.773,,,,,,
+134,134,Holden,2013,Residential & Low-Income,,,,,857943.0,,Municipal,Municipal,Municipal,Protected,,Protected
+135,135,Holland,2013,Residential & Low-Income,,10870.206,,,,,Protected,,Protected,No gas,No gas,No gas
+136,136,Holliston,2013,Residential & Low-Income,366686.751,41755.447,1094.147,188915.76,2149680.0,47719.268,,,,,,
+137,137,Holyoke,2013,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,Municipal,Municipal,Municipal
+138,138,Hopedale,2013,Residential & Low-Income,167462.998,21167.13,491.116,,361398.0,,,,,Protected,,Protected
+139,139,Hopkinton,2013,Residential & Low-Income,422522.446,52975.565,1715.862,118697.37,2709121.0,33236.015,,,,,,
+140,140,Hubbardston,2013,Residential & Low-Income,115735.5,15073.347,241.862,,,,,,,No gas,No gas,No gas
+141,141,Hudson,2013,Residential & Low-Income,,,,203677.44,3753409.0,70525.503,Municipal,Municipal,Municipal,,,
+142,142,Hull,2013,Residential & Low-Income,,,,88020.476,3076274.0,48457.216,Municipal,Municipal,Municipal,,,
+143,143,Huntington,2013,Residential & Low-Income,,9905.486,,,,,Protected,,Protected,No gas,No gas,No gas
+144,144,Ipswich,2013,Residential & Low-Income,,,,119189.225,1854412.0,31622.792,Municipal,Municipal,Municipal,,,
+145,145,Kingston,2013,Residential & Low-Income,337421.963,37811.447,1427.274,,1144327.0,,,,,Protected,,Protected
+146,146,Lakeville,2013,Residential & Low-Income,,2844.671,,,211545.0,,Protected,,Protected,Protected,,Protected
+147,147,Lancaster,2013,Residential & Low-Income,237830.992,40623.292,775.346,,322983.91,,,,,Protected,,Protected
+148,148,Lanesborough,2013,Residential & Low-Income,,,,,,,Protected,Protected,Protected,Protected,Protected,Protected
+149,149,Lawrence,2013,Residential & Low-Income,1000580.786,134661.287,4185.561,620861.218,16735957.0,42458.169,,,,,,
+150,150,Lee,2013,Residential & Low-Income,154174.845,28833.88,522.882,102359.25,1694629.75,12021.133,,,,,,
+151,151,Leicester,2013,Residential & Low-Income,322408.16,42181.971,972.463,,107242.0,,,,,Protected,,Protected
+152,152,Lenox,2013,Residential & Low-Income,128008.635,19938.806,840.797,70368.72,1535815.57,10893.103,,,,,,
+153,153,Leominster,2013,Residential & Low-Income,1333852.39,122830.975,3999.409,278817.56,4085532.0,56806.351,,,,,,
+154,154,Leverett,2013,Residential & Low-Income,,8671.593,,,,,Protected,,Protected,No gas,No gas,No gas
+155,155,Lexington,2013,Residential & Low-Income,1177913.597,107416.803,3737.46,389093.381,6184678.0,106897.87,,,,,,
+156,156,Leyden,2013,Residential & Low-Income,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+157,157,Lincoln,2013,Residential & Low-Income,143234.46,23426.945,597.471,52285.053,1462047.0,16588.44,,,,,,
+158,158,Littleton,2013,Residential & Low-Income,,,,,1095347.0,,Municipal,Municipal,Municipal,Protected,,Protected
+159,159,Longmeadow,2013,Residential & Low-Income,204486.673,68153.314,1171.479,399505.658,5812434.0,64583.013,,,,,,
+160,160,Lowell,2013,Residential & Low-Income,1196793.778,216553.393,5608.762,2069898.345,19679142.0,246124.743,,,,,,
+161,161,Ludlow,2013,Residential & Low-Income,337254.71,76340.169,1663.54,115618.89,2825645.0,26643.106,,,,,,
+162,162,Lunenburg,2013,Residential & Low-Income,,35790.326,,,488511.62,,Protected,,Protected,Protected,,Protected
+163,163,Lynn,2013,Residential & Low-Income,1441072.175,195428.367,6807.848,1025849.796,14453891.0,180058.622,,,,,,
+164,164,Lynnfield,2013,Residential & Low-Income,,,,113925.996,2838550.0,37599.536,Municipal,Municipal,Municipal,,,
+165,165,Malden,2013,Residential & Low-Income,1329981.161,124505.745,5506.237,660768.093,9946669.0,107129.061,,,,,,
+166,166,Manchester,2013,Residential & Low-Income,73021.559,21217.255,335.223,88027.906,1741399.0,16840.06,,,,,,
+167,167,Mansfield,2013,Residential & Low-Income,,,,153982.652,4274273.0,19060.15,Municipal,Municipal,Municipal,,,
+168,168,Marblehead,2013,Residential & Low-Income,,,,301463.454,6251907.0,93513.127,Municipal,Municipal,Municipal,,,
+169,169,Marion,2013,Residential & Low-Income,181003.627,18579.263,550.905,,714718.0,,,,,Protected,,Protected
+170,170,Marlborough,2013,Residential & Low-Income,738597.086,112331.453,3440.58,431291.72,7609739.0,111079.763,,,,,,
+171,171,Marshfield,2013,Residential & Low-Income,323045.838,72930.514,1931.52,329960.738,6690795.0,39790.136,,,,,,
+172,172,Mashpee,2013,Residential & Low-Income,520949.525,69228.614,1385.628,376777.683,5317328.0,183921.718,,,,,,
+173,173,Mattapoisett,2013,Residential & Low-Income,137731.048,21592.345,587.185,,852583.0,,,,,Protected,,Protected
+174,174,Maynard,2013,Residential & Low-Income,210533.599,25028.154,570.248,110460.82,1854681.0,34284.742,,,,,,
+175,175,Medfield,2013,Residential & Low-Income,262785.183,38677.915,1134.419,150952.159,3147557.0,19346.566,,,,,,
+176,176,Medford,2013,Residential & Low-Income,1102362.501,133004.624,5734.051,691523.371,11926548.0,153965.294,,,,,,
+177,177,Medway,2013,Residential & Low-Income,425552.593,41044.73,1123.31,103269.289,2069636.0,14469.635,,,,,,
+178,178,Melrose,2013,Residential & Low-Income,779525.639,72397.837,2910.287,304529.626,5807713.0,78802.773,,,,,,
+179,179,Mendon,2013,Residential & Low-Income,199367.629,23446.04,506.063,,96866.0,,,,,Protected,,Protected
+180,180,Merrimac,2013,Residential & Low-Income,,,,,1316951.0,,Municipal,Municipal,Municipal,Protected,,Protected
+181,181,Methuen,2013,Residential & Low-Income,789787.029,135975.297,3572.809,624722.073,11034192.0,69529.715,,,,,,
+182,182,Middleborough,2013,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,Municipal,Municipal,Municipal
+183,183,Middlefield,2013,Residential & Low-Income,,2209.534,,,,,Protected,,Protected,No gas,No gas,No gas
+184,184,Middleton,2013,Residential & Low-Income,,,,,994596.0,,Municipal,Municipal,Municipal,Protected,,Protected
+185,185,Milford,2013,Residential & Low-Income,975105.713,80440.722,2575.629,291946.91,2756374.0,73669.896,,,,,,
+186,186,Millbury,2013,Residential & Low-Income,508162.218,47900.565,1466.483,131847.59,1243063.0,19564.137,,,,,,
+187,187,Millis,2013,Residential & Low-Income,188651.265,23933.03,701.742,,853170.0,,,,,Protected,,Protected
+188,188,Millville,2013,Residential & Low-Income,90376.513,10112.512,231.086,,,,,,,Protected,Protected,Protected
+189,189,Milton,2013,Residential & Low-Income,509404.166,69855.541,2736.695,408319.178,7155631.0,121853.055,,,,,,
+190,190,Monroe,2013,Residential & Low-Income,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+191,191,Monson,2013,Residential & Low-Income,308775.708,29802.334,819.546,255878.03,84034.0,408.4,,,,,,
+192,192,Montague,2013,Residential & Low-Income,171573.852,29600.118,542.278,,508767.85,,,,,Protected,,Protected
+193,193,Monterey,2013,Residential & Low-Income,,6103.64,,,,,Protected,,Protected,No gas,No gas,No gas
+194,194,Montgomery,2013,Residential & Low-Income,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+195,195,Mount Washington,2013,Residential & Low-Income,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+196,196,Nahant,2013,Residential & Low-Income,,11329.256,,28107.283,1279557.0,8397.244,Protected,,Protected,,,
+197,197,Nantucket,2013,Residential & Low-Income,172696.135,94902.276,664.944,,,,,,,No gas,No gas,No gas
+198,198,Natick,2013,Residential & Low-Income,1070196.693,96517.094,3397.988,526679.712,5627232.0,148343.894,,,,,,
+199,199,Needham,2013,Residential & Low-Income,621614.369,91177.309,3002.792,397567.266,5400403.0,93499.619,,,,,,
+200,200,New Ashford,2013,Residential & Low-Income,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+201,201,New Bedford,2013,Residential & Low-Income,960955.143,154864.519,5231.959,2571904.89,18289687.0,284918.623,,,,,,
+202,202,New Braintree,2013,Residential & Low-Income,,3946.564,,,,,Protected,,Protected,No gas,No gas,No gas
+203,203,New Marlborough,2013,Residential & Low-Income,,1548.658,,,,,Protected,,Protected,No gas,No gas,No gas
+204,204,New Salem,2013,Residential & Low-Income,,3320.84,,,,,Protected,,Protected,No gas,No gas,No gas
+205,205,Newbury,2013,Residential & Low-Income,138344.884,24716.721,436.012,,499767.0,,,,,Protected,,Protected
+206,206,Newburyport,2013,Residential & Low-Income,277192.533,56148.962,1227.782,303598.806,4835297.0,64781.937,,,,,,
+207,207,Newton,2013,Residential & Low-Income,1483182.805,226801.818,8736.539,1186202.043,25081856.0,372733.805,,,,,,
+208,208,Norfolk,2013,Residential & Low-Income,355042.136,30402.293,1170.624,,400720.0,,,,,Protected,,Protected
+209,209,North Adams,2013,Residential & Low-Income,633194.703,37865.799,1185.153,457961.04,2648659.15,31881.015,,,,,,
+210,210,North Andover,2013,Residential & Low-Income,628108.185,94543.137,2585.527,220890.057,6063072.0,33353.202,,,,,,
+211,211,North Attleborough,2013,Residential & Low-Income,,,,,2015696.134,,Municipal,Municipal,Municipal,Protected,,Protected
+212,212,North Brookfield,2013,Residential & Low-Income,144616.827,15798.923,353.783,,372439.0,,,,,Protected,,Protected
+213,213,North Reading,2013,Residential & Low-Income,,,,98509.706,2388957.0,34679.9,Municipal,Municipal,Municipal,,,
+214,214,Northampton,2013,Residential & Low-Income,659456.71,70807.441,3425.469,404187.267,5264300.0,52843.551,,,,,,
+215,215,Northborough,2013,Residential & Low-Income,519118.209,53639.331,2120.438,86225.75,1780239.0,29734.23,,,,,,
+216,216,Northbridge,2013,Residential & Low-Income,439357.64,49822.663,1293.732,,1452199.0,,,,,Protected,,Protected
+217,217,Northfield,2013,Residential & Low-Income,,16876.384,,,,,Protected,,Protected,No gas,No gas,No gas
+218,218,Norton,2013,Residential & Low-Income,265938.704,62550.557,1949.957,85726.849,2898533.0,14542.345,,,,,,
+219,219,Norwell,2013,Residential & Low-Income,272520.242,41526.723,1020.377,,1604960.0,,,,,Protected,,Protected
+220,220,Norwood,2013,Residential & Low-Income,,,,227464.693,5260799.0,86729.712,Municipal,Municipal,Municipal,,,
+221,221,Oak Bluffs,2013,Residential & Low-Income,134875.598,28558.857,219.542,,,,,,,No gas,No gas,No gas
+222,222,Oakham,2013,Residential & Low-Income,,7753.192,,,,,Protected,,Protected,No gas,No gas,No gas
+223,223,Orange,2013,Residential & Low-Income,447755.144,24533.546,752.329,,,,,,,No gas,No gas,No gas
+224,224,Orleans,2013,Residential & Low-Income,354375.725,35025.794,477.59,,1152495.0,,,,,Protected,,Protected
+225,225,Otis,2013,Residential & Low-Income,,11947.448,,,,,Protected,,Protected,No gas,No gas,No gas
+226,226,Oxford,2013,Residential & Low-Income,400584.11,50077.6,1194.564,,,,,,,No gas,No gas,No gas
+227,227,Palmer,2013,Residential & Low-Income,479397.518,42857.26,1573.592,317926.13,79966.0,2224.79,,,,,,
+228,228,Paxton,2013,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+229,229,Peabody,2013,Residential & Low-Income,,,,452302.527,7341988.0,117140.074,Municipal,Municipal,Municipal,,,
+230,230,Pelham,2013,Residential & Low-Income,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+231,231,Pembroke,2013,Residential & Low-Income,378942.612,61030.625,1749.104,107365.729,2949705.0,14867.388,,,,,,
+232,232,Pepperell,2013,Residential & Low-Income,237161.597,39733.004,435.936,121367.426,1343926.0,20341.635,,,,,,
+233,233,Peru,2013,Residential & Low-Income,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+234,234,Petersham,2013,Residential & Low-Income,,4448.075,,,,,Protected,,Protected,No gas,No gas,No gas
+235,235,Phillipston,2013,Residential & Low-Income,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+236,236,Pittsfield,2013,Residential & Low-Income,841435.623,156409.781,2945.965,477117.39,10488838.26,65473.038,,,,,,
+237,237,Plainfield,2013,Residential & Low-Income,,2694.048,,,,,Protected,,Protected,No gas,No gas,No gas
+238,238,Plainville,2013,Residential & Low-Income,180915.228,28741.627,976.559,,534108.747,,,,,Protected,,Protected
+239,239,Plymouth,2013,Residential & Low-Income,1498753.009,177325.519,5440.269,240706.173,5294921.0,63504.227,,,,,,
+240,240,Plympton,2013,Residential & Low-Income,,9279.742,,,132704.0,,Protected,,Protected,Protected,,Protected
+241,241,Princeton,2013,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+242,242,Provincetown,2013,Residential & Low-Income,177426.068,18733.642,230.655,,,,,,,No gas,No gas,No gas
+243,243,Quincy,2013,Residential & Low-Income,1829595.503,209959.308,8817.512,1432224.428,15058727.0,278297.73,,,,,,
+244,244,Randolph,2013,Residential & Low-Income,728339.664,86251.536,4133.009,217055.809,5494801.0,24616.908,,,,,,
+245,245,Raynham,2013,Residential & Low-Income,,,,,979771.0,,Municipal,Municipal,Municipal,Protected,,Protected
+246,246,Reading,2013,Residential & Low-Income,,,,208045.498,3168500.0,59019.815,Municipal,Municipal,Municipal,,,
+247,247,Rehoboth,2013,Residential & Low-Income,319955.109,45247.642,1549.499,,,,,,,Protected,Protected,Protected
+248,248,Revere,2013,Residential & Low-Income,916307.216,118463.439,3888.71,457209.609,8797953.0,81997.194,,,,,,
+249,249,Richmond,2013,Residential & Low-Income,,8977.948,,,,,Protected,,Protected,No gas,No gas,No gas
+250,250,Rochester,2013,Residential & Low-Income,153314.414,16939.115,529.36,,186017.0,,,,,Protected,,Protected
+251,251,Rockland,2013,Residential & Low-Income,387339.13,52136.916,1311.416,289763.936,2766551.0,49931.512,,,,,,
+252,252,Rockport,2013,Residential & Low-Income,255143.945,29874.799,517.956,,,,,,,Protected,Protected,Protected
+253,253,Rowe,2013,Residential & Low-Income,,1802.925,,,,,Protected,,Protected,No gas,No gas,No gas
+254,254,Rowley,2013,Residential & Low-Income,,,,,1082728.0,,Municipal,Municipal,Municipal,Protected,,Protected
+255,255,Royalston,2013,Residential & Low-Income,,4428.536,,,,,Protected,,Protected,No gas,No gas,No gas
+256,256,Russell,2013,Residential & Low-Income,,3387.828,,,,,Protected,,Protected,No gas,No gas,No gas
+257,257,Rutland,2013,Residential & Low-Income,200730.694,27060.804,458.008,,,,,,,No gas,No gas,No gas
+258,258,Salem,2013,Residential & Low-Income,688864.045,103491.796,3103.496,387077.616,7196443.0,111651.957,,,,,,
+259,259,Salisbury,2013,Residential & Low-Income,162209.411,30574.726,560.582,84566.269,1595556.0,20799.784,,,,,,
+260,260,Sandisfield,2013,Residential & Low-Income,,6051.783,,,,,Protected,,Protected,No gas,No gas,No gas
+261,261,Sandwich,2013,Residential & Low-Income,839640.147,74159.248,1731.213,265194.634,3785567.0,113235.806,,,,,,
+262,262,Saugus,2013,Residential & Low-Income,470285.343,87465.023,2671.847,250198.39,5189245.0,39941.086,,,,,,
+263,263,Savoy,2013,Residential & Low-Income,,2829.053,,,,,Protected,,Protected,No gas,No gas,No gas
+264,264,Scituate,2013,Residential & Low-Income,324362.65,64317.155,1309.31,198755.219,4693943.0,28677.521,,,,,,
+265,265,Seekonk,2013,Residential & Low-Income,480197.243,46902.572,2327.823,108129.299,1821050.0,15119.245,,,,,,
+266,266,Sharon,2013,Residential & Low-Income,362968.596,52725.229,1904.719,308808.118,4993159.0,35701.934,,,,,,
+267,267,Sheffield,2013,Residential & Low-Income,,14639.891,,,,,Protected,,Protected,No gas,No gas,No gas
+268,268,Shelburne,2013,Residential & Low-Income,,8399.981,,,,,Protected,,Protected,No gas,No gas,No gas
+269,269,Sherborn,2013,Residential & Low-Income,118405.565,17626.375,398.895,,489850.0,,,,,Protected,,Protected
+270,270,Shirley,2013,Residential & Low-Income,158173.289,22067.099,531.715,,318808.0,,,,,Protected,,Protected
+271,271,Shrewsbury,2013,Residential & Low-Income,,,,340814.49,5373827.0,82081.775,Municipal,Municipal,Municipal,,,
+272,272,Shutesbury,2013,Residential & Low-Income,,6188.502,,,,,Protected,,Protected,No gas,No gas,No gas
+273,273,Somerset,2013,Residential & Low-Income,307838.724,51817.431,1811.883,,4591635.93,,,,,Protected,,Protected
+274,274,Somerville,2013,Residential & Low-Income,1232001.036,121635.883,5614.016,728567.604,14718479.0,209039.795,,,,,,
+275,275,South Hadley,2013,Residential & Low-Income,,,,184842.875,2762877.0,25971.053,Municipal,Municipal,Municipal,,,
+276,276,Southampton,2013,Residential & Low-Income,,24210.659,,,,,Protected,,Protected,Municipal,Municipal,Municipal
+277,277,Southborough,2013,Residential & Low-Income,320625.667,41806.073,1258.853,73250.66,1165293.0,21170.535,,,,,,
+278,278,Southbridge,2013,Residential & Low-Income,384938.277,49354.407,1129.753,,1748386.0,,,,,Protected,,Protected
+279,279,Southwick,2013,Residential & Low-Income,194812.312,44884.194,593.219,,480434.0,,,,,Protected,,Protected
+280,280,Spencer,2013,Residential & Low-Income,301680.285,40259.399,808.47,,761149.0,,,,,Protected,,Protected
+281,281,Springfield,2013,Residential & Low-Income,1667271.375,474335.057,9427.16,926510.548,28505961.0,184073.541,,,,,,
+282,282,Sterling,2013,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+283,283,Stockbridge,2013,Residential & Low-Income,,11851.068,,,371539.36,,Protected,,Protected,Protected,,Protected
+284,284,Stoneham,2013,Residential & Low-Income,818947.704,60943.939,2736.187,203324.547,2998604.0,57135.18,,,,,,
+285,285,Stoughton,2013,Residential & Low-Income,466670.567,80700.736,2881.762,263836.137,5168480.0,34694.534,,,,,,
+286,286,Stow,2013,Residential & Low-Income,,,,,573605.0,,Municipal,Municipal,Municipal,Protected,,Protected
+287,287,Sturbridge,2013,Residential & Low-Income,290025.61,38512.865,949.311,,,,,,,No gas,No gas,No gas
+288,288,Sudbury,2013,Residential & Low-Income,456110.424,71457.012,1734.272,311461.428,4845055.0,88984.897,,,,,,
+289,289,Sunderland,2013,Residential & Low-Income,,14607.861,,,,,Protected,,Protected,Protected,Protected,Protected
+290,290,Sutton,2013,Residential & Low-Income,322120.339,36973.902,858.859,,170864.0,,,,,Protected,,Protected
+291,291,Swampscott,2013,Residential & Low-Income,259625.913,45854.417,1177.802,209141.893,3929880.0,51164.764,,,,,,
+292,292,Swansea,2013,Residential & Low-Income,283269.887,49145.066,2023.685,,3472944.655,,,,,Protected,,Protected
+293,293,Taunton,2013,Residential & Low-Income,,,,230995.566,8015136.0,34780.693,Municipal,Municipal,Municipal,,,
+294,294,Templeton,2013,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+295,295,Tewksbury,2013,Residential & Low-Income,852833.409,93510.375,2585.206,787540.876,6251272.0,163765.487,,,,,,
+296,296,Tisbury,2013,Residential & Low-Income,238539.936,23790.067,319.271,,,,,,,No gas,No gas,No gas
+297,297,Tolland,2013,Residential & Low-Income,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+298,298,Topsfield,2013,Residential & Low-Income,137944.626,23729.026,552.691,,1242340.0,,,,,Protected,,Protected
+299,299,Townsend,2013,Residential & Low-Income,,27801.006,,,1372041.47,,Protected,,Protected,Protected,,Protected
+300,300,Truro,2013,Residential & Low-Income,,12664.211,,,,,Protected,,Protected,No gas,No gas,No gas
+301,301,Tyngsborough,2013,Residential & Low-Income,79657.013,40932.081,447.823,98715.15,2511819.0,29977.564,,,,,,
+302,302,Tyringham,2013,Residential & Low-Income,,1679.653,,,,,Protected,,Protected,No gas,No gas,No gas
+303,303,Upton,2013,Residential & Low-Income,255269.511,27453.528,724.035,,534431.0,,,,,Protected,,Protected
+304,304,Uxbridge,2013,Residential & Low-Income,446918.535,47769.363,1243.429,,1194466.0,,,,,Protected,,Protected
+305,305,Wakefield,2013,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,Municipal,Municipal,Municipal
+306,306,Wales,2013,Residential & Low-Income,,7175.946,,,,,Protected,,Protected,No gas,No gas,No gas
+307,307,Walpole,2013,Residential & Low-Income,487634.776,70181.302,2455.375,253069.538,4593562.0,32523.505,,,,,,
+308,308,Waltham,2013,Residential & Low-Income,919625.515,124402.115,5158.759,387119.077,9230106.0,152767.264,,,,,,
+309,309,Ware,2013,Residential & Low-Income,434193.834,34629.545,1035.796,,,,,,,No gas,No gas,No gas
+310,310,Wareham,2013,Residential & Low-Income,517148.431,67425.187,2149.125,244967.177,3597105.0,71267.209,,,,,,
+311,311,Warren,2013,Residential & Low-Income,,17489.494,,,278715.0,,Protected,,Protected,Protected,,Protected
+312,312,Warwick,2013,Residential & Low-Income,,2607.087,,,,,Protected,,Protected,No gas,No gas,No gas
+313,313,Washington,2013,Residential & Low-Income,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+314,314,Watertown,2013,Residential & Low-Income,702903.21,67585.156,2853.421,406766.284,7307225.0,143791.529,,,,,,
+315,315,Wayland,2013,Residential & Low-Income,307434.988,54292.33,1441.405,192656.891,3688403.0,54354.521,,,,,,
+316,316,Webster,2013,Residential & Low-Income,474788.82,55831.448,1186.67,171409.02,1151178.0,22090.376,,,,,,
+317,317,Wellesley,2013,Residential & Low-Income,,,,642105.201,9035986.0,108340.846,Municipal,Municipal,Municipal,,,
+318,318,Wellfleet,2013,Residential & Low-Income,,19205.684,,,,,Protected,,Protected,No gas,No gas,No gas
+319,319,Wendell,2013,Residential & Low-Income,,2977.034,,,,,Protected,,Protected,No gas,No gas,No gas
+320,320,Wenham,2013,Residential & Low-Income,94593.963,14165.343,331.28,,775738.0,,,,,Protected,,Protected
+321,321,West Boylston,2013,Residential & Low-Income,,,,,784923.0,,Municipal,Municipal,Municipal,Protected,,Protected
+322,322,West Bridgewater,2013,Residential & Low-Income,132966.454,24308.76,702.875,,982048.0,,,,,Protected,,Protected
+323,323,West Brookfield,2013,Residential & Low-Income,83224.874,14975.512,288.042,,298435.0,,,,,Protected,,Protected
+324,324,West Newbury,2013,Residential & Low-Income,111259.245,50381.595,343.238,214195.03,4304520.0,38642.585,,,,,,
+325,325,West Springfield,2013,Residential & Low-Income,445555.588,98705.934,2268.495,256921.424,5799535.0,64463.312,,,,,,
+326,326,West Stockbridge,2013,Residential & Low-Income,,7529.831,,,,,Protected,,Protected,No gas,No gas,No gas
+327,327,West Tisbury,2013,Residential & Low-Income,,16866.644,,,,,Protected,,Protected,No gas,No gas,No gas
+328,328,Westborough,2013,Residential & Low-Income,499328.688,56824.712,2186.446,146997.74,3072640.0,47211.512,,,,,,
+329,329,Westfield,2013,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,Municipal,Municipal,Municipal
+330,330,Westford,2013,Residential & Low-Income,363364.085,77495.064,1497.322,388132.956,5916601.0,71366.87,,,,,,
+331,331,Westhampton,2013,Residential & Low-Income,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+332,332,Westminster,2013,Residential & Low-Income,208477.383,28248.446,776.616,,270839.44,,,,,Protected,,Protected
+333,333,Weston,2013,Residential & Low-Income,205300.776,59497.658,1172.078,153536.113,5593488.0,52894.051,,,,,,
+334,334,Westport,2013,Residential & Low-Income,252507.827,54690.113,1330.866,,2955291.097,,,,,Protected,,Protected
+335,335,Westwood,2013,Residential & Low-Income,409253.369,47361.438,1584.465,155004.48,2233773.0,38155.054,,,,,,
+336,336,Weymouth,2013,Residential & Low-Income,1539446.496,160738.547,4905.292,417610.595,6827716.0,87026.58,,,,,,
+337,337,Whately,2013,Residential & Low-Income,,4224.824,,,,,Protected,,Protected,Protected,Protected,Protected
+338,338,Whitman,2013,Residential & Low-Income,183903.401,44012.546,866.542,142690.397,1966417.0,39440.603,,,,,,
+339,339,Wilbraham,2013,Residential & Low-Income,429692.827,51799.652,1638.559,536292.718,2705584.0,29759.193,,,,,,
+340,340,Williamsburg,2013,Residential & Low-Income,95790.191,8650.498,221.61,,,,,,,No gas,No gas,No gas
+341,341,Williamstown,2013,Residential & Low-Income,208139.759,20284.424,754.635,,1186059.18,,,,,Protected,,Protected
+342,342,Wilmington,2013,Residential & Low-Income,,,,87562.297,1905176.0,31757.033,Municipal,Municipal,Municipal,,,
+343,343,Winchendon,2013,Residential & Low-Income,188604.463,30437.474,542.904,,,,,,,No gas,No gas,No gas
+344,344,Winchester,2013,Residential & Low-Income,621966.532,65186.373,2442.771,342876.016,5871445.0,146402.016,,,,,,
+345,345,Windsor,2013,Residential & Low-Income,,4738.297,,,,,Protected,,Protected,No gas,No gas,No gas
+346,346,Winthrop,2013,Residential & Low-Income,187008.451,43670.594,1037.986,152996.858,4230732.0,47637.821,,,,,,
+347,347,Woburn,2013,Residential & Low-Income,2295142.62,99958.393,5913.662,449684.583,4783683.0,101958.831,,,,,,
+348,348,Worcester,2013,Residential & Low-Income,2948379.598,397255.19,11820.658,2478281.454,29233540.0,425905.638,,,,,,
+349,349,Worthington,2013,Residential & Low-Income,,5238.204,,,,,Protected,,Protected,No gas,No gas,No gas
+350,350,Wrentham,2013,Residential & Low-Income,348567.635,42414.7,1408.789,,1151884.0,,,,,Protected,,Protected
+351,351,Yarmouth,2013,Residential & Low-Income,1202021.928,85701.798,2532.094,569353.124,8461581.0,232362.95,,,,,,
+366,1,Abington,2014,Residential & Low-Income,403358.881,55405.261,1714.204,144391.855,2392759.0,31688.842,,,,,,
+367,2,Acton,2014,Residential & Low-Income,725265.279,61051.456,2832.581,597925.105,4515511.0,119019.725,,,,,,
+368,3,Acushnet,2014,Residential & Low-Income,254062.565,28701.596,989.823,,1473640.0,,,,,Protected,,Protected
+369,4,Adams,2014,Residential & Low-Income,226309.38,23007.549,1013.062,105797.5,1991041.0,13627.242,,,,,,
+370,5,Agawam,2014,Residential & Low-Income,628448.401,91195.544,3224.84,187061.129,6125712.0,28912.027,,,,,,
+371,6,Alford,2014,Residential & Low-Income,,3648.479,,,,,Protected,,Protected,No gas,No gas,No gas
+372,7,Amesbury,2014,Residential & Low-Income,1071539.404,50231.188,2708.027,261022.545,3617222.0,52766.837,,,,,,
+373,8,Amherst,2014,Residential & Low-Income,727608.394,58813.739,1413.825,167440.04,1599890.0,27926.237,,,,,,
+374,9,Andover,2014,Residential & Low-Income,1058547.957,117601.793,4383.036,414792.387,9974767.0,70195.599,,,,,,
+375,10,Arlington,2014,Residential & Low-Income,1080060.061,103480.948,4757.654,1262015.527,11401585.0,292900.311,,,,,,
+376,11,Ashburnham,2014,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+377,12,Ashby,2014,Residential & Low-Income,,10105.313,,,120503.32,,Protected,,Protected,Protected,,Protected
+378,13,Ashfield,2014,Residential & Low-Income,82213.696,6153.904,252.342,,,,,,,No gas,No gas,No gas
+379,14,Ashland,2014,Residential & Low-Income,489240.711,50543.776,1941.78,360462.88,4317724.0,64044.51,,,,,,
+380,15,Athol,2014,Residential & Low-Income,407838.026,38006.264,993.21,,,,,,,No gas,No gas,No gas
+381,16,Attleboro,2014,Residential & Low-Income,1417919.821,132361.092,5169.674,152388.666,5931969.215,23362.505,,,,,,
+382,17,Auburn,2014,Residential & Low-Income,758183.702,59567.134,2312.045,,834747.0,,,,,Protected,,Protected
+383,18,Avon,2014,Residential & Low-Income,114902.021,14500.723,472.664,,796257.0,,,,,Protected,,Protected
+384,19,Ayer,2014,Residential & Low-Income,257824.183,26243.987,947.536,,1287709.0,,,,,Protected,,Protected
+385,20,Barnstable,2014,Residential & Low-Income,3959982.53,190041.399,9429.52,1181370.617,17671422.0,317139.01,,,,,,
+386,21,Barre,2014,Residential & Low-Income,181029.095,16269.725,645.143,,,,,,,No gas,No gas,No gas
+387,22,Becket,2014,Residential & Low-Income,91893.322,11045.97,216.558,,,,,,,No gas,No gas,No gas
+388,23,Bedford,2014,Residential & Low-Income,436180.353,40439.352,1739.378,394905.117,3966685.0,92332.219,,,,,,
+389,24,Belchertown,2014,Residential & Low-Income,665914.095,52986.642,2000.825,,,,,,,No gas,No gas,No gas
+390,25,Bellingham,2014,Residential & Low-Income,452691.798,49572.369,1719.463,,1517401.0,,,,,Protected,,Protected
+391,26,Belmont,2014,Residential & Low-Income,,,,553719.559,8131240.0,149985.127,Municipal,Municipal,Municipal,,,
+392,27,Berkley,2014,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,Protected,Protected,Protected
+393,28,Berlin,2014,Residential & Low-Income,100597.928,12206.207,398.415,,112905.0,,,,,Protected,,Protected
+394,29,Bernardston,2014,Residential & Low-Income,109280.39,7693.55,210.769,,,,,,,No gas,No gas,No gas
+395,30,Beverly,2014,Residential & Low-Income,1305958.849,114057.817,4678.108,480785.379,7365836.0,90863.204,,,,,,
+396,31,Billerica,2014,Residential & Low-Income,998865.438,126693.657,4235.119,1234084.07,9679317.0,185476.086,,,,,,
+397,32,Blackstone,2014,Residential & Low-Income,253481.21,27388.269,1002.14,,,,,,,Protected,Protected,Protected
+398,33,Blandford,2014,Residential & Low-Income,,4902.669,,,,,Protected,,Protected,No gas,No gas,No gas
+399,34,Bolton,2014,Residential & Low-Income,259939.188,21315.543,674.023,,,,,,,Protected,Protected,Protected
+400,35,Boston,2014,Residential & Low-Income,16094695.742,1106968.549,55433.345,9889627.589,113507690.0,2016058.561,,,,,,
+401,36,Bourne,2014,Residential & Low-Income,1193300.053,64777.673,2396.778,368543.907,5253264.0,104654.243,,,,,,
+402,37,Boxborough,2014,Residential & Low-Income,,,,,499177.0,,Municipal,Municipal,Municipal,Protected,,Protected
+403,38,Boxford,2014,Residential & Low-Income,265027.603,37143.786,1047.379,151424.969,2232070.0,28575.41,,,,,,
+404,39,Boylston,2014,Residential & Low-Income,,,,,110712.0,,Municipal,Municipal,Municipal,Protected,,Protected
+405,40,Braintree,2014,Residential & Low-Income,,,,1589742.369,5978585.0,213200.332,Municipal,Municipal,Municipal,,,
+406,41,Brewster,2014,Residential & Low-Income,1109508.975,51784.623,1663.174,171733.666,2155560.0,47365.025,,,,,,
+407,42,Bridgewater,2014,Residential & Low-Income,675013.07,74242.548,2582.714,,2820287.0,,,,,Protected,,Protected
+408,43,Brimfield,2014,Residential & Low-Income,138352.197,14134.633,492.489,,,,,,,No gas,No gas,No gas
+409,44,Brockton,2014,Residential & Low-Income,1608268.392,226222.705,8145.218,271257.87,19980549.0,35658.011,,,,,,
+410,45,Brookfield,2014,Residential & Low-Income,107009.882,13152.768,432.6,,133883.0,,,,,Protected,,Protected
+411,46,Brookline,2014,Residential & Low-Income,998525.603,113123.406,4914.526,465788.551,14763049.0,156756.028,,,,,,
+412,47,Buckland,2014,Residential & Low-Income,,5817.789,,,,,Protected,,Protected,No gas,No gas,No gas
+413,48,Burlington,2014,Residential & Low-Income,2210664.652,64818.081,3901.887,475588.856,4287559.0,112443.705,,,,,,
+414,49,Cambridge,2014,Residential & Low-Income,2149946.026,156938.377,8581.915,1598623.25,17989874.0,254436.553,,,,,,
+415,50,Canton,2014,Residential & Low-Income,504713.935,68767.447,2569.329,205080.674,5754835.0,28254.477,,,,,,
+416,51,Carlisle,2014,Residential & Low-Income,171693.624,20458.978,727.901,,1195543.0,,,,,Protected,,Protected
+417,52,Carver,2014,Residential & Low-Income,322718.687,39164.9,1034.256,,1039118.0,,,,,Protected,,Protected
+418,53,Charlemont,2014,Residential & Low-Income,,3200.605,,,,,Protected,,Protected,No gas,No gas,No gas
+419,54,Charlton,2014,Residential & Low-Income,511790.848,50263.726,1711.415,,,,,,,No gas,No gas,No gas
+420,55,Chatham,2014,Residential & Low-Income,747623.836,43841.066,1174.874,230904.734,4167752.0,76774.575,,,,,,
+421,56,Chelmsford,2014,Residential & Low-Income,755980.939,106519.882,3907.483,970705.898,11124557.0,159840.09,,,,,,
+422,57,Chelsea,2014,Residential & Low-Income,913234.939,55801.838,2731.672,1025971.238,6464132.0,185266.741,,,,,,
+423,58,Cheshire,2014,Residential & Low-Income,128153.012,11299.356,444.193,,441970.0,,,,,Protected,,Protected
+424,59,Chester,2014,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+425,60,Chesterfield,2014,Residential & Low-Income,,4278.28,,,,,Protected,,Protected,No gas,No gas,No gas
+426,61,Chicopee,2014,Residential & Low-Income,,,,260726.966,11777249.0,33907.324,Municipal,Municipal,Municipal,,,
+427,62,Chilmark,2014,Residential & Low-Income,,11457.636,,,,,Protected,,Protected,No gas,No gas,No gas
+428,63,Clarksburg,2014,Residential & Low-Income,,4850.119,,,116347.0,,Protected,,Protected,Protected,,Protected
+429,64,Clinton,2014,Residential & Low-Income,675215.789,42708.996,2167.407,573104.468,1981422.0,93214.346,,,,,,
+430,65,Cohasset,2014,Residential & Low-Income,314114.258,33701.313,1175.823,97393.479,2312061.0,21717.705,,,,,,
+431,66,Colrain,2014,Residential & Low-Income,,6555.369,,,,,Protected,,Protected,No gas,No gas,No gas
+432,67,Concord,2014,Residential & Low-Income,,,,331431.106,4906297.0,81017.621,Municipal,Municipal,Municipal,,,
+433,68,Conway,2014,Residential & Low-Income,,6299.366,,,,,Protected,,Protected,No gas,No gas,No gas
+434,69,Cummington,2014,Residential & Low-Income,,3340.355,,,,,Protected,,Protected,No gas,No gas,No gas
+435,70,Dalton,2014,Residential & Low-Income,240135.921,19624.916,1008.814,101161.17,1550267.0,11654.435,,,,,,
+436,71,Danvers,2014,Residential & Low-Income,,,,292932.561,4070177.0,76895.333,Municipal,Municipal,Municipal,,,
+437,72,Dartmouth,2014,Residential & Low-Income,688442.241,81230.155,2877.723,430726.71,5618009.148,75722.002,,,,,,
+438,73,Dedham,2014,Residential & Low-Income,465648.145,64844.085,2156.175,548197.77,7271738.0,116101.124,,,,,,
+439,74,Deerfield,2014,Residential & Low-Income,246671.929,17555.676,817.897,,539102.0,,,,,Protected,,Protected
+440,75,Dennis,2014,Residential & Low-Income,1735654.146,71542.896,3598.802,743747.94,6555405.0,171489.388,,,,,,
+441,76,Dighton,2014,Residential & Low-Income,150428.953,21368.559,695.396,,479539.0,,,,,Protected,,Protected
+442,77,Douglas,2014,Residential & Low-Income,313801.868,31059.387,1059.763,,,,,,,No gas,No gas,No gas
+443,78,Dover,2014,Residential & Low-Income,190838.197,28122.318,697.662,,174846.0,,,,,Protected,,Protected
+444,79,Dracut,2014,Residential & Low-Income,910045.498,95568.632,3254.687,579522.617,7452279.0,129301.951,,,,,,
+445,80,Dudley,2014,Residential & Low-Income,413382.091,38882.83,1346.945,,588191.0,,,,,Protected,,Protected
+446,81,Dunstable,2014,Residential & Low-Income,128067.192,13143.591,399.525,,393002.0,,,,,Protected,,Protected
+447,82,Duxbury,2014,Residential & Low-Income,429048.138,56641.994,1793.287,139809.874,3991887.0,20305.512,,,,,,
+448,83,East Bridgewater,2014,Residential & Low-Income,399018.296,47716.04,1613.445,,2020013.0,,,,,Protected,,Protected
+449,84,East Brookfield,2014,Residential & Low-Income,73944.911,8430.125,287.875,,116113.0,,,,,Protected,,Protected
+450,85,East Longmeadow,2014,Residential & Low-Income,380500.649,53581.191,1905.673,118454.722,4404816.0,21454.194,,,,,,
+451,86,Eastham,2014,Residential & Low-Income,772238.679,29777.655,1239.044,130634.799,1435941.0,36810.804,,,,,,
+452,87,Easthampton,2014,Residential & Low-Income,452464.917,54551.151,1157.279,,2855587.0,,,,,Protected,,Protected
+453,88,Easton,2014,Residential & Low-Income,888413.093,85831.498,3025.278,313239.505,3835155.0,44327.407,,,,,,
+454,89,Edgartown,2014,Residential & Low-Income,455727.602,43800.266,926.539,,,,,,,No gas,No gas,No gas
+455,90,Egremont,2014,Residential & Low-Income,,7069.617,,,,,Protected,,Protected,No gas,No gas,No gas
+456,91,Erving,2014,Residential & Low-Income,,5262.099,,,,,Protected,,Protected,No gas,No gas,No gas
+457,92,Essex,2014,Residential & Low-Income,74462.783,13649.874,414.393,,600489.0,,,,,Protected,,Protected
+458,93,Everett,2014,Residential & Low-Income,581828.919,92711.603,3503.784,387140.158,9959957.0,79266.933,,,,,,
+459,94,Fairhaven,2014,Residential & Low-Income,247476.846,39296.129,1215.868,218137.36,4170291.0,48372.728,,,,,,
+460,95,Fall River,2014,Residential & Low-Income,1063238.871,181350.499,7877.51,241491.867,21100595.009,57038.167,,,,,,
+461,96,Falmouth,2014,Residential & Low-Income,2776403.17,124787.074,5568.361,2065016.343,10509923.0,413063.982,,,,,,
+462,97,Fitchburg,2014,Residential & Low-Income,950765.05,99562.043,2412.058,609076.179,6582650.6,68881.967,,,,,,
+463,98,Florida,2014,Residential & Low-Income,,2159.64,,,,,Protected,,Protected,No gas,No gas,No gas
+464,99,Foxborough,2014,Residential & Low-Income,492284.427,57283.414,2049.978,126307.547,4127129.0,19689.652,,,,,,
+465,100,Framingham,2014,Residential & Low-Income,1744817.624,163257.156,6236.159,1987629.738,11025389.0,269730.909,,,,,,
+466,101,Franklin,2014,Residential & Low-Income,830785.518,107145.268,3699.782,213635.538,7210656.0,32500.588,,,,,,
+467,102,Freetown,2014,Residential & Low-Income,280141.027,25940.053,896.063,,2198532.791,,,,,Protected,,Protected
+468,103,Gardner,2014,Residential & Low-Income,600357.868,54313.494,2185.429,,758125.73,,,,,Protected,,Protected
+469,104,Aquinnah,2014,Residential & Low-Income,,2889.738,,,,,Protected,,Protected,No gas,No gas,No gas
+470,105,Georgetown,2014,Residential & Low-Income,,,,164926.446,1816446.0,39022.576,Municipal,Municipal,Municipal,,,
+471,106,Gill,2014,Residential & Low-Income,,4590.147,,,,,Protected,,Protected,No gas,No gas,No gas
+472,107,Gloucester,2014,Residential & Low-Income,1246495.839,102718.966,4228.757,689176.338,4987993.0,111178.764,,,,,,
+473,108,Goshen,2014,Residential & Low-Income,,3618.966,,,,,Protected,,Protected,No gas,No gas,No gas
+474,109,Gosnold,2014,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+475,110,Grafton,2014,Residential & Low-Income,832920.281,64774.728,2702.594,299764.13,3129138.0,56288.583,,,,,,
+476,111,Granby,2014,Residential & Low-Income,248517.624,24826.505,814.424,,191584.0,,,,,Protected,,Protected
+477,112,Granville,2014,Residential & Low-Income,,6123.623,,,,,Protected,,Protected,No gas,No gas,No gas
+478,113,Great Barrington,2014,Residential & Low-Income,269791.578,24473.79,654.201,,726061.0,,,,,Protected,,Protected
+479,114,Greenfield,2014,Residential & Low-Income,737749.576,48143.438,1477.852,157090.97,2483448.0,24388.799,,,,,,
+480,115,Groton,2014,Residential & Low-Income,,,,,1060660.0,,Municipal,Municipal,Municipal,Protected,,Protected
+481,116,Groveland,2014,Residential & Low-Income,,,,113418.573,1619154.0,28412.301,Municipal,Municipal,Municipal,,,
+482,117,Hadley,2014,Residential & Low-Income,222043.014,18126.259,747.394,,408295.0,,,,,Protected,,Protected
+483,118,Halifax,2014,Residential & Low-Income,213205.632,27098.432,863.185,,564361.0,,,,,Protected,,Protected
+484,119,Hamilton,2014,Residential & Low-Income,428574.752,26401.709,1125.104,,988138.0,,,,,Protected,,Protected
+485,120,Hampden,2014,Residential & Low-Income,177029.039,19720.266,634.259,,778881.0,,,,,Protected,,Protected
+486,121,Hancock,2014,Residential & Low-Income,,1057.845,,,,,Protected,,Protected,No gas,No gas,No gas
+487,122,Hanover,2014,Residential & Low-Income,376065.487,49966.157,1676.45,,3033524.0,,,,,Protected,,Protected
+488,123,Hanson,2014,Residential & Low-Income,261735.284,35770.155,1169.663,,1807035.0,,,,,Protected,,Protected
+489,124,Hardwick,2014,Residential & Low-Income,88676.517,9333.134,313.655,,,,,,,No gas,No gas,No gas
+490,125,Harvard,2014,Residential & Low-Income,237096.3,22232.536,730.082,,308356.0,,,,,Protected,,Protected
+491,126,Harwich,2014,Residential & Low-Income,1328834.7,59753.57,1930.668,419518.073,5222414.0,113896.98,,,,,,
+492,127,Hatfield,2014,Residential & Low-Income,133152.691,11193.506,468.676,,575098.0,,,,,Protected,,Protected
+493,128,Haverhill,2014,Residential & Low-Income,1666454.807,170137.593,6507.686,1754401.501,16738047.0,265782.029,,,,,,
+494,129,Hawley,2014,Residential & Low-Income,,1220.209,,,,,Protected,,Protected,No gas,No gas,No gas
+495,130,Heath,2014,Residential & Low-Income,,2178.353,,,,,Protected,,Protected,No gas,No gas,No gas
+496,131,Hingham,2014,Residential & Low-Income,,,,410630.314,4686820.0,103563.858,Municipal,Municipal,Municipal,,,
+497,132,Hinsdale,2014,Residential & Low-Income,,7784.652,,,,,Protected,,Protected,No gas,No gas,No gas
+498,133,Holbrook,2014,Residential & Low-Income,424957.07,34081.375,1292.466,,1708697.0,,,,,Protected,,Protected
+499,134,Holden,2014,Residential & Low-Income,,,,,1061067.0,,Municipal,Municipal,Municipal,Protected,,Protected
+500,135,Holland,2014,Residential & Low-Income,,11428.71,,,,,Protected,,Protected,No gas,No gas,No gas
+501,136,Holliston,2014,Residential & Low-Income,462112.665,45288.457,1540.233,281523.36,3280051.0,54118.07,,,,,,
+502,137,Holyoke,2014,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,Municipal,Municipal,Municipal
+503,138,Hopedale,2014,Residential & Low-Income,310274.714,22052.528,893.545,,393069.0,,,,,Protected,,Protected
+504,139,Hopkinton,2014,Residential & Low-Income,570024.674,57316.729,2004.393,565405.13,3179036.0,69683.525,,,,,,
+505,140,Hubbardston,2014,Residential & Low-Income,126655.591,15391.172,503.929,,,,,,,No gas,No gas,No gas
+506,141,Hudson,2014,Residential & Low-Income,,,,397894.44,4672950.0,76368.448,Municipal,Municipal,Municipal,,,
+507,142,Hull,2014,Residential & Low-Income,,,,148858.254,3386417.0,54809.616,Municipal,Municipal,Municipal,,,
+508,143,Huntington,2014,Residential & Low-Income,,7172.495,,,,,Protected,,Protected,No gas,No gas,No gas
+509,144,Ipswich,2014,Residential & Low-Income,,,,294163.978,2119122.0,61210.524,Municipal,Municipal,Municipal,,,
+510,145,Kingston,2014,Residential & Low-Income,440076.903,40989.398,1489.557,,1363597.0,,,,,Protected,,Protected
+511,146,Lakeville,2014,Residential & Low-Income,,2810.134,,,236929.0,,Protected,,Protected,Protected,,Protected
+512,147,Lancaster,2014,Residential & Low-Income,345918.605,35058.919,1023.975,,220597.0,,,,,Protected,,Protected
+513,148,Lanesborough,2014,Residential & Low-Income,,,,,178362.0,,Protected,Protected,Protected,Protected,,Protected
+514,149,Lawrence,2014,Residential & Low-Income,3714068.286,154218.894,8524.486,305817.815,28725452.0,25694.626,,,,,,
+515,150,Lee,2014,Residential & Low-Income,132939.331,82359.053,778.19,,1431373.0,,,,,Protected,,Protected
+516,151,Leicester,2014,Residential & Low-Income,311283.661,39446.099,1236.249,,123388.0,,,,,Protected,,Protected
+517,152,Lenox,2014,Residential & Low-Income,133834.92,20100.173,692.099,198283.31,1799973.0,23806.457,,,,,,
+518,153,Leominster,2014,Residential & Low-Income,1217750.085,130247.295,4701.092,503391.274,5133576.0,87052.144,,,,,,
+519,154,Leverett,2014,Residential & Low-Income,76182.919,7021.192,263.636,,,,,,,No gas,No gas,No gas
+520,155,Lexington,2014,Residential & Low-Income,1206895.837,94095.59,3935.552,580008.701,6999379.0,152498.561,,,,,,
+521,156,Leyden,2014,Residential & Low-Income,,2683.502,,,,,Protected,,Protected,No gas,No gas,No gas
+522,157,Lincoln,2014,Residential & Low-Income,323174.938,25770.65,914.368,,1717174.0,,,,,Protected,,Protected
+523,158,Littleton,2014,Residential & Low-Income,,,,99425.653,1214788.0,22765.499,Municipal,Municipal,Municipal,,,
+524,159,Longmeadow,2014,Residential & Low-Income,371808.238,54072.158,2046.669,217370.841,6459885.0,36206.116,,,,,,
+525,160,Lowell,2014,Residential & Low-Income,2565993.525,236757.128,10937.89,2239049.548,25220654.0,405626.135,,,,,,
+526,161,Ludlow,2014,Residential & Low-Income,498549.709,62820.23,2352.282,104915.435,3421560.0,15892.855,,,,,,
+527,162,Lunenburg,2014,Residential & Low-Income,388275.689,37280.832,678.677,,608220.44,,,,,Protected,,Protected
+528,163,Lynn,2014,Residential & Low-Income,1786674.837,206683.211,8105.906,1055656.625,17886949.0,204009.761,,,,,,
+529,164,Lynnfield,2014,Residential & Low-Income,,,,226461.41,3170380.0,52730.768,Municipal,Municipal,Municipal,,,
+530,165,Malden,2014,Residential & Low-Income,1409227.044,134705.499,6009.828,702326.716,12059780.0,123395.376,,,,,,
+531,166,Manchester,2014,Residential & Low-Income,168118.696,21713.257,757.786,167990.766,2124250.0,27493.072,,,,,,
+532,167,Mansfield,2014,Residential & Low-Income,,,,99400.293,4838973.0,15305.234,Municipal,Municipal,Municipal,,,
+533,168,Marblehead,2014,Residential & Low-Income,,,,463633.21,6863563.0,115326.393,Municipal,Municipal,Municipal,,,
+534,169,Marion,2014,Residential & Low-Income,168560.745,19778.356,674.089,,876126.0,,,,,Protected,,Protected
+535,170,Marlborough,2014,Residential & Low-Income,1136174.007,121320.552,4993.514,738345.036,7456733.0,140918.558,,,,,,
+536,171,Marshfield,2014,Residential & Low-Income,418321.711,78594.136,2776.879,162066.152,7038174.0,23847.082,,,,,,
+537,172,Mashpee,2014,Residential & Low-Income,984123.268,71392.12,2295.332,666487.516,6307568.0,188644.41,,,,,,
+538,173,Mattapoisett,2014,Residential & Low-Income,233644.415,23242.611,822.65,,1260893.0,,,,,Protected,,Protected
+539,174,Maynard,2014,Residential & Low-Income,267857.508,27457.705,986.242,165478.62,2408414.0,33544.593,,,,,,
+540,175,Medfield,2014,Residential & Low-Income,435666.581,37791.269,1437.614,152069.878,3557697.0,21384.56,,,,,,
+541,176,Medford,2014,Residential & Low-Income,1132208.35,141199.721,5710.507,932442.213,14474626.0,200422.461,,,,,,
+542,177,Medway,2014,Residential & Low-Income,384905.07,35831.573,1443.642,,2365317.0,,,,,Protected,,Protected
+543,178,Melrose,2014,Residential & Low-Income,805907.581,74841.222,3332.15,453503.068,7043880.0,88946.234,,,,,,
+544,179,Mendon,2014,Residential & Low-Income,257919.855,23581.94,782.552,,87953.0,,,,,Protected,,Protected
+545,180,Merrimac,2014,Residential & Low-Income,,,,100326.087,1564005.0,26982.073,Municipal,Municipal,Municipal,,,
+546,181,Methuen,2014,Residential & Low-Income,816607.565,141144.707,4691.999,413219.918,14452960.0,46606.639,,,,,,
+547,182,Middleborough,2014,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,Municipal,Municipal,Municipal
+548,183,Middlefield,2014,Residential & Low-Income,,1830.342,,,,,Protected,,Protected,No gas,No gas,No gas
+549,184,Middleton,2014,Residential & Low-Income,,,,,1183543.0,,Municipal,Municipal,Municipal,Protected,,Protected
+550,185,Milford,2014,Residential & Low-Income,859450.976,84081.209,3334.064,179889.12,4116190.0,55986.059,,,,,,
+551,186,Millbury,2014,Residential & Low-Income,739280.155,49262.608,2104.858,,1353779.0,,,,,Protected,,Protected
+552,187,Millis,2014,Residential & Low-Income,262010.191,26151.577,855.427,,1037809.0,,,,,Protected,,Protected
+553,188,Millville,2014,Residential & Low-Income,110157.296,10234.47,351.714,,,,,,,Protected,Protected,Protected
+554,189,Milton,2014,Residential & Low-Income,551257.4,76063.702,2159.163,573772.503,8208006.0,143446.4,,,,,,
+555,190,Monroe,2014,Residential & Low-Income,,472.1,,,,,Protected,,Protected,No gas,No gas,No gas
+556,191,Monson,2014,Residential & Low-Income,315075.232,30695.932,1041.835,,129595.0,,,,,Protected,,Protected
+557,192,Montague,2014,Residential & Low-Income,465140.42,25155.819,1225.427,,644952.0,,,,,Protected,,Protected
+558,193,Monterey,2014,Residential & Low-Income,,6475.264,,,,,Protected,,Protected,No gas,No gas,No gas
+559,194,Montgomery,2014,Residential & Low-Income,,3146.771,,,,,Protected,,Protected,No gas,No gas,No gas
+560,195,Mount Washington,2014,Residential & Low-Income,,1035.058,,,,,Protected,,Protected,No gas,No gas,No gas
+561,196,Nahant,2014,Residential & Low-Income,71695.212,11373.662,378.9,67121.336,1427718.0,14959.143,,,,,,
+562,197,Nantucket,2014,Residential & Low-Income,466412.775,100654.794,2626.303,,,,,,,No gas,No gas,No gas
+563,198,Natick,2014,Residential & Low-Income,1024669.207,107127.301,3761.843,789425.099,6969666.0,140315.171,,,,,,
+564,199,Needham,2014,Residential & Low-Income,1091312.845,98633.133,3511.787,460161.659,6740228.0,85470.039,,,,,,
+565,200,New Ashford,2014,Residential & Low-Income,,1005.948,,,,,Protected,,Protected,No gas,No gas,No gas
+566,201,New Bedford,2014,Residential & Low-Income,1311763.303,165874.738,6400.548,1470682.18,22297109.0,220582.527,,,,,,
+567,202,New Braintree,2014,Residential & Low-Income,,3916.587,,,,,Protected,,Protected,No gas,No gas,No gas
+568,203,New Marlborough,2014,Residential & Low-Income,,3963.553,,,,,Protected,,Protected,No gas,No gas,No gas
+569,204,New Salem,2014,Residential & Low-Income,,3673.815,,,,,Protected,,Protected,No gas,No gas,No gas
+570,205,Newbury,2014,Residential & Low-Income,372695.893,27968.417,1123.356,,681424.0,,,,,Protected,,Protected
+571,206,Newburyport,2014,Residential & Low-Income,554057.836,57583.59,2456.656,691943.096,5388103.0,106602.699,,,,,,
+572,207,Newton,2014,Residential & Low-Income,2206148.42,281822.979,9442.32,1890824.017,31474205.0,518403.391,,,,,,
+573,208,Norfolk,2014,Residential & Low-Income,447978.545,30014.424,1311.569,,455357.0,,,,,Protected,,Protected
+574,209,North Adams,2014,Residential & Low-Income,322468.668,31450.315,834.764,232856.6,3191199.736,25623.255,,,,,,
+575,210,North Andover,2014,Residential & Low-Income,1202422.387,97742.866,3639.265,161454.144,7153954.0,30333.489,,,,,,
+576,211,North Attleborough,2014,Residential & Low-Income,,,,,2312638.161,,,,,,,
+577,212,North Brookfield,2014,Residential & Low-Income,137218.212,16535.176,608.342,,457775.0,,,,,Protected,,Protected
+578,213,North Reading,2014,Residential & Low-Income,,,,143210.9,2856141.0,48351.96,Municipal,Municipal,Municipal,,,
+579,214,Northampton,2014,Residential & Low-Income,830341.183,75033.758,3345.027,269386.474,6847885.0,42160.241,,,,,,
+580,215,Northborough,2014,Residential & Low-Income,610373.796,56300.589,1992.091,160470.36,1941028.0,34589.199,,,,,,
+581,216,Northbridge,2014,Residential & Low-Income,509753.954,52121.347,1886.4,,1445927.0,,,,,Protected,,Protected
+582,217,Northfield,2014,Residential & Low-Income,103056.918,9531.78,379.211,,,,,,,No gas,No gas,No gas
+583,218,Norton,2014,Residential & Low-Income,433975.837,61678.054,2017.032,113521.38,3284523.0,16278.346,,,,,,
+584,219,Norwell,2014,Residential & Low-Income,366180.86,43724.14,1462.444,,1866809.0,,,,,Protected,,Protected
+585,220,Norwood,2014,Residential & Low-Income,,,,384858.76,6497217.0,110664.137,Municipal,Municipal,Municipal,,,
+586,221,Oak Bluffs,2014,Residential & Low-Income,418329.15,29518.966,409.137,,,,,,,No gas,No gas,No gas
+587,222,Oakham,2014,Residential & Low-Income,,7867.088,,,,,Protected,,Protected,No gas,No gas,No gas
+588,223,Orange,2014,Residential & Low-Income,256233.844,26388.414,976.638,,,,,,,No gas,No gas,No gas
+589,224,Orleans,2014,Residential & Low-Income,889618.855,35450.423,1604.132,112257.74,1315584.0,26705.175,,,,,,
+590,225,Otis,2014,Residential & Low-Income,,10230.829,,,,,Protected,,Protected,No gas,No gas,No gas
+591,226,Oxford,2014,Residential & Low-Income,953954.643,52320.262,2161.872,,,,,,,No gas,No gas,No gas
+592,227,Palmer,2014,Residential & Low-Income,565569.083,42408.334,1718.204,,93544.0,,,,,Protected,,Protected
+593,228,Paxton,2014,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+594,229,Peabody,2014,Residential & Low-Income,,,,1127580.036,8970036.0,205991.85,Municipal,Municipal,Municipal,,,
+595,230,Pelham,2014,Residential & Low-Income,,4821.034,,,,,Protected,,Protected,No gas,No gas,No gas
+596,231,Pembroke,2014,Residential & Low-Income,512646.47,62206.08,2164.002,223841.226,3164663.0,48011.462,,,,,,
+597,232,Pepperell,2014,Residential & Low-Income,477576.687,40348.717,1520.079,101653.65,1638138.0,19502.674,,,,,,
+598,233,Peru,2014,Residential & Low-Income,,2984.524,,,,,Protected,,Protected,No gas,No gas,No gas
+599,234,Petersham,2014,Residential & Low-Income,,4544.077,,,,,Protected,,Protected,No gas,No gas,No gas
+600,235,Phillipston,2014,Residential & Low-Income,,6169.134,,,,,Protected,,Protected,No gas,No gas,No gas
+601,236,Pittsfield,2014,Residential & Low-Income,1114910.419,121256.116,5059.765,724317.1,12622362.0,94627.114,,,,,,
+602,237,Plainfield,2014,Residential & Low-Income,,2417.745,,,,,Protected,,Protected,No gas,No gas,No gas
+603,238,Plainville,2014,Residential & Low-Income,353478.749,30957.004,1142.517,,633950.218,,,,,Protected,,Protected
+604,239,Plymouth,2014,Residential & Low-Income,1549991.722,166969.587,3618.603,520933.724,6075799.0,92221.396,,,,,,
+605,240,Plympton,2014,Residential & Low-Income,82646.83,9971.357,307.936,,142213.0,,,,,Protected,,Protected
+606,241,Princeton,2014,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+607,242,Provincetown,2014,Residential & Low-Income,325433.934,15532.238,732.743,,,,,,,No gas,No gas,No gas
+608,243,Quincy,2014,Residential & Low-Income,1734304.621,227795.964,9372.308,1192557.046,18089977.0,253430.805,,,,,,
+609,244,Randolph,2014,Residential & Low-Income,640544.377,90130.239,3147.286,150580.882,6738474.0,20681.142,,,,,,
+610,245,Raynham,2014,Residential & Low-Income,,,,,1140489.0,,Municipal,Municipal,Municipal,Protected,,Protected
+611,246,Reading,2014,Residential & Low-Income,,,,501309.189,3805684.0,91711.382,Municipal,Municipal,Municipal,,,
+612,247,Rehoboth,2014,Residential & Low-Income,449091.058,46342.27,1542.513,,,,,,,Protected,Protected,Protected
+613,248,Revere,2014,Residential & Low-Income,1108770.193,124133.789,4815.817,572420.056,10735648.0,108197.748,,,,,,
+614,249,Richmond,2014,Residential & Low-Income,,8177.864,,,,,Protected,,Protected,No gas,No gas,No gas
+615,250,Rochester,2014,Residential & Low-Income,197274.245,18577.907,640.09,,258520.0,,,,,Protected,,Protected
+616,251,Rockland,2014,Residential & Low-Income,396708.666,54533.274,1778.681,206426.225,3396434.0,42652.816,,,,,,
+617,252,Rockport,2014,Residential & Low-Income,344762.469,32072.644,1197.754,,18555.0,,,,,Protected,,Protected
+618,253,Rowe,2014,Residential & Low-Income,,1731.444,,,,,Protected,,Protected,No gas,No gas,No gas
+619,254,Rowley,2014,Residential & Low-Income,,,,157460.973,1264874.0,36964.209,Municipal,Municipal,Municipal,,,
+620,255,Royalston,2014,Residential & Low-Income,,4474.277,,,,,Protected,,Protected,No gas,No gas,No gas
+621,256,Russell,2014,Residential & Low-Income,,2767.763,,,,,Protected,,Protected,No gas,No gas,No gas
+622,257,Rutland,2014,Residential & Low-Income,296769.284,27955.47,1013.594,,,,,,,No gas,No gas,No gas
+623,258,Salem,2014,Residential & Low-Income,1503671.027,107491.446,4657.226,677653.902,8823901.0,119526.647,,,,,,
+624,259,Salisbury,2014,Residential & Low-Income,299400.177,31552.486,1191.281,232406.04,1823887.0,39030.371,,,,,,
+625,260,Sandisfield,2014,Residential & Low-Income,,5251.847,,,,,Protected,,Protected,No gas,No gas,No gas
+626,261,Sandwich,2014,Residential & Low-Income,1632238.675,74811.834,3396.384,281626.808,4410452.0,80494.305,,,,,,
+627,262,Saugus,2014,Residential & Low-Income,1773529.253,89348.112,4331.94,332273.818,5580863.0,64156.2,,,,,,
+628,263,Savoy,2014,Residential & Low-Income,,2558.785,,,,,Protected,,Protected,No gas,No gas,No gas
+629,264,Scituate,2014,Residential & Low-Income,592126.168,63213.889,2492.348,241391.376,5298704.0,36068.63,,,,,,
+630,265,Seekonk,2014,Residential & Low-Income,419286.778,46570.738,1704.201,,2166017.0,,,,,Protected,,Protected
+631,266,Sharon,2014,Residential & Low-Income,396035.762,51250.157,1959.395,196843.857,5587367.0,33150.039,,,,,,
+632,267,Sheffield,2014,Residential & Low-Income,115455.872,15104.456,424.165,,,,,,,No gas,No gas,No gas
+633,268,Shelburne,2014,Residential & Low-Income,111609.718,9363.276,394.342,,,,,,,No gas,No gas,No gas
+634,269,Sherborn,2014,Residential & Low-Income,149608.954,19027.711,530.979,,630008.0,,,,,Protected,,Protected
+635,270,Shirley,2014,Residential & Low-Income,220282.541,23060.39,742.207,,389023.0,,,,,Protected,,Protected
+636,271,Shrewsbury,2014,Residential & Low-Income,,,,472728.44,7200738.0,94712.841,Municipal,Municipal,Municipal,,,
+637,272,Shutesbury,2014,Residential & Low-Income,,6575.526,,,,,Protected,,Protected,No gas,No gas,No gas
+638,273,Somerset,2014,Residential & Low-Income,313911.207,51752.906,1851.537,154900.518,5184564.242,24399.099,,,,,,
+639,274,Somerville,2014,Residential & Low-Income,1024782.575,118876.407,5223.803,1191377.143,17706122.0,274393.09,,,,,,
+640,275,South Hadley,2014,Residential & Low-Income,,,,,3498236.0,,Municipal,Municipal,Municipal,Protected,,Protected
+641,276,Southampton,2014,Residential & Low-Income,157610.49,20285.269,722.412,,,,,,,Municipal,Municipal,Municipal
+642,277,Southborough,2014,Residential & Low-Income,662361.468,42295.62,1611.42,289472.1,1425363.0,38784.425,,,,,,
+643,278,Southbridge,2014,Residential & Low-Income,334583.008,54017.251,1661.317,,2210440.0,,,,,Protected,,Protected
+644,279,Southwick,2014,Residential & Low-Income,261315.358,35831.918,1158.636,,548185.0,,,,,Protected,,Protected
+645,280,Spencer,2014,Residential & Low-Income,420873.075,42796.201,1519.209,,981611.0,,,,,Protected,,Protected
+646,281,Springfield,2014,Residential & Low-Income,3508000.229,370495.701,13901.238,599122.418,51319172.0,94770.596,,,,,,
+647,282,Sterling,2014,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+648,283,Stockbridge,2014,Residential & Low-Income,,12495.153,,,445024.0,,Protected,,Protected,Protected,,Protected
+649,284,Stoneham,2014,Residential & Low-Income,693818.559,58478.309,2413.785,257523.669,3406445.0,66596.579,,,,,,
+650,285,Stoughton,2014,Residential & Low-Income,635437.763,82589.366,3033.246,153900.074,6016166.0,23991.0,,,,,,
+651,286,Stow,2014,Residential & Low-Income,,,,,695157.0,,Municipal,Municipal,Municipal,Protected,,Protected
+652,287,Sturbridge,2014,Residential & Low-Income,563941.853,39868.033,1599.363,,,,,,,No gas,No gas,No gas
+653,288,Sudbury,2014,Residential & Low-Income,778225.3,62911.224,2664.358,625336.119,5402800.0,125266.535,,,,,,
+654,289,Sunderland,2014,Residential & Low-Income,137844.337,9694.248,421.365,,,,,,,Protected,Protected,Protected
+655,290,Sutton,2014,Residential & Low-Income,460599.873,37444.361,1414.12,,209517.0,,,,,Protected,,Protected
+656,291,Swampscott,2014,Residential & Low-Income,363222.563,46697.162,1630.975,250018.06,4532621.0,46916.601,,,,,,
+657,292,Swansea,2014,Residential & Low-Income,329259.233,48534.588,1755.325,131301.508,3979212.936,19171.173,,,,,,
+658,293,Taunton,2014,Residential & Low-Income,,,,132673.907,9360903.0,17515.777,Municipal,Municipal,Municipal,,,
+659,294,Templeton,2014,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+660,295,Tewksbury,2014,Residential & Low-Income,992131.097,94858.582,3540.754,575281.54,7381461.0,112702.536,,,,,,
+661,296,Tisbury,2014,Residential & Low-Income,813439.481,24165.911,2027.78,,,,,,,No gas,No gas,No gas
+662,297,Tolland,2014,Residential & Low-Income,,3074.931,,,,,Protected,,Protected,No gas,No gas,No gas
+663,298,Topsfield,2014,Residential & Low-Income,224077.279,24008.141,898.125,,1408184.0,,,,,Protected,,Protected
+664,299,Townsend,2014,Residential & Low-Income,209712.618,27355.607,535.399,,1251211.67,,,,,Protected,,Protected
+665,300,Truro,2014,Residential & Low-Income,271955.078,12176.856,388.697,,,,,,,No gas,No gas,No gas
+666,301,Tyngsborough,2014,Residential & Low-Income,250576.639,41414.438,1262.671,195409.286,2934058.0,39661.388,,,,,,
+667,302,Tyringham,2014,Residential & Low-Income,,2592.815,,,,,Protected,,Protected,No gas,No gas,No gas
+668,303,Upton,2014,Residential & Low-Income,332634.001,28179.683,1070.994,,589360.0,,,,,Protected,,Protected
+669,304,Uxbridge,2014,Residential & Low-Income,447887.493,46222.523,1601.424,,1276714.0,,,,,Protected,,Protected
+670,305,Wakefield,2014,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,Municipal,Municipal,Municipal
+671,306,Wales,2014,Residential & Low-Income,,7654.885,,,,,Protected,,Protected,No gas,No gas,No gas
+672,307,Walpole,2014,Residential & Low-Income,602973.645,68999.812,2550.303,181416.151,5362349.0,24684.001,,,,,,
+673,308,Waltham,2014,Residential & Low-Income,,136508.105,,195641.7,10988624.0,147732.249,Protected,,Protected,,,
+674,309,Ware,2014,Residential & Low-Income,267109.076,36008.137,725.692,,,,,,,No gas,No gas,No gas
+675,310,Wareham,2014,Residential & Low-Income,703617.385,72317.61,2390.249,398323.485,4390328.0,101930.009,,,,,,
+676,311,Warren,2014,Residential & Low-Income,132064.458,17867.596,460.45,,350526.698,,,,,Protected,,Protected
+677,312,Warwick,2014,Residential & Low-Income,,2543.459,,,,,Protected,,Protected,No gas,No gas,No gas
+678,313,Washington,2014,Residential & Low-Income,,2110.889,,,,,Protected,,Protected,No gas,No gas,No gas
+679,314,Watertown,2014,Residential & Low-Income,642153.535,72898.288,3285.766,511837.378,8750350.0,156743.179,,,,,,
+680,315,Wayland,2014,Residential & Low-Income,393667.27,48756.463,1772.701,324014.311,4251552.0,75061.187,,,,,,
+681,316,Webster,2014,Residential & Low-Income,732729.973,59466.25,2469.953,,1535662.0,,,,,Protected,,Protected
+682,317,Wellesley,2014,Residential & Low-Income,,,,590042.202,10652290.0,167085.849,Municipal,Municipal,Municipal,,,
+683,318,Wellfleet,2014,Residential & Low-Income,565636.387,19448.303,1034.522,,,,,,,No gas,No gas,No gas
+684,319,Wendell,2014,Residential & Low-Income,,3093.525,,,,,Protected,,Protected,No gas,No gas,No gas
+685,320,Wenham,2014,Residential & Low-Income,127542.864,14496.753,427.101,,859361.0,,,,,Protected,,Protected
+686,321,West Boylston,2014,Residential & Low-Income,,,,199191.07,904533.0,26348.508,Municipal,Municipal,Municipal,,,
+687,322,West Bridgewater,2014,Residential & Low-Income,163808.93,24019.249,764.323,,1094990.0,,,,,Protected,,Protected
+688,323,West Brookfield,2014,Residential & Low-Income,170806.227,13773.736,673.4,,300295.0,,,,,Protected,,Protected
+689,324,West Newbury,2014,Residential & Low-Income,157890.606,18651.066,536.312,,148454.0,,,,,Protected,,Protected
+690,325,West Springfield,2014,Residential & Low-Income,734675.864,73570.973,3381.521,205885.152,7580932.0,31815.86,,,,,,
+691,326,West Stockbridge,2014,Residential & Low-Income,,5104.765,,,,,Protected,,Protected,No gas,No gas,No gas
+692,327,West Tisbury,2014,Residential & Low-Income,,18481.075,,,,,Protected,,Protected,No gas,No gas,No gas
+693,328,Westborough,2014,Residential & Low-Income,532349.688,59011.383,2218.129,259566.91,3361143.0,55259.807,,,,,,
+694,329,Westfield,2014,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,Municipal,Municipal,Municipal
+695,330,Westford,2014,Residential & Low-Income,751444.341,78164.144,3727.812,571805.138,6646018.0,108301.952,,,,,,
+696,331,Westhampton,2014,Residential & Low-Income,,6366.06,,,,,Protected,,Protected,No gas,No gas,No gas
+697,332,Westminster,2014,Residential & Low-Income,344474.338,26537.593,954.574,,280980.97,,,,,Protected,,Protected
+698,333,Weston,2014,Residential & Low-Income,291700.338,63981.574,1365.22,292929.476,6513424.0,78352.982,,,,,,
+699,334,Westport,2014,Residential & Low-Income,378830.012,51349.29,1860.799,113707.988,3536900.388,16562.044,,,,,,
+700,335,Westwood,2014,Residential & Low-Income,572211.06,51141.57,1816.929,188242.97,2810784.0,36820.828,,,,,,
+701,336,Weymouth,2014,Residential & Low-Income,1942797.28,167109.597,6590.189,717281.971,8179479.0,137292.109,,,,,,
+702,337,Whately,2014,Residential & Low-Income,,4769.03,,,,,Protected,,Protected,Protected,Protected,Protected
+703,338,Whitman,2014,Residential & Low-Income,349366.872,46302.47,1485.752,169643.713,2389894.0,32061.439,,,,,,
+704,339,Wilbraham,2014,Residential & Low-Income,472184.224,51750.613,1772.137,157546.592,3088554.0,21455.655,,,,,,
+705,340,Williamsburg,2014,Residential & Low-Income,131199.959,8584.552,453.242,,,,,,,No gas,No gas,No gas
+706,341,Williamstown,2014,Residential & Low-Income,185029.57,20539.256,805.838,,1381812.0,,,,,Protected,,Protected
+707,342,Wilmington,2014,Residential & Low-Income,,,,101113.109,2271171.0,36447.182,Municipal,Municipal,Municipal,,,
+708,343,Winchendon,2014,Residential & Low-Income,251652.256,32349.672,1041.773,,,,,,,No gas,No gas,No gas
+709,344,Winchester,2014,Residential & Low-Income,869155.414,71258.592,2884.637,395083.124,6566390.0,103984.371,,,,,,
+710,345,Windsor,2014,Residential & Low-Income,,3517.466,,,,,Protected,,Protected,No gas,No gas,No gas
+711,346,Winthrop,2014,Residential & Low-Income,1461029.285,45281.001,3397.908,537531.492,5251283.0,110237.95,,,,,,
+712,347,Woburn,2014,Residential & Low-Income,1326154.294,98021.44,4100.768,534317.768,5875825.0,140829.679,,,,,,
+713,348,Worcester,2014,Residential & Low-Income,4091569.453,437167.37,16921.498,4064793.11,35187764.0,682362.391,,,,,,
+714,349,Worthington,2014,Residential & Low-Income,,4768.489,,,,,Protected,,Protected,No gas,No gas,No gas
+715,350,Wrentham,2014,Residential & Low-Income,385957.232,43409.966,1424.47,,1329605.0,,,,,Protected,,Protected
+716,351,Yarmouth,2014,Residential & Low-Income,2395026.916,99436.499,3476.426,1055631.717,9469797.0,232826.277,,,,,,
+731,1,Abington,2015,Residential & Low-Income,398829.588,54312.679,1518.034,208913.858,2523834.0,35757.39,,,,,,
+732,2,Acton,2015,Residential & Low-Income,1189741.159,71185.13,3111.354,715355.918,4735895.0,130985.053,,,,,,
+733,3,Acushnet,2015,Residential & Low-Income,289649.035,30938.243,884.037,,1816416.0,,,,,Protected,,Protected
+734,4,Adams,2015,Residential & Low-Income,187703.093,22973.898,853.436,,1921132.0,,,,,Protected,,Protected
+735,5,Agawam,2015,Residential & Low-Income,763651.991,97743.748,3330.268,654154.545,5949066.5,74917.641,,,,,,
+736,6,Alford,2015,Residential & Low-Income,,3544.95,,,,,Protected,,Protected,No gas,No gas,No gas
+737,7,Amesbury,2015,Residential & Low-Income,364748.5,49131.349,1706.231,294054.626,3597422.0,55859.764,,,,,,
+738,8,Amherst,2015,Residential & Low-Income,763996.25,58806.936,1829.712,133062.622,1577804.0,14024.844,,,,,,
+739,9,Andover,2015,Residential & Low-Income,1793091.46,115790.018,5014.048,724871.144,10071977.0,109832.346,,,,,,
+740,10,Arlington,2015,Residential & Low-Income,1078394.381,111997.416,4267.727,996677.058,11369266.0,240339.202,,,,,,
+741,11,Ashburnham,2015,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+742,12,Ashby,2015,Residential & Low-Income,,6460.772,,,85722.11,,Protected,,Protected,Protected,,Protected
+743,13,Ashfield,2015,Residential & Low-Income,132423.776,6079.71,303.849,,,,,,,No gas,No gas,No gas
+744,14,Ashland,2015,Residential & Low-Income,626778.433,54561.347,1956.067,359906.27,5961540.0,71339.493,,,,,,
+745,15,Athol,2015,Residential & Low-Income,407801.346,36496.555,896.304,,,,,,,No gas,No gas,No gas
+746,16,Attleboro,2015,Residential & Low-Income,1650266.63,132116.387,4771.008,418671.159,7341853.0,51958.894,,,,,,
+747,17,Auburn,2015,Residential & Low-Income,892570.211,57908.113,2188.334,,1012467.0,,,,,Protected,,Protected
+748,18,Avon,2015,Residential & Low-Income,88197.329,14276.684,400.742,,885160.5,,,,,Protected,,Protected
+749,19,Ayer,2015,Residential & Low-Income,183456.38,25760.44,796.8,104091.387,1257516.0,19120.122,,,,,,
+750,20,Barnstable,2015,Residential & Low-Income,4718696.761,196748.144,8558.549,1299975.557,17997416.0,319992.882,,,,,,
+751,21,Barre,2015,Residential & Low-Income,172366.786,15699.528,565.724,,,,,,,No gas,No gas,No gas
+752,22,Becket,2015,Residential & Low-Income,141381.21,10542.838,320.3,,,,,,,No gas,No gas,No gas
+753,23,Bedford,2015,Residential & Low-Income,1230798.297,40343.896,2578.339,515524.547,3917960.0,103495.579,,,,,,
+754,24,Belchertown,2015,Residential & Low-Income,715424.715,51353.544,1923.466,,,,,,,No gas,No gas,No gas
+755,25,Bellingham,2015,Residential & Low-Income,497109.143,57886.566,1752.386,156560.092,1498823.0,16890.198,,,,,,
+756,26,Belmont,2015,Residential & Low-Income,,,,508933.741,8158691.0,138274.96,Municipal,Municipal,Municipal,,,
+757,27,Berkley,2015,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,Protected,Protected,Protected
+758,28,Berlin,2015,Residential & Low-Income,,11873.747,,,119165.0,,Protected,,Protected,Protected,,Protected
+759,29,Bernardston,2015,Residential & Low-Income,122079.27,7265.498,274.403,,,,,,,No gas,No gas,No gas
+760,30,Beverly,2015,Residential & Low-Income,1197913.427,112290.063,4191.562,460961.607,7401707.0,80099.75,,,,,,
+761,31,Billerica,2015,Residential & Low-Income,976598.071,125130.521,3975.927,736682.705,9566708.0,125496.189,,,,,,
+762,32,Blackstone,2015,Residential & Low-Income,253607.433,26830.257,862.359,,,,,,,Protected,Protected,Protected
+763,33,Blandford,2015,Residential & Low-Income,,4978.734,,,,,Protected,,Protected,No gas,No gas,No gas
+764,34,Bolton,2015,Residential & Low-Income,242523.616,21375.236,619.881,,,,,,,Protected,Protected,Protected
+765,35,Boston,2015,Residential & Low-Income,18095592.795,1414323.542,50593.719,9995449.439,115697081.0,1943460.295,,,,,,
+766,36,Bourne,2015,Residential & Low-Income,1344206.373,65607.734,2152.038,319413.756,5330723.0,93129.754,,,,,,
+767,37,Boxborough,2015,Residential & Low-Income,,,,,492537.0,,Municipal,Municipal,Municipal,Protected,,Protected
+768,38,Boxford,2015,Residential & Low-Income,319913.436,36526.787,1149.93,146109.422,2188466.0,26479.303,,,,,,
+769,39,Boylston,2015,Residential & Low-Income,,,,,139951.0,,Municipal,Municipal,Municipal,Protected,,Protected
+770,40,Braintree,2015,Residential & Low-Income,,,,465299.85,6085325.0,110583.338,Municipal,Municipal,Municipal,,,
+771,41,Brewster,2015,Residential & Low-Income,1682049.91,53232.048,1857.864,179712.26,2216802.0,45937.136,,,,,,
+772,42,Bridgewater,2015,Residential & Low-Income,589364.684,74407.578,2113.785,274810.647,3746257.0,41149.128,,,,,,
+773,43,Brimfield,2015,Residential & Low-Income,169867.497,13797.432,517.401,,,,,,,No gas,No gas,No gas
+774,44,Brockton,2015,Residential & Low-Income,1527296.975,227732.017,6863.092,642200.383,29196018.0,71119.832,,,,,,
+775,45,Brookfield,2015,Residential & Low-Income,139737.332,12719.748,432.342,,140394.0,,,,,Protected,,Protected
+776,46,Brookline,2015,Residential & Low-Income,717621.159,132089.77,3983.349,452199.895,14731641.0,143894.832,,,,,,
+777,47,Buckland,2015,Residential & Low-Income,,5511.005,,,,,Protected,,Protected,No gas,No gas,No gas
+778,48,Burlington,2015,Residential & Low-Income,893611.732,77149.313,2712.776,503942.753,4263576.0,98371.466,,,,,,
+779,49,Cambridge,2015,Residential & Low-Income,1770606.317,211632.659,7415.95,3087997.525,19963296.0,466924.675,,,,,,
+780,50,Canton,2015,Residential & Low-Income,956829.835,74484.021,2858.357,486244.976,6301174.0,65011.442,,,,,,
+781,51,Carlisle,2015,Residential & Low-Income,220095.25,21522.911,749.487,91683.732,1183353.0,22406.145,,,,,,
+782,52,Carver,2015,Residential & Low-Income,399743.878,40923.828,1099.315,,1322030.0,,,,,Protected,,Protected
+783,53,Charlemont,2015,Residential & Low-Income,,3052.249,,,,,Protected,,Protected,No gas,No gas,No gas
+784,54,Charlton,2015,Residential & Low-Income,605540.909,48337.72,1674.5,,,,,,,No gas,No gas,No gas
+785,55,Chatham,2015,Residential & Low-Income,916950.344,46215.944,1389.767,229882.326,4188874.0,71088.071,,,,,,
+786,56,Chelmsford,2015,Residential & Low-Income,1233556.903,105202.03,4796.22,1543275.095,10830414.0,207263.425,,,,,,
+787,57,Chelsea,2015,Residential & Low-Income,415784.46,73691.451,1916.176,618354.712,6358636.0,127496.621,,,,,,
+788,58,Cheshire,2015,Residential & Low-Income,112479.054,10814.685,380.369,,428639.0,,,,,Protected,,Protected
+789,59,Chester,2015,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+790,60,Chesterfield,2015,Residential & Low-Income,,4384.256,,,,,Protected,,Protected,No gas,No gas,No gas
+791,61,Chicopee,2015,Residential & Low-Income,,,,624710.655,11407277.5,97033.641,Municipal,Municipal,Municipal,,,
+792,62,Chilmark,2015,Residential & Low-Income,,11923.679,,,,,Protected,,Protected,No gas,No gas,No gas
+793,63,Clarksburg,2015,Residential & Low-Income,,4755.154,,,116996.0,,Protected,,Protected,Protected,,Protected
+794,64,Clinton,2015,Residential & Low-Income,367107.584,42054.723,1497.72,215378.212,1968536.0,34100.421,,,,,,
+795,65,Cohasset,2015,Residential & Low-Income,347477.819,33346.653,1122.587,141511.345,2345062.0,27444.061,,,,,,
+796,66,Colrain,2015,Residential & Low-Income,128218.963,6205.051,309.685,,,,,,,No gas,No gas,No gas
+797,67,Concord,2015,Residential & Low-Income,,,,644561.754,4875604.0,104094.047,Municipal,Municipal,Municipal,,,
+798,68,Conway,2015,Residential & Low-Income,123750.686,6283.028,296.172,,,,,,,No gas,No gas,No gas
+799,69,Cummington,2015,Residential & Low-Income,,3509.9,,,,,Protected,,Protected,No gas,No gas,No gas
+800,70,Dalton,2015,Residential & Low-Income,343140.246,19680.085,968.425,162253.012,1471014.0,13497.239,,,,,,
+801,71,Danvers,2015,Residential & Low-Income,,,,247787.422,4557417.0,68894.301,Municipal,Municipal,Municipal,,,
+802,72,Dartmouth,2015,Residential & Low-Income,792386.23,93268.862,2609.794,407350.0,6072808.279,73331.622,,,,,,
+803,73,Dedham,2015,Residential & Low-Income,573015.229,70876.341,2228.884,784896.86,8424152.0,125828.345,,,,,,
+804,74,Deerfield,2015,Residential & Low-Income,332704.546,16758.823,840.679,,532773.0,,,,,Protected,,Protected
+805,75,Dennis,2015,Residential & Low-Income,2225190.043,74545.093,3229.673,517722.427,6567856.0,138382.868,,,,,,
+806,76,Dighton,2015,Residential & Low-Income,180398.501,21216.728,702.891,,573850.0,,,,,Protected,,Protected
+807,77,Douglas,2015,Residential & Low-Income,361409.243,30653.588,992.842,,,,,,,No gas,No gas,No gas
+808,78,Dover,2015,Residential & Low-Income,333862.007,32701.848,902.214,,212140.5,,,,,Protected,,Protected
+809,79,Dracut,2015,Residential & Low-Income,844416.988,94402.846,3526.465,838011.934,7375204.0,125347.627,,,,,,
+810,80,Dudley,2015,Residential & Low-Income,434930.811,38028.9,1266.026,,585018.0,,,,,Protected,,Protected
+811,81,Dunstable,2015,Residential & Low-Income,133169.202,12646.001,449.782,,387786.0,,,,,Protected,,Protected
+812,82,Duxbury,2015,Residential & Low-Income,499543.177,60459.165,1832.678,260880.909,4366276.0,34943.031,,,,,,
+813,83,East Bridgewater,2015,Residential & Low-Income,383845.425,46657.49,1434.696,149084.68,2173835.5,17971.187,,,,,,
+814,84,East Brookfield,2015,Residential & Low-Income,,8025.601,,,120545.0,,Protected,,Protected,Protected,,Protected
+815,85,East Longmeadow,2015,Residential & Low-Income,553282.277,52759.932,2053.195,578555.002,4661732.0,65799.483,,,,,,
+816,86,Eastham,2015,Residential & Low-Income,983732.637,31364.252,1121.057,114384.792,1477303.0,32208.152,,,,,,
+817,87,Easthampton,2015,Residential & Low-Income,794614.762,56538.436,1545.386,242287.165,2696954.5,32260.661,,,,,,
+818,88,Easton,2015,Residential & Low-Income,797141.04,85139.916,2519.552,319815.939,4339727.5,40535.446,,,,,,
+819,89,Edgartown,2015,Residential & Low-Income,456475.212,46741.808,807.634,,,,,,,No gas,No gas,No gas
+820,90,Egremont,2015,Residential & Low-Income,,6677.537,,,,,Protected,,Protected,No gas,No gas,No gas
+821,91,Erving,2015,Residential & Low-Income,,5046.75,,,,,Protected,,Protected,No gas,No gas,No gas
+822,92,Essex,2015,Residential & Low-Income,220531.657,13378.604,529.868,,601781.0,,,,,Protected,,Protected
+823,93,Everett,2015,Residential & Low-Income,468039.621,92271.226,2898.764,241342.667,9972609.0,65389.982,,,,,,
+824,94,Fairhaven,2015,Residential & Low-Income,327342.688,43161.576,1288.984,371911.09,5062990.0,64206.793,,,,,,
+825,95,Fall River,2015,Residential & Low-Income,1065317.49,184634.358,6592.19,776336.04,21122720.08,72444.906,,,,,,
+826,96,Falmouth,2015,Residential & Low-Income,3687293.156,126647.267,4922.453,828090.574,10799530.0,205987.602,,,,,,
+827,97,Fitchburg,2015,Residential & Low-Income,1258801.67,97836.504,2520.813,440549.09,7812034.88,56111.617,,,,,,
+828,98,Florida,2015,Residential & Low-Income,,2063.005,,,,,Protected,,Protected,No gas,No gas,No gas
+829,99,Foxborough,2015,Residential & Low-Income,610662.164,57275.203,2053.461,313351.017,4137950.5,44909.518,,,,,,
+830,100,Framingham,2015,Residential & Low-Income,2095984.809,193651.806,6349.796,1293728.576,13570024.0,202044.385,,,,,,
+831,101,Franklin,2015,Residential & Low-Income,887929.836,105455.778,3586.664,568160.429,7443550.5,73820.341,,,,,,
+832,102,Freetown,2015,Residential & Low-Income,358690.718,29961.518,897.744,,2228630.735,,,,,Protected,,Protected
+833,103,Gardner,2015,Residential & Low-Income,598075.919,52286.18,1963.628,,884132.05,,,,,Protected,,Protected
+834,104,Aquinnah,2015,Residential & Low-Income,,2960.089,,,,,Protected,,Protected,No gas,No gas,No gas
+835,105,Georgetown,2015,Residential & Low-Income,,,,120206.69,1831891.0,28215.529,Municipal,Municipal,Municipal,,,
+836,106,Gill,2015,Residential & Low-Income,111423.888,4508.669,223.436,,,,,,,No gas,No gas,No gas
+837,107,Gloucester,2015,Residential & Low-Income,1186951.658,100746.521,3920.041,525976.028,5053083.0,76878.891,,,,,,
+838,108,Goshen,2015,Residential & Low-Income,,3373.949,,,,,Protected,,Protected,No gas,No gas,No gas
+839,109,Gosnold,2015,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+840,110,Grafton,2015,Residential & Low-Income,650102.27,63889.958,2254.229,414800.29,3400294.0,71091.386,,,,,,
+841,111,Granby,2015,Residential & Low-Income,239521.583,21648.73,693.694,,187090.0,,,,,Protected,,Protected
+842,112,Granville,2015,Residential & Low-Income,,6370.61,,,,,Protected,,Protected,No gas,No gas,No gas
+843,113,Great Barrington,2015,Residential & Low-Income,191279.465,23735.24,554.3,,726121.0,,,,,Protected,,Protected
+844,114,Greenfield,2015,Residential & Low-Income,780396.511,44005.975,1751.389,172375.075,2398994.0,20388.136,,,,,,
+845,115,Groton,2015,Residential & Low-Income,,,,,1082774.0,,Municipal,Municipal,Municipal,Protected,,Protected
+846,116,Groveland,2015,Residential & Low-Income,,,,133332.401,1698543.0,29229.779,Municipal,Municipal,Municipal,,,
+847,117,Hadley,2015,Residential & Low-Income,294266.054,19944.515,777.371,,394406.0,,,,,Protected,,Protected
+848,118,Halifax,2015,Residential & Low-Income,271171.003,26673.555,850.12,,609875.5,,,,,Protected,,Protected
+849,119,Hamilton,2015,Residential & Low-Income,318286.383,25618.012,963.983,,973846.0,,,,,Protected,,Protected
+850,120,Hampden,2015,Residential & Low-Income,159367.422,19354.628,637.569,,805693.0,,,,,Protected,,Protected
+851,121,Hancock,2015,Residential & Low-Income,,1094.656,,,,,Protected,,Protected,No gas,No gas,No gas
+852,122,Hanover,2015,Residential & Low-Income,408007.599,49544.995,1587.254,189214.895,3235296.0,23209.045,,,,,,
+853,123,Hanson,2015,Residential & Low-Income,303155.246,35159.134,1115.759,,1994481.0,,,,,Protected,,Protected
+854,124,Hardwick,2015,Residential & Low-Income,,9965.289,,,,,Protected,,Protected,No gas,No gas,No gas
+855,125,Harvard,2015,Residential & Low-Income,272092.557,21867.631,793.69,,305171.0,,,,,Protected,,Protected
+856,126,Harwich,2015,Residential & Low-Income,1643298.259,61676.902,1962.204,356141.469,5235440.0,306946.662,,,,,,
+857,127,Hatfield,2015,Residential & Low-Income,167529.901,11604.771,514.408,,579189.0,,,,,Protected,,Protected
+858,128,Haverhill,2015,Residential & Low-Income,1157439.309,168150.163,5392.147,881198.439,16415915.5,180177.131,,,,,,
+859,129,Hawley,2015,Residential & Low-Income,,1113.104,,,,,Protected,,Protected,No gas,No gas,No gas
+860,130,Heath,2015,Residential & Low-Income,,2095.525,,,,,Protected,,Protected,No gas,No gas,No gas
+861,131,Hingham,2015,Residential & Low-Income,,,,324895.574,4748563.0,81770.975,Municipal,Municipal,Municipal,,,
+862,132,Hinsdale,2015,Residential & Low-Income,115405.51,7483.458,227.901,,,,,,,No gas,No gas,No gas
+863,133,Holbrook,2015,Residential & Low-Income,248319.399,33297.51,983.805,,2273108.0,,,,,Protected,,Protected
+864,134,Holden,2015,Residential & Low-Income,,,,,1265510.0,,Municipal,Municipal,Municipal,Protected,,Protected
+865,135,Holland,2015,Residential & Low-Income,,11037.265,,,,,Protected,,Protected,No gas,No gas,No gas
+866,136,Holliston,2015,Residential & Low-Income,634035.6,48015.093,1653.031,361179.54,4049877.0,61449.498,,,,,,
+867,137,Holyoke,2015,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,Municipal,Municipal,Municipal
+868,138,Hopedale,2015,Residential & Low-Income,264536.616,21465.922,725.865,,402773.0,,,,,Protected,,Protected
+869,139,Hopkinton,2015,Residential & Low-Income,825987.919,61812.881,2218.027,394612.97,4340183.0,65330.487,,,,,,
+870,140,Hubbardston,2015,Residential & Low-Income,145133.51,14766.82,483.59,,,,,,,No gas,No gas,No gas
+871,141,Hudson,2015,Residential & Low-Income,,,,316218.79,5508384.0,76034.588,Municipal,Municipal,Municipal,,,
+872,142,Hull,2015,Residential & Low-Income,,,,195689.347,3359337.0,55572.889,Municipal,Municipal,Municipal,,,
+873,143,Huntington,2015,Residential & Low-Income,,7357.262,,,,,Protected,,Protected,No gas,No gas,No gas
+874,144,Ipswich,2015,Residential & Low-Income,,,,191516.855,2145563.0,41257.369,Municipal,Municipal,Municipal,,,
+875,145,Kingston,2015,Residential & Low-Income,584952.928,43526.593,1477.245,103817.0,1796175.0,20982.17,,,,,,
+876,146,Lakeville,2015,Residential & Low-Income,,3188.96,,,334175.0,,Protected,,Protected,Protected,,Protected
+877,147,Lancaster,2015,Residential & Low-Income,355287.701,25458.237,1054.075,,246049.0,,,,,Protected,,Protected
+878,148,Lanesborough,2015,Residential & Low-Income,,10802.652,,,177271.0,,Protected,,Protected,Protected,,Protected
+879,149,Lawrence,2015,Residential & Low-Income,2830984.739,153901.974,6525.252,950946.692,30875787.5,66943.484,,,,,,
+880,150,Lee,2015,Residential & Low-Income,188543.838,91994.172,830.729,,1388284.0,,,,,Protected,,Protected
+881,151,Leicester,2015,Residential & Low-Income,367604.93,37688.874,1225.048,,116103.0,,,,,Protected,,Protected
+882,152,Lenox,2015,Residential & Low-Income,147700.215,20800.608,666.428,,1698647.0,,,,,Protected,,Protected
+883,153,Leominster,2015,Residential & Low-Income,1324879.636,131420.177,4363.358,442085.885,5131258.48,70508.517,,,,,,
+884,154,Leverett,2015,Residential & Low-Income,116021.663,7403.065,321.775,,,,,,,No gas,No gas,No gas
+885,155,Lexington,2015,Residential & Low-Income,1277810.459,110728.015,3715.883,561893.2,6972537.0,141642.059,,,,,,
+886,156,Leyden,2015,Residential & Low-Income,,2627.708,,,,,Protected,,Protected,No gas,No gas,No gas
+887,157,Lincoln,2015,Residential & Low-Income,244149.429,27232.383,860.186,83084.194,1712145.0,20991.605,,,,,,
+888,158,Littleton,2015,Residential & Low-Income,,,,107356.557,1232166.0,21269.153,Municipal,Municipal,Municipal,,,
+889,159,Longmeadow,2015,Residential & Low-Income,659913.297,56183.217,2448.267,523487.537,6240469.0,78548.297,,,,,,
+890,160,Lowell,2015,Residential & Low-Income,2665890.998,236866.288,8754.807,2145955.158,24837978.0,352530.998,,,,,,
+891,161,Ludlow,2015,Residential & Low-Income,658135.519,64928.828,2462.86,211250.408,3539055.0,27464.708,,,,,,
+892,162,Lunenburg,2015,Residential & Low-Income,396843.528,35813.45,781.534,,619597.02,,,,,Protected,,Protected
+893,163,Lynn,2015,Residential & Low-Income,2451376.8,202410.968,7883.002,2000601.399,17897925.0,266627.641,,,,,,
+894,164,Lynnfield,2015,Residential & Low-Income,,,,223296.103,3217071.0,51026.06,Municipal,Municipal,Municipal,,,
+895,165,Malden,2015,Residential & Low-Income,1856650.51,134263.048,5441.846,1668944.037,12036353.0,195715.269,,,,,,
+896,166,Manchester,2015,Residential & Low-Income,253844.636,21925.181,874.328,83100.582,2101344.0,17338.74,,,,,,
+897,167,Mansfield,2015,Residential & Low-Income,,,,246155.391,5131925.5,29549.6,Municipal,Municipal,Municipal,,,
+898,168,Marblehead,2015,Residential & Low-Income,,,,449778.785,6756259.0,110222.349,Municipal,Municipal,Municipal,,,
+899,169,Marion,2015,Residential & Low-Income,208384.628,21239.378,629.145,,981440.0,,,,,Protected,,Protected
+900,170,Marlborough,2015,Residential & Low-Income,750990.592,119907.324,3797.351,880942.78,9224552.0,186192.295,,,,,,
+901,171,Marshfield,2015,Residential & Low-Income,590091.627,82276.629,2892.875,442099.724,7606110.0,56806.307,,,,,,
+902,172,Mashpee,2015,Residential & Low-Income,1333655.012,74127.841,2065.606,484362.513,6381605.0,139505.769,,,,,,
+903,173,Mattapoisett,2015,Residential & Low-Income,246518.777,25355.834,815.652,,1675190.0,,,,,Protected,,Protected
+904,174,Maynard,2015,Residential & Low-Income,275176.474,29546.094,933.807,231054.49,2871359.0,44838.62,,,,,,
+905,175,Medfield,2015,Residential & Low-Income,548235.094,43333.75,1749.684,315608.109,3770871.0,43009.108,,,,,,
+906,176,Medford,2015,Residential & Low-Income,1760975.527,139719.854,5758.46,1083688.693,14492868.0,208421.563,,,,,,
+907,177,Medway,2015,Residential & Low-Income,410657.278,41258.866,1358.17,254083.637,2555725.0,29639.812,,,,,,
+908,178,Melrose,2015,Residential & Low-Income,610891.703,74135.833,3113.732,445345.208,6978990.0,84440.96,,,,,,
+909,179,Mendon,2015,Residential & Low-Income,247049.42,22656.328,700.636,,,,,,,Protected,Protected,Protected
+910,180,Merrimac,2015,Residential & Low-Income,,,,101597.747,1606314.0,25324.656,Municipal,Municipal,Municipal,,,
+911,181,Methuen,2015,Residential & Low-Income,1015330.737,139023.34,4402.845,771748.183,14876455.5,81079.475,,,,,,
+912,182,Middleborough,2015,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,Municipal,Municipal,Municipal
+913,183,Middlefield,2015,Residential & Low-Income,,1867.588,,,,,Protected,,Protected,No gas,No gas,No gas
+914,184,Middleton,2015,Residential & Low-Income,,,,,1316739.0,,Municipal,Municipal,Municipal,Protected,,Protected
+915,185,Milford,2015,Residential & Low-Income,761187.991,83290.814,2860.806,429315.67,5469318.0,82337.099,,,,,,
+916,186,Millbury,2015,Residential & Low-Income,540415.296,47464.13,1721.33,216735.21,1716757.0,31788.973,,,,,,
+917,187,Millis,2015,Residential & Low-Income,286159.133,28293.978,837.247,,1115261.5,,,,,Protected,,Protected
+918,188,Millville,2015,Residential & Low-Income,,9983.195,,,,,Protected,,Protected,Protected,Protected,Protected
+919,189,Milton,2015,Residential & Low-Income,617678.192,82049.649,2204.967,584515.937,8137541.0,143537.124,,,,,,
+920,190,Monroe,2015,Residential & Low-Income,,465.327,,,,,Protected,,Protected,No gas,No gas,No gas
+921,191,Monson,2015,Residential & Low-Income,272256.368,29091.473,979.538,,141257.0,,,,,Protected,,Protected
+922,192,Montague,2015,Residential & Low-Income,441249.62,24965.798,1105.943,,644274.0,,,,,Protected,,Protected
+923,193,Monterey,2015,Residential & Low-Income,,6271.664,,,,,Protected,,Protected,No gas,No gas,No gas
+924,194,Montgomery,2015,Residential & Low-Income,,3369.364,,,,,Protected,,Protected,No gas,No gas,No gas
+925,195,Mount Washington,2015,Residential & Low-Income,,994.276,,,,,Protected,,Protected,No gas,No gas,No gas
+926,196,Nahant,2015,Residential & Low-Income,,11025.03,,,1416301.0,,Protected,,Protected,Protected,,Protected
+927,197,Nantucket,2015,Residential & Low-Income,686604.6,105080.73,3162.133,,,,,,,No gas,No gas,No gas
+928,198,Natick,2015,Residential & Low-Income,1464429.961,118451.406,4078.353,825014.554,8957149.0,145090.055,,,,,,
+929,199,Needham,2015,Residential & Low-Income,1219792.499,105182.421,3769.82,713431.97,8446427.0,130338.276,,,,,,
+930,200,New Ashford,2015,Residential & Low-Income,,1139.65,,,,,Protected,,Protected,No gas,No gas,No gas
+931,201,New Bedford,2015,Residential & Low-Income,1081645.274,204488.051,4678.861,1255248.8,29512902.0,223250.803,,,,,,
+932,202,New Braintree,2015,Residential & Low-Income,,3736.414,,,,,Protected,,Protected,No gas,No gas,No gas
+933,203,New Marlborough,2015,Residential & Low-Income,,4001.407,,,,,Protected,,Protected,No gas,No gas,No gas
+934,204,New Salem,2015,Residential & Low-Income,,3745.108,,,,,Protected,,Protected,No gas,No gas,No gas
+935,205,Newbury,2015,Residential & Low-Income,242234.498,28781.31,932.711,,750162.0,,,,,Protected,,Protected
+936,206,Newburyport,2015,Residential & Low-Income,821463.399,57398.297,2300.523,273292.728,5344948.0,55868.837,,,,,,
+937,207,Newton,2015,Residential & Low-Income,2142941.671,307904.16,9150.639,1787785.511,31613790.0,484231.91,,,,,,
+938,208,Norfolk,2015,Residential & Low-Income,584383.583,34640.644,1506.555,,499443.0,,,,,Protected,,Protected
+939,209,North Adams,2015,Residential & Low-Income,224346.923,30520.653,627.824,276644.273,3114005.0,29021.372,,,,,,
+940,210,North Andover,2015,Residential & Low-Income,898147.256,97112.959,3519.275,531393.061,6949166.0,73856.056,,,,,,
+941,211,North Attleboro,2015,Residential & Low-Income,,,,146578.2,2477380.129,12762.779,Municipal,Municipal,Municipal,,,
+942,212,North Brookfield,2015,Residential & Low-Income,151189.379,16053.98,525.288,,456626.0,,,,,Protected,,Protected
+943,213,North Reading,2015,Residential & Low-Income,,,,199565.389,2860619.0,51483.727,Municipal,Municipal,Municipal,,,
+944,214,Northampton,2015,Residential & Low-Income,789841.042,71975.386,2996.111,544724.88,6619234.0,70850.16,,,,,,
+945,215,Northborough,2015,Residential & Low-Income,530414.505,54170.5,1821.394,252002.46,2677213.0,44540.142,,,,,,
+946,216,Northbridge,2015,Residential & Low-Income,513584.717,51068.421,1716.925,131470.69,1649494.0,26955.063,,,,,,
+947,217,Northfield,2015,Residential & Low-Income,152147.697,8994.365,431.487,,,,,,,No gas,No gas,No gas
+948,218,Norton,2015,Residential & Low-Income,531008.771,60931.689,2044.079,336032.124,3498982.5,39694.137,,,,,,
+949,219,Norwell,2015,Residential & Low-Income,356699.315,43170.964,1298.135,,1961723.0,,,,,Protected,,Protected
+950,220,Norwood,2015,Residential & Low-Income,,,,374940.689,6544018.0,103094.957,Municipal,Municipal,Municipal,,,
+951,221,Oak Bluffs,2015,Residential & Low-Income,473630.123,29946.662,300.885,,,,,,,No gas,No gas,No gas
+952,222,Oakham,2015,Residential & Low-Income,,8086.484,,,,,Protected,,Protected,No gas,No gas,No gas
+953,223,Orange,2015,Residential & Low-Income,225557.545,25228.455,776.568,,,,,,,No gas,No gas,No gas
+954,224,Orleans,2015,Residential & Low-Income,1241153.896,35903.817,1773.552,,1345727.0,,,,,Protected,,Protected
+955,225,Otis,2015,Residential & Low-Income,,10724.012,,,,,Protected,,Protected,No gas,No gas,No gas
+956,226,Oxford,2015,Residential & Low-Income,606848.065,49345.094,1692.126,,,,,,,No gas,No gas,No gas
+957,227,Palmer,2015,Residential & Low-Income,410138.429,40924.247,1303.724,,115548.0,,,,,Protected,,Protected
+958,228,Paxton,2015,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+959,229,Peabody,2015,Residential & Low-Income,,,,996189.728,8861908.0,174750.656,Municipal,Municipal,Municipal,,,
+960,230,Pelham,2015,Residential & Low-Income,,5139.899,,,,,Protected,,Protected,No gas,No gas,No gas
+961,231,Pembroke,2015,Residential & Low-Income,466700.655,63229.87,1866.528,261505.55,3465481.5,31583.426,,,,,,
+962,232,Pepperell,2015,Residential & Low-Income,406166.075,38578.615,1138.593,173215.71,1570222.0,24836.671,,,,,,
+963,233,Peru,2015,Residential & Low-Income,,3172.363,,,,,Protected,,Protected,No gas,No gas,No gas
+964,234,Petersham,2015,Residential & Low-Income,,4352.148,,,,,Protected,,Protected,No gas,No gas,No gas
+965,235,Phillipston,2015,Residential & Low-Income,,5881.174,,,,,Protected,,Protected,No gas,No gas,No gas
+966,236,Pittsfield,2015,Residential & Low-Income,1649058.532,118495.194,5383.337,823456.337,12181642.0,85725.845,,,,,,
+967,237,Plainfield,2015,Residential & Low-Income,,2319.036,,,,,Protected,,Protected,No gas,No gas,No gas
+968,238,Plainville,2015,Residential & Low-Income,249400.124,30633.068,921.962,,629593.174,,,,,Protected,,Protected
+969,239,Plymouth,2015,Residential & Low-Income,1868146.634,196574.871,3665.027,562005.905,6805575.0,101292.848,,,,,,
+970,240,Plympton,2015,Residential & Low-Income,111810.039,10522.494,351.082,,165817.5,,,,,Protected,,Protected
+971,241,Princeton,2015,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+972,242,Provincetown,2015,Residential & Low-Income,521555.757,13043.652,655.455,,,,,,,No gas,No gas,No gas
+973,243,Quincy,2015,Residential & Low-Income,1867101.758,224733.406,7894.354,1157805.142,18113699.0,233219.699,,,,,,
+974,244,Randolph,2015,Residential & Low-Income,638981.572,90091.17,2826.597,376138.937,7596746.0,42306.83,,,,,,
+975,245,Raynham,2015,Residential & Low-Income,,,,,1272133.5,,Municipal,Municipal,Municipal,Protected,,Protected
+976,246,Reading,2015,Residential & Low-Income,,,,451873.479,3863828.0,96038.968,Municipal,Municipal,Municipal,,,
+977,247,Rehoboth,2015,Residential & Low-Income,496547.826,45083.947,1361.241,,,,,,,Protected,Protected,Protected
+978,248,Revere,2015,Residential & Low-Income,1048936.861,123908.224,3927.182,460303.343,10664228.0,96549.122,,,,,,
+979,249,Richmond,2015,Residential & Low-Income,,7937.371,,,,,Protected,,Protected,No gas,No gas,No gas
+980,250,Rochester,2015,Residential & Low-Income,205821.238,19774.625,568.896,,357859.0,,,,,Protected,,Protected
+981,251,Rockland,2015,Residential & Low-Income,405643.825,53419.208,1526.928,254491.893,3388287.0,45991.618,,,,,,
+982,252,Rockport,2015,Residential & Low-Income,426225.035,31651.708,1405.349,,18024.0,,,,,Protected,,Protected
+983,253,Rowe,2015,Residential & Low-Income,,1621.102,,,,,Protected,,Protected,No gas,No gas,No gas
+984,254,Rowley,2015,Residential & Low-Income,,,,,1244972.0,,Municipal,Municipal,Municipal,Protected,,Protected
+985,255,Royalston,2015,Residential & Low-Income,,4261.096,,,,,Protected,,Protected,No gas,No gas,No gas
+986,256,Russell,2015,Residential & Low-Income,,2898.822,,,,,Protected,,Protected,No gas,No gas,No gas
+987,257,Rutland,2015,Residential & Low-Income,320419.954,26843.858,1101.645,,,,,,,No gas,No gas,No gas
+988,258,Salem,2015,Residential & Low-Income,2373992.311,106167.721,5339.881,1482541.046,8945934.0,185622.379,,,,,,
+989,259,Salisbury,2015,Residential & Low-Income,269200.96,31281.404,1064.863,114782.63,1838175.0,23997.182,,,,,,
+990,260,Sandisfield,2015,Residential & Low-Income,,5674.008,,,,,Protected,,Protected,No gas,No gas,No gas
+991,261,Sandwich,2015,Residential & Low-Income,2007030.439,72996.071,2441.827,296731.246,4449717.0,78570.491,,,,,,
+992,262,Saugus,2015,Residential & Low-Income,568844.798,81578.079,2628.674,292617.269,5315944.0,52442.434,,,,,,
+993,263,Savoy,2015,Residential & Low-Income,,2414.147,,,,,Protected,,Protected,No gas,No gas,No gas
+994,264,Scituate,2015,Residential & Low-Income,663568.669,66111.588,2487.889,406805.169,5721066.0,54609.045,,,,,,
+995,265,Seekonk,2015,Residential & Low-Income,833312.691,46671.446,1738.696,120744.458,2447058.0,14319.94,,,,,,
+996,266,Sharon,2015,Residential & Low-Income,600968.953,58844.02,2274.285,508259.756,5809319.5,67179.905,,,,,,
+997,267,Sheffield,2015,Residential & Low-Income,106946.725,14631.046,396.668,,,,,,,No gas,No gas,No gas
+998,268,Shelburne,2015,Residential & Low-Income,183185.411,9171.139,447.911,,,,,,,No gas,No gas,No gas
+999,269,Sherborn,2015,Residential & Low-Income,193218.143,20110.605,587.721,,891296.0,,,,,Protected,,Protected
+1000,270,Shirley,2015,Residential & Low-Income,203863.926,22347.289,694.619,,404364.0,,,,,Protected,,Protected
+1001,271,Shrewsbury,2015,Residential & Low-Income,,,,613460.21,9701034.0,123928.778,Municipal,Municipal,Municipal,,,
+1002,272,Shutesbury,2015,Residential & Low-Income,,6785.596,,,,,Protected,,Protected,No gas,No gas,No gas
+1003,273,Somerset,2015,Residential & Low-Income,387073.037,50119.102,1823.468,484598.81,5219473.19,42852.081,,,,,,
+1004,274,Somerville,2015,Residential & Low-Income,1067565.275,162262.947,4521.236,1320692.474,21898390.0,304562.725,,,,,,
+1005,275,South Hadley,2015,Residential & Low-Income,,,,263142.479,3325828.5,35820.266,Municipal,Municipal,Municipal,,,
+1006,276,Southampton,2015,Residential & Low-Income,248157.333,21396.399,751.713,,,,,,,Municipal,Municipal,Municipal
+1007,277,Southborough,2015,Residential & Low-Income,577303.341,42184.936,1411.716,257741.8,2213158.0,39676.769,,,,,,
+1008,278,Southbridge,2015,Residential & Low-Income,396279.694,53046.546,1492.212,114194.378,2258597.0,22790.85,,,,,,
+1009,279,Southwick,2015,Residential & Low-Income,376012.669,38033.512,1207.871,,535636.5,,,,,Protected,,Protected
+1010,280,Spencer,2015,Residential & Low-Income,361246.605,41093.604,1252.507,,997478.0,,,,,Protected,,Protected
+1011,281,Springfield,2015,Residential & Low-Income,3509428.476,390269.652,13478.488,1114307.268,54215993.5,154925.031,,,,,,
+1012,282,Sterling,2015,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+1013,283,Stockbridge,2015,Residential & Low-Income,,12967.215,,,440027.0,,Protected,,Protected,Protected,,Protected
+1014,284,Stoneham,2015,Residential & Low-Income,1042750.182,70733.125,2683.934,234120.162,3369410.0,66212.201,,,,,,
+1015,285,Stoughton,2015,Residential & Low-Income,577218.457,82026.978,2745.071,444992.363,6904880.5,60399.282,,,,,,
+1016,286,Stow,2015,Residential & Low-Income,,,,,843202.0,,Municipal,Municipal,Municipal,Protected,,Protected
+1017,287,Sturbridge,2015,Residential & Low-Income,465225.988,38773.75,1306.73,,,,,,,No gas,No gas,No gas
+1018,288,Sudbury,2015,Residential & Low-Income,849039.963,73220.489,2792.227,620780.585,5338078.0,108480.477,,,,,,
+1019,289,Sunderland,2015,Residential & Low-Income,282258.588,10704.888,502.018,,,,,,,Protected,Protected,Protected
+1020,290,Sutton,2015,Residential & Low-Income,460792.194,36469.058,1287.81,,268944.0,,,,,Protected,,Protected
+1021,291,Swampscott,2015,Residential & Low-Income,344979.509,46072.107,1533.14,243890.576,4445743.0,51005.468,,,,,,
+1022,292,Swansea,2015,Residential & Low-Income,385553.851,48183.887,1719.492,386124.57,3984987.394,33618.154,,,,,,
+1023,293,Taunton,2015,Residential & Low-Income,,,,279069.942,11957170.5,34307.183,Municipal,Municipal,Municipal,,,
+1024,294,Templeton,2015,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+1025,295,Tewksbury,2015,Residential & Low-Income,771166.023,94657.607,3015.977,553497.465,7417010.0,92895.507,,,,,,
+1026,296,Tisbury,2015,Residential & Low-Income,769880.969,23193.961,1483.366,,,,,,,No gas,No gas,No gas
+1027,297,Tolland,2015,Residential & Low-Income,,3347.516,,,,,Protected,,Protected,No gas,No gas,No gas
+1028,298,Topsfield,2015,Residential & Low-Income,272648.287,23832.826,880.106,112267.672,1402189.0,17581.016,,,,,,
+1029,299,Townsend,2015,Residential & Low-Income,294175.831,26301.402,644.916,,1278557.85,,,,,Protected,,Protected
+1030,300,Truro,2015,Residential & Low-Income,432579.293,14699.933,506.376,,,,,,,No gas,No gas,No gas
+1031,301,Tyngsborough,2015,Residential & Low-Income,322584.272,40785.383,1262.499,271934.702,2864280.0,44447.609,,,,,,
+1032,302,Tyringham,2015,Residential & Low-Income,,2693.367,,,,,Protected,,Protected,No gas,No gas,No gas
+1033,303,Upton,2015,Residential & Low-Income,299562.372,27272.759,886.309,,632370.0,,,,,Protected,,Protected
+1034,304,Uxbridge,2015,Residential & Low-Income,431056.409,44982.069,1401.649,112398.39,1386526.0,23673.874,,,,,,
+1035,305,Wakefield,2015,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,Municipal,Municipal,Municipal
+1036,306,Wales,2015,Residential & Low-Income,,7326.298,,,,,Protected,,Protected,No gas,No gas,No gas
+1037,307,Walpole,2015,Residential & Low-Income,873986.544,80590.887,2968.076,362551.733,5610950.0,57710.345,,,,,,
+1038,308,Waltham,2015,Residential & Low-Income,1963655.541,157233.822,5260.024,1662495.476,11033545.0,262823.688,,,,,,
+1039,309,Ware,2015,Residential & Low-Income,363761.072,34601.56,798.489,,,,,,,No gas,No gas,No gas
+1040,310,Wareham,2015,Residential & Low-Income,696623.343,78703.247,2236.943,454207.711,4427958.0,98658.571,,,,,,
+1041,311,Warren,2015,Residential & Low-Income,140561.666,17000.518,406.663,,359756.792,,,,,Protected,,Protected
+1042,312,Warwick,2015,Residential & Low-Income,,2440.287,,,,,Protected,,Protected,No gas,No gas,No gas
+1043,313,Washington,2015,Residential & Low-Income,,2017.19,,,,,Protected,,Protected,No gas,No gas,No gas
+1044,314,Watertown,2015,Residential & Low-Income,643853.069,86061.941,2786.243,487640.727,8749180.0,144733.11,,,,,,
+1045,315,Wayland,2015,Residential & Low-Income,599233.913,55954.867,2055.131,430362.469,4180445.0,88754.857,,,,,,
+1046,316,Webster,2015,Residential & Low-Income,677868.729,57976.054,2048.549,,1578893.0,,,,,Protected,,Protected
+1047,317,Wellesley,2015,Residential & Low-Income,,,,550545.382,10584601.0,159969.854,Municipal,Municipal,Municipal,,,
+1048,318,Wellfleet,2015,Residential & Low-Income,613373.079,18813.975,845.388,,,,,,,No gas,No gas,No gas
+1049,319,Wendell,2015,Residential & Low-Income,,3046.275,,,,,Protected,,Protected,No gas,No gas,No gas
+1050,320,Wenham,2015,Residential & Low-Income,157627.271,14422.005,510.777,,860544.0,,,,,Protected,,Protected
+1051,321,West Boylston,2015,Residential & Low-Income,,,,142380.62,1166313.0,17942.429,Municipal,Municipal,Municipal,,,
+1052,322,West Bridgewater,2015,Residential & Low-Income,184564.103,24224.65,711.49,,1228878.0,,,,,Protected,,Protected
+1053,323,West Brookfield,2015,Residential & Low-Income,187839.021,13211.516,605.727,,301844.0,,,,,Protected,,Protected
+1054,324,West Newbury,2015,Residential & Low-Income,203733.492,18381.747,665.388,,168221.0,,,,,Protected,,Protected
+1055,325,West Springfield,2015,Residential & Low-Income,544651.594,70763.031,2847.658,482336.53,7265781.5,65404.477,,,,,,
+1056,326,West Stockbridge,2015,Residential & Low-Income,,5056.041,,,,,Protected,,Protected,No gas,No gas,No gas
+1057,327,West Tisbury,2015,Residential & Low-Income,,17695.776,,,,,Protected,,Protected,No gas,No gas,No gas
+1058,328,Westborough,2015,Residential & Low-Income,855807.423,58634.931,2227.935,330174.69,4790424.0,67569.017,,,,,,
+1059,329,Westfield,2015,Residential & Low-Income,,,,,,,Municipal,Municipal,Municipal,Municipal,Municipal,Municipal
+1060,330,Westford,2015,Residential & Low-Income,903769.229,78350.664,3263.937,838184.419,6669864.0,125346.488,,,,,,
+1061,331,Westhampton,2015,Residential & Low-Income,107670.59,7007.328,196.056,,,,,,,No gas,No gas,No gas
+1062,332,Westminster,2015,Residential & Low-Income,305993.272,25607.692,879.176,,304480.65,,,,,Protected,,Protected
+1063,333,Weston,2015,Residential & Low-Income,422890.039,67858.335,1632.76,285513.932,6479695.0,76454.499,,,,,,
+1064,334,Westport,2015,Residential & Low-Income,408501.664,55725.191,1709.305,155641.13,3568035.471,14376.221,,,,,,
+1065,335,Westwood,2015,Residential & Low-Income,818498.198,55136.835,2497.414,322114.89,3304384.0,73347.865,,,,,,
+1066,336,Weymouth,2015,Residential & Low-Income,1389933.552,166207.22,5257.668,1085917.723,8272425.0,186737.304,,,,,,
+1067,337,Whately,2015,Residential & Low-Income,,4992.767,,,,,Protected,,Protected,Protected,Protected,Protected
+1068,338,Whitman,2015,Residential & Low-Income,722632.696,45403.244,1450.353,167026.837,2430929.0,32068.249,,,,,,
+1069,339,Wilbraham,2015,Residential & Low-Income,558153.522,51785.043,1914.062,306112.733,2937896.0,33972.797,,,,,,
+1070,340,Williamsburg,2015,Residential & Low-Income,132557.284,8049.921,414.106,,,,,,,No gas,No gas,No gas
+1071,341,Williamstown,2015,Residential & Low-Income,153700.633,20331.255,712.417,,1374770.0,,,,,Protected,,Protected
+1072,342,Wilmington,2015,Residential & Low-Income,,,,198684.13,2278125.0,48892.214,Municipal,Municipal,Municipal,,,
+1073,343,Winchendon,2015,Residential & Low-Income,274706.362,30914.267,970.574,,,,,,,No gas,No gas,No gas
+1074,344,Winchester,2015,Residential & Low-Income,743306.473,76366.146,2521.284,374089.351,6483723.0,106086.399,,,,,,
+1075,345,Windsor,2015,Residential & Low-Income,,3355.957,,,,,Protected,,Protected,No gas,No gas,No gas
+1076,346,Winthrop,2015,Residential & Low-Income,1180160.372,45086.795,2188.282,257600.265,5195200.0,56416.853,,,,,,
+1077,347,Woburn,2015,Residential & Low-Income,2105324.776,118023.439,4716.829,485579.276,5909034.0,127684.405,,,,,,
+1078,348,Worcester,2015,Residential & Low-Income,3768450.06,431140.479,14868.986,3155173.088,46067597.0,525913.48,,,,,,
+1079,349,Worthington,2015,Residential & Low-Income,86362.655,4627.211,233.32,,,,,,,No gas,No gas,No gas
+1080,350,Wrentham,2015,Residential & Low-Income,423269.833,43101.239,1410.715,,1364957.5,,,,,Protected,,Protected
+1081,351,Yarmouth,2015,Residential & Low-Income,2870623.075,96706.479,3641.924,1023435.765,9396021.0,278451.293,,,,,,

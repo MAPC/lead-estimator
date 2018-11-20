@@ -1,0 +1,1054 @@
+seq_id,muni_id,municipal,cal_year,sector,elec_incnt,mwh_use,mwh_save,gas_incnt,therm_use,therm_save,h_e_incnt,h_mwh_use,h_mwh_save,h_g_incnt,h_thrmuse,h_thrmsave
+1,1,Abington,2013,Commercial & Industrial,106362.65,31991.166,326.526,,978576.0,,,,,Protected,,Protected
+2,2,Acton,2013,Commercial & Industrial,842561.28,89136.136,2454.659,100101.56,2828675.0,64562.0,,,,,,
+3,3,Acushnet,2013,Commercial & Industrial,341807.63,10667.014,884.751,,827295.0,,,,,Protected,,Protected
+4,4,Adams,2013,Commercial & Industrial,43183.52,65364.098,255.77,,1099709.46,,,,,Protected,,Protected
+5,5,Agawam,2013,Commercial & Industrial,656310.03,125575.723,2622.856,,4755887.0,,,,,Protected,,Protected
+6,6,Alford,2013,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+7,7,Amesbury,2013,Commercial & Industrial,136090.05,39547.296,417.434,6908.39,1807721.0,4682.0,,,,,,
+8,8,Amherst,2013,Commercial & Industrial,1645563.09,82373.97,10771.772,35489.65,2797316.17,20814.0,,,,,,
+9,9,Andover,2013,Commercial & Industrial,1332082.41,416825.906,7624.9,269714.88,9935516.0,100322.89,,,,,,
+10,10,Arlington,2013,Commercial & Industrial,263045.19,51032.788,995.09,25292.0,2503517.0,10194.0,,,,,,
+11,11,Ashburnham,2013,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+12,12,Ashby,2013,Commercial & Industrial,,1689.913,,,,,Protected,,Protected,Protected,Protected,Protected
+13,13,Ashfield,2013,Commercial & Industrial,,1037.069,,,,,Protected,,Protected,No gas,No gas,No gas
+14,14,Ashland,2013,Commercial & Industrial,256948.84,38287.632,726.603,,1682440.0,,,,,Protected,,Protected
+15,15,Athol,2013,Commercial & Industrial,,29328.155,,,,,Protected,,Protected,No gas,No gas,No gas
+16,16,Attleboro,2013,Commercial & Industrial,494712.24,185686.684,2640.601,68892.35,8164886.02,30675.44,,,,,,
+17,17,Auburn,2013,Commercial & Industrial,695298.3,82668.195,3107.572,,1279081.0,,,,,Protected,,Protected
+18,18,Avon,2013,Commercial & Industrial,321845.32,52468.587,1659.402,,2511283.0,,,,,Protected,,Protected
+19,19,Ayer,2013,Commercial & Industrial,451384.91,79071.286,1387.16,,2154646.0,,,,,Protected,,Protected
+20,20,Barnstable,2013,Commercial & Industrial,1084892.59,206537.461,4135.412,47916.5,8993070.0,31084.0,,,,,,
+21,21,Barre,2013,Commercial & Industrial,36329.82,8136.955,139.247,,,,,,,No gas,No gas,No gas
+22,22,Becket,2013,Commercial & Industrial,,3038.159,,,,,Protected,,Protected,No gas,No gas,No gas
+23,23,Bedford,2013,Commercial & Industrial,717636.9,247417.815,3015.658,,9885454.0,,,,,Protected,,Protected
+24,24,Belchertown,2013,Commercial & Industrial,180200.24,16677.89,617.898,,,,,,,No gas,No gas,No gas
+25,25,Bellingham,2013,Commercial & Industrial,208932.3,55218.444,893.456,,1479568.0,,,,,Protected,,Protected
+26,26,Belmont,2013,Commercial & Industrial,,,,,1902824.0,,Municipal,Municipal,Municipal,Protected,,Protected
+27,27,Berkley,2013,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,Protected,Protected,Protected
+28,28,Berlin,2013,Commercial & Industrial,,5906.607,,,4880.0,,Protected,,Protected,Protected,,Protected
+29,29,Bernardston,2013,Commercial & Industrial,,4276.953,,,,,Protected,,Protected,No gas,No gas,No gas
+30,30,Beverly,2013,Commercial & Industrial,948556.98,167845.175,4621.316,92940.82,5321755.0,38077.0,,,,,,
+31,31,Billerica,2013,Commercial & Industrial,1243927.62,310597.471,5019.052,103163.68,10046365.0,125192.0,,,,,,
+32,32,Blackstone,2013,Commercial & Industrial,,8891.725,,,,,Protected,,Protected,Protected,Protected,Protected
+33,33,Blandford,2013,Commercial & Industrial,,3335.115,,,,,Protected,,Protected,No gas,No gas,No gas
+34,34,Bolton,2013,Commercial & Industrial,,14736.735,,,,,Protected,,Protected,Protected,Protected,Protected
+35,35,Boston,2013,Commercial & Industrial,20566933.53,4887566.577,94757.647,2243087.58,156357687.0,1602310.1,,,,,,
+36,36,Bourne,2013,Commercial & Industrial,214037.76,84946.851,1115.124,48515.0,2736796.0,62747.0,,,,,,
+37,37,Boxborough,2013,Commercial & Industrial,,,,,596920.0,,Municipal,Municipal,Municipal,Protected,,Protected
+38,38,Boxford,2013,Commercial & Industrial,,4529.84,,,355063.0,,Protected,,Protected,Protected,,Protected
+39,39,Boylston,2013,Commercial & Industrial,,,,,129628.0,,Municipal,Municipal,Municipal,Protected,,Protected
+40,40,Braintree,2013,Commercial & Industrial,,,,,6000577.0,,Municipal,Municipal,Municipal,Protected,,Protected
+41,41,Brewster,2013,Commercial & Industrial,18609.5,17766.387,91.396,,759108.0,,,,,Protected,,Protected
+42,42,Bridgewater,2013,Commercial & Industrial,289474.26,63082.655,783.072,3410.27,5646462.0,4365.0,,,,,,
+43,43,Brimfield,2013,Commercial & Industrial,,3871.27,,,,,Protected,,Protected,No gas,No gas,No gas
+44,44,Brockton,2013,Commercial & Industrial,1205867.67,265783.671,5814.336,152780.62,14716581.0,40354.44,,,,,,
+45,45,Brookfield,2013,Commercial & Industrial,,1869.082,,,56723.0,,Protected,,Protected,Protected,,Protected
+46,46,Brookline,2013,Commercial & Industrial,1042541.14,131915.533,3114.198,143576.11,9013605.0,137488.4,,,,,,
+47,47,Buckland,2013,Commercial & Industrial,,2836.182,,,,,Protected,,Protected,No gas,No gas,No gas
+48,48,Burlington,2013,Commercial & Industrial,3339733.08,358162.734,27676.789,48653.21,5586903.0,24018.0,,,,,,
+49,49,Cambridge,2013,Commercial & Industrial,6488674.61,1217590.224,30811.604,2581693.81,42742878.0,864528.34,,,,,,
+50,50,Canton,2013,Commercial & Industrial,1556883.9,184492.956,4833.204,48699.65,6196961.0,16507.25,,,,,,
+51,51,Carlisle,2013,Commercial & Industrial,,2036.548,,,81305.0,,Protected,,Protected,Protected,,Protected
+52,52,Carver,2013,Commercial & Industrial,212162.33,23805.422,459.576,,1903871.0,,,,,Protected,,Protected
+53,53,Charlemont,2013,Commercial & Industrial,,1990.505,,,,,Protected,,Protected,No gas,No gas,No gas
+54,54,Charlton,2013,Commercial & Industrial,152577.11,39745.803,616.989,,,,,,,No gas,No gas,No gas
+55,55,Chatham,2013,Commercial & Industrial,64104.97,23210.23,283.292,,1046347.0,,,,,Protected,,Protected
+56,56,Chelmsford,2013,Commercial & Industrial,395321.07,211446.092,1699.08,,5532482.0,,,,,Protected,,Protected
+57,57,Chelsea,2013,Commercial & Industrial,1165806.34,183100.168,5796.955,61453.08,5930616.0,26819.0,,,,,,
+58,58,Cheshire,2013,Commercial & Industrial,,2611.617,,,108658.5,,Protected,,Protected,Protected,,Protected
+59,59,Chester,2013,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+60,60,Chesterfield,2013,Commercial & Industrial,,778.156,,,,,Protected,,Protected,No gas,No gas,No gas
+61,61,Chicopee,2013,Commercial & Industrial,,,,,8953783.0,,Municipal,Municipal,Municipal,Protected,,Protected
+62,62,Chilmark,2013,Commercial & Industrial,,1945.076,,,,,Protected,,Protected,No gas,No gas,No gas
+63,63,Clarksburg,2013,Commercial & Industrial,,285.102,,,,,Protected,,Protected,Protected,Protected,Protected
+64,64,Clinton,2013,Commercial & Industrial,568331.99,77653.72,1935.745,,2938757.0,,,,,Protected,,Protected
+65,65,Cohasset,2013,Commercial & Industrial,111022.27,18391.118,387.318,,802975.0,,,,,Protected,,Protected
+66,66,Colrain,2013,Commercial & Industrial,,9065.069,,,,,Protected,,Protected,No gas,No gas,No gas
+67,67,Concord,2013,Commercial & Industrial,,,,144236.5,4300796.0,90494.0,Municipal,Municipal,Municipal,,,
+68,68,Conway,2013,Commercial & Industrial,,1136.036,,,,,Protected,,Protected,No gas,No gas,No gas
+69,69,Cummington,2013,Commercial & Industrial,,1464.848,,,,,Protected,,Protected,No gas,No gas,No gas
+70,70,Dalton,2013,Commercial & Industrial,557661.66,62529.911,2713.518,,693773.68,,,,,Protected,,Protected
+71,71,Danvers,2013,Commercial & Industrial,,,,36717.0,5762374.0,20630.0,Municipal,Municipal,Municipal,,,
+72,72,Dartmouth,2013,Commercial & Industrial,2257131.8,137195.034,17187.07,65594.74,5535370.28,18097.0,,,,,,
+73,73,Dedham,2013,Commercial & Industrial,999779.87,144747.104,4585.773,10922.78,4192300.0,5131.0,,,,,,
+74,74,Deerfield,2013,Commercial & Industrial,249820.28,41080.144,983.542,,2623392.33,,,,,Protected,,Protected
+75,75,Dennis,2013,Commercial & Industrial,141521.37,38504.849,378.414,9702.0,1741470.0,7734.0,,,,,,
+76,76,Dighton,2013,Commercial & Industrial,,7218.681,,,697337.0,,Protected,,Protected,Protected,,Protected
+77,77,Douglas,2013,Commercial & Industrial,,9180.144,,,,,Protected,,Protected,No gas,No gas,No gas
+78,78,Dover,2013,Commercial & Industrial,,5727.835,,,,,Protected,,Protected,Protected,Protected,Protected
+79,79,Dracut,2013,Commercial & Industrial,271128.8,38498.377,1024.585,,3956179.0,,,,,Protected,,Protected
+80,80,Dudley,2013,Commercial & Industrial,120373.65,32196.914,486.53,,499603.0,,,,,Protected,,Protected
+81,81,Dunstable,2013,Commercial & Industrial,,1013.598,,,51015.0,,Protected,,Protected,Protected,,Protected
+82,82,Duxbury,2013,Commercial & Industrial,186480.81,19658.102,519.888,,1006571.0,,,,,Protected,,Protected
+83,83,East Bridgewater,2013,Commercial & Industrial,200279.33,23930.375,559.849,,1058776.0,,,,,Protected,,Protected
+84,84,East Brookfield,2013,Commercial & Industrial,,3570.648,,,119251.0,,Protected,,Protected,Protected,,Protected
+85,85,East Longmeadow,2013,Commercial & Industrial,351126.17,147021.93,1733.39,,3529774.0,,,,,Protected,,Protected
+86,86,Eastham,2013,Commercial & Industrial,,6800.527,,,359696.0,,Protected,,Protected,Protected,,Protected
+87,87,Easthampton,2013,Commercial & Industrial,253806.71,46992.548,818.843,,2563642.0,,,,,Protected,,Protected
+88,88,Easton,2013,Commercial & Industrial,372871.21,73564.449,1749.144,25781.44,4459178.0,29544.37,,,,,,
+89,89,Edgartown,2013,Commercial & Industrial,23442.0,19457.732,246.958,,,,,,,No gas,No gas,No gas
+90,90,Egremont,2013,Commercial & Industrial,,814.7,,,,,Protected,,Protected,No gas,No gas,No gas
+91,91,Erving,2013,Commercial & Industrial,,50546.607,,,,,Protected,,Protected,No gas,No gas,No gas
+92,92,Essex,2013,Commercial & Industrial,,6996.598,,,286447.0,,Protected,,Protected,Protected,,Protected
+93,93,Everett,2013,Commercial & Industrial,326575.7,148710.962,1853.437,23479.16,5041989.0,13506.5,,,,,,
+94,94,Fairhaven,2013,Commercial & Industrial,684358.11,45427.153,1488.06,177071.78,1594961.0,28522.0,,,,,,
+95,95,Fall River,2013,Commercial & Industrial,2896373.95,314157.58,13206.14,493693.79,16944978.88,229163.0,,,,,,
+96,96,Falmouth,2013,Commercial & Industrial,341175.81,131054.212,977.649,37752.45,5101055.0,48840.0,,,,,,
+97,97,Fitchburg,2013,Commercial & Industrial,1498348.99,181832.796,5584.665,,9653569.41,,,,,Protected,,Protected
+98,98,Florida,2013,Commercial & Industrial,,216.61,,,,,Protected,,Protected,No gas,No gas,No gas
+99,99,Foxborough,2013,Commercial & Industrial,766660.24,117532.364,2899.883,82164.0,4495619.0,14189.96,,,,,,
+100,100,Framingham,2013,Commercial & Industrial,1781893.87,409615.574,6182.579,282986.53,13402945.0,215300.0,,,,,,
+101,101,Franklin,2013,Commercial & Industrial,2153601.74,248187.722,15465.809,,7909188.0,,,,,Protected,,Protected
+102,102,Freetown,2013,Commercial & Industrial,943349.19,34232.025,4815.665,,3686432.6,,,,,Protected,,Protected
+103,103,Gardner,2013,Commercial & Industrial,1046455.67,70392.152,5106.28,,3149508.6,,,,,Protected,,Protected
+104,104,Aquinnah,2013,Commercial & Industrial,,453.577,,,,,Protected,,Protected,No gas,No gas,No gas
+105,105,Georgetown,2013,Commercial & Industrial,,,,,741753.0,,Municipal,Municipal,Municipal,Protected,,Protected
+106,106,Gill,2013,Commercial & Industrial,,5404.262,,,,,Protected,,Protected,No gas,No gas,No gas
+107,107,Gloucester,2013,Commercial & Industrial,670428.41,120308.072,2653.646,24150.87,3481758.0,16028.0,,,,,,
+108,108,Goshen,2013,Commercial & Industrial,,436.819,,,,,Protected,,Protected,No gas,No gas,No gas
+109,109,Gosnold,2013,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+110,110,Grafton,2013,Commercial & Industrial,70878.48,64171.369,334.983,,6618895.0,,,,,Protected,,Protected
+111,111,Granby,2013,Commercial & Industrial,,5218.484,,,72576.0,,Protected,,Protected,Protected,,Protected
+112,112,Granville,2013,Commercial & Industrial,,1897.681,,,,,Protected,,Protected,No gas,No gas,No gas
+113,113,Great Barrington,2013,Commercial & Industrial,155231.9,34149.646,640.545,4554.65,1512140.84,5827.6,,,,,,
+114,114,Greenfield,2013,Commercial & Industrial,325794.46,76391.618,1246.115,29121.48,2250444.95,7309.0,,,,,,
+115,115,Groton,2013,Commercial & Industrial,,,,,1321416.0,,Municipal,Municipal,Municipal,Protected,,Protected
+116,116,Groveland,2013,Commercial & Industrial,,,,,430609.0,,Municipal,Municipal,Municipal,Protected,,Protected
+117,117,Hadley,2013,Commercial & Industrial,748897.72,70496.657,2347.102,,933687.85,,,,,Protected,,Protected
+118,118,Halifax,2013,Commercial & Industrial,,9290.744,,,333604.0,,Protected,,Protected,Protected,,Protected
+119,119,Hamilton,2013,Commercial & Industrial,65938.21,8667.85,227.36,,473758.0,,,,,Protected,,Protected
+120,120,Hampden,2013,Commercial & Industrial,,4855.557,,,201885.0,,Protected,,Protected,Protected,,Protected
+121,121,Hancock,2013,Commercial & Industrial,,10962.086,,,,,Protected,,Protected,No gas,No gas,No gas
+122,122,Hanover,2013,Commercial & Industrial,611933.06,53954.038,2576.863,,2172197.0,,,,,Protected,,Protected
+123,123,Hanson,2013,Commercial & Industrial,129195.69,13077.874,375.196,,587415.0,,,,,Protected,,Protected
+124,124,Hardwick,2013,Commercial & Industrial,,5254.646,,,,,Protected,,Protected,No gas,No gas,No gas
+125,125,Harvard,2013,Commercial & Industrial,37613.97,5949.802,133.621,,206261.0,,,,,Protected,,Protected
+126,126,Harwich,2013,Commercial & Industrial,81387.92,31400.38,524.8,18956.4,1577363.0,17293.0,,,,,,
+127,127,Hatfield,2013,Commercial & Industrial,75760.05,23742.671,308.689,,451177.66,,,,,Protected,,Protected
+128,128,Haverhill,2013,Commercial & Industrial,3020415.59,195769.956,9173.278,49912.21,10243208.0,34758.0,,,,,,
+129,129,Hawley,2013,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+130,130,Heath,2013,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+131,131,Hingham,2013,Commercial & Industrial,,,,,2807054.0,,Municipal,Municipal,Municipal,Protected,,Protected
+132,132,Hinsdale,2013,Commercial & Industrial,,2915.258,,,,,Protected,,Protected,No gas,No gas,No gas
+133,133,Holbrook,2013,Commercial & Industrial,,19513.979,,,1042458.0,,Protected,,Protected,Protected,,Protected
+134,134,Holden,2013,Commercial & Industrial,,,,,1184931.0,,Municipal,Municipal,Municipal,Protected,,Protected
+135,135,Holland,2013,Commercial & Industrial,,700.963,,,,,Protected,,Protected,No gas,No gas,No gas
+136,136,Holliston,2013,Commercial & Industrial,181402.26,30045.492,470.903,,1166870.0,,,,,Protected,,Protected
+137,137,Holyoke,2013,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,Municipal,Municipal,Municipal
+138,138,Hopedale,2013,Commercial & Industrial,,9982.282,,,112179.0,,Protected,,Protected,Protected,,Protected
+139,139,Hopkinton,2013,Commercial & Industrial,2034323.99,264794.049,12266.382,,3377504.0,,,,,Protected,,Protected
+140,140,Hubbardston,2013,Commercial & Industrial,,2213.656,,,,,Protected,,Protected,No gas,No gas,No gas
+141,141,Hudson,2013,Commercial & Industrial,,,,41798.3,4847457.0,37049.0,Municipal,Municipal,Municipal,,,
+142,142,Hull,2013,Commercial & Industrial,,,,,581535.0,,Municipal,Municipal,Municipal,Protected,,Protected
+143,143,Huntington,2013,Commercial & Industrial,,2971.082,,,,,Protected,,Protected,No gas,No gas,No gas
+144,144,Ipswich,2013,Commercial & Industrial,,,,,1941131.0,,Municipal,Municipal,Municipal,Protected,,Protected
+145,145,Kingston,2013,Commercial & Industrial,415673.68,51766.646,1860.529,,1259273.0,,,,,Protected,,Protected
+146,146,Lakeville,2013,Commercial & Industrial,21979.0,148.969,154.789,,327344.0,,,,,Protected,,Protected
+147,147,Lancaster,2013,Commercial & Industrial,,16362.529,,,57298.0,,Protected,,Protected,Protected,,Protected
+148,148,Lanesborough,2013,Commercial & Industrial,,9927.3,,,125407.62,,Protected,,Protected,Protected,,Protected
+149,149,Lawrence,2013,Commercial & Industrial,697943.22,244454.797,2601.806,25189.89,15142360.0,9871.42,,,,,,
+150,150,Lee,2013,Commercial & Industrial,443358.81,53068.062,2515.314,,1797075.95,,,,,Protected,,Protected
+151,151,Leicester,2013,Commercial & Industrial,51520.07,18013.879,189.692,,292038.0,,,,,Protected,,Protected
+152,152,Lenox,2013,Commercial & Industrial,284769.8,30692.811,1145.118,,1867082.62,,,,,Protected,,Protected
+153,153,Leominster,2013,Commercial & Industrial,2842592.25,291053.027,8889.864,268345.1,5912026.0,177542.0,,,,,,
+154,154,Leverett,2013,Commercial & Industrial,,651.63,,,,,Protected,,Protected,No gas,No gas,No gas
+155,155,Lexington,2013,Commercial & Industrial,717029.86,328874.177,2674.151,53639.2,6107266.0,43239.0,,,,,,
+156,156,Leyden,2013,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+157,157,Lincoln,2013,Commercial & Industrial,,10510.275,,,676529.0,,Protected,,Protected,Protected,,Protected
+158,158,Littleton,2013,Commercial & Industrial,,,,,1895742.0,,Municipal,Municipal,Municipal,Protected,,Protected
+159,159,Longmeadow,2013,Commercial & Industrial,362526.73,24641.874,824.922,,1387799.0,,,,,Protected,,Protected
+160,160,Lowell,2013,Commercial & Industrial,1672100.28,378759.685,8527.262,380205.99,22259669.0,274969.0,,,,,,
+161,161,Ludlow,2013,Commercial & Industrial,300541.37,76665.034,1138.8,,2119748.0,,,,,Protected,,Protected
+162,162,Lunenburg,2013,Commercial & Industrial,46800.22,17584.671,138.674,,1674710.48,,,,,Protected,,Protected
+163,163,Lynn,2013,Commercial & Industrial,739662.96,211149.252,3862.161,94611.03,10243635.0,61119.62,,,,,,
+164,164,Lynnfield,2013,Commercial & Industrial,,,,,867473.0,,Municipal,Municipal,Municipal,Protected,,Protected
+165,165,Malden,2013,Commercial & Industrial,264645.44,127538.412,909.52,,5189195.0,,,,,Protected,,Protected
+166,166,Manchester,2013,Commercial & Industrial,125178.43,9622.623,255.023,,448445.0,,,,,Protected,,Protected
+167,167,Mansfield,2013,Commercial & Industrial,,,,146870.38,3486594.0,22791.4,Municipal,Municipal,Municipal,,,
+168,168,Marblehead,2013,Commercial & Industrial,,,,,1395456.0,,Municipal,Municipal,Municipal,Protected,,Protected
+169,169,Marion,2013,Commercial & Industrial,88088.68,16033.038,255.483,,577048.0,,,,,Protected,,Protected
+170,170,Marlborough,2013,Commercial & Industrial,1441078.69,381453.168,6387.276,69473.93,8363752.0,87096.0,,,,,,
+171,171,Marshfield,2013,Commercial & Industrial,271511.57,41368.342,588.717,6549.84,1914211.0,5634.0,,,,,,
+172,172,Mashpee,2013,Commercial & Industrial,147725.26,39636.011,720.007,7226.5,1307448.0,6726.0,,,,,,
+173,173,Mattapoisett,2013,Commercial & Industrial,126052.72,11921.819,178.865,,528469.0,,,,,Protected,,Protected
+174,174,Maynard,2013,Commercial & Industrial,219863.79,42622.367,676.199,,993972.0,,,,,Protected,,Protected
+175,175,Medfield,2013,Commercial & Industrial,79666.0,17200.649,269.235,,743380.0,,,,,Protected,,Protected
+176,176,Medford,2013,Commercial & Industrial,791419.81,192828.614,2481.104,123366.74,5951519.0,91246.0,,,,,,
+177,177,Medway,2013,Commercial & Industrial,133354.73,26986.899,381.895,,1026905.0,,,,,Protected,,Protected
+178,178,Melrose,2013,Commercial & Industrial,266336.6,39504.06,939.836,10834.62,1579360.0,5730.0,,,,,,
+179,179,Mendon,2013,Commercial & Industrial,,6757.082,,,119338.0,,Protected,,Protected,Protected,,Protected
+180,180,Merrimac,2013,Commercial & Industrial,,,,,291496.0,,Municipal,Municipal,Municipal,Protected,,Protected
+181,181,Methuen,2013,Commercial & Industrial,419722.9,134032.104,2163.209,,9882941.0,,,,,Protected,,Protected
+182,182,Middleborough,2013,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,Municipal,Municipal,Municipal
+183,183,Middlefield,2013,Commercial & Industrial,,242.146,,,,,Protected,,Protected,No gas,No gas,No gas
+184,184,Middleton,2013,Commercial & Industrial,,,,,936435.0,,Municipal,Municipal,Municipal,Protected,,Protected
+185,185,Milford,2013,Commercial & Industrial,645711.53,220071.964,2724.845,68834.97,4484277.0,65768.0,,,,,,
+186,186,Millbury,2013,Commercial & Industrial,140961.24,61490.269,733.738,,3116929.0,,,,,Protected,,Protected
+187,187,Millis,2013,Commercial & Industrial,126918.55,15407.887,237.427,,706509.0,,,,,Protected,,Protected
+188,188,Millville,2013,Commercial & Industrial,,1074.343,,,,,Protected,,Protected,Protected,Protected,Protected
+189,189,Milton,2013,Commercial & Industrial,388086.95,38616.091,1013.261,,1647686.0,,,,,Protected,,Protected
+190,190,Monroe,2013,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+191,191,Monson,2013,Commercial & Industrial,,9780.293,,,418341.0,,Protected,,Protected,Protected,,Protected
+192,192,Montague,2013,Commercial & Industrial,181590.26,59194.259,941.289,,1748458.04,,,,,Protected,,Protected
+193,193,Monterey,2013,Commercial & Industrial,,309.248,,,,,Protected,,Protected,No gas,No gas,No gas
+194,194,Montgomery,2013,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+195,195,Mount Washington,2013,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+196,196,Nahant,2013,Commercial & Industrial,,2569.23,,,174285.0,,Protected,,Protected,Protected,,Protected
+197,197,Nantucket,2013,Commercial & Industrial,291565.5,45577.067,1349.595,,,,,,,No gas,No gas,No gas
+198,198,Natick,2013,Commercial & Industrial,1123883.6,200345.523,3932.174,,5079187.0,,,,,Protected,,Protected
+199,199,Needham,2013,Commercial & Industrial,2467652.41,259332.12,13134.877,115639.34,3431428.0,73665.0,,,,,,
+200,200,New Ashford,2013,Commercial & Industrial,,747.688,,,,,Protected,,Protected,No gas,No gas,No gas
+201,201,New Bedford,2013,Commercial & Industrial,1978040.73,419797.532,5588.712,136777.1,18838305.0,72638.0,,,,,,
+202,202,New Braintree,2013,Commercial & Industrial,,2475.321,,,,,Protected,,Protected,No gas,No gas,No gas
+203,203,New Marlborough,2013,Commercial & Industrial,,354.82,,,,,Protected,,Protected,No gas,No gas,No gas
+204,204,New Salem,2013,Commercial & Industrial,,388.04,,,,,Protected,,Protected,No gas,No gas,No gas
+205,205,Newbury,2013,Commercial & Industrial,,10805.517,,,494305.0,,Protected,,Protected,Protected,,Protected
+206,206,Newburyport,2013,Commercial & Industrial,244929.41,112687.17,1054.403,53009.73,4257494.0,58425.0,,,,,,
+207,207,Newton,2013,Commercial & Industrial,1911713.15,330418.065,5921.026,218606.16,13919189.0,130231.72,,,,,,
+208,208,Norfolk,2013,Commercial & Industrial,,15919.116,,,1287105.0,,Protected,,Protected,Protected,,Protected
+209,209,North Adams,2013,Commercial & Industrial,356478.97,44938.896,1508.067,,2734146.94,,,,,Protected,,Protected
+210,210,North Andover,2013,Commercial & Industrial,841441.97,134429.903,2894.187,51977.67,5783706.0,21826.42,,,,,,
+211,211,North Attleborough,2013,Commercial & Industrial,,,,,2035484.68,,Municipal,Municipal,Municipal,Protected,,Protected
+212,212,North Brookfield,2013,Commercial & Industrial,,13032.645,,,541300.0,,Protected,,Protected,Protected,,Protected
+213,213,North Reading,2013,Commercial & Industrial,,,,2600.0,1858935.0,3394.0,Municipal,Municipal,Municipal,,,
+214,214,Northampton,2013,Commercial & Industrial,616982.54,135765.305,2709.994,,12245121.84,,,,,Protected,,Protected
+215,215,Northborough,2013,Commercial & Industrial,269947.31,88757.195,1085.848,,3304151.0,,,,,Protected,,Protected
+216,216,Northbridge,2013,Commercial & Industrial,70995.71,33889.118,308.49,,2171698.0,,,,,Protected,,Protected
+217,217,Northfield,2013,Commercial & Industrial,,4727.785,,,,,Protected,,Protected,No gas,No gas,No gas
+218,218,Norton,2013,Commercial & Industrial,181646.35,66188.476,917.223,,2456122.0,,,,,Protected,,Protected
+219,219,Norwell,2013,Commercial & Industrial,144243.85,47045.8,561.848,,1476075.0,,,,,Protected,,Protected
+220,220,Norwood,2013,Commercial & Industrial,,,,44069.56,7432404.0,51198.0,Municipal,Municipal,Municipal,,,
+221,221,Oak Bluffs,2013,Commercial & Industrial,45477.88,19256.598,340.188,,,,,,,No gas,No gas,No gas
+222,222,Oakham,2013,Commercial & Industrial,,517.015,,,,,Protected,,Protected,No gas,No gas,No gas
+223,223,Orange,2013,Commercial & Industrial,,23599.164,,,,,Protected,,Protected,No gas,No gas,No gas
+224,224,Orleans,2013,Commercial & Industrial,129850.62,22551.505,456.308,29711.85,1113583.0,13327.0,,,,,,
+225,225,Otis,2013,Commercial & Industrial,,2184.247,,,,,Protected,,Protected,No gas,No gas,No gas
+226,226,Oxford,2013,Commercial & Industrial,120516.64,58111.539,494.154,,781876.0,,,,,Protected,,Protected
+227,227,Palmer,2013,Commercial & Industrial,232695.15,42105.405,704.323,,1179884.0,,,,,Protected,,Protected
+228,228,Paxton,2013,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+229,229,Peabody,2013,Commercial & Industrial,,,,22244.0,14052536.0,14655.0,Municipal,Municipal,Municipal,,,
+230,230,Pelham,2013,Commercial & Industrial,,953.115,,,,,Protected,,Protected,No gas,No gas,No gas
+231,231,Pembroke,2013,Commercial & Industrial,123907.83,40564.786,629.071,,1402896.0,,,,,Protected,,Protected
+232,232,Pepperell,2013,Commercial & Industrial,,10760.525,,,402570.0,,Protected,,Protected,Protected,,Protected
+233,233,Peru,2013,Commercial & Industrial,,365.391,,,,,Protected,,Protected,No gas,No gas,No gas
+234,234,Petersham,2013,Commercial & Industrial,,960.375,,,,,Protected,,Protected,No gas,No gas,No gas
+235,235,Phillipston,2013,Commercial & Industrial,,987.128,,,,,Protected,,Protected,No gas,No gas,No gas
+236,236,Pittsfield,2013,Commercial & Industrial,2144041.79,237858.643,4860.445,115544.55,10117728.6,46699.0,,,,,,
+237,237,Plainfield,2013,Commercial & Industrial,,804.943,,,,,Protected,,Protected,No gas,No gas,No gas
+238,238,Plainville,2013,Commercial & Industrial,70659.33,28983.477,286.612,,422675.73,,,,,Protected,,Protected
+239,239,Plymouth,2013,Commercial & Industrial,1594649.39,191232.017,5225.565,170624.36,5356933.0,67133.0,,,,,,
+240,240,Plympton,2013,Commercial & Industrial,,9008.582,,,226498.0,,Protected,,Protected,Protected,,Protected
+241,241,Princeton,2013,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+242,242,Provincetown,2013,Commercial & Industrial,148703.59,21127.355,835.345,,,,,,,No gas,No gas,No gas
+243,243,Quincy,2013,Commercial & Industrial,3309958.78,372086.355,11558.804,268480.07,9531076.0,175977.0,,,,,,
+244,244,Randolph,2013,Commercial & Industrial,258218.46,62996.122,1180.897,,4413629.0,,,,,Protected,,Protected
+245,245,Raynham,2013,Commercial & Industrial,,,,8017.5,2588727.0,3503.08,Municipal,Municipal,Municipal,,,
+246,246,Reading,2013,Commercial & Industrial,,,,5350.0,1831515.0,7061.0,Municipal,Municipal,Municipal,,,
+247,247,Rehoboth,2013,Commercial & Industrial,47040.85,8290.595,250.312,,200890.0,,,,,Protected,,Protected
+248,248,Revere,2013,Commercial & Industrial,350073.08,88566.542,1081.007,72221.0,3980245.0,24977.0,,,,,,
+249,249,Richmond,2013,Commercial & Industrial,,1204.385,,,,,Protected,,Protected,No gas,No gas,No gas
+250,250,Rochester,2013,Commercial & Industrial,,4881.403,,,56984.0,,Protected,,Protected,Protected,,Protected
+251,251,Rockland,2013,Commercial & Industrial,356238.2,54368.904,1919.341,3174.98,1965002.0,4080.0,,,,,,
+252,252,Rockport,2013,Commercial & Industrial,,10202.068,,,,,Protected,,Protected,Protected,Protected,Protected
+253,253,Rowe,2013,Commercial & Industrial,,328.72,,,,,Protected,,Protected,No gas,No gas,No gas
+254,254,Rowley,2013,Commercial & Industrial,,,,,614916.0,,Municipal,Municipal,Municipal,Protected,,Protected
+255,255,Royalston,2013,Commercial & Industrial,,443.767,,,,,Protected,,Protected,No gas,No gas,No gas
+256,256,Russell,2013,Commercial & Industrial,,2062.802,,,,,Protected,,Protected,No gas,No gas,No gas
+257,257,Rutland,2013,Commercial & Industrial,13145.3,5242.456,61.789,,,,,,,No gas,No gas,No gas
+258,258,Salem,2013,Commercial & Industrial,463650.84,188275.174,2742.993,31191.62,5741521.0,17525.0,,,,,,
+259,259,Salisbury,2013,Commercial & Industrial,130001.92,23566.722,406.44,3379.76,1033755.0,4007.0,,,,,,
+260,260,Sandisfield,2013,Commercial & Industrial,,403.638,,,,,Protected,,Protected,No gas,No gas,No gas
+261,261,Sandwich,2013,Commercial & Industrial,73007.87,45659.47,395.501,,1401017.0,,,,,Protected,,Protected
+262,262,Saugus,2013,Commercial & Industrial,289660.2,84724.585,1336.468,25003.5,3331796.0,10974.9,,,,,,
+263,263,Savoy,2013,Commercial & Industrial,,332.821,,,,,Protected,,Protected,No gas,No gas,No gas
+264,264,Scituate,2013,Commercial & Industrial,44131.71,17980.203,177.386,15695.03,924053.0,3337.89,,,,,,
+265,265,Seekonk,2013,Commercial & Industrial,281735.15,56826.045,1413.926,,2131953.0,,,,,Protected,,Protected
+266,266,Sharon,2013,Commercial & Industrial,106433.85,60923.002,397.078,,1125826.0,,,,,Protected,,Protected
+267,267,Sheffield,2013,Commercial & Industrial,,35790.117,,,,,Protected,,Protected,No gas,No gas,No gas
+268,268,Shelburne,2013,Commercial & Industrial,64272.16,3668.971,129.315,,,,,,,No gas,No gas,No gas
+269,269,Sherborn,2013,Commercial & Industrial,,3229.601,,,96720.0,,Protected,,Protected,Protected,,Protected
+270,270,Shirley,2013,Commercial & Industrial,,36996.663,,,2087541.0,,Protected,,Protected,Protected,,Protected
+271,271,Shrewsbury,2013,Commercial & Industrial,,,,46322.0,3534460.0,27861.0,Municipal,Municipal,Municipal,,,
+272,272,Shutesbury,2013,Commercial & Industrial,,425.051,,,,,Protected,,Protected,No gas,No gas,No gas
+273,273,Somerset,2013,Commercial & Industrial,131108.33,30565.733,755.371,,1286120.24,,,,,Protected,,Protected
+274,274,Somerville,2013,Commercial & Industrial,714487.02,243867.783,4248.093,25990.25,10038919.0,30818.52,,,,,,
+275,275,South Hadley,2013,Commercial & Industrial,,,,,2895435.0,,Municipal,Municipal,Municipal,Protected,,Protected
+276,276,Southampton,2013,Commercial & Industrial,,9985.317,,,,,Protected,,Protected,Municipal,Municipal,Municipal
+277,277,Southborough,2013,Commercial & Industrial,486751.24,46602.599,1493.075,,2370752.0,,,,,Protected,,Protected
+278,278,Southbridge,2013,Commercial & Industrial,195660.84,74241.446,459.814,,2312831.0,,,,,Protected,,Protected
+279,279,Southwick,2013,Commercial & Industrial,326800.49,28270.528,861.649,,802094.0,,,,,Protected,,Protected
+280,280,Spencer,2013,Commercial & Industrial,148693.24,36383.269,579.194,,515409.0,,,,,Protected,,Protected
+281,281,Springfield,2013,Commercial & Industrial,5831140.34,672829.8,18503.416,516656.11,35374961.0,224277.96,,,,,,
+282,282,Sterling,2013,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+283,283,Stockbridge,2013,Commercial & Industrial,73386.94,8369.42,386.38,,511811.33,,,,,Protected,,Protected
+284,284,Stoneham,2013,Commercial & Industrial,202317.51,47856.848,639.946,21321.35,1994167.0,13534.0,,,,,,
+285,285,Stoughton,2013,Commercial & Industrial,283034.67,84640.03,1086.475,60494.88,4666419.0,17515.39,,,,,,
+286,286,Stow,2013,Commercial & Industrial,,,,,285492.0,,Municipal,Municipal,Municipal,Protected,,Protected
+287,287,Sturbridge,2013,Commercial & Industrial,174461.63,67152.115,698.904,,,,,,,No gas,No gas,No gas
+288,288,Sudbury,2013,Commercial & Industrial,106804.19,49563.258,763.576,,1813617.0,,,,,Protected,,Protected
+289,289,Sunderland,2013,Commercial & Industrial,,4637.314,,,,,Protected,,Protected,Protected,Protected,Protected
+290,290,Sutton,2013,Commercial & Industrial,186836.51,22363.463,883.553,,123533.0,,,,,Protected,,Protected
+291,291,Swampscott,2013,Commercial & Industrial,90905.1,25239.758,656.578,,939391.0,,,,,Protected,,Protected
+292,292,Swansea,2013,Commercial & Industrial,155586.04,39000.223,504.113,,1053865.54,,,,,Protected,,Protected
+293,293,Taunton,2013,Commercial & Industrial,,,,177294.5,10706902.0,277721.14,Municipal,Municipal,Municipal,,,
+294,294,Templeton,2013,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+295,295,Tewksbury,2013,Commercial & Industrial,227483.98,136998.663,1173.4,33106.35,4761732.0,16036.0,,,,,,
+296,296,Tisbury,2013,Commercial & Industrial,43220.87,14934.914,186.39,,,,,,,No gas,No gas,No gas
+297,297,Tolland,2013,Commercial & Industrial,,562.302,,,,,Protected,,Protected,No gas,No gas,No gas
+298,298,Topsfield,2013,Commercial & Industrial,66660.92,10609.971,185.68,,346522.0,,,,,Protected,,Protected
+299,299,Townsend,2013,Commercial & Industrial,204399.17,34095.182,357.433,,862960.53,,,,,Protected,,Protected
+300,300,Truro,2013,Commercial & Industrial,6181.58,5476.967,62.254,,,,,,,No gas,No gas,No gas
+301,301,Tyngsborough,2013,Commercial & Industrial,241126.89,38718.447,732.116,,1388653.0,,,,,Protected,,Protected
+302,302,Tyringham,2013,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+303,303,Upton,2013,Commercial & Industrial,,9135.37,,,326416.0,,Protected,,Protected,Protected,,Protected
+304,304,Uxbridge,2013,Commercial & Industrial,81308.39,26787.029,313.573,,842753.0,,,,,Protected,,Protected
+305,305,Wakefield,2013,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,Municipal,Municipal,Municipal
+306,306,Wales,2013,Commercial & Industrial,,665.538,,,,,Protected,,Protected,No gas,No gas,No gas
+307,307,Walpole,2013,Commercial & Industrial,704645.71,109161.237,1669.905,,4478465.0,,,,,Protected,,Protected
+308,308,Waltham,2013,Commercial & Industrial,2538685.81,601955.019,11745.3,78774.25,11827297.0,82360.46,,,,,,
+309,309,Ware,2013,Commercial & Industrial,85182.7,41260.399,260.885,,,,,,,No gas,No gas,No gas
+310,310,Wareham,2013,Commercial & Industrial,484015.53,74024.111,1438.56,110993.18,3547626.0,72574.6,,,,,,
+311,311,Warren,2013,Commercial & Industrial,,6511.796,,,47272.0,,Protected,,Protected,Protected,,Protected
+312,312,Warwick,2013,Commercial & Industrial,,208.257,,,,,Protected,,Protected,No gas,No gas,No gas
+313,313,Washington,2013,Commercial & Industrial,,717.373,,,,,Protected,,Protected,No gas,No gas,No gas
+314,314,Watertown,2013,Commercial & Industrial,926284.27,174619.57,3223.093,87478.9,5216210.0,41076.0,,,,,,
+315,315,Wayland,2013,Commercial & Industrial,132386.07,22141.755,447.174,537.65,942125.0,3414.0,,,,,,
+316,316,Webster,2013,Commercial & Industrial,184753.25,55066.443,814.291,,1428220.0,,,,,Protected,,Protected
+317,317,Wellesley,2013,Commercial & Industrial,,,,,7421018.0,,Municipal,Municipal,Municipal,Protected,,Protected
+318,318,Wellfleet,2013,Commercial & Industrial,59720.5,5009.295,187.531,,,,,,,No gas,No gas,No gas
+319,319,Wendell,2013,Commercial & Industrial,,422.323,,,,,Protected,,Protected,No gas,No gas,No gas
+320,320,Wenham,2013,Commercial & Industrial,,10762.104,,,609140.0,,Protected,,Protected,Protected,,Protected
+321,321,West Boylston,2013,Commercial & Industrial,,,,,1077303.0,,Municipal,Municipal,Municipal,Protected,,Protected
+322,322,West Bridgewater,2013,Commercial & Industrial,530730.16,39039.048,1820.755,,1795815.0,,,,,Protected,,Protected
+323,323,West Brookfield,2013,Commercial & Industrial,,7791.247,,,200816.0,,Protected,,Protected,Protected,,Protected
+324,324,West Newbury,2013,Commercial & Industrial,,3000.517,,,144428.0,,Protected,,Protected,Protected,,Protected
+325,325,West Springfield,2013,Commercial & Industrial,6891148.52,147701.38,5865.584,,7664950.0,,,,,Protected,,Protected
+326,326,West Stockbridge,2013,Commercial & Industrial,,1409.048,,,,,Protected,,Protected,No gas,No gas,No gas
+327,327,West Tisbury,2013,Commercial & Industrial,,5187.432,,,,,Protected,,Protected,No gas,No gas,No gas
+328,328,Westborough,2013,Commercial & Industrial,1236294.07,233555.136,3255.36,,5433139.0,,,,,Protected,,Protected
+329,329,Westfield,2013,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,Municipal,Municipal,Municipal
+330,330,Westford,2013,Commercial & Industrial,1043714.36,171742.32,5183.74,,2807761.0,,,,,Protected,,Protected
+331,331,Westhampton,2013,Commercial & Industrial,,2065.39,,,,,Protected,,Protected,No gas,No gas,No gas
+332,332,Westminster,2013,Commercial & Industrial,425103.04,31832.088,1326.326,,1130751.52,,,,,Protected,,Protected
+333,333,Weston,2013,Commercial & Industrial,99294.57,36963.571,453.088,,1641319.0,,,,,Protected,,Protected
+334,334,Westport,2013,Commercial & Industrial,255588.91,18662.809,587.558,,618102.38,,,,,Protected,,Protected
+335,335,Westwood,2013,Commercial & Industrial,458210.12,62237.473,1199.506,,1615684.0,,,,,Protected,,Protected
+336,336,Weymouth,2013,Commercial & Industrial,441693.37,133460.787,1874.115,91542.27,5257371.0,53403.0,,,,,,
+337,337,Whately,2013,Commercial & Industrial,,25727.275,,,687819.26,,Protected,,Protected,Protected,,Protected
+338,338,Whitman,2013,Commercial & Industrial,117896.67,21954.804,483.56,,761401.0,,,,,Protected,,Protected
+339,339,Wilbraham,2013,Commercial & Industrial,215078.39,42971.271,859.813,,1472251.0,,,,,Protected,,Protected
+340,340,Williamsburg,2013,Commercial & Industrial,,4147.265,,,,,Protected,,Protected,No gas,No gas,No gas
+341,341,Williamstown,2013,Commercial & Industrial,243088.73,40199.54,776.249,24722.0,1054421.09,8447.0,,,,,,
+342,342,Wilmington,2013,Commercial & Industrial,,,,206495.0,6777647.0,121250.0,Municipal,Municipal,Municipal,,,
+343,343,Winchendon,2013,Commercial & Industrial,,11529.866,,,,,Protected,,Protected,No gas,No gas,No gas
+344,344,Winchester,2013,Commercial & Industrial,393147.11,47350.589,1087.278,,1332472.0,,,,,Protected,,Protected
+345,345,Windsor,2013,Commercial & Industrial,,323.8,,,,,Protected,,Protected,No gas,No gas,No gas
+346,346,Winthrop,2013,Commercial & Industrial,109357.94,15257.618,407.303,,851504.0,,,,,Protected,,Protected
+347,347,Woburn,2013,Commercial & Industrial,6287290.49,351766.156,27477.758,30983.33,14812036.0,20493.0,,,,,,
+348,348,Worcester,2013,Commercial & Industrial,3865813.93,811431.98,15832.137,1604681.86,43252299.0,1177418.0,,,,,,
+349,349,Worthington,2013,Commercial & Industrial,,599.458,,,,,Protected,,Protected,No gas,No gas,No gas
+350,350,Wrentham,2013,Commercial & Industrial,227375.56,37025.444,1784.389,,2243012.7,,,,,Protected,,Protected
+351,351,Yarmouth,2013,Commercial & Industrial,339113.73,72600.739,1363.601,22185.0,2925165.0,7914.0,,,,,,
+366,1,Abington,2014,Commercial & Industrial,147786.16,32565.966,562.899,,1271673.0,,,,,Protected,,Protected
+367,2,Acton,2014,Commercial & Industrial,447154.27,82725.615,1356.163,59502.69,3143168.0,19287.0,,,,,,
+368,3,Acushnet,2014,Commercial & Industrial,138889.22,10717.397,432.119,,1220666.0,,,,,Protected,,Protected
+369,4,Adams,2014,Commercial & Industrial,55474.61,64412.562,108.088,,1266829.0,,,,,Protected,,Protected
+370,5,Agawam,2014,Commercial & Industrial,247223.92,119679.167,1603.474,,4275010.0,,,,,Protected,,Protected
+371,6,Alford,2014,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+372,7,Amesbury,2014,Commercial & Industrial,301478.94,41046.649,753.549,43131.34,1985653.0,23769.0,,,,,,
+373,8,Amherst,2014,Commercial & Industrial,617024.4,76753.576,3894.562,,3403486.0,,,,,Protected,,Protected
+374,9,Andover,2014,Commercial & Industrial,1870831.5,390812.788,6405.53,315354.84,8097790.0,67797.0,,,,,,
+375,10,Arlington,2014,Commercial & Industrial,377860.89,52141.099,1021.109,,3028312.0,,,,,Protected,,Protected
+376,11,Ashburnham,2014,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+377,12,Ashby,2014,Commercial & Industrial,,1469.944,,,64822.67,,Protected,,Protected,Protected,,Protected
+378,13,Ashfield,2014,Commercial & Industrial,,1028.729,,,,,Protected,,Protected,No gas,No gas,No gas
+379,14,Ashland,2014,Commercial & Industrial,384767.02,36493.419,1834.466,,2205820.0,,,,,Protected,,Protected
+380,15,Athol,2014,Commercial & Industrial,505045.13,30311.338,1361.474,,,,,,,No gas,No gas,No gas
+381,16,Attleboro,2014,Commercial & Industrial,1333987.07,185281.58,4227.673,44064.22,6832007.42,39162.0,,,,,,
+382,17,Auburn,2014,Commercial & Industrial,759977.35,82422.472,2723.972,,2110568.0,,,,,Protected,,Protected
+383,18,Avon,2014,Commercial & Industrial,225982.6,51264.086,1741.173,,2274442.0,,,,,Protected,,Protected
+384,19,Ayer,2014,Commercial & Industrial,1294053.51,64838.414,4206.498,237287.0,2957814.0,112015.0,,,,,,
+385,20,Barnstable,2014,Commercial & Industrial,1663929.75,207814.816,6020.646,21532.61,9447998.0,29711.5,,,,,,
+386,21,Barre,2014,Commercial & Industrial,71702.36,8262.367,226.068,,,,,,,No gas,No gas,No gas
+387,22,Becket,2014,Commercial & Industrial,,3036.353,,,,,Protected,,Protected,No gas,No gas,No gas
+388,23,Bedford,2014,Commercial & Industrial,789286.91,249746.368,3903.219,,10712980.0,,,,,Protected,,Protected
+389,24,Belchertown,2014,Commercial & Industrial,53004.99,16040.274,246.323,,,,,,,No gas,No gas,No gas
+390,25,Bellingham,2014,Commercial & Industrial,289354.42,50035.378,1170.011,13410.76,1459396.0,5470.0,,,,,,
+391,26,Belmont,2014,Commercial & Industrial,,,,,2652935.0,,Municipal,Municipal,Municipal,Protected,,Protected
+392,27,Berkley,2014,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,Protected,Protected,Protected
+393,28,Berlin,2014,Commercial & Industrial,,5762.181,,,28958.0,,Protected,,Protected,Protected,,Protected
+394,29,Bernardston,2014,Commercial & Industrial,,3912.298,,,,,Protected,,Protected,No gas,No gas,No gas
+395,30,Beverly,2014,Commercial & Industrial,1490436.53,162764.329,3888.669,115910.33,5822578.0,85928.0,,,,,,
+396,31,Billerica,2014,Commercial & Industrial,1489084.05,312863.723,6516.648,95225.01,14705056.0,71605.0,,,,,,
+397,32,Blackstone,2014,Commercial & Industrial,,8834.073,,,,,Protected,,Protected,Protected,Protected,Protected
+398,33,Blandford,2014,Commercial & Industrial,,3203.005,,,,,Protected,,Protected,No gas,No gas,No gas
+399,34,Bolton,2014,Commercial & Industrial,,13285.5,,,,,Protected,,Protected,Protected,Protected,Protected
+400,35,Boston,2014,Commercial & Industrial,27997229.94,4733555.026,138557.735,3887700.45,214843808.0,3511899.6,,,,,,
+401,36,Bourne,2014,Commercial & Industrial,1315576.26,84824.452,1854.653,,3079975.0,,,,,Protected,,Protected
+402,37,Boxborough,2014,Commercial & Industrial,,,,,589256.0,,Municipal,Municipal,Municipal,Protected,,Protected
+403,38,Boxford,2014,Commercial & Industrial,,4527.657,,,358576.0,,Protected,,Protected,Protected,,Protected
+404,39,Boylston,2014,Commercial & Industrial,,,,,263269.0,,Municipal,Municipal,Municipal,Protected,,Protected
+405,40,Braintree,2014,Commercial & Industrial,,,,,6940657.0,,Municipal,Municipal,Municipal,Protected,,Protected
+406,41,Brewster,2014,Commercial & Industrial,298693.96,17967.94,569.744,,776923.0,,,,,Protected,,Protected
+407,42,Bridgewater,2014,Commercial & Industrial,212168.07,64944.629,1316.149,,4931526.0,,,,,Protected,,Protected
+408,43,Brimfield,2014,Commercial & Industrial,,3509.005,,,,,Protected,,Protected,No gas,No gas,No gas
+409,44,Brockton,2014,Commercial & Industrial,1534261.4,261382.277,5585.858,378623.25,12403985.0,233896.07,,,,,,
+410,45,Brookfield,2014,Commercial & Industrial,,1953.351,,,85568.0,,Protected,,Protected,Protected,,Protected
+411,46,Brookline,2014,Commercial & Industrial,443035.04,126737.71,1787.115,89694.37,14024592.0,49849.0,,,,,,
+412,47,Buckland,2014,Commercial & Industrial,,2300.325,,,,,Protected,,Protected,No gas,No gas,No gas
+413,48,Burlington,2014,Commercial & Industrial,1268091.18,335335.015,6801.459,,6495939.0,,,,,Protected,,Protected
+414,49,Cambridge,2014,Commercial & Industrial,7950419.26,1180369.029,56371.206,3227583.46,51864273.0,2141742.88,,,,,,
+415,50,Canton,2014,Commercial & Industrial,1617769.87,176078.503,5982.047,110406.97,5256596.0,46802.0,,,,,,
+416,51,Carlisle,2014,Commercial & Industrial,,2337.296,,,134729.0,,Protected,,Protected,Protected,,Protected
+417,52,Carver,2014,Commercial & Industrial,129435.13,20352.742,293.527,,1993402.0,,,,,Protected,,Protected
+418,53,Charlemont,2014,Commercial & Industrial,,1746.17,,,,,Protected,,Protected,No gas,No gas,No gas
+419,54,Charlton,2014,Commercial & Industrial,246850.25,40126.148,654.633,,,,,,,No gas,No gas,No gas
+420,55,Chatham,2014,Commercial & Industrial,337549.03,23005.57,703.935,,1112228.0,,,,,Protected,,Protected
+421,56,Chelmsford,2014,Commercial & Industrial,802040.92,208700.923,2981.114,16028.35,6167019.0,6395.3,,,,,,
+422,57,Chelsea,2014,Commercial & Industrial,1270674.56,173339.694,3442.924,41017.26,7462968.0,21710.2,,,,,,
+423,58,Cheshire,2014,Commercial & Industrial,236905.14,2940.812,371.144,,149854.0,,,,,Protected,,Protected
+424,59,Chester,2014,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+425,60,Chesterfield,2014,Commercial & Industrial,,597.0,,,,,Protected,,Protected,No gas,No gas,No gas
+426,61,Chicopee,2014,Commercial & Industrial,,,,107385.85,6607094.0,65672.0,Municipal,Municipal,Municipal,,,
+427,62,Chilmark,2014,Commercial & Industrial,,2112.674,,,,,Protected,,Protected,No gas,No gas,No gas
+428,63,Clarksburg,2014,Commercial & Industrial,,275.335,,,,,Protected,,Protected,Protected,Protected,Protected
+429,64,Clinton,2014,Commercial & Industrial,245773.55,74270.684,600.587,12220.93,3149822.0,8145.0,,,,,,
+430,65,Cohasset,2014,Commercial & Industrial,86747.39,17440.025,391.642,,907695.0,,,,,Protected,,Protected
+431,66,Colrain,2014,Commercial & Industrial,,8539.258,,,,,Protected,,Protected,No gas,No gas,No gas
+432,67,Concord,2014,Commercial & Industrial,,,,38925.5,5130368.0,23095.0,Municipal,Municipal,Municipal,,,
+433,68,Conway,2014,Commercial & Industrial,,983.165,,,,,Protected,,Protected,No gas,No gas,No gas
+434,69,Cummington,2014,Commercial & Industrial,,1338.689,,,,,Protected,,Protected,No gas,No gas,No gas
+435,70,Dalton,2014,Commercial & Industrial,,56464.758,,,1104375.0,,Protected,,Protected,Protected,,Protected
+436,71,Danvers,2014,Commercial & Industrial,,,,,6681917.0,,Municipal,Municipal,Municipal,Protected,,Protected
+437,72,Dartmouth,2014,Commercial & Industrial,1649460.54,136418.835,4982.965,109202.66,6880381.36,6689.0,,,,,,
+438,73,Dedham,2014,Commercial & Industrial,721521.98,124326.09,2424.425,,5084373.0,,,,,Protected,,Protected
+439,74,Deerfield,2014,Commercial & Industrial,255863.2,36104.197,1230.059,,2742207.0,,,,,Protected,,Protected
+440,75,Dennis,2014,Commercial & Industrial,945623.31,38476.174,2214.362,,1889065.0,,,,,Protected,,Protected
+441,76,Dighton,2014,Commercial & Industrial,34733.05,7913.325,109.472,,604481.0,,,,,Protected,,Protected
+442,77,Douglas,2014,Commercial & Industrial,,9412.067,,,,,Protected,,Protected,No gas,No gas,No gas
+443,78,Dover,2014,Commercial & Industrial,,4597.37,,,,,Protected,,Protected,Protected,Protected,Protected
+444,79,Dracut,2014,Commercial & Industrial,229811.8,40398.28,1133.464,19173.25,4520373.0,120812.0,,,,,,
+445,80,Dudley,2014,Commercial & Industrial,209302.86,32267.275,755.491,,609910.0,,,,,Protected,,Protected
+446,81,Dunstable,2014,Commercial & Industrial,,1000.548,,,51582.0,,Protected,,Protected,Protected,,Protected
+447,82,Duxbury,2014,Commercial & Industrial,224399.94,17795.211,767.626,,994615.0,,,,,Protected,,Protected
+448,83,East Bridgewater,2014,Commercial & Industrial,113664.71,24173.308,729.387,,854455.0,,,,,Protected,,Protected
+449,84,East Brookfield,2014,Commercial & Industrial,,3566.944,,,140473.0,,Protected,,Protected,Protected,,Protected
+450,85,East Longmeadow,2014,Commercial & Industrial,2291187.17,146487.434,6578.907,,3263056.0,,,,,Protected,,Protected
+451,86,Eastham,2014,Commercial & Industrial,,6420.588,,,389100.0,,Protected,,Protected,Protected,,Protected
+452,87,Easthampton,2014,Commercial & Industrial,203292.66,34993.198,1163.74,,2577802.0,,,,,Protected,,Protected
+453,88,Easton,2014,Commercial & Industrial,641819.02,70865.023,2903.345,,4379303.0,,,,,Protected,,Protected
+454,89,Edgartown,2014,Commercial & Industrial,198804.85,19473.39,512.137,,,,,,,No gas,No gas,No gas
+455,90,Egremont,2014,Commercial & Industrial,,728.306,,,,,Protected,,Protected,No gas,No gas,No gas
+456,91,Erving,2014,Commercial & Industrial,,47456.601,,,,,Protected,,Protected,No gas,No gas,No gas
+457,92,Essex,2014,Commercial & Industrial,,6755.229,,,316699.0,,Protected,,Protected,Protected,,Protected
+458,93,Everett,2014,Commercial & Industrial,653247.14,137202.311,3210.114,17822.65,11440844.0,15894.0,,,,,,
+459,94,Fairhaven,2014,Commercial & Industrial,495996.76,46475.475,1160.334,,2062210.0,,,,,Protected,,Protected
+460,95,Fall River,2014,Commercial & Industrial,2436107.78,304866.261,8176.509,395862.18,16489469.56,132115.0,,,,,,
+461,96,Falmouth,2014,Commercial & Industrial,1050387.29,132700.201,4895.954,75268.46,6293015.0,58178.0,,,,,,
+462,97,Fitchburg,2014,Commercial & Industrial,879896.34,167921.713,3836.831,205265.28,8243888.92,153065.3,,,,,,
+463,98,Florida,2014,Commercial & Industrial,,286.556,,,,,Protected,,Protected,No gas,No gas,No gas
+464,99,Foxborough,2014,Commercial & Industrial,618544.18,115035.033,2244.59,,3850188.0,,,,,Protected,,Protected
+465,100,Framingham,2014,Commercial & Industrial,1791240.24,396313.378,7759.947,493177.35,16605414.0,54860.0,,,,,,
+466,101,Franklin,2014,Commercial & Industrial,1234348.66,234582.138,6691.194,66950.12,7151764.0,51427.0,,,,,,
+467,102,Freetown,2014,Commercial & Industrial,456782.78,31730.437,1710.194,,4716869.29,,,,,Protected,,Protected
+468,103,Gardner,2014,Commercial & Industrial,1038856.14,68325.269,3150.408,,3576296.18,,,,,Protected,,Protected
+469,104,Aquinnah,2014,Commercial & Industrial,,422.193,,,,,Protected,,Protected,No gas,No gas,No gas
+470,105,Georgetown,2014,Commercial & Industrial,,,,,785951.0,,Municipal,Municipal,Municipal,Protected,,Protected
+471,106,Gill,2014,Commercial & Industrial,,5476.889,,,,,Protected,,Protected,No gas,No gas,No gas
+472,107,Gloucester,2014,Commercial & Industrial,526383.6,97539.399,2050.192,18609.0,3662812.0,13206.0,,,,,,
+473,108,Goshen,2014,Commercial & Industrial,,441.289,,,,,Protected,,Protected,No gas,No gas,No gas
+474,109,Gosnold,2014,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+475,110,Grafton,2014,Commercial & Industrial,564383.45,62217.615,3139.959,,11625094.0,,,,,Protected,,Protected
+476,111,Granby,2014,Commercial & Industrial,,5836.945,,,66068.0,,Protected,,Protected,Protected,,Protected
+477,112,Granville,2014,Commercial & Industrial,,1710.537,,,,,Protected,,Protected,No gas,No gas,No gas
+478,113,Great Barrington,2014,Commercial & Industrial,141422.36,33668.853,891.719,,1892889.0,,,,,Protected,,Protected
+479,114,Greenfield,2014,Commercial & Industrial,381902.51,72917.841,2197.708,26270.41,3065540.0,14558.7,,,,,,
+480,115,Groton,2014,Commercial & Industrial,,,,18322.0,4035989.0,86445.0,Municipal,Municipal,Municipal,,,
+481,116,Groveland,2014,Commercial & Industrial,,,,,471774.0,,Municipal,Municipal,Municipal,Protected,,Protected
+482,117,Hadley,2014,Commercial & Industrial,244634.2,61505.015,1540.872,,1157372.0,,,,,Protected,,Protected
+483,118,Halifax,2014,Commercial & Industrial,,9147.107,,,286869.0,,Protected,,Protected,Protected,,Protected
+484,119,Hamilton,2014,Commercial & Industrial,49283.7,8661.836,184.54,,455717.0,,,,,Protected,,Protected
+485,120,Hampden,2014,Commercial & Industrial,,4928.077,,,206342.0,,Protected,,Protected,Protected,,Protected
+486,121,Hancock,2014,Commercial & Industrial,,9949.093,,,,,Protected,,Protected,No gas,No gas,No gas
+487,122,Hanover,2014,Commercial & Industrial,306313.02,53209.577,953.637,,1821372.0,,,,,Protected,,Protected
+488,123,Hanson,2014,Commercial & Industrial,78906.5,13645.042,386.007,,546797.0,,,,,Protected,,Protected
+489,124,Hardwick,2014,Commercial & Industrial,,5331.744,,,,,Protected,,Protected,No gas,No gas,No gas
+490,125,Harvard,2014,Commercial & Industrial,,5672.669,,,233933.0,,Protected,,Protected,Protected,,Protected
+491,126,Harwich,2014,Commercial & Industrial,562726.91,32739.437,760.026,,1579540.0,,,,,Protected,,Protected
+492,127,Hatfield,2014,Commercial & Industrial,,22711.591,,,589022.0,,Protected,,Protected,Protected,,Protected
+493,128,Haverhill,2014,Commercial & Industrial,1666116.37,190414.615,5222.157,248629.05,10670595.0,132541.5,,,,,,
+494,129,Hawley,2014,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+495,130,Heath,2014,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+496,131,Hingham,2014,Commercial & Industrial,,,,,3679641.0,,Municipal,Municipal,Municipal,Protected,,Protected
+497,132,Hinsdale,2014,Commercial & Industrial,,2923.533,,,,,Protected,,Protected,No gas,No gas,No gas
+498,133,Holbrook,2014,Commercial & Industrial,116419.98,17980.387,333.743,,859047.0,,,,,Protected,,Protected
+499,134,Holden,2014,Commercial & Industrial,,,,,2030213.0,,Municipal,Municipal,Municipal,Protected,,Protected
+500,135,Holland,2014,Commercial & Industrial,,711.41,,,,,Protected,,Protected,No gas,No gas,No gas
+501,136,Holliston,2014,Commercial & Industrial,265055.77,31623.411,781.769,,1760184.0,,,,,Protected,,Protected
+502,137,Holyoke,2014,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,Municipal,Municipal,Municipal
+503,138,Hopedale,2014,Commercial & Industrial,,9339.074,,,219940.0,,Protected,,Protected,Protected,,Protected
+504,139,Hopkinton,2014,Commercial & Industrial,1046544.04,248138.833,4426.377,,3492983.0,,,,,Protected,,Protected
+505,140,Hubbardston,2014,Commercial & Industrial,,2349.447,,,,,Protected,,Protected,No gas,No gas,No gas
+506,141,Hudson,2014,Commercial & Industrial,,,,,6750853.0,,Municipal,Municipal,Municipal,Protected,,Protected
+507,142,Hull,2014,Commercial & Industrial,,,,,751819.0,,Municipal,Municipal,Municipal,Protected,,Protected
+508,143,Huntington,2014,Commercial & Industrial,,2832.849,,,,,Protected,,Protected,No gas,No gas,No gas
+509,144,Ipswich,2014,Commercial & Industrial,,,,,2181906.0,,Municipal,Municipal,Municipal,Protected,,Protected
+510,145,Kingston,2014,Commercial & Industrial,942591.4,47459.922,2774.281,,1481508.0,,,,,Protected,,Protected
+511,146,Lakeville,2014,Commercial & Industrial,27569.83,147.144,131.993,,310788.0,,,,,Protected,,Protected
+512,147,Lancaster,2014,Commercial & Industrial,520245.2,16611.407,2256.897,,74304.0,,,,,Protected,,Protected
+513,148,Lanesborough,2014,Commercial & Industrial,,9963.081,,,168215.0,,Protected,,Protected,Protected,,Protected
+514,149,Lawrence,2014,Commercial & Industrial,1838648.94,239646.742,7482.804,229336.64,14016085.0,204230.0,,,,,,
+515,150,Lee,2014,Commercial & Industrial,203354.8,83024.76,1130.68,,2246830.0,,,,,Protected,,Protected
+516,151,Leicester,2014,Commercial & Industrial,166496.38,16920.568,388.741,,315302.0,,,,,Protected,,Protected
+517,152,Lenox,2014,Commercial & Industrial,304688.35,30255.198,1289.921,,2242232.0,,,,,Protected,,Protected
+518,153,Leominster,2014,Commercial & Industrial,2095062.97,298528.977,6911.588,92300.0,7481816.0,39830.0,,,,,,
+519,154,Leverett,2014,Commercial & Industrial,,686.449,,,,,Protected,,Protected,No gas,No gas,No gas
+520,155,Lexington,2014,Commercial & Industrial,1602263.5,339085.79,6234.507,,7589826.0,,,,,Protected,,Protected
+521,156,Leyden,2014,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+522,157,Lincoln,2014,Commercial & Industrial,89064.51,10181.104,338.613,,902779.0,,,,,Protected,,Protected
+523,158,Littleton,2014,Commercial & Industrial,,,,,2063193.0,,Municipal,Municipal,Municipal,Protected,,Protected
+524,159,Longmeadow,2014,Commercial & Industrial,137030.0,22966.094,585.576,,1216923.0,,,,,Protected,,Protected
+525,160,Lowell,2014,Commercial & Industrial,2027985.55,363137.283,7163.067,167438.14,25301869.0,159024.5,,,,,,
+526,161,Ludlow,2014,Commercial & Industrial,218589.11,78276.328,1101.264,,1784864.0,,,,,Protected,,Protected
+527,162,Lunenburg,2014,Commercial & Industrial,475378.0,16290.371,2255.69,,1938645.68,,,,,Protected,,Protected
+528,163,Lynn,2014,Commercial & Industrial,1587410.35,218186.227,5738.032,443850.45,24485811.0,209943.51,,,,,,
+529,164,Lynnfield,2014,Commercial & Industrial,,,,,1826453.0,,Municipal,Municipal,Municipal,Protected,,Protected
+530,165,Malden,2014,Commercial & Industrial,971499.34,121750.98,3610.004,,7688691.0,,,,,Protected,,Protected
+531,166,Manchester,2014,Commercial & Industrial,82361.59,9329.291,193.963,,499019.0,,,,,Protected,,Protected
+532,167,Mansfield,2014,Commercial & Industrial,,,,,3123690.0,,Municipal,Municipal,Municipal,Protected,,Protected
+533,168,Marblehead,2014,Commercial & Industrial,,,,,1607326.0,,Municipal,Municipal,Municipal,Protected,,Protected
+534,169,Marion,2014,Commercial & Industrial,194107.67,13418.771,445.306,,658372.0,,,,,Protected,,Protected
+535,170,Marlborough,2014,Commercial & Industrial,2660955.07,373759.122,11159.805,274476.41,10854774.0,134664.0,,,,,,
+536,171,Marshfield,2014,Commercial & Industrial,506281.41,39285.968,1943.14,,1411073.0,,,,,Protected,,Protected
+537,172,Mashpee,2014,Commercial & Industrial,801792.65,39519.002,1724.416,,1467594.0,,,,,Protected,,Protected
+538,173,Mattapoisett,2014,Commercial & Industrial,228683.94,12219.427,529.253,,607943.0,,,,,Protected,,Protected
+539,174,Maynard,2014,Commercial & Industrial,120693.83,38955.328,351.019,,1493229.0,,,,,Protected,,Protected
+540,175,Medfield,2014,Commercial & Industrial,90628.14,17074.688,407.409,,704453.0,,,,,Protected,,Protected
+541,176,Medford,2014,Commercial & Industrial,866234.23,167631.296,3357.199,50464.36,8052840.0,27168.07,,,,,,
+542,177,Medway,2014,Commercial & Industrial,71685.59,24743.015,175.289,,905778.0,,,,,Protected,,Protected
+543,178,Melrose,2014,Commercial & Industrial,613392.34,38667.025,2475.249,94814.32,2089524.0,58686.0,,,,,,
+544,179,Mendon,2014,Commercial & Industrial,,6502.215,,,198035.0,,Protected,,Protected,Protected,,Protected
+545,180,Merrimac,2014,Commercial & Industrial,,,,,335859.0,,Municipal,Municipal,Municipal,Protected,,Protected
+546,181,Methuen,2014,Commercial & Industrial,970521.1,129496.185,4130.065,239017.3,8351324.0,135102.0,,,,,,
+547,182,Middleborough,2014,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,Municipal,Municipal,Municipal
+548,183,Middlefield,2014,Commercial & Industrial,,263.522,,,,,Protected,,Protected,No gas,No gas,No gas
+549,184,Middleton,2014,Commercial & Industrial,,,,,2053811.0,,Municipal,Municipal,Municipal,Protected,,Protected
+550,185,Milford,2014,Commercial & Industrial,570015.43,215504.622,2429.975,33003.92,7032134.0,31378.0,,,,,,
+551,186,Millbury,2014,Commercial & Industrial,364644.94,66427.399,2477.791,,4419563.0,,,,,Protected,,Protected
+552,187,Millis,2014,Commercial & Industrial,185054.57,14699.506,510.814,,625106.0,,,,,Protected,,Protected
+553,188,Millville,2014,Commercial & Industrial,,1007.191,,,,,Protected,,Protected,Protected,Protected,Protected
+554,189,Milton,2014,Commercial & Industrial,253372.18,38160.409,1326.354,,2034214.0,,,,,Protected,,Protected
+555,190,Monroe,2014,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+556,191,Monson,2014,Commercial & Industrial,,9550.923,,,381149.0,,Protected,,Protected,Protected,,Protected
+557,192,Montague,2014,Commercial & Industrial,112021.0,57534.363,833.282,,1061100.0,,,,,Protected,,Protected
+558,193,Monterey,2014,Commercial & Industrial,,296.798,,,,,Protected,,Protected,No gas,No gas,No gas
+559,194,Montgomery,2014,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+560,195,Mount Washington,2014,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+561,196,Nahant,2014,Commercial & Industrial,,2585.251,,,200701.0,,Protected,,Protected,Protected,,Protected
+562,197,Nantucket,2014,Commercial & Industrial,192102.33,45526.789,1122.345,,,,,,,No gas,No gas,No gas
+563,198,Natick,2014,Commercial & Industrial,1626395.73,173565.345,6945.607,,6245751.0,,,,,Protected,,Protected
+564,199,Needham,2014,Commercial & Industrial,826425.86,273160.486,3975.808,,4579459.0,,,,,Protected,,Protected
+565,200,New Ashford,2014,Commercial & Industrial,,805.943,,,,,Protected,,Protected,No gas,No gas,No gas
+566,201,New Bedford,2014,Commercial & Industrial,3443204.64,391942.37,11078.837,371866.09,23855434.0,167885.0,,,,,,
+567,202,New Braintree,2014,Commercial & Industrial,,2769.043,,,,,Protected,,Protected,No gas,No gas,No gas
+568,203,New Marlborough,2014,Commercial & Industrial,,331.526,,,,,Protected,,Protected,No gas,No gas,No gas
+569,204,New Salem,2014,Commercial & Industrial,,396.264,,,,,Protected,,Protected,No gas,No gas,No gas
+570,205,Newbury,2014,Commercial & Industrial,,11019.696,,,618958.0,,Protected,,Protected,Protected,,Protected
+571,206,Newburyport,2014,Commercial & Industrial,1415361.36,106734.974,3591.646,28236.42,4234733.0,46347.0,,,,,,
+572,207,Newton,2014,Commercial & Industrial,3070968.89,321634.725,12195.936,133543.84,19471114.0,55913.1,,,,,,
+573,208,Norfolk,2014,Commercial & Industrial,295890.44,15868.758,1107.325,,1050301.0,,,,,Protected,,Protected
+574,209,North Adams,2014,Commercial & Industrial,418586.49,44291.008,839.961,,3488708.0,,,,,Protected,,Protected
+575,210,North Andover,2014,Commercial & Industrial,994447.48,132457.156,3316.969,349237.5,4622287.0,317076.0,,,,,,
+576,211,North Attleborough,2014,Commercial & Industrial,,,,,2463207.66,,Municipal,Municipal,Municipal,Protected,,Protected
+577,212,North Brookfield,2014,Commercial & Industrial,,12568.405,,,539233.0,,Protected,,Protected,Protected,,Protected
+578,213,North Reading,2014,Commercial & Industrial,,,,,2125591.0,,Municipal,Municipal,Municipal,Protected,,Protected
+579,214,Northampton,2014,Commercial & Industrial,697791.19,131096.252,3369.758,300576.34,10151825.0,93076.14,,,,,,
+580,215,Northborough,2014,Commercial & Industrial,350413.51,88636.948,2223.346,,4577303.0,,,,,Protected,,Protected
+581,216,Northbridge,2014,Commercial & Industrial,194673.74,31675.604,1047.701,,3134857.0,,,,,Protected,,Protected
+582,217,Northfield,2014,Commercial & Industrial,,4546.476,,,,,Protected,,Protected,No gas,No gas,No gas
+583,218,Norton,2014,Commercial & Industrial,612427.14,55559.99,1866.994,,2420273.0,,,,,Protected,,Protected
+584,219,Norwell,2014,Commercial & Industrial,187952.47,48266.731,745.758,,1244432.0,,,,,Protected,,Protected
+585,220,Norwood,2014,Commercial & Industrial,,,,,11343637.0,,Municipal,Municipal,Municipal,Protected,,Protected
+586,221,Oak Bluffs,2014,Commercial & Industrial,302051.87,19328.043,1431.546,,,,,,,No gas,No gas,No gas
+587,222,Oakham,2014,Commercial & Industrial,,503.899,,,,,Protected,,Protected,No gas,No gas,No gas
+588,223,Orange,2014,Commercial & Industrial,166430.32,23374.213,587.346,,,,,,,No gas,No gas,No gas
+589,224,Orleans,2014,Commercial & Industrial,243813.99,20473.103,1115.356,,1129658.0,,,,,Protected,,Protected
+590,225,Otis,2014,Commercial & Industrial,,2238.457,,,,,Protected,,Protected,No gas,No gas,No gas
+591,285,Stoughton,2014,Commercial & Industrial,875683.59,80083.243,3646.152,62607.7,4271433.0,26870.0,,,,,,
+592,226,Oxford,2014,Commercial & Industrial,178626.45,64357.301,794.016,,972195.0,,,,,Protected,,Protected
+593,227,Palmer,2014,Commercial & Industrial,420700.16,40437.275,1622.849,,1302148.0,,,,,Protected,,Protected
+594,228,Paxton,2014,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+595,229,Peabody,2014,Commercial & Industrial,,,,,16497160.0,,Municipal,Municipal,Municipal,Protected,,Protected
+596,230,Pelham,2014,Commercial & Industrial,,932.286,,,,,Protected,,Protected,No gas,No gas,No gas
+597,231,Pembroke,2014,Commercial & Industrial,273813.6,39800.42,1710.04,,1237819.0,,,,,Protected,,Protected
+598,232,Pepperell,2014,Commercial & Industrial,82339.59,11051.683,393.291,1885.0,488522.0,4304.0,,,,,,
+599,233,Peru,2014,Commercial & Industrial,,377.415,,,,,Protected,,Protected,No gas,No gas,No gas
+600,234,Petersham,2014,Commercial & Industrial,,1062.95,,,,,Protected,,Protected,No gas,No gas,No gas
+601,235,Phillipston,2014,Commercial & Industrial,,970.908,,,,,Protected,,Protected,No gas,No gas,No gas
+602,236,Pittsfield,2014,Commercial & Industrial,1341497.6,219892.65,7445.193,175355.0,11524508.0,89575.05,,,,,,
+603,237,Plainfield,2014,Commercial & Industrial,,666.966,,,,,Protected,,Protected,No gas,No gas,No gas
+604,238,Plainville,2014,Commercial & Industrial,115972.92,26818.398,463.873,,511391.95,,,,,Protected,,Protected
+605,239,Plymouth,2014,Commercial & Industrial,3421324.7,164408.041,14261.369,100306.1,7276396.0,16053.0,,,,,,
+606,240,Plympton,2014,Commercial & Industrial,,12119.915,,,167456.0,,Protected,,Protected,Protected,,Protected
+607,241,Princeton,2014,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+608,242,Provincetown,2014,Commercial & Industrial,512772.16,16955.138,1302.955,,,,,,,No gas,No gas,No gas
+609,243,Quincy,2014,Commercial & Industrial,2302687.52,365772.566,9500.59,169865.3,16268075.0,132825.0,,,,,,
+610,244,Randolph,2014,Commercial & Industrial,632618.55,62862.871,1737.88,8088.14,3723733.0,6379.0,,,,,,
+611,245,Raynham,2014,Commercial & Industrial,,,,,2466660.0,,Municipal,Municipal,Municipal,Protected,,Protected
+612,246,Reading,2014,Commercial & Industrial,,,,,2132275.0,,Municipal,Municipal,Municipal,Protected,,Protected
+613,247,Rehoboth,2014,Commercial & Industrial,78647.24,8481.07,235.193,,198495.0,,,,,Protected,,Protected
+614,248,Revere,2014,Commercial & Industrial,753414.82,87952.967,3842.079,,6518371.0,,,,,Protected,,Protected
+615,249,Richmond,2014,Commercial & Industrial,,1119.483,,,,,Protected,,Protected,No gas,No gas,No gas
+616,250,Rochester,2014,Commercial & Industrial,,4789.514,,,93279.0,,Protected,,Protected,Protected,,Protected
+617,251,Rockland,2014,Commercial & Industrial,214663.46,52812.329,1072.813,,2402675.0,,,,,Protected,,Protected
+618,252,Rockport,2014,Commercial & Industrial,56135.37,9954.407,337.439,,,,,,,Protected,Protected,Protected
+619,253,Rowe,2014,Commercial & Industrial,,357.579,,,,,Protected,,Protected,No gas,No gas,No gas
+620,254,Rowley,2014,Commercial & Industrial,,,,,706338.0,,Municipal,Municipal,Municipal,Protected,,Protected
+621,255,Royalston,2014,Commercial & Industrial,,376.123,,,,,Protected,,Protected,No gas,No gas,No gas
+622,256,Russell,2014,Commercial & Industrial,,481.355,,,,,Protected,,Protected,No gas,No gas,No gas
+623,257,Rutland,2014,Commercial & Industrial,,5195.208,,,,,Protected,,Protected,No gas,No gas,No gas
+624,258,Salem,2014,Commercial & Industrial,1205185.65,146510.656,4729.845,,6672595.0,,,,,Protected,,Protected
+625,259,Salisbury,2014,Commercial & Industrial,134423.11,24376.451,400.217,3300.92,1138282.0,12797.0,,,,,,
+626,260,Sandisfield,2014,Commercial & Industrial,,393.988,,,,,Protected,,Protected,No gas,No gas,No gas
+627,261,Sandwich,2014,Commercial & Industrial,263886.33,47142.804,1445.985,,1533071.0,,,,,Protected,,Protected
+628,262,Saugus,2014,Commercial & Industrial,442962.08,82313.499,2489.968,28434.93,4219781.0,23024.32,,,,,,
+629,263,Savoy,2014,Commercial & Industrial,,297.199,,,,,Protected,,Protected,No gas,No gas,No gas
+630,264,Scituate,2014,Commercial & Industrial,318791.85,16882.484,876.134,,809543.0,,,,,Protected,,Protected
+631,265,Seekonk,2014,Commercial & Industrial,443274.66,57299.92,2171.895,,1936642.0,,,,,Protected,,Protected
+632,266,Sharon,2014,Commercial & Industrial,395022.21,25653.959,1053.968,,1036409.0,,,,,Protected,,Protected
+633,267,Sheffield,2014,Commercial & Industrial,,35962.074,,,,,Protected,,Protected,No gas,No gas,No gas
+634,268,Shelburne,2014,Commercial & Industrial,,3369.96,,,,,Protected,,Protected,No gas,No gas,No gas
+635,269,Sherborn,2014,Commercial & Industrial,,2378.08,,,150847.0,,Protected,,Protected,Protected,,Protected
+636,270,Shirley,2014,Commercial & Industrial,,37981.841,,,2143129.0,,Protected,,Protected,Protected,,Protected
+637,271,Shrewsbury,2014,Commercial & Industrial,,,,,5519107.0,,Municipal,Municipal,Municipal,Protected,,Protected
+638,272,Shutesbury,2014,Commercial & Industrial,,428.767,,,,,Protected,,Protected,No gas,No gas,No gas
+639,273,Somerset,2014,Commercial & Industrial,465001.8,29579.324,1890.765,,1334459.07,,,,,Protected,,Protected
+640,274,Somerville,2014,Commercial & Industrial,945148.0,243213.345,2952.078,37117.03,12955437.0,14705.0,,,,,,
+641,275,South Hadley,2014,Commercial & Industrial,,,,,2261742.0,,Municipal,Municipal,Municipal,Protected,,Protected
+642,276,Southampton,2014,Commercial & Industrial,,9758.37,,,,,Protected,,Protected,Municipal,Municipal,Municipal
+643,277,Southborough,2014,Commercial & Industrial,434761.16,51834.211,1627.593,,2864277.0,,,,,Protected,,Protected
+644,278,Southbridge,2014,Commercial & Industrial,245962.02,69522.4,894.116,,2406111.0,,,,,Protected,,Protected
+645,279,Southwick,2014,Commercial & Industrial,91745.28,26113.916,338.594,,724788.0,,,,,Protected,,Protected
+646,280,Spencer,2014,Commercial & Industrial,51174.73,37906.59,232.258,,3206324.0,,,,,Protected,,Protected
+647,281,Springfield,2014,Commercial & Industrial,2978570.05,653105.677,13952.487,631880.17,30126795.0,818921.78,,,,,,
+648,282,Sterling,2014,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+649,283,Stockbridge,2014,Commercial & Industrial,56464.95,8360.716,421.705,,614678.0,,,,,Protected,,Protected
+650,284,Stoneham,2014,Commercial & Industrial,994793.44,43534.28,3573.083,6007.18,2437718.0,4084.0,,,,,,
+651,286,Stow,2014,Commercial & Industrial,,,,,509728.0,,Municipal,Municipal,Municipal,Protected,,Protected
+652,287,Sturbridge,2014,Commercial & Industrial,324594.3,66332.799,1256.88,,,,,,,No gas,No gas,No gas
+653,288,Sudbury,2014,Commercial & Industrial,298055.47,47560.93,1305.034,,2020628.0,,,,,Protected,,Protected
+654,289,Sunderland,2014,Commercial & Industrial,,4494.29,,,,,Protected,,Protected,Protected,Protected,Protected
+655,290,Sutton,2014,Commercial & Industrial,158734.8,23870.501,901.556,,487341.0,,,,,Protected,,Protected
+656,291,Swampscott,2014,Commercial & Industrial,107145.8,24738.381,568.989,,1356244.0,,,,,Protected,,Protected
+657,292,Swansea,2014,Commercial & Industrial,613508.28,39056.28,2694.713,,1168771.31,,,,,Protected,,Protected
+658,293,Taunton,2014,Commercial & Industrial,,,,89761.75,8373050.0,129497.0,Municipal,Municipal,Municipal,,,
+659,294,Templeton,2014,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+660,295,Tewksbury,2014,Commercial & Industrial,765322.13,133089.852,3235.924,7055.44,5196372.0,12609.0,,,,,,
+661,296,Tisbury,2014,Commercial & Industrial,90254.95,15354.91,259.667,,,,,,,No gas,No gas,No gas
+662,297,Tolland,2014,Commercial & Industrial,,561.257,,,,,Protected,,Protected,No gas,No gas,No gas
+663,298,Topsfield,2014,Commercial & Industrial,64008.87,10592.51,337.894,,393194.0,,,,,Protected,,Protected
+664,299,Townsend,2014,Commercial & Industrial,151312.85,31954.588,564.673,,786615.41,,,,,Protected,,Protected
+665,300,Truro,2014,Commercial & Industrial,101452.65,4575.697,596.083,,,,,,,No gas,No gas,No gas
+666,301,Tyngsborough,2014,Commercial & Industrial,279452.59,38019.85,542.157,,1487696.0,,,,,Protected,,Protected
+667,302,Tyringham,2014,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+668,303,Upton,2014,Commercial & Industrial,49231.36,8887.301,222.229,,449915.0,,,,,Protected,,Protected
+669,304,Uxbridge,2014,Commercial & Industrial,135221.53,27826.659,433.558,,1417152.0,,,,,Protected,,Protected
+670,305,Wakefield,2014,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,Municipal,Municipal,Municipal
+671,306,Wales,2014,Commercial & Industrial,,844.793,,,,,Protected,,Protected,No gas,No gas,No gas
+672,307,Walpole,2014,Commercial & Industrial,679129.77,100062.23,2163.095,9183.53,3817463.0,3643.0,,,,,,
+673,308,Waltham,2014,Commercial & Industrial,3117272.19,584686.842,29681.289,101614.78,16388008.0,70647.0,,,,,,
+674,309,Ware,2014,Commercial & Industrial,86867.34,39990.404,248.522,,,,,,,No gas,No gas,No gas
+675,310,Wareham,2014,Commercial & Industrial,541769.46,65157.238,1994.457,,3620618.0,,,,,Protected,,Protected
+676,311,Warren,2014,Commercial & Industrial,,6032.052,,,80646.0,,Protected,,Protected,Protected,,Protected
+677,312,Warwick,2014,Commercial & Industrial,,197.898,,,,,Protected,,Protected,No gas,No gas,No gas
+678,313,Washington,2014,Commercial & Industrial,,502.406,,,,,Protected,,Protected,No gas,No gas,No gas
+679,314,Watertown,2014,Commercial & Industrial,752692.69,169166.661,2743.193,96637.75,7406377.0,69285.0,,,,,,
+680,315,Wayland,2014,Commercial & Industrial,386447.48,22599.583,813.238,,1169362.0,,,,,Protected,,Protected
+681,316,Webster,2014,Commercial & Industrial,186567.29,51620.079,548.814,,1542028.0,,,,,Protected,,Protected
+682,317,Wellesley,2014,Commercial & Industrial,,,,,7949597.0,,Municipal,Municipal,Municipal,Protected,,Protected
+683,318,Wellfleet,2014,Commercial & Industrial,159533.32,4946.234,398.437,,,,,,,No gas,No gas,No gas
+684,319,Wendell,2014,Commercial & Industrial,,454.531,,,,,Protected,,Protected,No gas,No gas,No gas
+685,320,Wenham,2014,Commercial & Industrial,46544.75,10657.661,288.017,,617174.0,,,,,Protected,,Protected
+686,321,West Boylston,2014,Commercial & Industrial,,,,,1597703.0,,Municipal,Municipal,Municipal,Protected,,Protected
+687,322,West Bridgewater,2014,Commercial & Industrial,111109.53,39404.799,528.706,,1406469.0,,,,,Protected,,Protected
+688,323,West Brookfield,2014,Commercial & Industrial,,7512.113,,,565259.0,,Protected,,Protected,Protected,,Protected
+689,324,West Newbury,2014,Commercial & Industrial,,3318.407,,,,,Protected,,Protected,Protected,Protected,Protected
+690,325,West Springfield,2014,Commercial & Industrial,577395.1,137053.261,3478.391,91472.12,7237118.0,45092.0,,,,,,
+691,326,West Stockbridge,2014,Commercial & Industrial,,1566.772,,,,,Protected,,Protected,No gas,No gas,No gas
+692,327,West Tisbury,2014,Commercial & Industrial,124980.39,5522.348,190.072,,,,,,,No gas,No gas,No gas
+693,328,Westborough,2014,Commercial & Industrial,1084385.55,230643.543,4097.754,100797.75,7248921.0,86785.0,,,,,,
+694,329,Westfield,2014,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,Municipal,Municipal,Municipal
+695,330,Westford,2014,Commercial & Industrial,481931.7,169636.878,1746.408,15216.71,3054010.0,15171.0,,,,,,
+696,331,Westhampton,2014,Commercial & Industrial,,2445.556,,,,,Protected,,Protected,No gas,No gas,No gas
+697,332,Westminster,2014,Commercial & Industrial,910265.75,28252.929,5376.574,,978139.9,,,,,Protected,,Protected
+698,333,Weston,2014,Commercial & Industrial,222258.34,38216.588,945.889,,1956147.0,,,,,Protected,,Protected
+699,334,Westport,2014,Commercial & Industrial,242145.35,17367.271,1295.132,,556931.19,,,,,Protected,,Protected
+700,335,Westwood,2014,Commercial & Industrial,190898.95,59969.921,548.592,,1977363.0,,,,,Protected,,Protected
+701,336,Weymouth,2014,Commercial & Industrial,628875.18,131768.875,2379.017,,7525641.0,,,,,Protected,,Protected
+702,337,Whately,2014,Commercial & Industrial,,26278.075,,,230387.0,,Protected,,Protected,Protected,,Protected
+703,338,Whitman,2014,Commercial & Industrial,174375.72,23005.27,641.657,,883856.0,,,,,Protected,,Protected
+704,339,Wilbraham,2014,Commercial & Industrial,151924.21,42230.637,846.58,,1337917.0,,,,,Protected,,Protected
+705,340,Williamsburg,2014,Commercial & Industrial,,4081.558,,,,,Protected,,Protected,No gas,No gas,No gas
+706,341,Williamstown,2014,Commercial & Industrial,631175.1,40311.702,2751.614,,1100787.0,,,,,Protected,,Protected
+707,342,Wilmington,2014,Commercial & Industrial,,,,,8507410.0,,Municipal,Municipal,Municipal,Protected,,Protected
+708,343,Winchendon,2014,Commercial & Industrial,122393.29,11624.245,486.931,,,,,,,No gas,No gas,No gas
+709,344,Winchester,2014,Commercial & Industrial,399907.53,47006.828,1210.023,,2400613.0,,,,,Protected,,Protected
+710,345,Windsor,2014,Commercial & Industrial,,305.94,,,,,Protected,,Protected,No gas,No gas,No gas
+711,346,Winthrop,2014,Commercial & Industrial,73280.54,14817.22,230.619,,1081074.0,,,,,Protected,,Protected
+712,347,Woburn,2014,Commercial & Industrial,2037184.05,330985.341,6447.478,,17163367.0,,,,,Protected,,Protected
+713,348,Worcester,2014,Commercial & Industrial,6548578.87,847102.262,22548.828,1556942.63,61317338.0,1263822.79,,,,,,
+714,349,Worthington,2014,Commercial & Industrial,,505.533,,,,,Protected,,Protected,No gas,No gas,No gas
+715,350,Wrentham,2014,Commercial & Industrial,149951.74,35231.124,588.748,,1851265.0,,,,,Protected,,Protected
+716,351,Yarmouth,2014,Commercial & Industrial,1259916.85,72003.973,2828.05,,3109826.0,,,,,Protected,,Protected
+731,1,Abington,2015,Commercial & Industrial,121612.98,31372.125,405.497,,1173319.0,,,,,Protected,,Protected
+732,2,Acton,2015,Commercial & Industrial,411916.31,87223.812,1575.207,,3693293.0,,,,,Protected,,Protected
+733,3,Acushnet,2015,Commercial & Industrial,97294.88,11852.74,297.842,,1447824.0,,,,,Protected,,Protected
+734,4,Adams,2015,Commercial & Industrial,108687.79,70540.543,438.913,,1226589.0,,,,,Protected,,Protected
+735,5,Agawam,2015,Commercial & Industrial,970529.56,129870.89,3567.923,45971.93,4171819.0,23333.0,,,,,,
+736,6,Alford,2015,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+737,7,Amesbury,2015,Commercial & Industrial,417941.51,41584.75,1399.963,,1986706.0,,,,,Protected,,Protected
+738,8,Amherst,2015,Commercial & Industrial,1149512.91,85488.173,5803.137,,3185790.0,,,,,Protected,,Protected
+739,9,Andover,2015,Commercial & Industrial,1327159.97,368174.376,6888.565,,8549269.0,,,,,Protected,,Protected
+740,10,Arlington,2015,Commercial & Industrial,566774.98,44478.78,1380.722,,3054559.0,,,,,Protected,,Protected
+741,11,Ashburnham,2015,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+742,12,Ashby,2015,Commercial & Industrial,,1276.885,,,35245.46,,Protected,,Protected,Protected,,Protected
+743,13,Ashfield,2015,Commercial & Industrial,,1093.791,,,,,Protected,,Protected,No gas,No gas,No gas
+744,14,Ashland,2015,Commercial & Industrial,464594.41,37063.988,1633.384,125096.69,2068460.0,69822.0,,,,,,
+745,15,Athol,2015,Commercial & Industrial,469258.09,27469.855,1252.006,,,,,,,No gas,No gas,No gas
+746,16,Attleboro,2015,Commercial & Industrial,1238778.91,184711.798,4135.249,26485.67,6841343.77,14386.0,,,,,,
+747,17,Auburn,2015,Commercial & Industrial,1129846.89,80876.945,2959.717,,2175586.0,,,,,Protected,,Protected
+748,18,Avon,2015,Commercial & Industrial,108083.1,48071.67,442.306,,2452064.0,,,,,Protected,,Protected
+749,19,Ayer,2015,Commercial & Industrial,1715158.02,74739.943,6086.42,,2984493.0,,,,,Protected,,Protected
+750,20,Barnstable,2015,Commercial & Industrial,1904558.63,188874.458,5802.542,81540.56,9379763.0,38287.0,,,,,,
+751,21,Barre,2015,Commercial & Industrial,,7045.852,,,,,Protected,,Protected,No gas,No gas,No gas
+752,22,Becket,2015,Commercial & Industrial,,3058.299,,,,,Protected,,Protected,No gas,No gas,No gas
+753,23,Bedford,2015,Commercial & Industrial,359913.1,254261.107,1260.455,,10337636.0,,,,,Protected,,Protected
+754,24,Belchertown,2015,Commercial & Industrial,60941.33,14168.68,179.771,,,,,,,No gas,No gas,No gas
+755,25,Bellingham,2015,Commercial & Industrial,328669.65,53326.35,1230.618,,1647333.0,,,,,Protected,,Protected
+756,26,Belmont,2015,Commercial & Industrial,,,,,2643445.0,,Municipal,Municipal,Municipal,Protected,,Protected
+757,27,Berkley,2015,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,Protected,Protected,Protected
+758,28,Berlin,2015,Commercial & Industrial,,1974.518,,,91769.0,,Protected,,Protected,Protected,,Protected
+759,29,Bernardston,2015,Commercial & Industrial,,4065.885,,,,,Protected,,Protected,No gas,No gas,No gas
+760,30,Beverly,2015,Commercial & Industrial,1173719.73,162062.557,7171.471,42966.52,6645639.0,41764.0,,,,,,
+761,31,Billerica,2015,Commercial & Industrial,1751375.46,322320.75,7768.881,,12614853.0,,,,,Protected,,Protected
+762,32,Blackstone,2015,Commercial & Industrial,232392.76,8792.661,2962.628,,,,,,,Protected,Protected,Protected
+763,33,Blandford,2015,Commercial & Industrial,,3047.163,,,,,Protected,,Protected,No gas,No gas,No gas
+764,34,Bolton,2015,Commercial & Industrial,279650.53,4921.844,723.178,,,,,,,Protected,Protected,Protected
+765,35,Boston,2015,Commercial & Industrial,28114313.9,4823710.185,123399.554,2906198.7,184467130.0,2093365.2,,,,,,
+766,36,Bourne,2015,Commercial & Industrial,1514566.62,78913.494,3017.11,,3117024.0,,,,,Protected,,Protected
+767,37,Boxborough,2015,Commercial & Industrial,,,,,598042.0,,Municipal,Municipal,Municipal,Protected,,Protected
+768,38,Boxford,2015,Commercial & Industrial,,4474.376,,,344581.0,,Protected,,Protected,Protected,,Protected
+769,39,Boylston,2015,Commercial & Industrial,,,,,232667.0,,Municipal,Municipal,Municipal,Protected,,Protected
+770,40,Braintree,2015,Commercial & Industrial,,,,,6211757.0,,Municipal,Municipal,Municipal,Protected,,Protected
+771,41,Brewster,2015,Commercial & Industrial,297629.99,18302.069,783.362,,764171.0,,,,,Protected,,Protected
+772,42,Bridgewater,2015,Commercial & Industrial,437688.83,67864.249,2134.207,,5258878.0,,,,,Protected,,Protected
+773,43,Brimfield,2015,Commercial & Industrial,,3162.387,,,,,Protected,,Protected,No gas,No gas,No gas
+774,44,Brockton,2015,Commercial & Industrial,2673919.53,262187.7,9311.666,158948.04,14213543.0,108293.0,,,,,,
+775,45,Brookfield,2015,Commercial & Industrial,,1234.32,,,91961.0,,Protected,,Protected,Protected,,Protected
+776,46,Brookline,2015,Commercial & Industrial,788700.81,124124.418,3475.532,76093.6,12988021.0,51840.0,,,,,,
+777,47,Buckland,2015,Commercial & Industrial,,2138.873,,,,,Protected,,Protected,No gas,No gas,No gas
+778,48,Burlington,2015,Commercial & Industrial,1151565.31,373481.389,5241.514,35073.6,7606032.0,32466.0,,,,,,
+779,49,Cambridge,2015,Commercial & Industrial,15668339.78,1280109.295,143654.163,2918240.06,50800328.0,2392030.0,,,,,,
+780,50,Canton,2015,Commercial & Industrial,754445.18,226201.781,2784.605,67009.46,5957633.0,15921.0,,,,,,
+781,51,Carlisle,2015,Commercial & Industrial,,1959.229,,,135335.0,,Protected,,Protected,Protected,,Protected
+782,52,Carver,2015,Commercial & Industrial,100556.33,23952.218,199.597,,1846404.0,,,,,Protected,,Protected
+783,53,Charlemont,2015,Commercial & Industrial,,727.282,,,,,Protected,,Protected,No gas,No gas,No gas
+784,54,Charlton,2015,Commercial & Industrial,472947.67,35983.144,1612.752,,,,,,,No gas,No gas,No gas
+785,55,Chatham,2015,Commercial & Industrial,293685.16,23513.496,857.731,,1101455.0,,,,,Protected,,Protected
+786,56,Chelmsford,2015,Commercial & Industrial,833725.81,210604.861,4325.715,,6019601.0,,,,,Protected,,Protected
+787,57,Chelsea,2015,Commercial & Industrial,1247421.96,143679.343,4038.303,,7239166.0,,,,,Protected,,Protected
+788,58,Cheshire,2015,Commercial & Industrial,24383.17,2730.741,57.755,,97420.0,,,,,Protected,,Protected
+789,59,Chester,2015,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+790,60,Chesterfield,2015,Commercial & Industrial,,479.878,,,,,Protected,,Protected,No gas,No gas,No gas
+791,61,Chicopee,2015,Commercial & Industrial,,,,88808.0,7623638.0,48795.0,Municipal,Municipal,Municipal,,,
+792,62,Chilmark,2015,Commercial & Industrial,,2147.001,,,,,Protected,,Protected,No gas,No gas,No gas
+793,63,Clarksburg,2015,Commercial & Industrial,,272.912,,,,,Protected,,Protected,Protected,Protected,Protected
+794,64,Clinton,2015,Commercial & Industrial,234406.22,74346.494,936.054,,3318032.0,,,,,Protected,,Protected
+795,65,Cohasset,2015,Commercial & Industrial,218566.53,17535.237,883.235,,932967.0,,,,,Protected,,Protected
+796,66,Colrain,2015,Commercial & Industrial,,7907.425,,,,,Protected,,Protected,No gas,No gas,No gas
+797,67,Concord,2015,Commercial & Industrial,,,,,4993943.0,,Municipal,Municipal,Municipal,Protected,,Protected
+798,68,Conway,2015,Commercial & Industrial,,916.208,,,,,Protected,,Protected,No gas,No gas,No gas
+799,69,Cummington,2015,Commercial & Industrial,,1148.368,,,,,Protected,,Protected,No gas,No gas,No gas
+800,70,Dalton,2015,Commercial & Industrial,205660.41,60500.57,628.397,,2069127.0,,,,,Protected,,Protected
+801,71,Danvers,2015,Commercial & Industrial,,,,127042.29,7184993.0,46224.0,Municipal,Municipal,Municipal,,,
+802,72,Dartmouth,2015,Commercial & Industrial,1285113.33,117126.156,4446.142,,3667708.49,,,,,Protected,,Protected
+803,73,Dedham,2015,Commercial & Industrial,1339344.59,144123.403,4994.922,,4920651.0,,,,,Protected,,Protected
+804,74,Deerfield,2015,Commercial & Industrial,392453.16,38122.553,1941.107,,3584394.0,,,,,Protected,,Protected
+805,75,Dennis,2015,Commercial & Industrial,355116.8,38544.359,1018.045,,1972091.0,,,,,Protected,,Protected
+806,76,Dighton,2015,Commercial & Industrial,135434.07,7630.452,395.193,,1196505.0,,,,,Protected,,Protected
+807,77,Douglas,2015,Commercial & Industrial,86645.98,6489.781,361.406,,,,,,,No gas,No gas,No gas
+808,78,Dover,2015,Commercial & Industrial,55088.75,2890.936,231.723,,,,,,,Protected,Protected,Protected
+809,79,Dracut,2015,Commercial & Industrial,420170.09,41071.579,1296.541,,4531094.0,,,,,Protected,,Protected
+810,80,Dudley,2015,Commercial & Industrial,214128.69,34868.602,828.883,,669343.0,,,,,Protected,,Protected
+811,81,Dunstable,2015,Commercial & Industrial,,946.378,,,50415.0,,Protected,,Protected,Protected,,Protected
+812,82,Duxbury,2015,Commercial & Industrial,95163.14,14068.138,410.526,,698623.0,,,,,Protected,,Protected
+813,83,East Bridgewater,2015,Commercial & Industrial,41711.9,25021.488,330.392,,1203202.0,,,,,Protected,,Protected
+814,84,East Brookfield,2015,Commercial & Industrial,,3468.65,,,132350.0,,Protected,,Protected,Protected,,Protected
+815,85,East Longmeadow,2015,Commercial & Industrial,1096513.78,131831.395,5026.945,53706.76,2463117.0,23919.98,,,,,,
+816,86,Eastham,2015,Commercial & Industrial,,6806.54,,,333345.0,,Protected,,Protected,Protected,,Protected
+817,87,Easthampton,2015,Commercial & Industrial,222176.06,41599.446,693.23,77558.46,2352700.0,29017.0,,,,,,
+818,88,Easton,2015,Commercial & Industrial,661060.25,65874.319,2518.363,102582.5,4003568.0,40775.0,,,,,,
+819,89,Edgartown,2015,Commercial & Industrial,142930.84,19325.206,751.288,,,,,,,No gas,No gas,No gas
+820,90,Egremont,2015,Commercial & Industrial,,654.407,,,,,Protected,,Protected,No gas,No gas,No gas
+821,91,Erving,2015,Commercial & Industrial,,45543.279,,,,,Protected,,Protected,No gas,No gas,No gas
+822,92,Essex,2015,Commercial & Industrial,54270.17,7013.205,97.751,,306768.0,,,,,Protected,,Protected
+823,93,Everett,2015,Commercial & Industrial,832899.77,140925.477,2842.701,,8296001.0,,,,,Protected,,Protected
+824,94,Fairhaven,2015,Commercial & Industrial,637052.32,47219.111,2308.795,9804.92,1898942.0,3682.0,,,,,,
+825,95,Fall River,2015,Commercial & Industrial,2971595.29,295808.174,11411.415,123747.6,25407633.63,51329.0,,,,,,
+826,96,Falmouth,2015,Commercial & Industrial,1534855.19,120054.878,3780.2,69900.4,5950470.0,37863.2,,,,,,
+827,97,Fitchburg,2015,Commercial & Industrial,1865525.35,213201.335,5639.414,,9745089.91,,,,,Protected,,Protected
+828,98,Florida,2015,Commercial & Industrial,,212.044,,,,,Protected,,Protected,No gas,No gas,No gas
+829,99,Foxborough,2015,Commercial & Industrial,674789.2,112759.201,2782.733,,5290307.0,,,,,Protected,,Protected
+830,100,Framingham,2015,Commercial & Industrial,1910384.43,398563.413,7067.065,30472.9,15233390.0,19932.0,,,,,,
+831,101,Franklin,2015,Commercial & Industrial,1083416.97,213433.676,4700.321,76778.09,7032030.0,38270.0,,,,,,
+832,102,Freetown,2015,Commercial & Industrial,910868.12,27426.843,8187.428,,5300929.52,,,,,Protected,,Protected
+833,103,Gardner,2015,Commercial & Industrial,730278.5,62788.67,2473.066,,3690895.27,,,,,Protected,,Protected
+834,104,Aquinnah,2015,Commercial & Industrial,,392.921,,,,,Protected,,Protected,No gas,No gas,No gas
+835,105,Georgetown,2015,Commercial & Industrial,,,,,817127.0,,Municipal,Municipal,Municipal,Protected,,Protected
+836,106,Gill,2015,Commercial & Industrial,81637.66,5313.959,275.614,,,,,,,No gas,No gas,No gas
+837,107,Gloucester,2015,Commercial & Industrial,568550.96,111216.608,3150.912,47596.0,3891895.0,34829.0,,,,,,
+838,108,Goshen,2015,Commercial & Industrial,,424.522,,,,,Protected,,Protected,No gas,No gas,No gas
+839,109,Gosnold,2015,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+840,110,Grafton,2015,Commercial & Industrial,240902.34,56768.253,941.209,470222.28,11563894.0,447542.5,,,,,,
+841,111,Granby,2015,Commercial & Industrial,,5441.592,,,97187.0,,Protected,,Protected,Protected,,Protected
+842,112,Granville,2015,Commercial & Industrial,,1668.134,,,,,Protected,,Protected,No gas,No gas,No gas
+843,113,Great Barrington,2015,Commercial & Industrial,121358.65,32818.59,653.35,,1770954.0,,,,,Protected,,Protected
+844,114,Greenfield,2015,Commercial & Industrial,1069686.72,80725.205,2361.825,91545.25,2933805.0,34524.0,,,,,,
+845,115,Groton,2015,Commercial & Industrial,,,,,3209730.0,,Municipal,Municipal,Municipal,Protected,,Protected
+846,116,Groveland,2015,Commercial & Industrial,,,,,497496.0,,Municipal,Municipal,Municipal,Protected,,Protected
+847,117,Hadley,2015,Commercial & Industrial,460363.45,60311.686,1939.397,,967212.0,,,,,Protected,,Protected
+848,118,Halifax,2015,Commercial & Industrial,37534.06,8888.581,145.376,,457502.0,,,,,Protected,,Protected
+849,119,Hamilton,2015,Commercial & Industrial,97663.1,8969.252,375.645,,480861.0,,,,,Protected,,Protected
+850,120,Hampden,2015,Commercial & Industrial,130632.29,3545.266,409.193,,281888.0,,,,,Protected,,Protected
+851,121,Hancock,2015,Commercial & Industrial,,7812.427,,,,,Protected,,Protected,No gas,No gas,No gas
+852,122,Hanover,2015,Commercial & Industrial,705197.5,50677.051,1995.378,,2483076.0,,,,,Protected,,Protected
+853,123,Hanson,2015,Commercial & Industrial,158902.67,13290.227,478.285,,906990.0,,,,,Protected,,Protected
+854,124,Hardwick,2015,Commercial & Industrial,,4224.314,,,,,Protected,,Protected,No gas,No gas,No gas
+855,125,Harvard,2015,Commercial & Industrial,,5300.486,,,231779.0,,Protected,,Protected,Protected,,Protected
+856,126,Harwich,2015,Commercial & Industrial,973347.1,32360.833,1392.026,,1579026.0,,,,,Protected,,Protected
+857,127,Hatfield,2015,Commercial & Industrial,594698.86,21608.711,2327.494,,440476.0,,,,,Protected,,Protected
+858,128,Haverhill,2015,Commercial & Industrial,2366883.68,187618.666,8512.769,33917.5,10512431.0,42607.0,,,,,,
+859,129,Hawley,2015,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+860,130,Heath,2015,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+861,131,Hingham,2015,Commercial & Industrial,,,,,3445165.0,,Municipal,Municipal,Municipal,Protected,,Protected
+862,132,Hinsdale,2015,Commercial & Industrial,,2682.1,,,,,Protected,,Protected,No gas,No gas,No gas
+863,133,Holbrook,2015,Commercial & Industrial,119416.93,17407.195,309.021,,1117336.0,,,,,Protected,,Protected
+864,134,Holden,2015,Commercial & Industrial,,,,,1702578.0,,Municipal,Municipal,Municipal,Protected,,Protected
+865,135,Holland,2015,Commercial & Industrial,,743.951,,,,,Protected,,Protected,No gas,No gas,No gas
+866,136,Holliston,2015,Commercial & Industrial,217881.67,114092.215,578.855,,1664563.0,,,,,Protected,,Protected
+867,137,Holyoke,2015,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,Municipal,Municipal,Municipal
+868,138,Hopedale,2015,Commercial & Industrial,57887.0,8746.005,197.309,,137314.0,,,,,Protected,,Protected
+869,139,Hopkinton,2015,Commercial & Industrial,335986.54,250195.185,1121.799,,2883069.0,,,,,Protected,,Protected
+870,140,Hubbardston,2015,Commercial & Industrial,,,,,,,Protected,,Protected,No gas,No gas,No gas
+871,141,Hudson,2015,Commercial & Industrial,,,,,4935879.0,,Municipal,Municipal,Municipal,Protected,,Protected
+872,142,Hull,2015,Commercial & Industrial,,,,,723066.0,,Municipal,Municipal,Municipal,Protected,,Protected
+873,143,Huntington,2015,Commercial & Industrial,,2723.888,,,,,Protected,,Protected,No gas,No gas,No gas
+874,144,Ipswich,2015,Commercial & Industrial,,,,,2156397.0,,Municipal,Municipal,Municipal,Protected,,Protected
+875,145,Kingston,2015,Commercial & Industrial,291987.55,45950.421,840.394,,1209383.0,,,,,Protected,,Protected
+876,146,Lakeville,2015,Commercial & Industrial,19013.0,158.844,175.403,,385759.0,,,,,Protected,,Protected
+877,147,Lancaster,2015,Commercial & Industrial,231292.24,5910.01,561.258,,80692.0,,,,,Protected,,Protected
+878,148,Lanesborough,2015,Commercial & Industrial,,14046.49,,,165737.0,,Protected,,Protected,Protected,,Protected
+879,149,Lawrence,2015,Commercial & Industrial,1345802.19,234620.482,5690.125,122739.9,10899776.0,135285.0,,,,,,
+880,150,Lee,2015,Commercial & Industrial,176142.43,53652.726,1027.93,,2187584.0,,,,,Protected,,Protected
+881,151,Leicester,2015,Commercial & Industrial,56385.17,16904.542,192.752,,310950.0,,,,,Protected,,Protected
+882,152,Lenox,2015,Commercial & Industrial,283498.13,30398.735,1072.793,,2052330.0,,,,,Protected,,Protected
+883,153,Leominster,2015,Commercial & Industrial,3090580.12,308117.294,11446.023,,7732721.0,,,,,Protected,,Protected
+884,154,Leverett,2015,Commercial & Industrial,,1242.731,,,,,Protected,,Protected,No gas,No gas,No gas
+885,155,Lexington,2015,Commercial & Industrial,999570.87,268023.536,3576.066,,7203946.0,,,,,Protected,,Protected
+886,156,Leyden,2015,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+887,157,Lincoln,2015,Commercial & Industrial,40626.02,13719.913,134.087,,906086.0,,,,,Protected,,Protected
+888,158,Littleton,2015,Commercial & Industrial,,,,,1665701.0,,Municipal,Municipal,Municipal,Protected,,Protected
+889,159,Longmeadow,2015,Commercial & Industrial,48706.3,22983.926,284.972,13885.5,1294054.0,5891.0,,,,,,
+890,160,Lowell,2015,Commercial & Industrial,1862189.96,381722.993,8229.075,270705.5,33558322.0,132837.0,,,,,,
+891,161,Ludlow,2015,Commercial & Industrial,831127.7,75629.029,1715.139,23532.32,1931661.0,10492.0,,,,,,
+892,162,Lunenburg,2015,Commercial & Industrial,50962.64,18475.862,256.079,,2354363.7,,,,,Protected,,Protected
+893,163,Lynn,2015,Commercial & Industrial,1991548.65,208685.13,8171.583,,25906230.0,,,,,Protected,,Protected
+894,164,Lynnfield,2015,Commercial & Industrial,,,,,1855859.0,,Municipal,Municipal,Municipal,Protected,,Protected
+895,165,Malden,2015,Commercial & Industrial,857333.52,119149.35,2431.648,,7291667.0,,,,,Protected,,Protected
+896,166,Manchester,2015,Commercial & Industrial,53251.36,9639.058,344.072,,568646.0,,,,,Protected,,Protected
+897,167,Mansfield,2015,Commercial & Industrial,,,,,3999489.0,,Municipal,Municipal,Municipal,Protected,,Protected
+898,168,Marblehead,2015,Commercial & Industrial,,,,,1565530.0,,Municipal,Municipal,Municipal,Protected,,Protected
+899,169,Marion,2015,Commercial & Industrial,61419.86,15806.408,227.877,,607321.0,,,,,Protected,,Protected
+900,170,Marlborough,2015,Commercial & Industrial,4947766.18,368079.695,15016.805,64409.24,10826536.0,20425.0,,,,,,
+901,171,Marshfield,2015,Commercial & Industrial,317953.48,37144.961,1065.354,9046.62,1924515.0,19764.0,,,,,,
+902,172,Mashpee,2015,Commercial & Industrial,219340.77,38592.35,768.44,,1442978.0,,,,,Protected,,Protected
+903,173,Mattapoisett,2015,Commercial & Industrial,51626.13,8059.841,203.328,,359396.0,,,,,Protected,,Protected
+904,174,Maynard,2015,Commercial & Industrial,157209.57,36559.322,502.002,,1205166.0,,,,,Protected,,Protected
+905,175,Medfield,2015,Commercial & Industrial,119195.65,15761.591,552.67,,884566.0,,,,,Protected,,Protected
+906,176,Medford,2015,Commercial & Industrial,1519765.23,192225.249,5615.136,112507.46,8096282.0,65539.0,,,,,,
+907,177,Medway,2015,Commercial & Industrial,170987.05,23817.137,617.258,,1037827.0,,,,,Protected,,Protected
+908,178,Melrose,2015,Commercial & Industrial,225516.67,38621.815,680.587,,2346592.0,,,,,Protected,,Protected
+909,179,Mendon,2015,Commercial & Industrial,51467.41,6326.361,192.617,,185505.0,,,,,Protected,,Protected
+910,180,Merrimac,2015,Commercial & Industrial,,,,,344529.0,,Municipal,Municipal,Municipal,Protected,,Protected
+911,181,Methuen,2015,Commercial & Industrial,986066.31,120804.773,2667.952,95877.0,5017438.0,25075.4,,,,,,
+912,182,Middleborough,2015,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,Municipal,Municipal,Municipal
+913,183,Middlefield,2015,Commercial & Industrial,,215.217,,,,,Protected,,Protected,No gas,No gas,No gas
+914,184,Middleton,2015,Commercial & Industrial,,,,,2239152.0,,Municipal,Municipal,Municipal,Protected,,Protected
+915,185,Milford,2015,Commercial & Industrial,2135725.67,219135.168,9175.27,84675.83,6374779.0,21900.0,,,,,,
+916,186,Millbury,2015,Commercial & Industrial,392967.38,59625.149,1847.469,,4354709.0,,,,,Protected,,Protected
+917,187,Millis,2015,Commercial & Industrial,,15800.876,,,916375.0,,Protected,,Protected,Protected,,Protected
+918,188,Millville,2015,Commercial & Industrial,,972.149,,,,,Protected,,Protected,Protected,Protected,Protected
+919,189,Milton,2015,Commercial & Industrial,513192.53,44356.503,1615.195,18846.0,2028396.0,20673.0,,,,,,
+920,190,Monroe,2015,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+921,191,Monson,2015,Commercial & Industrial,65404.46,9522.932,291.376,,380661.0,,,,,Protected,,Protected
+922,192,Montague,2015,Commercial & Industrial,82569.26,61813.23,380.983,,2024014.0,,,,,Protected,,Protected
+923,193,Monterey,2015,Commercial & Industrial,,265.88,,,,,Protected,,Protected,No gas,No gas,No gas
+924,194,Montgomery,2015,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+925,195,Mount Washington,2015,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+926,196,Nahant,2015,Commercial & Industrial,,2758.458,,,196907.0,,Protected,,Protected,Protected,,Protected
+927,197,Nantucket,2015,Commercial & Industrial,775968.2,46237.273,1968.958,,,,,,,No gas,No gas,No gas
+928,198,Natick,2015,Commercial & Industrial,1087026.22,211561.509,5497.118,,5538152.0,,,,,Protected,,Protected
+929,199,Needham,2015,Commercial & Industrial,1097844.89,296056.728,3377.614,,4991725.0,,,,,Protected,,Protected
+930,200,New Ashford,2015,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+931,201,New Bedford,2015,Commercial & Industrial,3945887.16,425376.664,24192.667,77586.22,21542437.0,27736.0,,,,,,
+932,202,New Braintree,2015,Commercial & Industrial,,2660.048,,,,,Protected,,Protected,No gas,No gas,No gas
+933,203,New Marlborough,2015,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+934,204,New Salem,2015,Commercial & Industrial,,377.458,,,,,Protected,,Protected,No gas,No gas,No gas
+935,205,Newbury,2015,Commercial & Industrial,220441.85,11208.79,704.064,,655228.0,,,,,Protected,,Protected
+936,206,Newburyport,2015,Commercial & Industrial,506319.52,107406.771,2366.248,,4119064.0,,,,,Protected,,Protected
+937,207,Newton,2015,Commercial & Industrial,2682212.49,349341.862,9160.688,203913.35,15386593.0,156843.0,,,,,,
+938,208,Norfolk,2015,Commercial & Industrial,174972.26,7566.44,931.607,,237332.0,,,,,Protected,,Protected
+939,209,North Adams,2015,Commercial & Industrial,511561.28,42067.734,923.621,,3366413.0,,,,,Protected,,Protected
+940,210,North Andover,2015,Commercial & Industrial,973808.0,129430.434,3666.68,,5693085.0,,,,,Protected,,Protected
+941,211,North Attleboro,2015,Commercial & Industrial,,,,,2951723.08,,Municipal,Municipal,Municipal,Protected,,Protected
+942,212,North Brookfield,2015,Commercial & Industrial,,9133.334,,,470723.0,,Protected,,Protected,Protected,,Protected
+943,213,North Reading,2015,Commercial & Industrial,,,,,1983793.0,,Municipal,Municipal,Municipal,Protected,,Protected
+944,214,Northampton,2015,Commercial & Industrial,707242.78,129274.175,3646.183,114051.02,7636546.0,40109.2,,,,,,
+945,215,Northborough,2015,Commercial & Industrial,534951.07,87432.482,2477.369,37978.16,4491585.0,16410.0,,,,,,
+946,216,Northbridge,2015,Commercial & Industrial,780584.73,33662.799,1558.27,,2648750.0,,,,,Protected,,Protected
+947,217,Northfield,2015,Commercial & Industrial,63499.76,4140.307,159.785,,,,,,,No gas,No gas,No gas
+948,218,Norton,2015,Commercial & Industrial,304748.61,57298.352,982.788,,3529830.0,,,,,Protected,,Protected
+949,219,Norwell,2015,Commercial & Industrial,275309.71,50554.634,1200.877,,1952033.0,,,,,Protected,,Protected
+950,220,Norwood,2015,Commercial & Industrial,,,,,11306062.0,,Municipal,Municipal,Municipal,Protected,,Protected
+951,221,Oak Bluffs,2015,Commercial & Industrial,133355.88,18598.404,549.77,,,,,,,No gas,No gas,No gas
+952,222,Oakham,2015,Commercial & Industrial,,538.173,,,,,Protected,,Protected,No gas,No gas,No gas
+953,223,Orange,2015,Commercial & Industrial,276332.72,15461.229,761.761,,,,,,,No gas,No gas,No gas
+954,224,Orleans,2015,Commercial & Industrial,473431.46,20287.314,1182.545,,1122354.0,,,,,Protected,,Protected
+955,225,Otis,2015,Commercial & Industrial,,2173.575,,,,,Protected,,Protected,No gas,No gas,No gas
+956,226,Oxford,2015,Commercial & Industrial,361934.59,67285.548,1063.668,,993620.0,,,,,Protected,,Protected
+957,227,Palmer,2015,Commercial & Industrial,181080.93,33934.333,707.432,,1130011.0,,,,,Protected,,Protected
+958,228,Paxton,2015,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+959,229,Peabody,2015,Commercial & Industrial,,,,174009.25,15757575.0,109042.0,Municipal,Municipal,Municipal,,,
+960,230,Pelham,2015,Commercial & Industrial,,850.049,,,,,Protected,,Protected,No gas,No gas,No gas
+961,231,Pembroke,2015,Commercial & Industrial,310128.89,40566.502,1094.615,,1583742.0,,,,,Protected,,Protected
+962,232,Pepperell,2015,Commercial & Industrial,96597.13,10848.034,444.078,,458214.0,,,,,Protected,,Protected
+963,233,Peru,2015,Commercial & Industrial,,364.095,,,,,Protected,,Protected,No gas,No gas,No gas
+964,234,Petersham,2015,Commercial & Industrial,,851.711,,,,,Protected,,Protected,No gas,No gas,No gas
+965,235,Phillipston,2015,Commercial & Industrial,,1025.71,,,,,Protected,,Protected,No gas,No gas,No gas
+966,236,Pittsfield,2015,Commercial & Industrial,1239762.23,228093.087,6072.254,46648.85,11420761.0,20229.6,,,,,,
+967,237,Plainfield,2015,Commercial & Industrial,,708.605,,,,,Protected,,Protected,No gas,No gas,No gas
+968,238,Plainville,2015,Commercial & Industrial,125492.55,35610.674,478.118,,737504.18,,,,,Protected,,Protected
+969,239,Plymouth,2015,Commercial & Industrial,1654956.63,185678.682,6658.939,74807.28,6114670.0,57192.0,,,,,,
+970,240,Plympton,2015,Commercial & Industrial,,13604.396,,,426980.0,,Protected,,Protected,Protected,,Protected
+971,241,Princeton,2015,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+972,242,Provincetown,2015,Commercial & Industrial,80190.51,16355.244,305.458,,,,,,,No gas,No gas,No gas
+973,243,Quincy,2015,Commercial & Industrial,7458225.2,359189.818,23014.69,2487742.9,14786657.0,901314.64,,,,,,
+974,244,Randolph,2015,Commercial & Industrial,1077381.25,63741.389,3745.425,19778.0,3940427.0,13182.0,,,,,,
+975,245,Raynham,2015,Commercial & Industrial,,,,,2775490.0,,Municipal,Municipal,Municipal,Protected,,Protected
+976,246,Reading,2015,Commercial & Industrial,,,,2710.0,2100220.0,2754.0,Municipal,Municipal,Municipal,,,
+977,247,Rehoboth,2015,Commercial & Industrial,85235.98,5607.299,253.521,,335389.0,,,,,Protected,,Protected
+978,248,Revere,2015,Commercial & Industrial,1129608.31,88408.073,6356.331,,6894055.0,,,,,Protected,,Protected
+979,249,Richmond,2015,Commercial & Industrial,,1137.064,,,,,Protected,,Protected,No gas,No gas,No gas
+980,250,Rochester,2015,Commercial & Industrial,,3729.567,,,71091.0,,Protected,,Protected,Protected,,Protected
+981,251,Rockland,2015,Commercial & Industrial,397387.19,53360.503,1581.036,,2643060.0,,,,,Protected,,Protected
+982,252,Rockport,2015,Commercial & Industrial,132106.88,10840.924,430.75,,,,,,,Protected,Protected,Protected
+983,253,Rowe,2015,Commercial & Industrial,,459.667,,,,,Protected,,Protected,No gas,No gas,No gas
+984,254,Rowley,2015,Commercial & Industrial,,,,,709900.0,,Municipal,Municipal,Municipal,Protected,,Protected
+985,255,Royalston,2015,Commercial & Industrial,,447.951,,,,,Protected,,Protected,No gas,No gas,No gas
+986,256,Russell,2015,Commercial & Industrial,,613.527,,,,,Protected,,Protected,No gas,No gas,No gas
+987,257,Rutland,2015,Commercial & Industrial,,5199.99,,,,,Protected,,Protected,No gas,No gas,No gas
+988,258,Salem,2015,Commercial & Industrial,1223916.97,144289.54,8269.434,,7279596.0,,,,,Protected,,Protected
+989,259,Salisbury,2015,Commercial & Industrial,377617.4,24203.698,1121.574,,1127740.0,,,,,Protected,,Protected
+990,260,Sandisfield,2015,Commercial & Industrial,,755.337,,,,,Protected,,Protected,No gas,No gas,No gas
+991,261,Sandwich,2015,Commercial & Industrial,240801.47,41587.236,624.34,,1510518.0,,,,,Protected,,Protected
+992,262,Saugus,2015,Commercial & Industrial,581499.63,78310.196,2241.134,,4053020.0,,,,,Protected,,Protected
+993,263,Savoy,2015,Commercial & Industrial,,256.364,,,,,Protected,,Protected,No gas,No gas,No gas
+994,264,Scituate,2015,Commercial & Industrial,64200.28,11399.214,257.524,,1217661.0,,,,,Protected,,Protected
+995,265,Seekonk,2015,Commercial & Industrial,387406.82,55492.453,1726.152,,2822922.0,,,,,Protected,,Protected
+996,266,Sharon,2015,Commercial & Industrial,86147.89,24501.669,393.17,,1287940.0,,,,,Protected,,Protected
+997,267,Sheffield,2015,Commercial & Industrial,,16127.02,,,,,Protected,,Protected,No gas,No gas,No gas
+998,268,Shelburne,2015,Commercial & Industrial,49830.24,3643.678,199.312,,,,,,,No gas,No gas,No gas
+999,269,Sherborn,2015,Commercial & Industrial,,2878.113,,,85589.0,,Protected,,Protected,Protected,,Protected
+1000,270,Shirley,2015,Commercial & Industrial,,37832.233,,,2028436.0,,Protected,,Protected,Protected,,Protected
+1001,271,Shrewsbury,2015,Commercial & Industrial,,,,8206.0,4721181.0,10050.0,Municipal,Municipal,Municipal,,,
+1002,272,Shutesbury,2015,Commercial & Industrial,,441.652,,,,,Protected,,Protected,No gas,No gas,No gas
+1003,273,Somerset,2015,Commercial & Industrial,337157.4,27879.44,1318.81,,1530914.06,,,,,Protected,,Protected
+1004,274,Somerville,2015,Commercial & Industrial,1322718.61,260680.346,4653.595,322326.95,13255955.0,194759.0,,,,,,
+1005,275,South Hadley,2015,Commercial & Industrial,,,,154485.5,3696368.0,90279.0,Municipal,Municipal,Municipal,,,
+1006,276,Southampton,2015,Commercial & Industrial,,9715.129,,,,,Protected,,Protected,Municipal,Municipal,Municipal
+1007,277,Southborough,2015,Commercial & Industrial,202565.7,43111.004,565.765,,2463071.0,,,,,Protected,,Protected
+1008,278,Southbridge,2015,Commercial & Industrial,509119.27,73510.742,1885.265,,2656478.0,,,,,Protected,,Protected
+1009,279,Southwick,2015,Commercial & Industrial,472255.06,28090.031,1267.344,5325.62,564901.0,4336.0,,,,,,
+1010,280,Spencer,2015,Commercial & Industrial,270290.51,35403.584,1310.428,,2964429.0,,,,,Protected,,Protected
+1011,281,Springfield,2015,Commercial & Industrial,3877956.18,681085.516,16745.728,585316.3,24473806.0,245344.3,,,,,,
+1012,282,Sterling,2015,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+1013,283,Stockbridge,2015,Commercial & Industrial,26937.77,8634.109,197.483,,528529.0,,,,,Protected,,Protected
+1014,284,Stoneham,2015,Commercial & Industrial,570372.59,46249.178,1702.547,,2464824.0,,,,,Protected,,Protected
+1015,285,Stoughton,2015,Commercial & Industrial,876194.89,77516.872,2667.709,323788.41,4818682.0,53478.0,,,,,,
+1016,286,Stow,2015,Commercial & Industrial,,,,,402043.0,,Municipal,Municipal,Municipal,Protected,,Protected
+1017,287,Sturbridge,2015,Commercial & Industrial,258678.36,63570.694,1331.415,,,,,,,No gas,No gas,No gas
+1018,288,Sudbury,2015,Commercial & Industrial,366932.01,44478.153,1176.877,,1888816.0,,,,,Protected,,Protected
+1019,289,Sunderland,2015,Commercial & Industrial,,7118.539,,,,,Protected,,Protected,Protected,Protected,Protected
+1020,290,Sutton,2015,Commercial & Industrial,930816.94,24769.026,4531.948,,509003.0,,,,,Protected,,Protected
+1021,291,Swampscott,2015,Commercial & Industrial,395688.02,22632.291,849.047,,1258475.0,,,,,Protected,,Protected
+1022,292,Swansea,2015,Commercial & Industrial,233675.29,33824.616,1468.348,,1595668.18,,,,,Protected,,Protected
+1023,293,Taunton,2015,Commercial & Industrial,,,,95039.49,8862862.0,119420.0,Municipal,Municipal,Municipal,,,
+1024,294,Templeton,2015,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,No gas,No gas,No gas
+1025,295,Tewksbury,2015,Commercial & Industrial,570045.91,122589.905,2425.016,,5133461.0,,,,,Protected,,Protected
+1026,296,Tisbury,2015,Commercial & Industrial,152729.11,14655.889,435.345,,,,,,,No gas,No gas,No gas
+1027,297,Tolland,2015,Commercial & Industrial,,583.153,,,,,Protected,,Protected,No gas,No gas,No gas
+1028,298,Topsfield,2015,Commercial & Industrial,49734.98,10689.441,160.649,,387075.0,,,,,Protected,,Protected
+1029,299,Townsend,2015,Commercial & Industrial,50171.3,40383.191,236.743,,747559.43,,,,,Protected,,Protected
+1030,300,Truro,2015,Commercial & Industrial,,5119.032,,,,,Protected,,Protected,No gas,No gas,No gas
+1031,301,Tyngsborough,2015,Commercial & Industrial,297556.37,35666.027,1281.338,,1519632.0,,,,,Protected,,Protected
+1032,302,Tyringham,2015,Commercial & Industrial,,,,,,,Protected,Protected,Protected,No gas,No gas,No gas
+1033,303,Upton,2015,Commercial & Industrial,75879.8,9113.207,362.308,,174957.0,,,,,Protected,,Protected
+1034,304,Uxbridge,2015,Commercial & Industrial,153329.56,19912.524,529.442,,1402873.0,,,,,Protected,,Protected
+1035,305,Wakefield,2015,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,Municipal,Municipal,Municipal
+1036,306,Wales,2015,Commercial & Industrial,,1024.495,,,,,Protected,,Protected,No gas,No gas,No gas
+1037,307,Walpole,2015,Commercial & Industrial,375133.17,102033.645,1223.352,9065.04,4130443.0,5055.0,,,,,,
+1038,308,Waltham,2015,Commercial & Industrial,2826345.4,625017.488,11203.443,85155.14,15654686.0,63822.0,,,,,,
+1039,309,Ware,2015,Commercial & Industrial,98751.43,36917.498,454.812,,,,,,,No gas,No gas,No gas
+1040,310,Wareham,2015,Commercial & Industrial,757877.67,77796.936,2691.49,,3914383.0,,,,,Protected,,Protected
+1041,311,Warren,2015,Commercial & Industrial,,,,,79969.0,,Protected,,Protected,Protected,,Protected
+1042,312,Warwick,2015,Commercial & Industrial,,153.588,,,,,Protected,,Protected,No gas,No gas,No gas
+1043,313,Washington,2015,Commercial & Industrial,,572.805,,,,,Protected,,Protected,No gas,No gas,No gas
+1044,314,Watertown,2015,Commercial & Industrial,1788159.38,182926.285,4539.315,,7089760.0,,,,,Protected,,Protected
+1045,315,Wayland,2015,Commercial & Industrial,252799.51,20837.886,451.089,,1143905.0,,,,,Protected,,Protected
+1046,316,Webster,2015,Commercial & Industrial,326385.9,53883.751,945.706,,1549921.0,,,,,Protected,,Protected
+1047,317,Wellesley,2015,Commercial & Industrial,,,,57197.6,8859796.0,49058.0,Municipal,Municipal,Municipal,,,
+1048,318,Wellfleet,2015,Commercial & Industrial,50942.93,5454.201,131.952,,,,,,,No gas,No gas,No gas
+1049,319,Wendell,2015,Commercial & Industrial,,504.354,,,,,Protected,,Protected,No gas,No gas,No gas
+1050,320,Wenham,2015,Commercial & Industrial,,10401.459,,,599470.0,,Protected,,Protected,Protected,,Protected
+1051,321,West Boylston,2015,Commercial & Industrial,,,,,1058608.0,,Municipal,Municipal,Municipal,Protected,,Protected
+1052,322,West Bridgewater,2015,Commercial & Industrial,232746.25,36431.104,1072.333,,1867958.0,,,,,Protected,,Protected
+1053,323,West Brookfield,2015,Commercial & Industrial,,6554.402,,,417685.0,,Protected,,Protected,Protected,,Protected
+1054,324,West Newbury,2015,Commercial & Industrial,,3378.89,,,,,Protected,,Protected,Protected,Protected,Protected
+1055,325,West Springfield,2015,Commercial & Industrial,1312286.99,148213.514,3169.748,133627.32,6440938.0,63360.0,,,,,,
+1056,326,West Stockbridge,2015,Commercial & Industrial,,1615.447,,,,,Protected,,Protected,No gas,No gas,No gas
+1057,327,West Tisbury,2015,Commercial & Industrial,59531.91,5245.352,170.034,,,,,,,No gas,No gas,No gas
+1058,328,Westborough,2015,Commercial & Industrial,1670625.92,228682.148,6326.962,31192.48,7515428.0,29066.0,,,,,,
+1059,329,Westfield,2015,Commercial & Industrial,,,,,,,Municipal,Municipal,Municipal,Municipal,Municipal,Municipal
+1060,330,Westford,2015,Commercial & Industrial,447970.2,166046.615,1450.987,,2934915.0,,,,,Protected,,Protected
+1061,331,Westhampton,2015,Commercial & Industrial,,2056.838,,,,,Protected,,Protected,No gas,No gas,No gas
+1062,332,Westminster,2015,Commercial & Industrial,253811.62,27083.187,533.752,,1017077.29,,,,,Protected,,Protected
+1063,333,Weston,2015,Commercial & Industrial,315339.46,35945.588,935.709,,2122114.0,,,,,Protected,,Protected
+1064,334,Westport,2015,Commercial & Industrial,137723.5,17582.705,351.409,,644817.23,,,,,Protected,,Protected
+1065,335,Westwood,2015,Commercial & Industrial,968409.35,68315.865,4255.462,,2170341.0,,,,,Protected,,Protected
+1066,336,Weymouth,2015,Commercial & Industrial,953304.7,126377.393,3199.809,33266.63,7008805.0,24375.0,,,,,,
+1067,337,Whately,2015,Commercial & Industrial,58270.33,28799.451,239.043,,824049.0,,,,,Protected,,Protected
+1068,338,Whitman,2015,Commercial & Industrial,122274.06,22209.715,564.772,,880387.0,,,,,Protected,,Protected
+1069,339,Wilbraham,2015,Commercial & Industrial,139588.39,42361.195,969.215,,2506015.0,,,,,Protected,,Protected
+1070,340,Williamsburg,2015,Commercial & Industrial,,3243.674,,,,,Protected,,Protected,No gas,No gas,No gas
+1071,341,Williamstown,2015,Commercial & Industrial,407096.72,42711.51,1278.432,,1280368.0,,,,,Protected,,Protected
+1072,342,Wilmington,2015,Commercial & Industrial,,,,,8786356.0,,Municipal,Municipal,Municipal,Protected,,Protected
+1073,343,Winchendon,2015,Commercial & Industrial,93006.5,8919.477,180.422,,,,,,,No gas,No gas,No gas
+1074,344,Winchester,2015,Commercial & Industrial,387412.14,43490.346,1215.046,,2380784.0,,,,,Protected,,Protected
+1075,345,Windsor,2015,Commercial & Industrial,,369.894,,,,,Protected,,Protected,No gas,No gas,No gas
+1076,346,Winthrop,2015,Commercial & Industrial,343675.54,16436.455,942.688,,1162648.0,,,,,Protected,,Protected
+1077,347,Woburn,2015,Commercial & Industrial,2049406.46,360240.578,5962.844,64677.4,13447361.0,50830.0,,,,,,
+1078,348,Worcester,2015,Commercial & Industrial,5720818.0,768370.696,22601.436,1057744.75,54132521.0,682160.8,,,,,,
+1079,349,Worthington,2015,Commercial & Industrial,,593.26,,,,,Protected,,Protected,No gas,No gas,No gas
+1080,350,Wrentham,2015,Commercial & Industrial,206288.41,35619.37,1665.006,,1082082.0,,,,,Protected,,Protected
+1081,351,Yarmouth,2015,Commercial & Industrial,851319.94,65713.814,3084.788,12121.0,3155157.0,28101.0,,,,,,

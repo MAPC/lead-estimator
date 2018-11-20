@@ -1,0 +1,167 @@
+seq_id,geography,naicscode,naicstitle,naics_3d,naics_4d,naics_5_6d,years,tot_consum,net_elec,r_fueloil,d_fueloil,natgas,lpg_ngl,coal,coke_brz,other
+1,United States,311,Food,311,,,2010,1158.0,257.0,12.0,22.0,579.0,6.0,182.0,2.0,99.0
+2,United States,3112,Food: Grain and Oil seed Milling,,3112,,2010,350.0,56.0,,1.0,121.0,,126.0,0.0,45.0
+3,United States,311221,Food: Wet Corn Milling,,,311221,2010,214.0,25.0,,,53.0,,110.0,0.0,25.0
+4,United States,31131,Food: Sugar Manufacturing,,,31131,2010,107.0,4.0,1.0,1.0,15.0,,49.0,2.0,36.0
+5,United States,3114,Food: Fruit and Vegetable Preserving and Specialty Foods,,3114,,2010,143.0,31.0,1.0,,100.0,1.0,2.0,0.0,4.0
+6,United States,3115,Food: Dairy Products,,3115,,2010,105.0,33.0,2.0,2.0,66.0,1.0,,0.0,2.0
+7,United States,3116,Food: Animal Slaughtering and Processing,,3116,,2010,212.0,69.0,5.0,3.0,125.0,2.0,,0.0,8.0
+8,United States,312,Beverage and Tobacco Products,312,,,2010,86.0,29.0,1.0,1.0,38.0,1.0,10.0,0.0,7.0
+9,United States,3121,Beverage and Tobacco Products: Beverages,,3121,,2010,77.0,25.0,,1.0,34.0,1.0,8.0,0.0,7.0
+10,United States,3122,Beverage and Tobacco Products: Tobacco,,3122,,2010,9.0,3.0,,,4.0,,2.0,0.0,
+11,United States,313,Textile Mills,313,,,2010,95.0,45.0,2.0,,31.0,1.0,8.0,0.0,6.0
+12,United States,314,Textile Product Mills,314,,,2010,20.0,8.0,,,9.0,,,0.0,
+13,United States,315,Apparel,315,,,2010,6.0,4.0,0.0,,2.0,,0.0,0.0,
+14,United States,316,Leather and Allied Products,316,,,2010,2.0,1.0,,,1.0,,0.0,0.0,
+15,United States,321,Wood Products,321,,,2010,470.0,52.0,,22.0,34.0,3.0,1.0,0.0,357.0
+16,United States,321113,Wood Products: Sawmills,,,321113,2010,232.0,15.0,,,5.0,,0.0,0.0,195.0
+17,United States,3212,Wood Products: Veneer; Plywood and Engineered Woods,,3212,,2010,183.0,22.0,,2.0,19.0,1.0,1.0,0.0,138.0
+18,United States,321219,Wood Products: Reconstituted Wood Products,,,321219,2010,82.0,14.0,,,14.0,,1.0,0.0,52.0
+19,United States,3219,Wood Products: Other Wood Products,,3219,,2010,48.0,14.0,,5.0,7.0,2.0,,0.0,20.0
+20,United States,322,Wood Products: Paper,322,,,2010,2110.0,206.0,35.0,6.0,399.0,4.0,207.0,,1253.0
+21,United States,322110,Wood Products: Pulp Mills,,,322110,2010,249.0,7.0,8.0,1.0,19.0,,,0.0,214.0
+22,United States,322121,Wood Products: Paper Mills except News print,,,322121,2010,822.0,62.0,13.0,2.0,172.0,1.0,113.0,0.0,458.0
+23,United States,322122,Wood Products: Newsprint Mills,,,322122,2010,101.0,38.0,1.0,1.0,3.0,,23.0,0.0,35.0
+24,United States,322130,Wood Products: Paper board Mills,,,322130,2010,824.0,59.0,11.0,2.0,142.0,,67.0,,541.0
+25,United States,323,Printing and Related Support,323,,,2010,83.0,47.0,,,34.0,1.0,0.0,0.0,
+26,United States,324,Petroleum and Coal Products,324,,,2010,3319.0,160.0,17.0,24.0,918.0,26.0,11.0,0.0,2162.0
+27,United States,324110,Petroleum and Coal Products: Petroleum Refineries,,,324110,2010,3176.0,153.0,14.0,11.0,859.0,25.0,1.0,0.0,2113.0
+28,United States,324121,Petroleum and Coal Products: Asphalt Paving Mixture and Block,,,324121,2010,65.0,4.0,3.0,12.0,39.0,1.0,,0.0,6.0
+29,United States,324199,Petroleum and Coal Products: Other Petroleum and Coal Products,,,324199,2010,55.0,,,,5.0,,9.0,0.0,41.0
+30,United States,325,Chemicals,325,,,2010,3222.0,450.0,7.0,8.0,1784.0,7.0,200.0,0.0,765.0
+31,United States,325110,Chemicals: Petro chemicals,,,325110,2010,568.0,22.0,1.0,,248.0,1.0,0.0,0.0,295.0
+32,United States,325120,Chemicals: Industrial Gases,,,325120,2010,96.0,66.0,0.0,,27.0,,0.0,0.0,3.0
+33,United States,325181,Chemicals: Alkalies and Chlorine,,,325181,2010,,32.0,0.0,,,,39.0,0.0,17.0
+34,United States,325182,Chemicals: Carbon Black,,,325182,2010,,1.0,,,11.0,,0.0,0.0,
+35,United States,325188,Chemicals: Other Basic Inorganic Chemicals,,,325188,2010,214.0,84.0,1.0,1.0,49.0,,17.0,0.0,62.0
+36,United States,325192,Chemicals: Cyclic Crudes and Intermediates,,,325192,2010,52.0,9.0,2.0,,22.0,,0.0,0.0,18.0
+37,United States,325193,Chemicals: Ethyl Alcohol,,,325193,2010,307.0,25.0,0.0,,252.0,,25.0,0.0,4.0
+38,United States,325199,Chemicals: Other Basic Organic Chemicals,,,325199,2010,634.0,33.0,,1.0,378.0,,59.0,0.0,164.0
+39,United States,325211,Chemicals: Plastics Materials and Resins,,,325211,2010,462.0,67.0,,1.0,307.0,1.0,12.0,0.0,73.0
+40,United States,325212,Chemicals: Synthetic Rubber,,,325212,2010,39.0,6.0,0.0,,22.0,,3.0,0.0,8.0
+41,United States,325222,Chemicals: Noncellulosic Organic Fibers,,,325222,2010,36.0,10.0,,,10.0,,3.0,0.0,13.0
+42,United States,325311,Chemicals: Nitrogenous Fertilizers,,,325311,2010,166.0,12.0,,,152.0,,0.0,0.0,2.0
+43,United States,325312,Chemicals: Phosphatic Fertilizers,,,325312,2010,35.0,4.0,,1.0,27.0,,2.0,0.0,
+44,United States,3254,Chemicals: Pharmaceuticals and Medicines,,3254,,2010,91.0,31.0,,1.0,49.0,,4.0,0.0,7.0
+45,United States,325412,Chemicals: Pharmaceutical Preparation,,,325412,2010,51.0,19.0,,,24.0,,4.0,0.0,4.0
+46,United States,325992,Chemicals: Photographic Film; Paper; Plate and Chemicals,,,325992,2010,20.0,5.0,,,6.0,,9.0,0.0,
+47,United States,326,Plastics and Rubber Products,326,,,2010,272.0,156.0,,2.0,103.0,2.0,,0.0,
+48,United States,327,Nonmetallic Mineral Products,327,,,2010,711.0,111.0,1.0,23.0,273.0,2.0,217.0,8.0,76.0
+49,United States,327121,Nonmetallic Mineral Products: Brick and Structural Clay Tile,,,327121,2010,20.0,2.0,,,16.0,,1.0,0.0,1.0
+50,United States,327211,Nonmetallic Mineral Products: Flat Glass,,,327211,2010,49.0,6.0,0.0,,43.0,,0.0,0.0,
+51,United States,327212,Nonmetallic Mineral Products: Other Pressed and Blown Glass and Glassware,,,327212,2010,37.0,9.0,0.0,,28.0,,0.0,0.0,
+52,United States,327213,Nonmetallic Mineral Products: Glass Containers,,,327213,2010,59.0,12.0,0.0,,46.0,,0.0,0.0,
+53,United States,327215,Nonmetallic Mineral Products: Glass Products from Purchased Glass,,,327215,2010,14.0,9.0,0.0,,5.0,,,0.0,
+54,United States,327310,Nonmetallic Mineral Products: Cements,,,327310,2010,246.0,31.0,,3.0,13.0,,135.0,3.0,60.0
+55,United States,327410,Nonmetallic Mineral Products: Lime,,,327410,2010,101.0,5.0,,5.0,3.0,,77.0,1.0,9.0
+56,United States,327420,Nonmetallic Mineral Products: Gypsum,,,327420,2010,44.0,5.0,,,39.0,,0.0,0.0,
+57,United States,327993,Nonmetallic Mineral Products: Mineral Wool,,,327993,2010,39.0,12.0,0.0,,24.0,,0.0,3.0,
+58,United States,331,Primary Metals,331,,,2010,1655.0,400.0,1.0,9.0,537.0,3.0,23.0,367.0,316.0
+59,United States,331111,Primary Metals: Iron and Steel Mills,,,331111,2010,1158.0,172.0,,5.0,325.0,,23.0,351.0,281.0
+60,United States,331112,Primary Metals: Electrometallurgical Ferroalloy Products,,,331112,2010,13.0,11.0,0.0,,1.0,,0.0,,1.0
+61,United States,3312,Primary Metals:  Steel Products from Purchased Steel,,3312,,2010,44.0,18.0,,,18.0,,0.0,,7.0
+62,United States,3313,Primary Metals: Alumina and Aluminum,,3313,,2010,219.0,116.0,,2.0,96.0,1.0,0.0,0.0,5.0
+63,United States,331314,Primary Metals: Secondary Smelting and Alloying of Aluminum,,,331314,2010,24.0,9.0,,,14.0,,0.0,0.0,
+64,United States,331315,Primary Metals: Aluminum Sheet;Plate and Foils,,,331315,2010,57.0,14.0,,,40.0,,0.0,0.0,2.0
+65,United States,331316,Primary Metals: Aluminum Extruded Products,,,331316,2010,16.0,5.0,0.0,,11.0,,0.0,0.0,
+66,United States,3314,Primary Metals: Nonferrous Metals; except Aluminum,,3314,,2010,123.0,45.0,,,51.0,1.0,0.0,4.0,21.0
+67,United States,331419,Primary Metals: Primary Smelting and Refining of Non ferrous Metals except Copper and Aluminum,,,331419,2010,59.0,25.0,0.0,,12.0,,0.0,1.0,21.0
+68,United States,3315,Foundries,,3315,,2010,97.0,38.0,0.0,1.0,46.0,1.0,0.0,11.0,
+69,United States,331511,Foundries: Iron Foundries,,,331511,2010,45.0,19.0,0.0,,14.0,,0.0,11.0,
+70,United States,331521,Foundries: Aluminum Die-Casting Foundries,,,331521,2010,16.0,4.0,0.0,,11.0,,0.0,0.0,
+71,United States,331524,Foundries: Aluminum  Foundries except Die-Casting,,,331524,2010,11.0,3.0,0.0,,8.0,,0.0,0.0,
+72,United States,332,Fabricated Metal Products,332,,,2010,301.0,127.0,,3.0,163.0,5.0,,0.0,
+73,United States,333,Machinery,333,,,2010,148.0,70.0,,3.0,71.0,2.0,0.0,0.0,1.0
+74,United States,334,Computer and Electronic Products,334,,,2010,144.0,101.0,,,42.0,,0.0,0.0,
+75,United States,334413,Computer and Electronic Products: Semiconductors and Related Devices,,,334413,2010,57.0,37.0,,,20.0,,0.0,0.0,
+76,United States,335,ElectricalEquip ; Appliances and Components,335,,,2010,74.0,36.0,,1.0,36.0,1.0,0.0,,
+77,United States,336,Transportation Equipment,336,,,2010,275.0,132.0,2.0,3.0,127.0,3.0,3.0,0.0,5.0
+78,United States,336111,Transportation Equipment: Automobiles,,,336111,2010,28.0,10.0,0.0,,15.0,,1.0,0.0,1.0
+79,United States,336112,Transportation Equipment: Light Trucks and Utility Vehicles,,,336112,2010,38.0,12.0,0.0,,23.0,,1.0,0.0,1.0
+80,United States,3364,Transportation Equipment: Aerospace Product and Parts,,3364,,2010,67.0,32.0,1.0,1.0,30.0,,,0.0,2.0
+81,United States,336411,Transportation Equipment: Aircraft,,,336411,2010,19.0,9.0,,,10.0,,0.0,0.0,
+82,United States,337,Furniture and Related Products,337,,,2010,36.0,17.0,0.0,,13.0,1.0,,0.0,4.0
+83,United States,339,Miscellaneous,339,,,2010,43.0,26.0,,1.0,16.0,,,0.0,
+84,Northeast,311,Food,311,,,2010,90.0,24.0,3.0,3.0,56.0,1.0,1.0,0.0,2.0
+85,Northeast,3112,Food: Grain and Oil seed Milling,,3112,,2010,3.0,1.0,,,2.0,,0.0,0.0,
+86,Northeast,311221,Food: Wet Corn Milling,,,311221,2010,,,,0.0,0.0,,0.0,0.0,0.0
+87,Northeast,31131,Food: Sugar Manufacturing,,,31131,2010,1.0,1.0,0.0,,,0.0,0.0,0.0,0.0
+88,Northeast,3114,Food: Fruit and Vegetable Preserving and Specialty Foods,,3114,,2010,13.0,3.0,1.0,,7.0,,1.0,0.0,1.0
+89,Northeast,3115,Food: Dairy Products,,3115,,2010,14.0,4.0,1.0,1.0,8.0,,0.0,0.0,
+90,Northeast,3116,Food:Animal Slaughtering and Processing,,3116,,2010,9.0,3.0,,1.0,4.0,,0.0,0.0,1.0
+91,Northeast,312,Beverage and Tobacco Products,312,,,2010,12.0,4.0,1.0,,6.0,,0.0,0.0,1.0
+92,Northeast,3121,Beverage and Tobacco Products: Beverages,,3121,,2010,11.0,4.0,,,5.0,,0.0,0.0,1.0
+93,Northeast,3122,Beverage and Tobacco Products: Tobacco,,3122,,2010,1.0,,,,,,0.0,0.0,
+94,Northeast,313,Textile Mills,313,,,2010,8.0,2.0,1.0,,5.0,,0.0,0.0,
+95,Northeast,314,Textile Product Mills,314,,,2010,,,0.0,,,,,0.0,
+96,Northeast,315,Apparel,315,,,2010,,,0.0,0.0,,0.0,0.0,0.0,0.0
+97,Northeast,316,Leather and AlliedProducts,316,,,2010,,,,,,,0.0,0.0,
+98,Northeast,321,Wood Products,321,,,2010,87.0,3.0,,1.0,2.0,,,0.0,80.0
+99,Northeast,321113,Wood Products: Sawmills,,,321113,2010,5.0,1.0,,1.0,,,0.0,0.0,3.0
+100,Northeast,3212,Wood Products: Veneer; Plywood and Engineered Woods,,3212,,2010,75.0,1.0,0.0,,,,,0.0,74.0
+101,Northeast,321219,Wood Products: Reconstituted Wood Products,,,321219,2010,18.0,1.0,0.0,,,,0.0,0.0,17.0
+102,Northeast,3219,Wood Products: Other Wood Products,,3219,,2010,5.0,2.0,,1.0,1.0,,,0.0,2.0
+103,Northeast,322,Wood Products: Paper,322,,,2010,248.0,17.0,12.0,1.0,71.0,1.0,19.0,0.0,128.0
+104,Northeast,322110,Wood Products: Pulp Mills,,,322110,2010,26.0,1.0,2.0,,1.0,,0.0,0.0,22.0
+105,Northeast,322121,Wood Products: Paper Mills except News print,,,322121,2010,166.0,2.0,7.0,1.0,51.0,,18.0,0.0,87.0
+106,Northeast,322122,Wood Products: Newsprint Mills,,,322122,2010,,3.0,1.0,,0.0,,0.0,0.0,
+107,Northeast,322130,Wood Products: Paper board Mills,,,322130,2010,25.0,5.0,1.0,,12.0,,0.0,0.0,7.0
+108,Northeast,323,Printing and Related Support,323,,,2010,16.0,8.0,,,6.0,,0.0,0.0,
+109,Northeast,324,Petroleum and Coal Products,324,,,2010,264.0,15.0,7.0,11.0,42.0,10.0,5.0,0.0,174.0
+110,Northeast,324110,Petroleum and Coal Products: Petroleum Refineries,,,324110,2010,238.0,14.0,6.0,5.0,31.0,10.0,1.0,0.0,171.0
+111,Northeast,324121,Petroleum and Coal Products: Asphalt Paving Mixture and Block,,,324121,2010,19.0,1.0,1.0,5.0,9.0,,0.0,0.0,2.0
+112,Northeast,324199,Petroleum and Coal Products: Other Petroleum and Coal Products,,,324199,2010,6.0,,,,1.0,,4.0,0.0,
+113,Northeast,325,Chemicals,325,,,2010,148.0,41.0,4.0,1.0,71.0,,17.0,0.0,14.0
+114,Northeast,325110,Chemicals: Petro chemicals,,,325110,2010,,,0.0,,,0.0,0.0,0.0,0.0
+115,Northeast,325120,Chemicals: Industrial Gases,,,325120,2010,11.0,9.0,0.0,,,,0.0,0.0,2.0
+116,Northeast,325181,Chemicals: Alkalies and Chlorine,,,325181,2010,8.0,5.0,0.0,,,,0.0,0.0,2.0
+117,Northeast,325182,Chemicals: Carbon Black,,,325182,2010,,,0.0,0.0,,0.0,0.0,0.0,0.0
+118,Northeast,325188,Chemicals: Other Basic Inorganic Chemicals,,,325188,2010,8.0,3.0,1.0,,4.0,,0.0,0.0,
+119,Northeast,325192,Chemicals: Cyclic Crudes and Intermediates,,,325192,2010,7.0,1.0,1.0,,5.0,,0.0,0.0,
+120,Northeast,325193,Chemicals: Ethyl Alcohol,,,325193,2010,2.0,,0.0,,2.0,,0.0,0.0,0.0
+121,Northeast,325199,Chemicals: Other Basic Organic Chemicals,,,325199,2010,19.0,2.0,0.0,,13.0,,0.0,0.0,4.0
+122,Northeast,325211,Chemicals: Plastics Materials and Resins,,,325211,2010,13.0,3.0,0.0,,5.0,,0.0,0.0,4.0
+123,Northeast,325212,Chemicals: Synthetic Rubber,,,325212,2010,,,0.0,0.0,,,0.0,0.0,0.0
+124,Northeast,325222,Chemicals: Noncellulosic Organic Fibers,,,325222,2010,,,0.0,,0.0,,0.0,0.0,
+125,Northeast,325311,Chemicals: Nitrogenous Fertilizers,,,325311,2010,1.0,,,,,,0.0,0.0,
+126,Northeast,325312,Chemicals: Phosphatic Fertilizers,,,325312,2010,,,0.0,,,,0.0,0.0,
+127,Northeast,3254,Chemicals: Pharmaceuticals and Medicines,,3254,,2010,31.0,8.0,,,22.0,,0.0,0.0,1.0
+128,Northeast,325412,Chemicals: Pharmaceutical Preparation,,,325412,2010,13.0,4.0,,,9.0,,0.0,0.0,
+129,Northeast,325992,Chemicals: Photographic Film; Paper; Plate and Chemicals,,,325992,2010,16.0,3.0,,,4.0,,9.0,0.0,
+130,Northeast,326,Plastics and Rubber Products,326,,,2010,20.0,9.0,0.0,,8.0,,,0.0,
+131,Northeast,327,NonmetallicMineral Products,327,,,2010,88.0,14.0,,3.0,38.0,,25.0,1.0,7.0
+132,Northeast,327121,Nonmetallic Mineral Products: Brick and Structural Clay Tile,,,327121,2010,2.0,,0.0,,1.0,,,0.0,
+133,Northeast,327211,Nonmetallic Mineral Products: Flat Glass,,,327211,2010,9.0,1.0,0.0,,8.0,,0.0,0.0,
+134,Northeast,327212,Nonmetallic Mineral Products: Other Pressed and Blown Glass and Glassware,,,327212,2010,8.0,2.0,0.0,,6.0,,0.0,0.0,
+135,Northeast,327213,Nonmetallic Mineral Products: Glass Containers,,,327213,2010,10.0,2.0,0.0,,8.0,,0.0,0.0,
+136,Northeast,327215,Nonmetallic Mineral Products: Glass Products from Purchased Glass,,,327215,2010,3.0,1.0,0.0,,1.0,,,0.0,
+137,Northeast,327310,Nonmetallic Mineral Products: Cements,,,327310,2010,28.0,3.0,,1.0,,,17.0,1.0,5.0
+138,Northeast,327410,Nonmetallic Mineral Products: Lime,,,327410,2010,5.0,,0.0,,0.0,,4.0,0.0,1.0
+139,Northeast,327420,Nonmetallic Mineral Products: Gypsum,,,327420,2010,7.0,1.0,,,5.0,,0.0,0.0,
+140,Northeast,327993,Nonmetallic Mineral Products: Mineral Wool,,,327993,2010,4.0,1.0,0.0,,3.0,,0.0,0.0,
+141,Northeast,331,Primary Metals,331,,,2010,186.0,44.0,,1.0,65.0,,1.0,30.0,45.0
+142,Northeast,331111,Primary Metals: Iron and Steel Mills,,,331111,2010,129.0,20.0,0.0,,35.0,,1.0,29.0,44.0
+143,Northeast,331112,Primary Metals: Electrometallurgical Ferroalloy Products,,,331112,2010,2.0,2.0,0.0,,,,0.0,0.0,
+144,Northeast,3312,Primary Metals: Steel Products from Purchased Steel,,3312,,2010,7.0,3.0,,,4.0,,0.0,,
+145,Northeast,3313,Primary Metals: Alumina and Aluminum,,3313,,2010,20.0,10.0,,,9.0,,0.0,0.0,1.0
+146,Northeast,331314,Primary Metals: Secondary Smelting and Alloying of Aluminum,,,331314,2010,9.0,7.0,,,2.0,,0.0,0.0,
+147,Northeast,331315,Primary Metals: Aluminum Sheet;Plate and Foils,,,331315,2010,7.0,2.0,,,5.0,,0.0,0.0,
+148,Northeast,331316,Primary Metals: Aluminum Extruded Products,,,331316,2010,4.0,1.0,0.0,,2.0,,0.0,0.0,
+149,Northeast,3314,Primary Metals: Nonferrous Metals; except Aluminum,,3314,,2010,20.0,6.0,,,13.0,,0.0,,
+150,Northeast,331419,Primary Metals: Primary Smelting and Refining of Non ferrous Metals except Copper and Aluminum,,,331419,2010,1.0,1.0,0.0,,,,0.0,0.0,
+151,Northeast,3315,Foundries,,3315,,2010,8.0,3.0,0.0,,4.0,,0.0,,
+152,Northeast,331511,Foundries: Iron Foundries,,,331511,2010,2.0,1.0,0.0,,1.0,,0.0,,
+153,Northeast,331521,Foundries: Aluminum Die-Casting Foundries,,,331521,2010,1.0,,0.0,0.0,1.0,,0.0,0.0,0.0
+154,Northeast,331524,Foundries: Aluminum  Foundries except Die-Casting,,,331524,2010,1.0,,0.0,,,,0.0,0.0,
+155,Northeast,332,Fabricated Metal Products,332,,,2010,43.0,15.0,,,25.0,1.0,0.0,0.0,
+156,Northeast,333,Machinery,333,,,2010,21.0,11.0,0.0,,9.0,,0.0,0.0,
+157,Northeast,334,Computer and Electronic Products,334,,,2010,25.0,18.0,,,7.0,,0.0,0.0,
+158,Northeast,334413,Computer and Electronic Products: Semiconductors and Related Devices,,,334413,2010,10.0,7.0,,,3.0,,0.0,0.0,
+159,Northeast,335,Electrical Equip; Appliances and Components,335,,,2010,13.0,6.0,,1.0,6.0,,0.0,,
+160,Northeast,336,Transportation Equipment,336,,,2010,26.0,10.0,1.0,,14.0,,0.0,0.0,1.0
+161,Northeast,336111,Transportation Equipment: Automobiles,,,336111,2010,,,0.0,0.0,,,0.0,0.0,
+162,Northeast,336112,Transportation Equipment: Light Trucks and Utility Vehicles,,,336112,2010,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+163,Northeast,3364,Transportation Equipment: Aerospace Product and Parts,,3364,,2010,12.0,3.0,1.0,,7.0,,0.0,0.0,1.0
+164,Northeast,336411,Transportation Equipment: Aircraft,,,336411,2010,5.0,1.0,,,3.0,,0.0,0.0,
+165,Northeast,337,Furniture and Related Products,337,,,2010,5.0,2.0,0.0,,2.0,,0.0,0.0,
+166,Northeast,339,Miscellaneous,339,,,2010,13.0,6.0,0.0,,6.0,,0.0,0.0,

@@ -1,0 +1,111 @@
+seq_id,geography,years,bld_group,bld_indic,all_bldg,enrgy_bldg,elec,nat_gas,fuel_oil,distheat,diswater,propane,other
+1,United States,2012,All buildings,All buildings,5557000.0,5239000.0,5234000.0,2933000.0,467000.0,48000.0,54000.0,510000.0,172000.0
+2,United States,2012,Building floorspace (square feet),1001 to 5000 ,2777000.0,2559000.0,2556000.0,1253000.0,204000.0,,,252000.0,69000.0
+3,United States,2012,Building floorspace (square feet),5001 to 10000 ,1229000.0,1172000.0,1171000.0,660000.0,74000.0,,,134000.0,41000.0
+4,United States,2012,Building floorspace (square feet),10001 to 25000,884000.0,852000.0,852000.0,548000.0,67000.0,,9000.0,74000.0,31000.0
+5,United States,2012,Building floorspace (square feet),25001 to 50000,332000.0,326000.0,326000.0,227000.0,39000.0,6000.0,,24000.0,16000.0
+6,United States,2012,Building floorspace (square feet),50001 to 100000 ,199000.0,195000.0,195000.0,142000.0,39000.0,10000.0,10000.0,14000.0,8000.0
+7,United States,2012,Building floorspace (square feet),100001 to 200000 ,90000.0,90000.0,90000.0,67000.0,19000.0,9000.0,9000.0,8000.0,4000.0
+8,United States,2012,Building floorspace (square feet),200001 to 500000 ,38000.0,37000.0,37000.0,29000.0,18000.0,5000.0,4000.0,3000.0,3000.0
+9,United States,2012,Building floorspace (square feet),Over 500000 ,8000.0,8000.0,8000.0,6000.0,6000.0,2000.0,1000.0,1000.0,1000.0
+10,United States,2012,Principal building activity,Education,389000.0,389000.0,389000.0,234000.0,30000.0,12000.0,25000.0,25000.0,10000.0
+11,United States,2012,Principal building activity,Food sales ,177000.0,177000.0,177000.0,82000.0,,,,,
+12,United States,2012,Principal building activity,Food service ,380000.0,380000.0,380000.0,283000.0,,,,47000.0,
+13,United States,2012,Principal building activity,Health care ,157000.0,157000.0,157000.0,95000.0,23000.0,2000.0,,10000.0,
+14,United States,2012,Principal building activity,Inpatient ,10000.0,10000.0,10000.0,8000.0,9000.0,1000.0,1000.0,2000.0,
+15,United States,2012,Principal building activity,Outpatient ,147000.0,147000.0,147000.0,87000.0,15000.0,,,,
+16,United States,2012,Principal building activity,Lodging ,158000.0,158000.0,158000.0,99000.0,28000.0,4000.0,,26000.0,
+17,United States,2012,Principal building activity,Mercantile ,602000.0,602000.0,599000.0,356000.0,44000.0,,,51000.0,22000.0
+18,United States,2012,Principal building activity,Retail (other than mall) ,438000.0,438000.0,435000.0,232000.0,37000.0,,,43000.0,
+19,United States,2012,Principal building activity,Enclosed and strip malls ,164000.0,164000.0,164000.0,124000.0,7000.0,,,8000.0,
+20,United States,2012,Principal building activity,Office ,1012000.0,1012000.0,1012000.0,595000.0,86000.0,12000.0,10000.0,35000.0,24000.0
+21,United States,2012,Principal building activity,Public assembly ,352000.0,352000.0,352000.0,205000.0,27000.0,7000.0,5000.0,67000.0,17000.0
+22,United States,2012,Principal building activity,Public order and safety ,84000.0,84000.0,84000.0,53000.0,34000.0,,,,
+23,United States,2012,Principal building activity,Religious worship ,412000.0,412000.0,412000.0,229000.0,23000.0,,,66000.0,
+24,United States,2012,Principal building activity,Service ,619000.0,602000.0,602000.0,339000.0,86000.0,,,69000.0,39000.0
+25,United States,2012,Principal building activity,Warehouse and storage ,796000.0,676000.0,675000.0,261000.0,26000.0,,,45000.0,16000.0
+26,United States,2012,Principal building activity,Other ,125000.0,123000.0,123000.0,59000.0,28000.0,,,22000.0,
+27,United States,2012,Principal building activity,Vacant ,296000.0,116000.0,116000.0,44000.0,,,,,
+28,United States,2012,Year constructed,Before 1920,362000.0,337000.0,337000.0,202000.0,56000.0,5000.0,,45000.0,
+29,United States,2012,Year constructed,1920 to 1945,488000.0,459000.0,458000.0,288000.0,44000.0,7000.0,,35000.0,22000.0
+30,United States,2012,Year constructed,1946 to 1959,599000.0,554000.0,554000.0,334000.0,53000.0,5000.0,,49000.0,15000.0
+31,United States,2012,Year constructed,1960 to 1969,639000.0,609000.0,609000.0,401000.0,75000.0,9000.0,11000.0,54000.0,20000.0
+32,United States,2012,Year constructed,1970 to 1979,684000.0,651000.0,651000.0,406000.0,58000.0,10000.0,9000.0,62000.0,24000.0
+33,United States,2012,Year constructed,1980 to 1989,915000.0,856000.0,856000.0,431000.0,50000.0,2000.0,3000.0,52000.0,21000.0
+34,United States,2012,Year constructed,1990 to 1999,845000.0,764000.0,762000.0,407000.0,51000.0,3000.0,10000.0,89000.0,19000.0
+35,United States,2012,Year constructed,2000 to 2003,375000.0,370000.0,370000.0,182000.0,35000.0,4000.0,5000.0,49000.0,10000.0
+36,United States,2012,Year constructed,2004 to 2007,347000.0,341000.0,341000.0,144000.0,18000.0,2000.0,6000.0,43000.0,
+37,United States,2012,Year constructed,2008 to 2012,303000.0,297000.0,296000.0,138000.0,27000.0,,,31000.0,
+38,United States,2012,Census region and division,Northeast,805000.0,773000.0,770000.0,433000.0,217000.0,16000.0,7000.0,106000.0,51000.0
+39,United States,2012,Census region and division,New England ,302000.0,287000.0,285000.0,98000.0,115000.0,,,75000.0,
+40,United States,2012,Census region and division,Middle Atlantic,504000.0,486000.0,485000.0,335000.0,102000.0,9000.0,,31000.0,22000.0
+41,United States,2012,Census region and division,Midwest,1237000.0,1173000.0,1171000.0,843000.0,77000.0,7000.0,2000.0,133000.0,50000.0
+42,United States,2012,Census region and division,East North Central,735000.0,706000.0,706000.0,577000.0,46000.0,3000.0,2000.0,37000.0,28000.0
+43,United States,2012,Census region and division,West North Central,502000.0,467000.0,466000.0,266000.0,31000.0,4000.0,,96000.0,22000.0
+44,United States,2012,Census region and division,South,2247000.0,2086000.0,2086000.0,950000.0,131000.0,18000.0,35000.0,187000.0,34000.0
+45,United States,2012,Census region and division,South Atlantic ,1091000.0,1020000.0,1020000.0,387000.0,69000.0,9000.0,22000.0,94000.0,19000.0
+46,United States,2012,Census region and division,East South Central,370000.0,354000.0,354000.0,191000.0,30000.0,,,49000.0,
+47,United States,2012,Census region and division,West South Central,786000.0,712000.0,712000.0,372000.0,32000.0,5000.0,6000.0,43000.0,
+48,United States,2012,Census region and division,West,1267000.0,1207000.0,1207000.0,707000.0,43000.0,7000.0,9000.0,84000.0,37000.0
+49,United States,2012,Census region and division,Mountain,338000.0,316000.0,316000.0,218000.0,8000.0,,1000.0,29000.0,12000.0
+50,United States,2012,Census region and division,Pacific,929000.0,891000.0,891000.0,489000.0,35000.0,5000.0,8000.0,55000.0,
+51,United States,2012,Climate region2,Very cold/Cold,2031000.0,1934000.0,1929000.0,1264000.0,271000.0,18000.0,7000.0,227000.0,112000.0
+52,United States,2012,Climate region2,Mixed-humid,1743000.0,1637000.0,1637000.0,932000.0,131000.0,20000.0,18000.0,170000.0,39000.0
+53,United States,2012,Climate region2,Mixed-dry/Hot-dry,837000.0,791000.0,791000.0,428000.0,22000.0,4000.0,7000.0,59000.0,14000.0
+54,United States,2012,Climate region2,Hot-humid,799000.0,740000.0,740000.0,215000.0,36000.0,,21000.0,51000.0,
+55,United States,2012,Climate region2,Marine,147000.0,138000.0,138000.0,94000.0,7000.0,,,,
+56,United States,2012,Number of workers (main shift),Fewer than 5,2892000.0,2575000.0,2570000.0,1225000.0,214000.0,,,286000.0,84000.0
+57,United States,2012,Number of workers (main shift),5 to 9,1085000.0,1084000.0,1084000.0,606000.0,73000.0,,,98000.0,36000.0
+58,United States,2012,Number of workers (main shift),10 to 19,731000.0,731000.0,731000.0,498000.0,45000.0,,,66000.0,24000.0
+59,United States,2012,Number of workers (main shift),20 to 49,513000.0,513000.0,513000.0,348000.0,44000.0,11000.0,9000.0,40000.0,11000.0
+60,United States,2012,Number of workers (main shift),50 to 99,206000.0,206000.0,206000.0,154000.0,39000.0,7000.0,9000.0,11000.0,9000.0
+61,United States,2012,Number of workers (main shift),100 to 249,93000.0,93000.0,93000.0,74000.0,30000.0,7000.0,6000.0,7000.0,6000.0
+62,United States,2012,Number of workers (main shift),250 or more,37000.0,37000.0,37000.0,27000.0,21000.0,7000.0,5000.0,2000.0,2000.0
+63,United States,2012,Weekly operating hours,Fewer than 40,1149000.0,942000.0,941000.0,433000.0,58000.0,,,133000.0,
+64,United States,2012,Weekly operating hours,40 to 48,1346000.0,1325000.0,1325000.0,726000.0,125000.0,7000.0,12000.0,93000.0,30000.0
+65,United States,2012,Weekly operating hours,49 to 60,1244000.0,1232000.0,1229000.0,757000.0,102000.0,11000.0,10000.0,112000.0,65000.0
+66,United States,2012,Weekly operating hours,61 to 84,764000.0,744000.0,744000.0,454000.0,49000.0,9000.0,9000.0,59000.0,26000.0
+67,United States,2012,Weekly operating hours,85 to 167,479000.0,466000.0,466000.0,281000.0,30000.0,6000.0,12000.0,40000.0,17000.0
+68,United States,2012,Weekly operating hours,Open continuously,575000.0,529000.0,529000.0,282000.0,102000.0,11000.0,11000.0,73000.0,19000.0
+69,United States,2012,Ownership and occupancy,Nongovernment owned,4781000.0,4484000.0,4480000.0,2489000.0,365000.0,22000.0,17000.0,435000.0,145000.0
+70,United States,2012,Ownership and occupancy,Owner occupied,2466000.0,2400000.0,2395000.0,1317000.0,223000.0,13000.0,14000.0,297000.0,100000.0
+71,United States,2012,Ownership and occupancy,Leased to tenant(s),1745000.0,1675000.0,1675000.0,951000.0,108000.0,,2000.0,107000.0,31000.0
+72,United States,2012,Ownership and occupancy,Owner occupied and leased,349000.0,344000.0,344000.0,198000.0,29000.0,2000.0,1000.0,29000.0,13000.0
+73,United States,2012,Ownership and occupancy,Unoccupied,221000.0,66000.0,66000.0,23000.0,,,,,
+74,United States,2012,Ownership and occupancy,Government owned,776000.0,755000.0,755000.0,444000.0,101000.0,26000.0,37000.0,75000.0,27000.0
+75,United States,2012,Ownership and occupancy,Federal,33000.0,33000.0,33000.0,21000.0,,1000.0,,,
+76,United States,2012,Ownership and occupancy,State,185000.0,183000.0,183000.0,100000.0,15000.0,18000.0,20000.0,13000.0,
+77,United States,2012,Ownership and occupancy,Local,558000.0,538000.0,538000.0,322000.0,83000.0,7000.0,16000.0,57000.0,16000.0
+78,United States,2012,"Energy sources
+(more than one may apply)",Electricity,5234000.0,5234000.0,5234000.0,2933000.0,467000.0,48000.0,54000.0,507000.0,167000.0
+79,United States,2012,"Energy sources
+(more than one may apply)",Natural gas,2933000.0,2933000.0,2933000.0,2933000.0,164000.0,17000.0,21000.0,69000.0,72000.0
+80,United States,2012,"Energy sources
+(more than one may apply)",Fuel oil,467000.0,467000.0,467000.0,164000.0,467000.0,10000.0,8000.0,90000.0,41000.0
+81,United States,2012,"Energy sources
+(more than one may apply)",District heat,48000.0,48000.0,48000.0,17000.0,10000.0,48000.0,26000.0,,1000.0
+82,United States,2012,"Energy sources
+(more than one may apply)",District chilled water,54000.0,54000.0,54000.0,21000.0,8000.0,26000.0,54000.0,,
+83,United States,2012,"Energy sources
+(more than one may apply)",Propane,510000.0,510000.0,507000.0,69000.0,90000.0,,,510000.0,38000.0
+84,United States,2012,"Energy sources
+(more than one may apply)",Other,172000.0,172000.0,167000.0,72000.0,41000.0,1000.0,,38000.0,172000.0
+85,United States,2012,"Energy end uses
+(more than one may apply)",Buildings with space heating,4722000.0,4722000.0,4717000.0,2888000.0,455000.0,48000.0,51000.0,491000.0,172000.0
+86,United States,2012,"Energy end uses
+(more than one may apply)",Buildings with cooling,4461000.0,4461000.0,4461000.0,2700000.0,360000.0,44000.0,54000.0,420000.0,126000.0
+87,United States,2012,"Energy end uses
+(more than one may apply)",Buildings with water heating,4423000.0,4423000.0,4423000.0,2742000.0,411000.0,45000.0,51000.0,466000.0,141000.0
+88,United States,2012,"Energy end uses
+(more than one may apply)",Buildings with cooking,1589000.0,1589000.0,1589000.0,1087000.0,166000.0,14000.0,9000.0,234000.0,60000.0
+89,United States,2012,"Energy end uses
+(more than one may apply)",Buildings with manufacturing,259000.0,259000.0,259000.0,153000.0,25000.0,,,43000.0,
+90,United States,2012,"Energy end uses
+(more than one may apply)","Buildings with electricity
+generation",410000.0,410000.0,410000.0,270000.0,214000.0,15000.0,12000.0,79000.0,73000.0
+91,United States,2012,Food preparation or serving areas in non-food service buildings (more than one may apply),Snack bar or concession stand,153000.0,153000.0,153000.0,96000.0,24000.0,3000.0,2000.0,22000.0,5000.0
+92,United States,2012,Food preparation or serving areas in non-food service buildings (more than one may apply),Fast food or small restaurant,173000.0,173000.0,173000.0,132000.0,19000.0,2000.0,1000.0,24000.0,5000.0
+93,United States,2012,Food preparation or serving areas in non-food service buildings (more than one may apply),Cafeteria or large restaurant,130000.0,130000.0,130000.0,104000.0,35000.0,6000.0,3000.0,17000.0,11000.0
+94,United States,2012,Food preparation or serving areas in non-food service buildings (more than one may apply),"Commercial kitchen/
+food preparation area",282000.0,282000.0,282000.0,221000.0,49000.0,4000.0,3000.0,38000.0,10000.0
+95,United States,2012,Food preparation or serving areas in non-food service buildings (more than one may apply),Small kitchen area,736000.0,736000.0,736000.0,459000.0,82000.0,3000.0,3000.0,121000.0,31000.0

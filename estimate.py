@@ -68,7 +68,7 @@ for opt, arg in options:
   elif opt in ['-p', '--push']:
     push_to_db = True
   elif opt in ['-f', '--file']:
-    data_files.append({'file_path': arg.strip(), 'tag': ''})
+    data_files.append({'file_path': path.join(FILES_PATH, 'data', arg.strip()), 'tag': ''})
 
     # Whenever a --file argument is passed, a tag for that file should follow
     check_for_tag = True 

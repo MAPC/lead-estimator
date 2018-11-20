@@ -1,0 +1,6 @@
+seq_id,hu_type,years,tot_us,northeast,new_englnd,ma,ne_no_ma,mid_atlntc,ny,pa,nj
+1,Single Family Detached,2009,71.8,10.9,3.1,1.2,1.9,7.8,3.1,2.6,2.1
+2,Single Family Attached,2009,6.7,1.8,0.3,0.1,0.1,1.5,0.4,1.0,0.2
+3,Apartments in 2-4 Unit Buildings,2009,9.0,3.1,1.0,0.6,0.4,2.1,1.2,0.5,0.4
+4,Apartments in 5 or more Unit Buildings,2009,19.1,4.4,1.0,0.5,0.5,3.4,2.4,0.6,0.5
+5,Mobile Homes,2009,6.9,0.5,0.1,,,0.4,0.1,0.3,

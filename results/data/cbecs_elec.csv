@@ -1,0 +1,19 @@
+seq_id,geography,years,activity,c_blg,c_sqft,c_perwrkr,e_blg,e_sqft,e_kwh
+1,United States,2012,Education,345.0,11.0,12.3,33.2,1.05,0.096
+2,United States,2012,Food Sales ,345.0,48.7,52.0,32.4,4.57,0.094
+3,United States,2012,Food Service ,215.0,44.9,23.8,21.3,4.44,0.099
+4,United States,2012,Health Care,683.0,25.8,14.1,61.2,2.31,0.09
+5,United States,2012,Health Care Inpatient ,7687.0,31.0,17.2,671.8,2.71,0.087
+6,United States,2012,Health Care Outpatient,227.0,18.7,10.0,21.4,1.77,0.094
+7,United States,2012,Lodging ,565.0,15.3,29.1,53.8,1.46,0.095
+8,United States,2012,Mercantile,345.0,18.3,22.7,33.4,1.77,0.097
+9,United States,2012,Mercantile Retail (other than mall) ,189.0,15.2,20.5,18.7,1.5,0.099
+10,United States,2012,Mercantile Enclosed and strip malls,757.0,21.1,24.4,72.4,2.02,0.096
+11,United States,2012,Office ,250.0,15.9,7.5,25.9,1.64,0.104
+12,United States,2012,Public Assembly ,229.0,14.5,25.9,22.4,1.42,0.098
+13,United States,2012,Public Order And Safety ,255.0,14.9,11.5,24.3,1.42,0.095
+14,United States,2012,Religious Worship ,58.0,5.2,12.2,6.1,0.55,0.106
+15,United States,2012,Service ,62.0,8.3,9.3,6.8,0.91,0.11
+16,United States,2012,Warehouse And Storage ,123.0,6.6,13.2,12.5,0.67,0.101
+17,United States,2012,Other ,455.0,28.3,34.7,41.1,2.56,0.09
+18,United States,2012,Vacant ,66.0,4.5,32.7,7.0,0.48,0.105
