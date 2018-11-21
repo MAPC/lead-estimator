@@ -6,7 +6,6 @@ services:
     build: .
     command: >
       python -u estimate.py
-        --sector=commercial
         --file=acs_hf.csv --tag=acs_hf
         --file=acs_uis.csv --tag=acs_uis
         --file=cbecs_elec.csv --tag=cbecs_elec
@@ -16,7 +15,6 @@ services:
         --file=eowld.csv --tag=eowld
         --file=masssave_ci.csv --tag=masssave_ci
         --file=masssave_res.csv --tag=masssave_res
-        --file=mecs_ami.csv --tag=mecs_ami
         --file=mecs_fce.csv --tag=mecs_fce
         --file=recs_hfc.csv --tag=recs_hfc
         --file=recs_hfe.csv --tag=recs_hfe

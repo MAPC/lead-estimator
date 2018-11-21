@@ -83,6 +83,12 @@ def commercial(data_sources):
     'total_con_mmbtu'
   ]
 
+  acs_ratios = {
+    'elec': 1,
+    'ng': .4633,
+    'foil': .3609,
+  }
+
 
   def methodology(datasets):
     """
@@ -106,17 +112,8 @@ def commercial(data_sources):
     results = pd.DataFrame()
 
     for municipality in eowld['municipal'].unique():
-      def dump(x):
-        if municipality == 'Gloucester':
-          print(x)
-          exit()
-
       eowld = pd.DataFrame(eowld_snapshot[eowld_snapshot['municipal'] == municipality])
       muni_id = eowld['muni_id'].unique()[0]
-
-      masssave_ci = datasets['masssave_ci']
-      masssave_ci = pd.DataFrame(masssave_ci[masssave_ci['municipal'] == municipality])
-      dump(masssave_ci)
 
       pba_stats = {}
       for pba, naics_codes in pba_naics_groups.items():
@@ -234,16 +231,14 @@ def commercial(data_sources):
       }
 
       for fuel in fuel_types:
-
         for set_name, result_set in result_sets.items():
-
           if not result_set.empty:
             if set_name == 'mercantile':
-              result_set[fuel+'_con_pu'] = result_set[fuel+'_con_per_b'] * result_set['estabs'] * energy_sources[fuel] * fuel_factor[fuel]
-              result_set[fuel+'_exp_dollar'] = result_set[fuel+'_exp_per_b'] * result_set['estabs'] * energy_sources[fuel]
+              result_set[fuel+'_con_pu'] = result_set[fuel+'_con_per_b'] * result_set['estabs'] * acs_ratios[fuel] * fuel_factor[fuel]
+              result_set[fuel+'_exp_dollar'] = result_set[fuel+'_exp_per_b'] * result_set['estabs'] * acs_ratios[fuel]
             else:
-              result_set[fuel+'_con_pu'] = result_set[fuel+'_con_per_w'] * result_set['emps'] * energy_sources[fuel] * fuel_factor[fuel]
-              result_set[fuel+'_exp_dollar'] = result_set[fuel+'_exp_per_w'] * result_set['emps'] * energy_sources[fuel]
+              result_set[fuel+'_con_pu'] = result_set[fuel+'_con_per_w'] * result_set['emps'] * acs_ratios[fuel] * fuel_factor[fuel]
+              result_set[fuel+'_exp_dollar'] = result_set[fuel+'_exp_per_w'] * result_set['emps'] * acs_ratios[fuel]
 
             result_set[fuel+'_con_mmbtu'] = result_set[fuel+'_con_pu'] * fuel_conversion[fuel]
             result_set[fuel+'_emissions_co2'] = result_set[fuel+'_con_pu'] * co2_conversion_map[fuel]
@@ -255,9 +250,6 @@ def commercial(data_sources):
 
       current_result['total_con_mmbtu'] = current_result['elec_con_mmbtu'] + current_result['ng_con_mmbtu'] + current_result['foil_con_mmbtu']
 
-      dump(current_result)
-
-      
       current_result['muni_id'] = muni_id
       current_result['municipal'] = municipality
 

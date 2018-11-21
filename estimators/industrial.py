@@ -5,7 +5,6 @@
 import pandas as pd
 import numpy as np
 from .estimator import Estimator
-from pprint import pprint
 
 
 def industrial(data_sources):
@@ -15,7 +14,7 @@ def industrial(data_sources):
     @return DataFrame
   """
 
-  fuel_types = ['elec', 'foil', 'ng', 'other']
+  fuel_types = ['elec', 'foil', 'ng']
 
   fuel_conversion = {
     'elec': 0.006707,
@@ -52,6 +51,10 @@ def industrial(data_sources):
       @return DataFrame
     """
 
+    pd.set_option('display.max_rows', 500)
+    pd.set_option('display.max_columns', 500)
+    pd.set_option('display.width', 800)
+
     """
       Step 1 in Methodology
     """
@@ -73,47 +76,53 @@ def industrial(data_sources):
     """
 
     mecs_fce = pd.DataFrame(datasets['mecs_fce'])
-    mecs_fce.rename(columns={'naicscode': 'naics_code'}, inplace=True)
+    mecs_fce.rename(columns={'naicscode': 'naics_code', 'c_employee': 'con_per_w'}, inplace=True)
     mecs_fce['naics_code'] = mecs_fce['naics_code'].astype(int)
 
     mecs_fce = mecs_fce[(mecs_fce['naics_code'].isin(naics_codes)) & (mecs_fce['years'] == 2010) & (mecs_fce['geography'].str.lower() == 'northeast region')]
-    mecs_fce = mecs_fce[['naics_code', 'c_employee']]
+    mecs_fce = mecs_fce[['naics_code', 'con_per_w']]
 
     results = pd.merge(results, mecs_fce, on='naics_code')
     replace_invalid_values(results)
 
-    results['total_con_mmbtu'] = results['c_employee'].astype(float) * results['avgemp'].astype(float)
+    results['total_con_mmbtu'] = results['con_per_w'].astype(float) * results['avgemp'].astype(float)
 
 
     """
       Step 3 in Methodology
     """
-    mecs_ami = pd.DataFrame(datasets['mecs_ami'])
-    mecs_ami.rename(columns={'naics_3d': 'naics_code'}, inplace=True)
 
-    mecs_ami['naics_code'] = mecs_ami['naics_code'].apply(pd.to_numeric, errors='coerce')
-    mecs_ami = mecs_ami[(mecs_ami['naics_code'].isin(naics_codes)) & (mecs_ami['geography'].str.lower() == 'northeast') & (mecs_ami['years'] == 2010)]
-    replace_invalid_values(mecs_ami)
+    mecs_data = {
+      'euc': pd.DataFrame(datasets['mecs_euc']),
+      'fuc': pd.DataFrame(datasets['mecs_fuc']),
+    }
 
-    mecs_ami['other'] = mecs_ami[['lpg_ngl', 'coal', 'coke_brz', 'other']].apply(pd.to_numeric).sum(axis=1, skipna=True)
-    mecs_ami['foil'] = mecs_ami[['d_fueloil', 'r_fueloil']].apply(pd.to_numeric).sum(axis=1, skipna=True)
-    mecs_ami = mecs_ami[['net_elec', 'natgas', 'foil', 'other', 'tot_consum', 'naics_code']].rename(columns={'net_elec': 'elec', 'natgas': 'ng', 'tot_consum': 'tot'})
+    for dataset in mecs_data.keys():
+      mecs_data[dataset].rename(columns={'naics_3d': 'naics_code'}, inplace=True)
+      mecs_data[dataset]['naics_code'] = mecs_data[dataset]['naics_code'].apply(pd.to_numeric, errors='coerce')
+      mecs_data[dataset] = mecs_data[dataset][(mecs_data[dataset]['naics_code'].isin(naics_codes)) & (mecs_data[dataset]['geography'].str.lower() == 'united states') & (mecs_data[dataset]['years'] == 2010)]
+      replace_invalid_values(mecs_data[dataset])
+
+    mecs_data['euc']['foil'] = mecs_data[dataset][['d_fueloil', 'r_fueloil']].apply(pd.to_numeric).sum(axis=1, skipna=True)
+    mecs_data['euc'] = mecs_data['euc'][['net_elec', 'natgas', 'foil', 'naics_code']].rename(columns={'net_elec': 'elec', 'natgas': 'ng'})
+    mecs_data['fuc'] = mecs_data['fuc'][['naics_code', 'tot_consum']].rename(columns={'tot_consum': 'tot'})
+
+    mecs = pd.merge(mecs_data['euc'], mecs_data['fuc'], on="naics_code")
 
     for fuel in fuel_types:
-      mecs_ami[fuel+'_con_perc'] = mecs_ami[fuel].astype(float) / mecs_ami['tot'].astype(float)
+      mecs[fuel+'_con_perc'] = mecs[fuel].astype(float) / mecs['tot'].astype(float)
 
-    mecs_ami['naics_code'] = mecs_ami['naics_code'].astype(int)
-    mecs_ami.drop(fuel_types + ['tot'], axis=1, inplace=True)
+    mecs['naics_code'] = mecs['naics_code'].astype(int)
+    mecs.drop(fuel_types + ['tot'], axis=1, inplace=True)
+    replace_invalid_values(mecs)
 
-    results = pd.merge(results, mecs_ami, on='naics_code')
+    results = pd.merge(results, mecs, on='naics_code')
 
     for fuel in fuel_types:
       results[fuel+'_con_mmbtu'] = results['total_con_mmbtu'] * results[fuel+'_con_perc']
-
-      if not fuel == 'other':
-        results[fuel+'_con_pu'] = results[fuel+'_con_mmbtu'] / fuel_conversion[fuel]
-        results[fuel+'_exp_dollar'] = results[fuel+'_con_pu'] * exp_per_fuel_pu[fuel]
-        results[fuel+'_emissions_co2'] = results[fuel+'_con_pu'] * co2_conversion_map[fuel]
+      results[fuel+'_con_pu'] = results[fuel+'_con_mmbtu'] / fuel_conversion[fuel]
+      results[fuel+'_exp_dollar'] = results[fuel+'_con_pu'] * exp_per_fuel_pu[fuel]
+      results[fuel+'_emissions_co2'] = results[fuel+'_con_pu'] * co2_conversion_map[fuel]
 
     results.sort_values('municipal', inplace=True)
 
