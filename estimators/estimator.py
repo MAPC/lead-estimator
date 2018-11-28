@@ -77,7 +77,10 @@ class Estimator(object):
       for tag, table in Estimator.database_tag_map.items():
         if not tag in Estimator.loaded_data:
           print("Loading " + tag)
-          data[tag] = pd.read_sql_query("SELECT * FROM tabular." + table, Estimator.db_engine)
+          df = pd.read_sql_query("SELECT * FROM tabular." + table, Estimator.db_engine)
+          Estimator.loaded_data[tag] = df
+
+        data[tag] = Estimator.loaded_data[tag]
      
       for tag, table in data.items():
         if 'municipal' in table.columns:
