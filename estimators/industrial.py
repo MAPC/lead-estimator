@@ -51,10 +51,6 @@ def industrial(data_sources):
       @return DataFrame
     """
 
-    pd.set_option('display.max_rows', 500)
-    pd.set_option('display.max_columns', 500)
-    pd.set_option('display.width', 800)
-
     """
       Step 1 in Methodology
     """
@@ -123,8 +119,6 @@ def industrial(data_sources):
       results[fuel+'_con_pu'] = results[fuel+'_con_mmbtu'] / fuel_conversion[fuel]
       results[fuel+'_exp_dollar'] = results[fuel+'_con_pu'] * exp_per_fuel_pu[fuel]
       results[fuel+'_emissions_co2'] = results[fuel+'_con_pu'] * co2_conversion_map[fuel]
-
-    results.sort_values('municipal', inplace=True)
 
     # Rename certain municipal identifiers to conform to the the data
     # used in the other sectors.

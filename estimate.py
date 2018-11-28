@@ -43,7 +43,7 @@ options = getopt(sys.argv[1:], short_options, long_options)[0]
 
 data_processors = {
   'commercial': estimators.commercial,
-  #'residential': estimators.residential,
+  'residential': estimators.residential,
   'industrial': estimators.industrial
 }
 
@@ -80,6 +80,7 @@ for sector, processor in data_processors.items():
   sector_data[sector] = processor(data_files)
   print('Finished {} sector!'.format(sector))
 
+print('Calibrating Commercial and Industrial sectors using MassSave data...')
 sector_data = estimators.ci_munger(data_files, sector_data)
 
 

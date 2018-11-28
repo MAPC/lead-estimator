@@ -97,11 +97,6 @@ def commercial(data_sources):
       @return DataFrame 
     """
 
-    pd.set_option('display.max_rows', 500)
-    pd.set_option('display.max_columns', 500)
-    pd.set_option('display.width', 800)
-
-
     """
       Step 1 in Methodology
     """
@@ -244,7 +239,7 @@ def commercial(data_sources):
             result_set[fuel+'_emissions_co2'] = result_set[fuel+'_con_pu'] * co2_conversion_map[fuel]
 
 
-      current_result = pd.concat(result_sets, sort=False).sort_values(['activity']).reset_index()
+      current_result = pd.concat(result_sets, sort=False).reset_index()
       del current_result['level_0']
       del current_result['level_1']
 

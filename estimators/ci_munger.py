@@ -22,25 +22,49 @@ def ci_munger(data_sources, sector_data):
   
   fuel_types = ['elec', 'ng']
 
-  col_order = [
+  com_col_order = [
     'muni_id',
     'municipal',
     'year',
     'activity',
     'elec_con_pu',
-    'elec_exp_dollar',
     'elec_con_mmbtu',
+    'elec_exp_dollar',
     'elec_emissions_co2',
     'ng_con_pu',
-    'ng_exp_dollar',
     'ng_con_mmbtu',
+    'ng_exp_dollar',
     'ng_emissions_co2',
     'foil_con_pu',
-    'foil_exp_dollar',
     'foil_con_mmbtu',
+    'foil_exp_dollar',
     'foil_emissions_co2',
     'total_con_mmbtu'
   ]
+
+  ind_col_order = [
+    'muni_id',
+    'municipal',
+    'year',
+    'naicstitle',
+    'elec_con_pu',
+    'elec_con_mmbtu',
+    'elec_exp_dollar',
+    'elec_emissions_co2',
+    'ng_con_pu',
+    'ng_con_mmbtu',
+    'ng_exp_dollar',
+    'ng_emissions_co2',
+    'foil_con_pu',
+    'foil_con_mmbtu',
+    'foil_exp_dollar',
+    'foil_emissions_co2',
+    'elec_con_perc',
+    'ng_con_perc',
+    'foil_con_perc',
+    'total_con_mmbtu'
+  ]
+
 
   fuel_conversion = {
     'elec': {
@@ -49,7 +73,6 @@ def ci_munger(data_sources, sector_data):
       2015: 0.006707,
     },
     'ng': 0.1,
-    'foil': 0.139,
   }
 
   emissions_factors = {
@@ -61,11 +84,6 @@ def ci_munger(data_sources, sector_data):
     'ng': 11.710
   }
 
-  commercial_columns = []
-
-  industrial_columns = []
-
-
   def methodology(datasets):
     """
       @param Dict<DataFrame> datasets
@@ -73,15 +91,12 @@ def ci_munger(data_sources, sector_data):
       @return DataFrame 
     """
 
-    pd.set_option('display.max_rows', 500)
-    pd.set_option('display.max_columns', 500)
-    pd.set_option('display.width', 800)
-
     masssave_ci_all = pd.DataFrame(datasets['masssave_ci'])
     masssave_ci_all = masssave_ci_all[['municipal', 'cal_year', 'mwh_use', 'therm_use']].rename(columns={'mwh_use': 'elec', 'therm_use': 'ng'})
     masssave_ci_all['elec'] *= 1000
 
     years = masssave_ci_all['cal_year'].unique()
+    latest_year = years[-1]
 
     sectors = {
       'commercial': pd.DataFrame(),
@@ -89,15 +104,6 @@ def ci_munger(data_sources, sector_data):
     }
 
     for municipality in datasets['eowld']['municipal'].unique():
-      def cprint(x):
-        if municipality == 'Gloucester':
-          print(x)
-
-      def dump(x):
-        if municipality == 'Gloucester':
-          print(x)
-          exit()
-
       masssave_ci = masssave_ci_all[masssave_ci_all['municipal'] == municipality]
       muni_data = {
         'commercial': sector_data['commercial'][sector_data['commercial']['municipal'] == municipality],
@@ -115,20 +121,23 @@ def ci_munger(data_sources, sector_data):
           muni_sector_data = muni_data[sector].copy()
 
           for fuel in fuel_types:
-            calibrator = (masssave[fuel] / pu_totals[fuel]).values[0]
-            muni_sector_data[fuel+'_con_pu'] *= calibrator
-            muni_sector_data[fuel+'_con_mmbtu'] = muni_sector_data[fuel+'_con_pu'] * (fuel_conversion['elec'][year] or fuel_conversion['elec'][2015]) if fuel == 'elec' else muni_sector_data[fuel+'_con_pu'] * fuel_conversion[fuel]
-            muni_sector_data[fuel+'_emissions_co2'] = muni_sector_data[fuel+'_con_pu'] * (emissions_factors['elec'][year] or emissions_factors['elec'][2015]) if fuel == 'elec' else muni_sector_data[fuel+'_con_pu'] * emissions_factors[fuel]
+            ratio = (masssave[fuel] / pu_totals[fuel])
+            calibrator = ratio if not ratio.empty else 1
+
+            muni_sector_data[fuel+'_con_pu'] = muni_sector_data[fuel+'_con_pu'].apply(lambda x: x * calibrator)
+            muni_sector_data[fuel+'_con_mmbtu'] = muni_sector_data[fuel+'_con_pu'] * (fuel_conversion['elec'][year] or fuel_conversion['elec'][latest_year]) if fuel == 'elec' else muni_sector_data[fuel+'_con_pu'] * fuel_conversion[fuel]
+            muni_sector_data[fuel+'_emissions_co2'] = muni_sector_data[fuel+'_con_pu'] * (emissions_factors['elec'][year] or emissions_factors['elec'][latest_year]) if fuel == 'elec' else muni_sector_data[fuel+'_con_pu'] * emissions_factors[fuel]
 
           muni_sector_data['year'] = year
 
           sectors[sector] = sectors[sector].append(muni_sector_data, ignore_index=True)
 
-      dump(sectors['industrial'])
+    sectors['commercial'].sort_values(['municipal', 'year', 'activity'], inplace=True)
+    sectors['industrial'].sort_values(['municipal', 'year', 'naics_code'], inplace=True)
 
     results = {
-      'commercial': sectors.commercial,
-      'industrial': sectors.industrial,
+      'commercial': sectors['commercial'][com_col_order],
+      'industrial': sectors['industrial'][ind_col_order],
       'residential': sector_data['residential']
     }
 
