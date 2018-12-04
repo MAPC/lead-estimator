@@ -91,7 +91,7 @@ makedirs(SECTOR_DIR, exist_ok=True)
 
 for sector, df in sector_data.items():
   if push_to_db:
-    table = "mapc-lead-{}".format(sector)
+    table = "mapc_lead_{}".format(sector)
     engine = estimators.Estimator.db_engine
     schema = "tabular"
     

@@ -121,10 +121,11 @@ def ci_munger(data_sources, sector_data):
           muni_sector_data = muni_data[sector].copy()
 
           for fuel in fuel_types:
-            ratio = (masssave[fuel] / pu_totals[fuel])
-            calibrator = ratio if not ratio.empty else 1
+            ratio = (masssave[fuel] / pu_totals[fuel]).values
+            calibrator = ratio[0] if len(ratio) > 0 and not np.isnan(ratio[0]) else 1
 
             muni_sector_data[fuel+'_con_pu'] = muni_sector_data[fuel+'_con_pu'].apply(lambda x: x * calibrator)
+            muni_sector_data[fuel+'_exp_dollar'] = muni_sector_data[fuel+'_exp_dollar'].apply(lambda x: x * calibrator)
             muni_sector_data[fuel+'_con_mmbtu'] = muni_sector_data[fuel+'_con_pu'] * (fuel_conversion['elec'][year] or fuel_conversion['elec'][latest_year]) if fuel == 'elec' else muni_sector_data[fuel+'_con_pu'] * fuel_conversion[fuel]
             muni_sector_data[fuel+'_emissions_co2'] = muni_sector_data[fuel+'_con_pu'] * (emissions_factors['elec'][year] or emissions_factors['elec'][latest_year]) if fuel == 'elec' else muni_sector_data[fuel+'_con_pu'] * emissions_factors[fuel]
 
