@@ -60,6 +60,7 @@ def residential(data_sources):
     'Mobile Homes': 'u_oth',
   }
 
+  # For initial estimates
   fuel_conversion_map = {
     'elec': 0.006707,
     'ng': 0.1,
@@ -71,6 +72,49 @@ def residential(data_sources):
     'ng': 11.71,
     'foil': 22.579,
   }
+
+  # For calibration
+  calibrated_fuels = ['elec', 'ng']
+
+  fuel_conversion = {
+    'elec': {
+      2013: 0.006841,
+      2014: 0.007692, 
+      2015: 0.006707,
+    },
+    'ng': 0.1,
+  }
+
+  emissions_factors = {
+    'elec': {
+      2013: .93,     
+      2014: .941,
+      2015: .857,
+    },
+    'ng': 11.710
+  }
+
+  col_order = [
+    'muni_id',
+    'municipal',
+    'year',
+    'hu_type',
+    'hu',
+    'elec_con_pu',
+    'elec_con_mmbtu',
+    'elec_exp_dollar',
+    'elec_emissions_co2',
+    'ng_con_pu',
+    'ng_con_mmbtu',
+    'ng_exp_dollar',
+    'ng_emissions_co2',
+    'foil_con_pu',
+    'foil_con_mmbtu',
+    'foil_exp_dollar',
+    'foil_emissions_co2',
+    'total_con_mmbtu'
+  ]
+
 
 
   def methodology(datasets):
@@ -205,9 +249,53 @@ def residential(data_sources):
     for fuel, conversion_ratio in co2_conversion_map.items():
       results[fuel+'_emissions_co2'] = results[fuel+'_con_pu'] * conversion_ratio
 
-    results.sort_values(['municipal', 'hu_type'], inplace=True)
 
-    return results
+    """
+      Calibrate using MassSave data
+    """
+    print("Calibrating Residential sector using MassSave data...")
+
+    masssave_res_all = pd.DataFrame(datasets['masssave_res'])
+    masssave_res_all = masssave_res_all[['municipal', 'cal_year', 'mwh_use', 'therm_use']].rename(columns={'mwh_use': 'elec', 'therm_use': 'ng'})
+    masssave_res_all['elec'] *= 1000
+
+    years = masssave_res_all['cal_year'].unique()
+    latest_year = years[-1]
+
+    calibrated_results = pd.DataFrame()
+
+    for municipality in datasets['eowld']['municipal'].unique():
+      masssave_res = masssave_res_all[masssave_res_all['municipal'] == municipality]
+      muni_data = results[results['municipal'] == municipality].copy();
+
+      pu_totals = {}
+      for fuel in calibrated_fuels:
+        pu_totals[fuel] = muni_data[fuel+'_con_pu'].sum()
+
+      for year in years:
+        masssave = masssave_res[masssave_res['cal_year'] == year]
+        muni_data_by_year = muni_data.copy()
+
+        for fuel in calibrated_fuels:
+          ratio = (masssave[fuel] / pu_totals[fuel]).values
+          calibrator = ratio[0] if len(ratio) > 0 and not np.isnan(ratio[0]) else 1
+
+          muni_data_by_year[fuel+'_con_pu'] = muni_data_by_year[fuel+'_con_pu'].apply(lambda x: x * calibrator)
+          muni_data_by_year[fuel+'_exp_dollar'] = muni_data_by_year[fuel+'_exp_dollar'].apply(lambda x: x * calibrator)
+          muni_data_by_year[fuel+'_con_mmbtu'] = muni_data_by_year[fuel+'_con_pu'] * (fuel_conversion['elec'][year] or fuel_conversion['elec'][latest_year]) if fuel == 'elec' else muni_data_by_year[fuel+'_con_pu'] * fuel_conversion[fuel]
+          muni_data_by_year[fuel+'_emissions_co2'] = muni_data_by_year[fuel+'_con_pu'] * (emissions_factors['elec'][year] or emissions_factors['elec'][latest_year]) if fuel == 'elec' else muni_data_by_year[fuel+'_con_pu'] * emissions_factors[fuel]
+
+        muni_data_by_year['year'] = year
+
+        calibrated_results = calibrated_results.append(muni_data_by_year, ignore_index=True)
+
+
+    """
+      Cleanup
+    """
+    calibrated_results.sort_values(['municipal', 'year', 'hu_type'], inplace=True)
+
+    return calibrated_results[col_order]
 
 
   # Construct the Estimator from the methodology and then process the data sources

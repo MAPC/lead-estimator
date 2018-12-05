@@ -65,7 +65,6 @@ def ci_munger(data_sources, sector_data):
     'total_con_mmbtu'
   ]
 
-
   fuel_conversion = {
     'elec': {
       2013: 0.006841,
@@ -83,6 +82,7 @@ def ci_munger(data_sources, sector_data):
     },
     'ng': 11.710
   }
+
 
   def methodology(datasets):
     """
