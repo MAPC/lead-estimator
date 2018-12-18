@@ -28,7 +28,8 @@ class Estimator(object):
     'cbecs_foil': 'energy_cbecs_fueloil_consumption_expenditure_us',
     'cbecs_ng': 'energy_cbecs_natgas_consumption_expenditure_us',
     'cbecs_sources': 'energy_cbecs_building_energy_sources_us',
-    'mecs_ami': 'energy_mecs_fuel_consumption_ne_us',
+    'mecs_euc': 'energy_mecs_end_use_consumption_us',
+    'mecs_fuc': 'energy_mecs_first_use_consumption_ne_us',
     'mecs_fce': 'energy_mecs_consumption_ratios_ne_us',
     'recs_hfc': 'energy_recs_hh_fuel_consumption_ne_us',
     'recs_hfe': 'energy_recs_hh_fuel_expenditures_ne_us',
@@ -76,7 +77,10 @@ class Estimator(object):
       for tag, table in Estimator.database_tag_map.items():
         if not tag in Estimator.loaded_data:
           print("Loading " + tag)
-          data[tag] = pd.read_sql_query("SELECT * FROM tabular." + table, Estimator.db_engine)
+          df = pd.read_sql_query("SELECT * FROM tabular." + table, Estimator.db_engine)
+          Estimator.loaded_data[tag] = df
+
+        data[tag] = Estimator.loaded_data[tag]
      
       for tag, table in data.items():
         if 'municipal' in table.columns:
