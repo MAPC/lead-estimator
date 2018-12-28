@@ -26,6 +26,7 @@ def ci_munger(data_sources, sector_data):
     'muni_id',
     'municipal',
     'year',
+    'calibrated',
     'activity',
     'elec_con_pu',
     'elec_con_mmbtu',
@@ -46,6 +47,7 @@ def ci_munger(data_sources, sector_data):
     'muni_id',
     'municipal',
     'year',
+    'calibrated',
     'naicstitle',
     'elec_con_pu',
     'elec_con_mmbtu',
@@ -114,22 +116,34 @@ def ci_munger(data_sources, sector_data):
       for fuel in fuel_types:
         pu_totals[fuel] = muni_data['commercial'][fuel+'_con_pu'].sum() + muni_data['industrial'][fuel+'_con_pu'].sum()
 
+      has_uncalibrated = {}
+      for sector in sectors.keys():
+        has_uncalibrated[sector] = False
+
       for year in years:
         masssave = masssave_ci[masssave_ci['cal_year'] == year]
 
         for sector in sectors.keys():
           muni_sector_data = muni_data[sector].copy()
-
-          for fuel in fuel_types:
-            ratio = (masssave[fuel] / pu_totals[fuel]).values
-            calibrator = ratio[0] if len(ratio) > 0 and not np.isnan(ratio[0]) else 1
-
-            muni_sector_data[fuel+'_con_pu'] = muni_sector_data[fuel+'_con_pu'].apply(lambda x: x * calibrator)
-            muni_sector_data[fuel+'_exp_dollar'] = muni_sector_data[fuel+'_exp_dollar'].apply(lambda x: x * calibrator)
-            muni_sector_data[fuel+'_con_mmbtu'] = muni_sector_data[fuel+'_con_pu'] * (fuel_conversion['elec'][year] or fuel_conversion['elec'][latest_year]) if fuel == 'elec' else muni_sector_data[fuel+'_con_pu'] * fuel_conversion[fuel]
-            muni_sector_data[fuel+'_emissions_co2'] = muni_sector_data[fuel+'_con_pu'] * (emissions_factors['elec'][year] or emissions_factors['elec'][latest_year]) if fuel == 'elec' else muni_sector_data[fuel+'_con_pu'] * emissions_factors[fuel]
-
           muni_sector_data['year'] = year
+
+          if masssave.isnull().sum().sum() > 0:
+            if has_uncalibrated[sector]:
+              continue
+
+            muni_sector_data['calibrated'] = False
+            has_uncalibrated[sector] = True
+
+          else:
+            muni_sector_data['calibrated'] = True
+            for fuel in fuel_types:
+              ratio = (masssave[fuel] / pu_totals[fuel]).values
+              calibrator = ratio[0] if len(ratio) > 0 and not np.isnan(ratio[0]) else 1
+
+              muni_sector_data[fuel+'_con_pu'] = muni_sector_data[fuel+'_con_pu'].apply(lambda x: x * calibrator)
+              muni_sector_data[fuel+'_exp_dollar'] = muni_sector_data[fuel+'_exp_dollar'].apply(lambda x: x * calibrator)
+              muni_sector_data[fuel+'_con_mmbtu'] = muni_sector_data[fuel+'_con_pu'] * (fuel_conversion['elec'][year] or fuel_conversion['elec'][latest_year]) if fuel == 'elec' else muni_sector_data[fuel+'_con_pu'] * fuel_conversion[fuel]
+              muni_sector_data[fuel+'_emissions_co2'] = muni_sector_data[fuel+'_con_pu'] * (emissions_factors['elec'][year] or emissions_factors['elec'][latest_year]) if fuel == 'elec' else muni_sector_data[fuel+'_con_pu'] * emissions_factors[fuel]
 
           sectors[sector] = sectors[sector].append(muni_sector_data, ignore_index=True)
 
