@@ -98,6 +98,7 @@ def residential(data_sources):
     'muni_id',
     'municipal',
     'year',
+    'calibrated',
     'hu_type',
     'hu',
     'elec_con_pu',
@@ -272,20 +273,29 @@ def residential(data_sources):
       for fuel in calibrated_fuels:
         pu_totals[fuel] = muni_data[fuel+'_con_pu'].sum()
 
+      has_uncalibrated = False
       for year in years:
         masssave = masssave_res[masssave_res['cal_year'] == year]
         muni_data_by_year = muni_data.copy()
-
-        for fuel in calibrated_fuels:
-          ratio = (masssave[fuel] / pu_totals[fuel]).values
-          calibrator = ratio[0] if len(ratio) > 0 and not np.isnan(ratio[0]) else 1
-
-          muni_data_by_year[fuel+'_con_pu'] = muni_data_by_year[fuel+'_con_pu'].apply(lambda x: x * calibrator)
-          muni_data_by_year[fuel+'_exp_dollar'] = muni_data_by_year[fuel+'_exp_dollar'].apply(lambda x: x * calibrator)
-          muni_data_by_year[fuel+'_con_mmbtu'] = muni_data_by_year[fuel+'_con_pu'] * (fuel_conversion['elec'][year] or fuel_conversion['elec'][latest_year]) if fuel == 'elec' else muni_data_by_year[fuel+'_con_pu'] * fuel_conversion[fuel]
-          muni_data_by_year[fuel+'_emissions_co2'] = muni_data_by_year[fuel+'_con_pu'] * (emissions_factors['elec'][year] or emissions_factors['elec'][latest_year]) if fuel == 'elec' else muni_data_by_year[fuel+'_con_pu'] * emissions_factors[fuel]
-
         muni_data_by_year['year'] = year
+
+        if masssave.isnull().sum().sum() > 0:
+          if has_uncalibrated:
+            continue
+
+          muni_data_by_year['calibrated'] = False
+          has_uncalibrated = True
+
+        else:
+          muni_data_by_year['calibrated'] = True
+          for fuel in calibrated_fuels:
+            ratio = (masssave[fuel] / pu_totals[fuel]).values
+            calibrator = ratio[0] if len(ratio) > 0 and not np.isnan(ratio[0]) else 1
+
+            muni_data_by_year[fuel+'_con_pu'] = muni_data_by_year[fuel+'_con_pu'].apply(lambda x: x * calibrator)
+            muni_data_by_year[fuel+'_exp_dollar'] = muni_data_by_year[fuel+'_exp_dollar'].apply(lambda x: x * calibrator)
+            muni_data_by_year[fuel+'_con_mmbtu'] = muni_data_by_year[fuel+'_con_pu'] * (fuel_conversion['elec'][year] or fuel_conversion['elec'][latest_year]) if fuel == 'elec' else muni_data_by_year[fuel+'_con_pu'] * fuel_conversion[fuel]
+            muni_data_by_year[fuel+'_emissions_co2'] = muni_data_by_year[fuel+'_con_pu'] * (emissions_factors['elec'][year] or emissions_factors['elec'][latest_year]) if fuel == 'elec' else muni_data_by_year[fuel+'_con_pu'] * emissions_factors[fuel]
 
         calibrated_results = calibrated_results.append(muni_data_by_year, ignore_index=True)
 
