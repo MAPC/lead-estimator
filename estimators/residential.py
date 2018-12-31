@@ -244,7 +244,6 @@ def residential(data_sources):
 
     results = results[['muni_id', 'municipal', 'hu_type', 'hu'] + fuel_cons_columns + fuel_cons_pu_columns + fuel_exp_columns]
     results['total_con_mmbtu'] = results[fuel_cons_columns].sum(axis=1)
-    results['total_exp_dollar'] = results[fuel_exp_columns].sum(axis=1)
 
     emissions = pd.DataFrame()
     for fuel, conversion_ratio in co2_conversion_map.items():
@@ -293,9 +292,10 @@ def residential(data_sources):
             calibrator = ratio[0] if len(ratio) > 0 and not np.isnan(ratio[0]) else 1
 
             muni_data_by_year[fuel+'_con_pu'] = muni_data_by_year[fuel+'_con_pu'].apply(lambda x: x * calibrator)
-            muni_data_by_year[fuel+'_exp_dollar'] = muni_data_by_year[fuel+'_exp_dollar'].apply(lambda x: x * calibrator)
             muni_data_by_year[fuel+'_con_mmbtu'] = muni_data_by_year[fuel+'_con_pu'] * (fuel_conversion['elec'][year] or fuel_conversion['elec'][latest_year]) if fuel == 'elec' else muni_data_by_year[fuel+'_con_pu'] * fuel_conversion[fuel]
             muni_data_by_year[fuel+'_emissions_co2'] = muni_data_by_year[fuel+'_con_pu'] * (emissions_factors['elec'][year] or emissions_factors['elec'][latest_year]) if fuel == 'elec' else muni_data_by_year[fuel+'_con_pu'] * emissions_factors[fuel]
+
+          muni_data_by_year['total_con_mmbtu'] = muni_data_by_year[fuel_cons_columns].sum(axis=1)
 
         calibrated_results = calibrated_results.append(muni_data_by_year, ignore_index=True)
 
