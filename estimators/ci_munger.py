@@ -145,6 +145,8 @@ def ci_munger(data_sources, sector_data):
               muni_sector_data[fuel+'_con_mmbtu'] = muni_sector_data[fuel+'_con_pu'] * (fuel_conversion['elec'][year] or fuel_conversion['elec'][latest_year]) if fuel == 'elec' else muni_sector_data[fuel+'_con_pu'] * fuel_conversion[fuel]
               muni_sector_data[fuel+'_emissions_co2'] = muni_sector_data[fuel+'_con_pu'] * (emissions_factors['elec'][year] or emissions_factors['elec'][latest_year]) if fuel == 'elec' else muni_sector_data[fuel+'_con_pu'] * emissions_factors[fuel]
 
+            muni_sector_data['total_con_mmbtu'] = muni_sector_data['elec_con_mmbtu'] + muni_sector_data['ng_con_mmbtu'] + muni_sector_data['foil_con_mmbtu']
+
           sectors[sector] = sectors[sector].append(muni_sector_data, ignore_index=True)
 
     sectors['commercial'].sort_values(['municipal', 'year', 'activity'], inplace=True)
