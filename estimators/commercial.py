@@ -229,11 +229,11 @@ def commercial(data_sources):
         for set_name, result_set in result_sets.items():
           if not result_set.empty:
             if set_name == 'mercantile':
-              result_set[fuel+'_con_pu'] = result_set[fuel+'_con_per_b'] * result_set['estabs'] * acs_ratios[fuel] * fuel_factor[fuel]
-              result_set[fuel+'_exp_dollar'] = result_set[fuel+'_exp_per_b'] * result_set['estabs'] * acs_ratios[fuel]
+              result_set[fuel+'_con_pu'] = result_set[fuel+'_con_per_b'] * result_set['estabs'] * energy_sources[fuel] * fuel_factor[fuel]
+              result_set[fuel+'_exp_dollar'] = result_set[fuel+'_exp_per_b'] * result_set['estabs'] * energy_sources[fuel]
             else:
-              result_set[fuel+'_con_pu'] = result_set[fuel+'_con_per_w'] * result_set['emps'] * acs_ratios[fuel] * fuel_factor[fuel]
-              result_set[fuel+'_exp_dollar'] = result_set[fuel+'_exp_per_w'] * result_set['emps'] * acs_ratios[fuel]
+              result_set[fuel+'_con_pu'] = result_set[fuel+'_con_per_w'] * result_set['emps'] * energy_sources[fuel] * fuel_factor[fuel]
+              result_set[fuel+'_exp_dollar'] = result_set[fuel+'_exp_per_w'] * result_set['emps'] * energy_sources[fuel]
 
             result_set[fuel+'_con_mmbtu'] = result_set[fuel+'_con_pu'] * fuel_conversion[fuel]
             result_set[fuel+'_emissions_co2'] = result_set[fuel+'_con_pu'] * co2_conversion_map[fuel]
