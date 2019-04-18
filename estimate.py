@@ -17,9 +17,8 @@
                     cbecs_el, cbecs_fo, cbecs_ng, cbecs_sources, mecs_fuc, mecs_euc, mecs_fce, recs_hfc,
                     recs_hfe, recs_sc, acs_uis, acs_hf, masssave_ci, masssave_res. See --file argument.
 
-    --sector, -s:   The name of the sector that will be processed. If this argument is not included 
-                    in the command, then the program will process all sectors.
-
+    --push, -p:     Pushes the generated dataset right to the receiving database instead of only writing
+                    to csv files.
 """
 
 import sys
